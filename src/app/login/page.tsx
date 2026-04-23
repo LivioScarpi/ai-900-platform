@@ -3,30 +3,36 @@
 import { useState } from "react";
 import { supabase } from "@/lib/supabase";
 
-type Step = "input" | "sent";
+type Mode = "signin" | "signup";
 
 export default function LoginPage() {
+  const [mode, setMode] = useState<Mode>("signin");
   const [email, setEmail] = useState("");
-  const [step, setStep] = useState<Step>("input");
+  const [password, setPassword] = useState("");
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
+  const [message, setMessage] = useState<string | null>(null);
 
   async function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
     setError(null);
+    setMessage(null);
     setLoading(true);
-    const { error } = await supabase.auth.signInWithOtp({
-      email,
-      options: {
-        emailRedirectTo: typeof window !== "undefined" ? window.location.origin : undefined,
-      },
-    });
-    setLoading(false);
-    if (error) {
-      setError(error.message);
+
+    if (mode === "signin") {
+      const { error } = await supabase.auth.signInWithPassword({ email, password });
+      if (error) setError(error.message);
     } else {
-      setStep("sent");
+      const { error } = await supabase.auth.signUp({ email, password });
+      if (error) {
+        setError(error.message);
+      } else {
+        setMessage("Account creato! Controlla la mail per confermare, poi accedi.");
+        setMode("signin");
+      }
     }
+
+    setLoading(false);
   }
 
   return (
@@ -41,71 +47,72 @@ export default function LoginPage() {
         </div>
 
         <div className="bg-card rounded-2xl border border-cream-200 p-8" style={{ boxShadow: "var(--shadow-sm)" }}>
-          {step === "input" ? (
-            <>
-              <h1 className="font-display text-xl font-bold text-ink mb-1">Sign in</h1>
-              <p className="text-sm text-ink-muted mb-6">
-                Enter your email to receive a magic link — no password required.
-              </p>
+          <h1 className="font-display text-xl font-bold text-ink mb-1">
+            {mode === "signin" ? "Accedi" : "Crea account"}
+          </h1>
+          <p className="text-sm text-ink-muted mb-6">
+            {mode === "signin" ? "Inserisci email e password per accedere." : "Scegli email e password per il tuo account."}
+          </p>
 
-              <form onSubmit={handleSubmit} className="flex flex-col gap-4">
-                <div className="flex flex-col gap-1.5">
-                  <label htmlFor="email" className="label-caps">Email address</label>
-                  <input
-                    id="email"
-                    type="email"
-                    required
-                    autoFocus
-                    value={email}
-                    onChange={(e) => setEmail(e.target.value)}
-                    placeholder="you@example.com"
-                    className="w-full px-4 py-2.5 rounded-lg border border-cream-200 bg-cream text-ink text-sm font-mono placeholder:text-ink-faint focus:outline-none focus:ring-2 focus:ring-brand/30 focus:border-brand transition-colors"
-                  />
-                </div>
-
-                {error && (
-                  <p className="text-xs text-status-red bg-status-red-bg rounded-lg px-3 py-2 border border-red-200">
-                    {error}
-                  </p>
-                )}
-
-                <button
-                  type="submit"
-                  disabled={loading || !email}
-                  className="w-full py-2.5 rounded-lg bg-brand text-white text-sm font-semibold hover:bg-brand-dark disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
-                >
-                  {loading ? "Sending…" : "Send magic link →"}
-                </button>
-              </form>
-            </>
-          ) : (
-            <div className="text-center flex flex-col items-center gap-4">
-              <div className="w-12 h-12 rounded-full bg-status-green-bg border border-status-green/20 flex items-center justify-center">
-                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className="text-status-green">
-                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
-                  <polyline points="22,6 12,13 2,6" />
-                </svg>
-              </div>
-              <div>
-                <h2 className="font-display text-lg font-bold text-ink mb-1">Check your email</h2>
-                <p className="text-sm text-ink-muted">
-                  We sent a magic link to <strong className="text-ink font-mono text-xs">{email}</strong>.
-                  Click the link to sign in.
-                </p>
-              </div>
-              <button
-                onClick={() => setStep("input")}
-                className="text-xs text-ink-faint hover:text-ink-muted transition-colors font-mono mt-2"
-              >
-                ← Use a different email
-              </button>
+          <form onSubmit={handleSubmit} className="flex flex-col gap-4">
+            <div className="flex flex-col gap-1.5">
+              <label htmlFor="email" className="label-caps">Email</label>
+              <input
+                id="email"
+                type="email"
+                required
+                autoFocus
+                autoComplete="email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                placeholder="you@example.com"
+                className="w-full px-4 py-2.5 rounded-lg border border-cream-200 bg-cream text-ink text-sm font-mono placeholder:text-ink-faint focus:outline-none focus:ring-2 focus:ring-brand/30 focus:border-brand transition-colors"
+              />
             </div>
-          )}
-        </div>
 
-        <p className="text-center font-mono text-[10px] text-ink-faint mt-6 tracking-wide">
-          Your progress syncs across all your devices
-        </p>
+            <div className="flex flex-col gap-1.5">
+              <label htmlFor="password" className="label-caps">Password</label>
+              <input
+                id="password"
+                type="password"
+                required
+                autoComplete={mode === "signin" ? "current-password" : "new-password"}
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
+                placeholder="••••••••"
+                className="w-full px-4 py-2.5 rounded-lg border border-cream-200 bg-cream text-ink text-sm font-mono placeholder:text-ink-faint focus:outline-none focus:ring-2 focus:ring-brand/30 focus:border-brand transition-colors"
+              />
+            </div>
+
+            {error && (
+              <p className="text-xs text-status-red bg-status-red-bg rounded-lg px-3 py-2 border border-red-200">
+                {error}
+              </p>
+            )}
+            {message && (
+              <p className="text-xs text-status-green bg-status-green-bg rounded-lg px-3 py-2 border border-status-green/20">
+                {message}
+              </p>
+            )}
+
+            <button
+              type="submit"
+              disabled={loading || !email || !password}
+              className="w-full py-2.5 rounded-lg bg-brand text-white text-sm font-semibold hover:bg-brand-dark disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
+            >
+              {loading ? "…" : mode === "signin" ? "Accedi →" : "Crea account →"}
+            </button>
+          </form>
+
+          <div className="mt-5 pt-4 border-t border-cream-200 text-center">
+            <button
+              onClick={() => { setMode(mode === "signin" ? "signup" : "signin"); setError(null); setMessage(null); }}
+              className="font-mono text-[11px] text-ink-faint hover:text-ink-muted transition-colors"
+            >
+              {mode === "signin" ? "Non hai un account? Registrati" : "Hai già un account? Accedi"}
+            </button>
+          </div>
+        </div>
       </div>
     </div>
   );
