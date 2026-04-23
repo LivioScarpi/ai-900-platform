@@ -686,11 +686,11 @@
       "3f1cd94c-3400-440a-9cc8-c7307a45eebe.png"
     ],
     "options": [
-      "classification",
-      "regression",
-      "clustering"
+      { "letter": "A", "text": "classification" },
+      { "letter": "B", "text": "regression" },
+      { "letter": "C", "text": "clustering" }
     ],
-    "correctAnswer": "regression",
+    "correctAnswer": "B",
     "explanation": "Predicted vs True charts evaluate regression models by comparing predicted numeric values to actual values.",
     "reference": "https://docs.microsoft.com/en-us/azure/machine-learning/how-to-understand-automated-m"
   },
@@ -1111,15 +1111,15 @@
       "9ba34ebe-f496-4d86-adb2-8b637bbd26c1.png"
     ],
     "options": [
-      "Education Level",
-      "Last Name",
-      "Age",
-      "Income Range",
-      "First Name"
+      { "letter": "A", "text": "Education Level" },
+      { "letter": "B", "text": "Last Name" },
+      { "letter": "C", "text": "Age" },
+      { "letter": "D", "text": "Income Range" },
+      { "letter": "E", "text": "First Name" }
     ],
     "correctAnswers": [
-      "Education Level",
-      "Age"
+      "A",
+      "C"
     ],
     "explanation": "First Name, Last Name, Age and Education Level are features. Income range is the label. First Name and Last Name are irrelevant identifiers. Age and Education Level are useful features."
   },
@@ -2004,12 +2004,12 @@
       "06c4b074-8caa-4819-ad77-d3362b9b28c9.png"
     ],
     "options": [
-      "object detection",
-      "face detection",
-      "optical character recognition (OCR)",
-      "image classification"
+      { "letter": "A", "text": "object detection" },
+      { "letter": "B", "text": "face detection" },
+      { "letter": "C", "text": "optical character recognition (OCR)" },
+      { "letter": "D", "text": "image classification" }
     ],
-    "correctAnswer": "object detection",
+    "correctAnswer": "A",
     "explanation": "Annotated images with bounding boxes around identified items are produced by object detection.",
     "reference": "https://docs.microsoft.com/en-us/azure/cognitive-services/computer-vision/concept-object-detection"
   },
@@ -2815,12 +2815,12 @@
       "33f2cf69-cbfd-4dcf-9ad2-272f2375ca3d.png"
     ],
     "options": [
-      "entity recognition",
-      "key phrase extraction",
-      "sentiment analysis",
-      "translation"
+      { "letter": "A", "text": "entity recognition" },
+      { "letter": "B", "text": "key phrase extraction" },
+      { "letter": "C", "text": "sentiment analysis" },
+      { "letter": "D", "text": "translation" }
     ],
-    "correctAnswer": "entity recognition",
+    "correctAnswer": "A",
     "explanation": "The output identifies named entities (persons, organizations, locations) from text — entity recognition.",
     "reference": "https://docs.microsoft.com/en-in/azure/cognitive-services/text-analytics/how-tos/text-analytics-how-to-entity-linking"
   },
