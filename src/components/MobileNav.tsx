@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { useAuth } from "@/components/AuthProvider";
 
 const NAV = [
   {
@@ -65,6 +66,7 @@ const NAV = [
 
 export function MobileNav() {
   const pathname = usePathname();
+  const { signOut } = useAuth();
 
   return (
     <nav className="fixed bottom-0 left-0 right-0 z-40 md:hidden bg-sidebar-bg border-t border-sidebar-border">
@@ -86,6 +88,17 @@ export function MobileNav() {
             </Link>
           );
         })}
+        <button
+          onClick={signOut}
+          className="flex-1 flex flex-col items-center justify-center gap-0.5 text-[10px] font-semibold tracking-wide text-sidebar-text hover:text-status-red transition-colors"
+        >
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+            <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4" />
+            <polyline points="16 17 21 12 16 7" />
+            <line x1="21" y1="12" x2="9" y2="12" />
+          </svg>
+          <span>Out</span>
+        </button>
       </div>
     </nav>
   );

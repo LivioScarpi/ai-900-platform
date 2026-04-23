@@ -5,11 +5,12 @@ import { getAllQuestions } from "@/lib/questions";
 import { QuestionCard } from "@/components/QuestionCard";
 import { ProgressBar } from "@/components/ProgressBar";
 import { saveAttempt } from "@/lib/supabase";
-import { getUserId } from "@/lib/userId";
+import { useUserId } from "@/components/AuthProvider";
 import { Question } from "@/types/question";
 import Link from "next/link";
 
 export default function RandomSequentialPage() {
+  const userId = useUserId();
   // Shuffle once at mount — order is fixed for the whole session
   const [questions] = useState<Question[]>(() =>
     [...getAllQuestions()].sort(() => Math.random() - 0.5)
@@ -38,7 +39,7 @@ export default function RandomSequentialPage() {
 
   async function handleAnswer(isCorrect: boolean, selectedAnswers: string[]) {
     setAnswered(true);
-    await saveAttempt({ userId: getUserId(), questionId: question.id, mode: "random_sequential", selectedAnswers, isCorrect });
+    await saveAttempt({ userId, questionId: question.id, mode: "random_sequential", selectedAnswers, isCorrect });
   }
 
   function next() { setIndex((i) => i + 1); setAnswered(false); }

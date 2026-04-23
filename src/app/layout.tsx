@@ -1,8 +1,7 @@
 import type { Metadata } from "next";
 import { Inter, Playfair_Display, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
-import { Sidebar } from "@/components/Sidebar";
-import { MobileNav } from "@/components/MobileNav";
+import { AuthProvider } from "@/components/AuthProvider";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -37,11 +36,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <body className={`${inter.variable} ${playfair.variable} ${jetbrainsMono.variable} antialiased bg-cream`}>
-        <Sidebar />
-        <MobileNav />
-        <main className="md:ml-[200px] min-h-screen bg-cream overflow-y-auto pb-16 md:pb-0">
-          {children}
-        </main>
+        <AuthProvider>{children}</AuthProvider>
       </body>
     </html>
   );

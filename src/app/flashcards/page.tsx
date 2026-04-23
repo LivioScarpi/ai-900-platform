@@ -5,12 +5,13 @@ import { getAllQuestions } from "@/lib/questions";
 import { QuestionCard } from "@/components/QuestionCard";
 import { ProgressBar } from "@/components/ProgressBar";
 import { saveFlashcardRating } from "@/lib/supabase";
-import { getUserId } from "@/lib/userId";
+import { useUserId } from "@/components/AuthProvider";
 import { Question } from "@/types/question";
 import Link from "next/link";
 
 export default function FlashcardsPage() {
   const questions: Question[] = getAllQuestions().sort(() => Math.random() - 0.5);
+  const userId = useUserId();
   const [index, setIndex] = useState(0);
   const [answered, setAnswered] = useState(false);
   const [results, setResults] = useState<{ id: number; knew: boolean }[]>([]);
@@ -36,7 +37,7 @@ export default function FlashcardsPage() {
 
   async function handleAnswer(isCorrect: boolean) {
     setAnswered(true);
-    await saveFlashcardRating({ userId: getUserId(), questionId: question.id, rating: isCorrect ? "got_it" : "missed_it" });
+    await saveFlashcardRating({ userId, questionId: question.id, rating: isCorrect ? "got_it" : "missed_it" });
   }
 
   async function rate(knew: boolean) {

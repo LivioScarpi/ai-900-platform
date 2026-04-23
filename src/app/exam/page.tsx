@@ -6,7 +6,7 @@ import { QuestionCard } from "@/components/QuestionCard";
 import { ProgressBar } from "@/components/ProgressBar";
 import { Timer } from "@/components/Timer";
 import { saveExamSession } from "@/lib/supabase";
-import { getUserId } from "@/lib/userId";
+import { useUserId } from "@/components/AuthProvider";
 import { Question } from "@/types/question";
 import Link from "next/link";
 
@@ -18,6 +18,7 @@ type ExamState = "idle" | "running" | "finished";
 
 export default function ExamPage() {
   const allQuestions = getAllQuestions();
+  const userId = useUserId();
   const [state, setState] = useState<ExamState>("idle");
   const [questions, setQuestions] = useState<Question[]>([]);
   const [userAnswers, setUserAnswers] = useState<Record<number, UserAnswer>>({});
@@ -44,7 +45,7 @@ export default function ExamPage() {
       topicScores[q.topic].total += 1;
       if (ans?.isCorrect) topicScores[q.topic].correct += 1;
     });
-    await saveExamSession({ userId: getUserId(), mode: timedOut ? "exam_timeout" : "exam", score, total: questions.length, topicScores, durationMs });
+    await saveExamSession({ userId, mode: timedOut ? "exam_timeout" : "exam", score, total: questions.length, topicScores, durationMs });
     setState("finished");
   }
 

@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { useAuth } from "@/components/AuthProvider";
 
 const NAV = [
   {
@@ -65,6 +66,7 @@ const NAV = [
 
 export function Sidebar() {
   const pathname = usePathname();
+  const { user, signOut } = useAuth();
 
   return (
     <aside className="fixed left-0 top-0 h-screen w-[200px] bg-sidebar-bg flex-col z-30 select-none hidden md:flex">
@@ -109,12 +111,22 @@ export function Sidebar() {
       </nav>
 
       {/* Footer */}
-      <div className="px-5 py-4 border-t border-sidebar-border">
-        <div className="flex items-center gap-1.5 mb-1">
+      <div className="px-4 py-4 border-t border-sidebar-border flex flex-col gap-2">
+        {user && (
+          <div className="flex flex-col gap-0.5 mb-1">
+            <p className="font-mono text-[9px] text-sidebar-text-muted truncate">{user.email}</p>
+            <button
+              onClick={signOut}
+              className="text-left font-mono text-[9px] text-sidebar-text-muted hover:text-status-red transition-colors tracking-wide"
+            >
+              Sign out →
+            </button>
+          </div>
+        )}
+        <div className="flex items-center gap-1.5">
           <span className="w-1.5 h-1.5 rounded-full bg-green-500 animate-pulse" />
-          <p className="font-mono text-[10px] text-sidebar-text-muted">Microsoft AI-900</p>
+          <p className="font-mono text-[9px] text-sidebar-text-muted">Microsoft AI-900</p>
         </div>
-        <p className="font-mono text-[10px] text-sidebar-text-muted">Azure AI Fundamentals</p>
       </div>
     </aside>
   );

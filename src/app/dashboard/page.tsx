@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import { getAttemptStats, getExamHistory, getQuestionAttempts } from "@/lib/supabase";
 import { getAllQuestions } from "@/lib/questions";
-import { getUserId } from "@/lib/userId";
+import { useUserId } from "@/components/AuthProvider";
 import { TOPICS } from "@/lib/topics";
 import Link from "next/link";
 
@@ -49,13 +49,14 @@ interface TopicStat {
 
 export default function DashboardPage() {
   const allQuestions = getAllQuestions();
+  const userId = useUserId();
   const [stats, setStats] = useState<{ total: number; correct: number } | null>(null);
   const [history, setHistory] = useState<ExamSession[]>([]);
   const [questionStats, setQuestionStats] = useState<QuestionStat[]>([]);
   const [topicStats, setTopicStats] = useState<TopicStat[]>([]);
 
   useEffect(() => {
-    const userId = getUserId();
+    if (!userId) return;
     Promise.all([
       getAttemptStats(userId),
       getExamHistory(userId),
@@ -105,8 +106,7 @@ export default function DashboardPage() {
       }));
       setTopicStats(tStats.sort((a, b) => a.pct - b.pct));
     });
-  // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+  }, [userId]);
 
   const accuracy = stats && stats.total > 0 ? Math.round((stats.correct / stats.total) * 100) : null;
   const examCount = history.length;
