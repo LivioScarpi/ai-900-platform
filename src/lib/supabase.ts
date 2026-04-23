@@ -89,3 +89,23 @@ export async function getQuestionAttempts(userId: string): Promise<{ question_id
     .eq("user_id", userId);
   return data ?? [];
 }
+
+// ── Exam Draft ────────────────────────────────────────────────────────────────
+
+export async function saveExamDraft(userId: string, data: object) {
+  const { error } = await supabase.from("exam_drafts").upsert({ user_id: userId, data, updated_at: new Date().toISOString() });
+  if (error) console.error("[exam_drafts] save error:", error.message);
+}
+
+export async function loadExamDraft(userId: string) {
+  const { data } = await supabase
+    .from("exam_drafts")
+    .select("data, updated_at")
+    .eq("user_id", userId)
+    .single();
+  return data ?? null;
+}
+
+export async function deleteExamDraft(userId: string) {
+  await supabase.from("exam_drafts").delete().eq("user_id", userId);
+}

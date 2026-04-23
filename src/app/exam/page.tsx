@@ -1,42 +1,155 @@
 "use client";
 
-import { useRef, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import { getAllQuestions, pickProportional } from "@/lib/questions";
 import { QuestionCard } from "@/components/QuestionCard";
 import { ProgressBar } from "@/components/ProgressBar";
 import { Timer } from "@/components/Timer";
-import { saveExamSession } from "@/lib/supabase";
+import { saveExamSession, saveExamDraft, loadExamDraft, deleteExamDraft } from "@/lib/supabase";
 import { useUserId } from "@/components/AuthProvider";
 import { Question } from "@/types/question";
 import Link from "next/link";
 
 const EXAM_QUESTIONS = 50;
 const EXAM_DURATION_SEC = 45 * 60;
+const DRAFT_MAX_AGE_MS = 24 * 60 * 60 * 1000;
 
 type UserAnswer = { selected: string[]; isCorrect: boolean };
 type ExamState = "idle" | "running" | "finished";
 
+interface ExamDraft {
+  questionIds: number[];
+  userAnswers: Record<number, UserAnswer>;
+  currentIndex: number;
+  remainingSeconds: number;
+  startedAt: number;
+  pausedDurationMs: number;
+  savedAt: number;
+}
+
+interface DraftInfo {
+  answered: number;
+  remainingSeconds: number;
+}
+
 export default function ExamPage() {
   const allQuestions = getAllQuestions();
   const userId = useUserId();
+
   const [state, setState] = useState<ExamState>("idle");
   const [questions, setQuestions] = useState<Question[]>([]);
   const [userAnswers, setUserAnswers] = useState<Record<number, UserAnswer>>({});
   const [index, setIndex] = useState(0);
   const [reviewIndex, setReviewIndex] = useState(0);
+  const [isPaused, setIsPaused] = useState(false);
+  const [remainingSeconds, setRemainingSeconds] = useState(EXAM_DURATION_SEC);
+  const [hasDraft, setHasDraft] = useState(false);
+  const [draftInfo, setDraftInfo] = useState<DraftInfo | null>(null);
+
   const startTimeRef = useRef<number>(0);
+  const pausedDurationMsRef = useRef(0);
+  const pausedAtRef = useRef<number | null>(null);
+  const latestAnswersRef = useRef<Record<number, UserAnswer>>({});
+  const latestRemainingRef = useRef(EXAM_DURATION_SEC);
+
+  // Keep refs in sync for use inside callbacks without stale closures
+  latestAnswersRef.current = userAnswers;
+  latestRemainingRef.current = remainingSeconds;
+
+  // Load draft on mount (after userId is available)
+  useEffect(() => {
+    if (!userId) return;
+    loadExamDraft(userId).then((row) => {
+      if (!row) return;
+      const draft = row.data as ExamDraft;
+      if (Date.now() - draft.savedAt > DRAFT_MAX_AGE_MS) {
+        deleteExamDraft(userId);
+        return;
+      }
+      setHasDraft(true);
+      setDraftInfo({ answered: Object.keys(draft.userAnswers).length, remainingSeconds: draft.remainingSeconds });
+    });
+  }, [userId]);
+
+  const buildDraft = useCallback((): ExamDraft => ({
+    questionIds: questions.map((q) => q.id),
+    userAnswers: latestAnswersRef.current,
+    currentIndex: index,
+    remainingSeconds: latestRemainingRef.current,
+    startedAt: startTimeRef.current,
+    pausedDurationMs: pausedDurationMsRef.current,
+    savedAt: Date.now(),
+  }), [questions, index]);
 
   function startExam() {
     const picked = pickProportional(allQuestions, EXAM_QUESTIONS);
     setQuestions(picked);
     setUserAnswers({});
     setIndex(0);
+    setIsPaused(false);
+    setRemainingSeconds(EXAM_DURATION_SEC);
+    pausedDurationMsRef.current = 0;
+    pausedAtRef.current = null;
     startTimeRef.current = Date.now();
+    setHasDraft(false);
+    setDraftInfo(null);
+    if (userId) deleteExamDraft(userId);
     setState("running");
   }
 
+  function loadDraftAndResume(draft: ExamDraft) {
+    const qs = draft.questionIds.map((id) => allQuestions.find((q) => q.id === id)).filter(Boolean) as Question[];
+    const firstUnanswered = draft.questionIds.findIndex((_, i) => !draft.userAnswers[i]);
+    setQuestions(qs);
+    setUserAnswers(draft.userAnswers);
+    setIndex(firstUnanswered >= 0 ? firstUnanswered : draft.questionIds.length - 1);
+    setRemainingSeconds(draft.remainingSeconds);
+    startTimeRef.current = draft.startedAt;
+    pausedDurationMsRef.current = draft.pausedDurationMs;
+    pausedAtRef.current = null;
+    setIsPaused(false);
+    setHasDraft(false);
+    setDraftInfo(null);
+    setState("running");
+  }
+
+  async function resumeFromSaved() {
+    if (!userId) return;
+    const row = await loadExamDraft(userId);
+    if (!row) return;
+    loadDraftAndResume(row.data as ExamDraft);
+  }
+
+  function pauseExam() {
+    setIsPaused(true);
+    pausedAtRef.current = Date.now();
+    if (userId) saveExamDraft(userId, buildDraft());
+  }
+
+  function resumeExam() {
+    if (pausedAtRef.current !== null) {
+      pausedDurationMsRef.current += Date.now() - pausedAtRef.current;
+      pausedAtRef.current = null;
+    }
+    setIsPaused(false);
+  }
+
+  function handleAnswer(qi: number, isCorrect: boolean, selected: string[]) {
+    setUserAnswers((prev) => {
+      const next = { ...prev, [qi]: { isCorrect, selected } };
+      latestAnswersRef.current = next;
+      if (userId) saveExamDraft(userId, { ...buildDraft(), userAnswers: next });
+      return next;
+    });
+  }
+
+  const handleTick = useCallback((remaining: number) => {
+    setRemainingSeconds(remaining);
+    latestRemainingRef.current = remaining;
+  }, []);
+
   async function submitExam(timedOut = false) {
-    const durationMs = Date.now() - startTimeRef.current;
+    const durationMs = Date.now() - startTimeRef.current - pausedDurationMsRef.current;
     const score = Object.values(userAnswers).filter((a) => a.isCorrect).length;
     const topicScores: Record<string, { correct: number; total: number }> = {};
     questions.forEach((q, i) => {
@@ -45,20 +158,52 @@ export default function ExamPage() {
       topicScores[q.topic].total += 1;
       if (ans?.isCorrect) topicScores[q.topic].correct += 1;
     });
+    if (userId) await deleteExamDraft(userId);
     await saveExamSession({ userId, mode: timedOut ? "exam_timeout" : "exam", score, total: questions.length, topicScores, durationMs });
     setState("finished");
   }
 
-  function handleAnswer(qi: number, isCorrect: boolean, selected: string[]) {
-    setUserAnswers((prev) => ({ ...prev, [qi]: { isCorrect, selected } }));
-  }
-
   // ── Idle ─────────────────────────────────────────────────────────────────
   if (state === "idle") {
+    const remainingMins = draftInfo ? Math.floor(draftInfo.remainingSeconds / 60) : null;
+    const remainingSecs = draftInfo ? draftInfo.remainingSeconds % 60 : null;
+
     return (
       <div className="px-4 md:px-8 py-6 md:py-8 max-w-2xl mx-auto w-full">
         <p className="label-caps text-ink-faint mb-1">Study / <span className="text-ink-muted">Exam Simulator</span></p>
         <h1 className="font-display text-3xl font-bold text-ink tracking-tight mb-6">Exam Simulator</h1>
+
+        {/* Resume card */}
+        {hasDraft && draftInfo && (
+          <div className="card p-5 mb-5 border-l-4 border-l-status-orange bg-status-orange-bg/30">
+            <div className="flex items-start justify-between gap-4">
+              <div>
+                <p className="font-semibold text-ink text-sm mb-1">Esame in pausa</p>
+                <p className="text-xs text-ink-muted">
+                  {draftInfo.answered} risposte salvate · {String(remainingMins).padStart(2, "0")}:{String(remainingSecs).padStart(2, "0")} rimanenti
+                </p>
+              </div>
+              <span className="font-mono text-[10px] font-bold tracking-widest px-2 py-1 rounded-full bg-status-orange-bg text-status-orange border border-amber-200 flex-shrink-0">
+                PAUSED
+              </span>
+            </div>
+            <div className="flex gap-3 mt-4">
+              <button
+                onClick={resumeFromSaved}
+                className="px-4 py-2 rounded-lg bg-brand text-white text-sm font-semibold hover:bg-brand-dark transition-colors"
+              >
+                ▶ Riprendi
+              </button>
+              <button
+                onClick={() => { setHasDraft(false); setDraftInfo(null); if (userId) deleteExamDraft(userId); }}
+                className="px-4 py-2 rounded-lg border border-cream-200 bg-card text-sm font-semibold text-ink-muted hover:bg-cream-100 transition-colors"
+              >
+                Scarta e ricomincia
+              </button>
+            </div>
+          </div>
+        )}
+
         <div className="card p-8">
           <div className="grid grid-cols-2 gap-4 mb-8">
             {[
@@ -80,7 +225,7 @@ export default function ExamPage() {
             <p className="text-status-red text-sm text-center">No questions loaded. Run the preprocessing script first.</p>
           ) : (
             <button onClick={startExam} className="w-full py-3 rounded-xl bg-brand text-white font-bold text-base hover:bg-brand-dark transition-colors">
-              Start Exam →
+              {hasDraft ? "Nuovo esame →" : "Start Exam →"}
             </button>
           )}
         </div>
@@ -150,14 +295,43 @@ export default function ExamPage() {
   const allAnswered = Object.keys(userAnswers).length === questions.length;
 
   return (
-    <div className="px-4 md:px-8 py-6 md:py-8 max-w-2xl mx-auto w-full">
+    <div className="relative px-4 md:px-8 py-6 md:py-8 max-w-2xl mx-auto w-full">
+      {/* Pause overlay */}
+      {isPaused && (
+        <div className="absolute inset-0 z-20 bg-cream/90 backdrop-blur-sm rounded-2xl flex flex-col items-center justify-center gap-4">
+          <div className="text-center">
+            <p className="font-display text-2xl font-bold text-ink mb-1">Esame in pausa</p>
+            <p className="text-sm text-ink-muted">Il timer è fermo. Riprendi quando sei pronto.</p>
+          </div>
+          <button
+            onClick={resumeExam}
+            className="px-6 py-3 rounded-xl bg-brand text-white font-bold text-base hover:bg-brand-dark transition-colors"
+          >
+            ▶ Riprendi
+          </button>
+        </div>
+      )}
+
       <div className="flex items-end justify-between mb-6">
         <h1 className="font-display text-2xl font-semibold text-ink tracking-tight">Q {index + 1}</h1>
         <div className="flex items-center gap-3">
           <span className="label-caps text-ink-faint">{Object.keys(userAnswers).length}/{questions.length} answered</span>
           <span className="px-3 py-1.5 rounded-lg bg-brand/10 text-brand text-sm font-mono font-bold border border-brand/20">
-            ⏱ <Timer durationSeconds={EXAM_DURATION_SEC} onExpire={() => submitExam(true)} />
+            ⏱ <Timer
+              durationSeconds={EXAM_DURATION_SEC}
+              initialSeconds={remainingSeconds}
+              paused={isPaused}
+              onExpire={() => submitExam(true)}
+              onTick={handleTick}
+            />
           </span>
+          <button
+            onClick={isPaused ? resumeExam : pauseExam}
+            className="px-3 py-1.5 rounded-lg border border-cream-200 bg-card text-ink-muted text-sm font-semibold hover:bg-cream-100 transition-colors"
+            title={isPaused ? "Riprendi" : "Pausa"}
+          >
+            {isPaused ? "▶" : "⏸"}
+          </button>
         </div>
       </div>
 
