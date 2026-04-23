@@ -36,7 +36,7 @@ export default function FlashcardsPage() {
 
   async function handleAnswer(isCorrect: boolean) {
     setAnswered(true);
-    await saveFlashcardRating({ userId: getUserId(), questionId: question.id, knew: isCorrect });
+    await saveFlashcardRating({ userId: getUserId(), questionId: question.id, rating: isCorrect ? "got_it" : "missed_it" });
   }
 
   async function rate(knew: boolean) {
