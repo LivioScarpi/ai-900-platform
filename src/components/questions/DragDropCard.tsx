@@ -6,7 +6,9 @@ import {
   DragEndEvent,
   DragOverlay,
   DragStartEvent,
+  KeyboardSensor,
   PointerSensor,
+  TouchSensor,
   useSensor,
   useSensors,
 } from "@dnd-kit/core";
@@ -36,6 +38,7 @@ function DraggableChip({
       ref={setNodeRef}
       {...listeners}
       {...attributes}
+      style={{ touchAction: "none" }}
       className={`px-4 py-2.5 rounded-xl border-2 text-[13px] font-semibold select-none transition-all
         ${disabled ? "cursor-default" : "cursor-grab active:cursor-grabbing"}
         ${isDragging ? "opacity-30" : ""}
@@ -62,7 +65,7 @@ function DropZone({
   const { setNodeRef, isOver } = useDroppable({ id });
 
   let zoneClass =
-    "min-h-[44px] rounded-xl border-2 border-dashed flex items-center justify-center text-xs font-medium px-3 transition-colors";
+    "min-h-[52px] rounded-xl border-2 border-dashed flex items-center justify-center text-xs font-medium px-3 transition-colors";
   if (!confirmed) {
     zoneClass +=
       isOver
@@ -101,7 +104,15 @@ export function DragDropCard({ question, onAnswer }: Props) {
   const [confirmed, setConfirmed] = useState(false);
   const [activeId, setActiveId] = useState<string | null>(null);
 
-  const sensors = useSensors(useSensor(PointerSensor));
+  const sensors = useSensors(
+    useSensor(PointerSensor, {
+      activationConstraint: { distance: 8 },
+    }),
+    useSensor(TouchSensor, {
+      activationConstraint: { delay: 200, tolerance: 8 },
+    }),
+    useSensor(KeyboardSensor),
+  );
 
   // Items not yet placed in any drop zone
   const placedItems = new Set(Object.values(assignments));
