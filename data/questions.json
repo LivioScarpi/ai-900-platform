@@ -1,0 +1,3304 @@
+[
+  {
+    "id": 1,
+    "topic": "conversational_ai",
+    "explanation": "",
+    "contextImages": [],
+    "type": "mcq",
+    "text": "A company employs a team of customer service agents to provide telephone and email support to customers.\n\nThe company develops a webchat bot to provide automated answers to common customer queries.  \nWhich business benefit should the company expect as a result of creating the webchat bot solution?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "increased sales"
+      },
+      {
+        "letter": "B",
+        "text": "a reduced workload for the customer service agents"
+      },
+      {
+        "letter": "C",
+        "text": "improved product reliability"
+      }
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": 2,
+    "topic": "ml_fundamentals",
+    "explanation": "The Split Data module is particularly useful when you need to separate data into training and testing sets. Use the Split Rows option if you want to divide the data into two parts. You can specify the percentage of data to put in each split, but by default, the data is divided 50-50. You can also randomize the selection of rows in each group, and use stratified sampling.",
+    "reference": "https://docs.microsoft.com/en-us/azure/machine-learning/studio-module-reference/split-data",
+    "contextImages": [],
+    "type": "mcq",
+    "text": "For a machine learning progress, how should you split data for training and evaluation?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Use features for training and labels for evaluation."
+      },
+      {
+        "letter": "B",
+        "text": "Randomly split the data into rows for training and rows for evaluation."
+      },
+      {
+        "letter": "C",
+        "text": "Use labels for training and features for evaluation."
+      },
+      {
+        "letter": "D",
+        "text": "Randomly split the data into columns for training and columns for evaluation."
+      }
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": 3,
+    "topic": "ml_fundamentals",
+    "type": "dropdown",
+    "text": "You are developing a model to predict events by using classification. You have a confusion matrix for the model scored on test data as shown in the following exhibit. Use the drop-down menus to select the answer choice that completes each statement based on the information presented in the graphic.",
+    "contextImages": [
+      "19601894-47fa-46fd-8628-00a836341cc5.png"
+    ],
+    "statements": [
+      {
+        "text": "There are [answer choice] correctly predicted positives.",
+        "options": [
+          "5",
+          "11",
+          "1,033",
+          "13,951"
+        ],
+        "correctAnswer": "11"
+      },
+      {
+        "text": "There are [answer choice] false negatives.",
+        "options": [
+          "5",
+          "11",
+          "1,033",
+          "13,951"
+        ],
+        "correctAnswer": "1,033"
+      }
+    ],
+    "explanation": "Box 1: 11 (TP). Box 2: 1,033 (FN).",
+    "reference": "https://docs.microsoft.com/en-us/azure/machine-learning/studio/evaluate-model-performance"
+  },
+  {
+    "id": 4,
+    "topic": "responsible_ai",
+    "explanation": "Model Explain Ability.  \nMost businesses run on trust and being able to open the ML ג€black boxג€ helps build transparency and trust. In heavily regulated industries like healthcare and banking, it is critical to comply with regulations and best practices. One key aspect of this is understanding the relationship between input variables (features) and model output. Knowing both the magnitude and direction of the impact each feature (feature importance) has on the predicted value helps better understand and explain the model. With model explain ability, we enable you to understand feature importance as part of automated ML runs.",
+    "reference": "https://azure.microsoft.com/en-us/blog/new-automated-machine-learning-capabilities-in-azure-machine-learning-service/",
+    "contextImages": [],
+    "type": "mcq",
+    "text": "You build a machine learning model by using the automated machine learning user interface (UI).  \nYou need to ensure that the model meets the Microsoft transparency principle for responsible AI.  \nWhat should you do?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Set Validation type to Auto."
+      },
+      {
+        "letter": "B",
+        "text": "Enable Explain best model."
+      },
+      {
+        "letter": "C",
+        "text": "Set Primary metric to accuracy."
+      },
+      {
+        "letter": "D",
+        "text": "Set Max concurrent iterations to 0."
+      }
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": 5,
+    "topic": "ml_fundamentals",
+    "type": "yesno",
+    "text": "For each of the following statements, select Yes if the statement is true. Otherwise, select No.",
+    "statements": [
+      {
+        "text": "Forecasting housing prices based on historical data is an example of anomaly detection.",
+        "correct": "No"
+      },
+      {
+        "text": "Identifying suspicious sign-ins by looking for deviations from usual patterns is an example of anomaly detection.",
+        "correct": "Yes"
+      },
+      {
+        "text": "Predicting whether a patient will develop diabetes based on the patient's medical history is an example of anomaly detection.",
+        "correct": "No"
+      }
+    ],
+    "explanation": "Anomaly detection identifies deviations from expected patterns. Suspicious sign-ins are anomaly detection. Housing prices and diabetes prediction are regression/classification.",
+    "reference": "https://docs.microsoft.com/en-us/azure/machine-learning/studio-module-reference/anomaly-detection"
+  },
+  {
+    "id": 6,
+    "topic": "responsible_ai",
+    "type": "sentence_completion",
+    "text": "To complete the sentence, select the appropriate option in the answer area.",
+    "sentence": "The handling of unusual or missing values provided to an AI system is a consideration for the Microsoft [BLANK] principle for responsible AI.",
+    "options": [
+      "inclusiveness",
+      "privacy and security",
+      "reliability and safety",
+      "transparency"
+    ],
+    "correctAnswer": "reliability and safety",
+    "explanation": "Reliability and safety covers handling unexpected inputs and ensuring consistent operation.",
+    "reference": "https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/innovate/best-practices/trusted-ai"
+  },
+  {
+    "id": 7,
+    "topic": "ml_fundamentals",
+    "type": "dragdrop",
+    "text": "Match the types of AI workloads to the appropriate scenarios.",
+    "items": [
+      "Anomaly detection",
+      "Computer vision",
+      "Conversational AI",
+      "Knowledge mining",
+      "Natural language processing"
+    ],
+    "targets": [
+      {
+        "text": "An automated chat to answer questions about refunds and exchange",
+        "correctItem": "Conversational AI"
+      },
+      {
+        "text": "Determining whether a photo contains a person",
+        "correctItem": "Computer vision"
+      },
+      {
+        "text": "Determining whether a review is positive or negative",
+        "correctItem": "Natural language processing"
+      }
+    ],
+    "explanation": "Chatbots are conversational AI. Photo analysis is computer vision. Sentiment analysis is NLP.",
+    "reference": "https://docs.microsoft.com/en-us/azure/architecture/data-guide/technology-choices/natural-language-processing"
+  },
+  {
+    "id": 8,
+    "topic": "responsible_ai",
+    "explanation": "Inclusiveness: At Microsoft, we firmly believe everyone should benefit from intelligent technology, meaning it must incorporate and address a broad range of human needs and experiences. For the 1 billion people with disabilities around the world, AI technologies can be a game-changer.",
+    "reference": "https://docs.microsoft.com/en-us/learn/modules/responsible-ai-principles/4-guiding-principles",
+    "contextImages": [],
+    "type": "mcq",
+    "text": "You are designing an AI system that empowers everyone, including people who have hearing, visual, and other impairments.  \nThis is an example of which Microsoft guiding principle for responsible AI?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "fairness"
+      },
+      {
+        "letter": "B",
+        "text": "inclusiveness"
+      },
+      {
+        "letter": "C",
+        "text": "reliability and safety"
+      },
+      {
+        "letter": "D",
+        "text": "accountability"
+      }
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": 9,
+    "topic": "responsible_ai",
+    "type": "dragdrop",
+    "text": "Match the Microsoft guiding principles for responsible AI to the appropriate descriptions.",
+    "items": [
+      "Accountability",
+      "Fairness",
+      "Inclusiveness",
+      "Privacy and security",
+      "Reliability and safety"
+    ],
+    "targets": [
+      {
+        "text": "Ensure that AI systems operate as they were originally designed, respond to unanticipated conditions, and resist harmful manipulation.",
+        "correctItem": "Reliability and safety"
+      },
+      {
+        "text": "Implementing processes to ensure that decisions made by AI systems can be overridden by humans.",
+        "correctItem": "Accountability"
+      },
+      {
+        "text": "Provide consumers with information and controls over the collection, use, and storage of their data.",
+        "correctItem": "Privacy and security"
+      }
+    ],
+    "explanation": "Reliability and safety = consistent operation. Accountability = human oversight. Privacy and security = data controls.",
+    "reference": "https://docs.microsoft.com/en-us/learn/modules/responsible-ai-principles/4-guiding-principles"
+  },
+  {
+    "id": 10,
+    "topic": "responsible_ai",
+    "type": "sentence_completion",
+    "text": "To complete the sentence, select the appropriate option in the answer area.",
+    "sentence": "When developing an AI system for self-driving cars, the Microsoft [BLANK] principle for responsible AI should be applied to ensure consistent operation of the system during unexpected circumstances.",
+    "options": [
+      "inclusiveness",
+      "accountability",
+      "reliability and safety",
+      "fairness"
+    ],
+    "correctAnswer": "reliability and safety",
+    "explanation": "Reliability and safety ensures consistent operation during unexpected circumstances.",
+    "reference": "https://docs.microsoft.com/en-us/learn/modules/responsible-ai-principles/4-guiding-principles"
+  },
+  {
+    "id": 11,
+    "topic": "responsible_ai",
+    "explanation": "",
+    "contextImages": [],
+    "type": "mcq",
+    "text": "You are building an AI system.  \nWhich task should you include to ensure that the service meets the Microsoft transparency principle for responsible AI?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Ensure that all visuals have an associated text that can be read by a screen reader."
+      },
+      {
+        "letter": "B",
+        "text": "Enable autoscaling to ensure that a service scales based on demand."
+      },
+      {
+        "letter": "C",
+        "text": "Provide documentation to help developers debug code."
+      },
+      {
+        "letter": "D",
+        "text": "Ensure that a training dataset is representative of the population."
+      }
+    ],
+    "correctAnswer": "C"
+  },
+  {
+    "id": 12,
+    "topic": "ml_fundamentals",
+    "type": "dragdrop",
+    "text": "Match the types of AI workloads to the appropriate scenarios.",
+    "items": [
+      "Anomaly detection",
+      "Computer vision",
+      "Machine Learning (Regression)",
+      "Natural language processing"
+    ],
+    "targets": [
+      {
+        "text": "Identify handwritten letters.",
+        "correctItem": "Computer vision"
+      },
+      {
+        "text": "Predict the sentiment of a social media post.",
+        "correctItem": "Natural language processing"
+      },
+      {
+        "text": "Identify a fraudulent credit card payment.",
+        "correctItem": "Anomaly detection"
+      },
+      {
+        "text": "Predict next month's toy sales.",
+        "correctItem": "Machine Learning (Regression)"
+      }
+    ],
+    "explanation": "Handwritten letters = computer vision (OCR). Sentiment = NLP. Fraud = anomaly detection. Sales prediction = regression.",
+    "reference": "https://docs.microsoft.com/en-us/learn/paths/get-started-with-artificial-intelligence-on-azure/"
+  },
+  {
+    "id": 13,
+    "topic": "responsible_ai",
+    "explanation": "",
+    "contextImages": [],
+    "type": "mcq",
+    "text": "Your company is exploring the use of voice recognition technologies in its smart home devices. The company wants to identify any barriers that might unintentionally leave out specific user groups.  \nThis an example of which Microsoft guiding principle for responsible AI?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "accountability"
+      },
+      {
+        "letter": "B",
+        "text": "fairness"
+      },
+      {
+        "letter": "C",
+        "text": "inclusiveness"
+      },
+      {
+        "letter": "D",
+        "text": "privacy and security"
+      }
+    ],
+    "correctAnswer": "C"
+  },
+  {
+    "id": 14,
+    "topic": "responsible_ai",
+    "explanation": "",
+    "contextImages": [],
+    "type": "multi",
+    "text": "What are three Microsoft guiding principles for responsible AI? Each correct answer presents a complete solution.  \nNote: Each correct selection is worth one point.",
+    "options": [
+      {
+        "letter": "A",
+        "text": "knowledgeability"
+      },
+      {
+        "letter": "B",
+        "text": "decisiveness"
+      },
+      {
+        "letter": "C",
+        "text": "inclusiveness"
+      },
+      {
+        "letter": "D",
+        "text": "fairness"
+      },
+      {
+        "letter": "E",
+        "text": "opinionatedness"
+      },
+      {
+        "letter": "F",
+        "text": "reliability and safety"
+      }
+    ],
+    "correctAnswers": [
+      "C",
+      "D",
+      "F"
+    ]
+  },
+  {
+    "id": 15,
+    "topic": "computer_vision",
+    "type": "sentence_completion",
+    "text": "To complete the sentence, select the appropriate option in the answer area.",
+    "sentence": "Returning a bounding box that indicates the location of a vehicle in an image is an example of [BLANK].",
+    "options": [
+      "image classification",
+      "object detection",
+      "optical character recognizer (OCR)",
+      "semantic segmentation"
+    ],
+    "correctAnswer": "object detection",
+    "explanation": "Object detection returns bounding boxes around detected objects.",
+    "reference": "https://docs.microsoft.com/en-us/azure/cognitive-services/computer-vision/concept-object-detection"
+  },
+  {
+    "id": 16,
+    "topic": "ml_fundamentals",
+    "type": "sentence_completion",
+    "text": "To complete the sentence, select the appropriate option in the answer area.",
+    "sentence": "[BLANK] is used to generate additional features.",
+    "options": [
+      "Feature engineering",
+      "Feature selection",
+      "Model evaluation",
+      "Model training"
+    ],
+    "correctAnswer": "Feature engineering",
+    "explanation": "Feature engineering creates new features from existing data. Feature selection picks which features to use.",
+    "reference": "https://docs.microsoft.com/en-us/azure/machine-learning/concept-automated-ml"
+  },
+  {
+    "id": 17,
+    "topic": "computer_vision",
+    "explanation": "",
+    "contextImages": [],
+    "type": "mcq",
+    "text": "You run a charity event that involves posting photos of people wearing sunglasses on Twitter.  \nYou need to ensure that you only retweet photos that meet the following requirements:\n\n\\-Include one or more faces.  \n\\-Contain at least one person wearing sunglasses.\n\nWhat should you use to analyze the images?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "the Verify operation in the Face service"
+      },
+      {
+        "letter": "B",
+        "text": "the Detect operation in the Face service"
+      },
+      {
+        "letter": "C",
+        "text": "the Describe Image operation in the Computer Vision service"
+      },
+      {
+        "letter": "D",
+        "text": "the Analyze Image operation in the Computer Vision service"
+      }
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": 18,
+    "topic": "responsible_ai",
+    "explanation": "Achieving transparency helps the team to understand the data and algorithms used to train the model, what transformation logic was applied to the data, the final model generated, and its associated assets. This information offers insights about how the model was created, which allows it to be reproduced in a transparent way.  \nIncorrect Answers:  \nB: Inclusiveness mandates that AI should consider all human races and experiences, and inclusive design practices can help developers to understand and address potential barriers that could unintentionally exclude people.  \nWhere possible, speech-to-text, text-to-speech, and visual recognition technology should be used to empower people with hearing, visual, and other impairments.  \nC: Fairness is a core ethical principle that all humans aim to understand and apply. This principle is even more important when AI systems are being developed.  \nKey checks and balances need to make sure that the system's decisions don't discriminate or run a gender, race, sexual orientation, or religion bias toward a group or individual.  \nD: A data holder is obligated to protect the data in an AI system, and privacy and security are an integral part of this system. Personal needs to be secured, and it should be accessed in a way that doesn't compromise an individual's privacy.",
+    "reference": "https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/innovate/best-practices/trusted-ai https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/strategy/responsible-ai",
+    "contextImages": [],
+    "type": "mcq",
+    "text": "When you design an AI system to assess whether loans should be approved, the factors used to make the decision should be explainable.  \nThis is an example of which Microsoft guiding principle for responsible AI?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "transparency"
+      },
+      {
+        "letter": "B",
+        "text": "inclusiveness"
+      },
+      {
+        "letter": "C",
+        "text": "fairness"
+      },
+      {
+        "letter": "D",
+        "text": "privacy and security"
+      }
+    ],
+    "correctAnswer": "A"
+  },
+  {
+    "id": 19,
+    "topic": "responsible_ai",
+    "type": "yesno",
+    "text": "For each of the following statements, select Yes if the statement is true. Otherwise, select No.",
+    "statements": [
+      {
+        "text": "Providing an explanation of the outcome of a credit loan application is an example of the Microsoft transparency principle for responsible AI.",
+        "correct": "Yes"
+      },
+      {
+        "text": "A triage bot that prioritizes insurance claims based on injuries is an example of the Microsoft reliability and safety principle for responsible AI.",
+        "correct": "No"
+      },
+      {
+        "text": "An AI solution that is offered at different prices for different sales territories is an example of the Microsoft inclusiveness principle for responsible AI.",
+        "correct": "No"
+      }
+    ],
+    "explanation": "Explaining loan outcomes = transparency. Triage bot = fairness. Different prices = fairness not inclusiveness.",
+    "reference": "https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/innovate/best-practices/trusted-ai"
+  },
+  {
+    "id": 20,
+    "topic": "responsible_ai",
+    "type": "dragdrop",
+    "text": "Match the principles of responsible AI to appropriate requirements.",
+    "items": [
+      "Fairness",
+      "Privacy and security",
+      "Reliability and safety",
+      "Transparency"
+    ],
+    "targets": [
+      {
+        "text": "The system must not discriminate based on gender, race",
+        "correctItem": "Fairness"
+      },
+      {
+        "text": "Personal data must be visible only to approved users",
+        "correctItem": "Privacy and security"
+      },
+      {
+        "text": "Automated decision-making processes must be recorded so that approved users can identify why a decision was made",
+        "correctItem": "Transparency"
+      }
+    ],
+    "explanation": "Non-discrimination = fairness. Data access controls = privacy and security. Decision records = transparency.",
+    "reference": "https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/innovate/best-practices/trusted-ai"
+  },
+  {
+    "id": 21,
+    "topic": "azure_ml",
+    "type": "dragdrop",
+    "text": "You plan to deploy an Azure Machine Learning model as a service. Which three processes should you perform in sequence before you deploy the model?",
+    "items": [
+      "data encryption",
+      "model retraining",
+      "model training",
+      "data preparation",
+      "model evaluation"
+    ],
+    "targets": [
+      {
+        "text": "1st process",
+        "correctItem": "data preparation"
+      },
+      {
+        "text": "2nd process",
+        "correctItem": "model training"
+      },
+      {
+        "text": "3rd process",
+        "correctItem": "model evaluation"
+      }
+    ],
+    "explanation": "The ML pipeline sequence: data preparation → model training → model evaluation → deploy.",
+    "reference": "https://docs.microsoft.com/en-us/azure/machine-learning/concept-ml-pipelines"
+  },
+  {
+    "id": 22,
+    "topic": "responsible_ai",
+    "explanation": "",
+    "contextImages": [],
+    "type": "multi",
+    "text": "You are building an AI-based app.  \nYou need to ensure that the app uses the principles for responsible AI.  \nWhich two principles should you follow? Each correct answer presents part of the solution.  \nNote: Each correct selection is worth one point.",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Implement an Agile software development methodology"
+      },
+      {
+        "letter": "B",
+        "text": "Implement a process of AI model validation as part of the software review process"
+      },
+      {
+        "letter": "C",
+        "text": "Establish a risk governance committee that includes members of the legal team, members of the risk management team, and a privacy officer"
+      },
+      {
+        "letter": "D",
+        "text": "Prevent the disclosure of the use of AI-based algorithms for automated decision making"
+      }
+    ],
+    "correctAnswers": [
+      "B",
+      "C"
+    ]
+  },
+  {
+    "id": 23,
+    "topic": "responsible_ai",
+    "type": "sentence_completion",
+    "text": "To complete the sentence, select the appropriate option in the answer area.",
+    "sentence": "According to Microsoft's [BLANK] principle of responsible AI, AI systems should NOT reflect biases from the data sets that are used to train the systems.",
+    "options": [
+      "accountability",
+      "fairness",
+      "inclusiveness",
+      "transparency"
+    ],
+    "correctAnswer": "fairness",
+    "explanation": "Fairness ensures AI systems do not reflect dataset biases or discriminate.",
+    "reference": "https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/innovate/best-practices/trusted-ai"
+  },
+  {
+    "id": 24,
+    "topic": "responsible_ai",
+    "type": "sentence_completion",
+    "text": "Select the answer that correctly completes the sentence.",
+    "sentence": "According to Microsoft's [BLANK] principle of responsible AI, AI systems should NOT reflect biases from the data sets that are used to train the systems.",
+    "options": [
+      "accountability",
+      "fairness",
+      "inclusiveness",
+      "transparency"
+    ],
+    "correctAnswer": "fairness",
+    "explanation": "Fairness ensures AI systems do not reflect dataset biases or discriminate.",
+    "reference": "https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/innovate/best-practices/trusted-ai"
+  },
+  {
+    "id": 25,
+    "topic": "ml_fundamentals",
+    "type": "dragdrop",
+    "text": "Match the types of AI workloads to the appropriate scenarios.",
+    "items": [
+      "Anomaly detection",
+      "Computer vision",
+      "Knowledge mining",
+      "Natural language processing"
+    ],
+    "targets": [
+      {
+        "text": "An automated chatbot to answer questions about refunds and exchanges",
+        "correctItem": "Knowledge mining"
+      },
+      {
+        "text": "Determining whether a photo contains a person",
+        "correctItem": "Computer vision"
+      },
+      {
+        "text": "Determining whether a review is positive or negative",
+        "correctItem": "Natural language processing"
+      }
+    ],
+    "explanation": "Knowledge mining extracts information. Computer vision analyzes photos. NLP processes text sentiment.",
+    "reference": "https://docs.microsoft.com/en-us/azure/architecture/data-guide/technology-choices/natural-language-processing"
+  },
+  {
+    "id": 26,
+    "topic": "ml_fundamentals",
+    "type": "dragdrop",
+    "text": "Match the machine learning tasks to the appropriate scenarios.",
+    "items": [
+      "Feature engineering",
+      "Feature selection",
+      "Model deployment",
+      "Model evaluation",
+      "Model training"
+    ],
+    "targets": [
+      {
+        "text": "Examining the values of a confusion matrix",
+        "correctItem": "Model evaluation"
+      },
+      {
+        "text": "Splitting a date into month, day, and year fields",
+        "correctItem": "Feature engineering"
+      },
+      {
+        "text": "Picking temperature and pressure to train a weather model",
+        "correctItem": "Feature selection"
+      }
+    ],
+    "explanation": "Confusion matrix = evaluation. Splitting dates = feature engineering. Choosing columns = feature selection.",
+    "reference": "https://docs.microsoft.com/en-us/azure/machine-learning/studio/evaluate-model-performance"
+  },
+  {
+    "id": 27,
+    "topic": "ml_fundamentals",
+    "type": "sentence_completion",
+    "text": "To complete the sentence, select the appropriate option in the answer area.",
+    "sentence": "Data values that influence the prediction of a model are called [BLANK].",
+    "options": [
+      "dependant variables.",
+      "features.",
+      "identifiers.",
+      "labels."
+    ],
+    "correctAnswer": "features.",
+    "explanation": "Features are the input variables that influence model predictions. Labels are the output.",
+    "reference": "https://www.baeldung.com/cs/feature-vs-label"
+  },
+  {
+    "id": 28,
+    "topic": "ml_fundamentals",
+    "type": "mcq",
+    "text": "You have the Predicted vs. True chart shown in the following exhibit. Which type of model is the chart used to evaluate?",
+    "contextImages": [
+      "3f1cd94c-3400-440a-9cc8-c7307a45eebe.png"
+    ],
+    "options": [
+      "classification",
+      "regression",
+      "clustering"
+    ],
+    "correctAnswer": "regression",
+    "explanation": "Predicted vs True charts evaluate regression models by comparing predicted numeric values to actual values.",
+    "reference": "https://docs.microsoft.com/en-us/azure/machine-learning/how-to-understand-automated-m"
+  },
+  {
+    "id": 29,
+    "topic": "ml_fundamentals",
+    "explanation": "In the most basic sense, regression refers to prediction of a numeric target.  \nLinear regression attempts to establish a linear relationship between one or more independent variables and a numeric outcome, or dependent variable.  \nYou use this module to define a linear regression method, and then train a model using a labeled dataset. The trained model can then be used to make predictions.",
+    "reference": "https://docs.microsoft.com/en-us/azure/machine-learning/studio-module-reference/linear-regression",
+    "contextImages": [],
+    "type": "mcq",
+    "text": "Which type of machine learning should you use to predict the number of gift cards that will be sold next month?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "classification"
+      },
+      {
+        "letter": "B",
+        "text": "regression"
+      },
+      {
+        "letter": "C",
+        "text": "clustering"
+      }
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": 30,
+    "topic": "ml_fundamentals",
+    "explanation": "The label is the column you want to predict. The identified Featuresare the inputs you give the model to predict the Label.  \nExample:  \nThe provided data set contains the following columns:  \nvendor_id: The ID of the taxi vendor is a feature.  \nrate_code: The rate type of the taxi trip is a feature.  \npassenger_count: The number of passengers on the trip is a feature. trip_time_in_secs: The amount of time the trip took. You want to predict the fare of the trip before the trip is completed. At that moment, you don't know how long the trip would take. Thus, the trip time is not a feature and you'll exclude this column from the model. trip_distance: The distance of the trip is a feature. payment_type: The payment method (cash or credit card) is a feature. fare_amount: The total taxi fare paid is the label.",
+    "reference": "https://docs.microsoft.com/en-us/dotnet/machine-learning/tutorials/predict-prices",
+    "contextImages": [],
+    "type": "mcq",
+    "text": "You have a dataset that contains information about taxi journeys that occurred during a given period.  \nYou need to train a model to predict the fare of a taxi journey.  \nWhat should you use as a feature?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "the number of taxi journeys in the dataset"
+      },
+      {
+        "letter": "B",
+        "text": "the trip distance of individual taxi journeys"
+      },
+      {
+        "letter": "C",
+        "text": "the fare of individual taxi journeys"
+      },
+      {
+        "letter": "D",
+        "text": "the trip ID of individual taxi journeys"
+      }
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": 31,
+    "topic": "ml_fundamentals",
+    "explanation": "In the most basic sense, regression refers to prediction of a numeric target.  \nLinear regression attempts to establish a linear relationship between one or more independent variables and a numeric outcome, or dependent variable.  \nYou use this module to define a linear regression method, and then train a model using a labeled dataset. The trained model can then be used to make predictions.",
+    "reference": "https://docs.microsoft.com/en-us/azure/machine-learning/studio-module-reference/linear-regression",
+    "contextImages": [],
+    "type": "mcq",
+    "text": "You need to predict the sea level in meters for the next 10 years.  \nWhich type of machine learning should you use?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "classification"
+      },
+      {
+        "letter": "B",
+        "text": "regression"
+      },
+      {
+        "letter": "C",
+        "text": "clustering"
+      }
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": 32,
+    "topic": "azure_ml",
+    "type": "yesno",
+    "text": "For each of the following statements, select Yes if the statement is true. Otherwise, select No.",
+    "statements": [
+      {
+        "text": "Automated machine learning is the process of automating the time-consuming, iterative tasks of machine learning model development.",
+        "correct": "Yes"
+      },
+      {
+        "text": "Automated machine learning can automatically infer the training data from the use case provided.",
+        "correct": "No"
+      },
+      {
+        "text": "Automated machine learning works by running multiple training iterations that are scored and ranked by the metrics you specify.",
+        "correct": "Yes"
+      },
+      {
+        "text": "Automated machine learning enables you to specify a dataset and will automatically understand which label to predict.",
+        "correct": "No"
+      }
+    ],
+    "explanation": "AutoML automates iterations and scoring, but still requires user-provided training data and label specification.",
+    "reference": "https://azure.microsoft.com/en-us/services/machine-learning/automatedml/#features"
+  },
+  {
+    "id": 33,
+    "topic": "ml_fundamentals",
+    "type": "sentence_completion",
+    "text": "To complete the sentence, select the appropriate option in the answer area.",
+    "sentence": "A banking system that predicts whether a loan will be repaid is an example of the [BLANK] type of machine learning.",
+    "options": [
+      "classification",
+      "regression",
+      "clustering"
+    ],
+    "correctAnswer": "classification",
+    "explanation": "Predicting a binary outcome (repaid/not repaid) is classification."
+  },
+  {
+    "id": 34,
+    "topic": "ml_fundamentals",
+    "type": "yesno",
+    "text": "For each of the following statements, select Yes if the statement is true. Otherwise, select No.",
+    "statements": [
+      {
+        "text": "Labelling is the process of tagging training data with known values.",
+        "correct": "Yes"
+      },
+      {
+        "text": "You should evaluate a model by using the same data used to train the model.",
+        "correct": "No"
+      },
+      {
+        "text": "Accuracy is always the primary metric used to measure a model's performance.",
+        "correct": "No"
+      }
+    ],
+    "explanation": "Labels tag training data. Evaluation uses separate test data. Accuracy is not always the best metric.",
+    "reference": "https://www.cloudfactory.com/data-labeling-guide"
+  },
+  {
+    "id": 35,
+    "topic": "ml_fundamentals",
+    "explanation": "Accelerate your business processes by automating information extraction. Form Recognizer applies advanced machine learning to accurately extract text, key/ value pairs, and tables from documents. With just a few samples, Form Recognizer tailors its understanding to your documents, both on-premises and in the cloud. Turn forms into usable data at a fraction of the time and cost, so you can focus more time acting on the information rather than compiling it.",
+    "reference": "https://azure.microsoft.com/en-us/services/cognitive-services/form-recognizer/",
+    "contextImages": [],
+    "type": "mcq",
+    "text": "Which service should you use to extract text, key/value pairs, and table data automatically from scanned documents?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Form Recognizer"
+      },
+      {
+        "letter": "B",
+        "text": "Text Analytics"
+      },
+      {
+        "letter": "C",
+        "text": "Language Understanding"
+      },
+      {
+        "letter": "D",
+        "text": "Custom Vision"
+      }
+    ],
+    "correctAnswer": "A"
+  },
+  {
+    "id": 36,
+    "topic": "azure_cognitive",
+    "type": "sentence_completion",
+    "text": "To complete the sentence, select the appropriate option in the answer area.",
+    "sentence": "The ability to extract subtotals and totals from a receipt is a capability of the [BLANK] service.",
+    "options": [
+      "Custom Vision",
+      "Form Recognizer",
+      "Ink Recognizer",
+      "Text Analytics"
+    ],
+    "correctAnswer": "Form Recognizer",
+    "explanation": "Form Recognizer extracts structured data from forms and receipts including line items and totals.",
+    "reference": "https://azure.microsoft.com/en-us/services/cognitive-services/form-recognizer/"
+  },
+  {
+    "id": 37,
+    "topic": "ml_fundamentals",
+    "explanation": "You can consume a published pipeline in the Published pipelines page. Select a published pipeline and find the REST endpoint of it.  \nTo consume the pipeline, you need:  \n\\-The REST endpoint for your service  \n\\-The Primary Key for your service",
+    "reference": "https://docs.microsoft.com/en-in/learn/modules/create-regression-model-azure-machine-learning-designer/deploy-service",
+    "contextImages": [],
+    "type": "multi",
+    "text": "You use Azure Machine Learning designer to publish an inference pipeline.  \nWhich two parameters should you use to access the web service? Each correct answer presents part of the solution.  \nNote: Each correct selection is worth one point.",
+    "options": [
+      {
+        "letter": "A",
+        "text": "the model name"
+      },
+      {
+        "letter": "B",
+        "text": "the training endpoint"
+      },
+      {
+        "letter": "C",
+        "text": "the authentication key"
+      },
+      {
+        "letter": "D",
+        "text": "the REST endpoint"
+      }
+    ],
+    "correctAnswers": [
+      "C",
+      "D"
+    ]
+  },
+  {
+    "id": 38,
+    "topic": "azure_ml",
+    "type": "sentence_completion",
+    "text": "To complete the sentence, select the appropriate option in the answer area.",
+    "sentence": "From Azure Machine Learning designer, to deploy a real-time inference pipeline as a service for others to consume, you must deploy the model to [BLANK].",
+    "options": [
+      "a local web service.",
+      "Azure Container Instances.",
+      "Azure Kubernetes Service (AKS).",
+      "Azure Machine Learning compute."
+    ],
+    "correctAnswer": "Azure Kubernetes Service (AKS).",
+    "explanation": "AKS is required for production real-time inference deployments from AML designer.",
+    "reference": "https://docs.microsoft.com/en-us/azure/machine-learning/concept-designer#deploy"
+  },
+  {
+    "id": 39,
+    "topic": "ml_fundamentals",
+    "type": "sentence_completion",
+    "text": "To complete the sentence, select the appropriate option in the answer area.",
+    "sentence": "Predicting how many hours of overtime a delivery person will work based on the number of order received is an example of [BLANK].",
+    "options": [
+      "classification.",
+      "clustering.",
+      "regression."
+    ],
+    "correctAnswer": "regression.",
+    "explanation": "Predicting a numeric quantity (hours) based on another numeric input is regression.",
+    "reference": "https://docs.microsoft.com/en-us/azure/machine-learning/algorithm-module-reference/linear-regression"
+  },
+  {
+    "id": 40,
+    "topic": "azure_ml",
+    "type": "yesno",
+    "text": "For each of the following statements, select Yes if the statement is true. Otherwise, select No.",
+    "statements": [
+      {
+        "text": "Azure Machine Learning designer provides a drag-and-drop visual canvas to build, test, and deploy machine learning models.",
+        "correct": "Yes"
+      },
+      {
+        "text": "Azure Machine Learning designer enables you to save your progress as a pipeline draft.",
+        "correct": "Yes"
+      },
+      {
+        "text": "Azure Machine Learning designer enables you to include custom JavaScript functions.",
+        "correct": "No"
+      }
+    ],
+    "explanation": "AML designer supports drag-and-drop and pipeline drafts. It does not support JavaScript (Python is used).",
+    "reference": "https://docs.microsoft.com/en-us/azure/machine-learning/concept-designer"
+  },
+  {
+    "id": 41,
+    "topic": "ml_fundamentals",
+    "type": "dropdown",
+    "text": "You have the following dataset. You plan to use the dataset to train a model that will predict the house price categories of houses. What are Household Income and House Price Category?",
+    "contextImages": [
+      "17706814-d67b-4dcf-ad03-bac45cab5ec7.png"
+    ],
+    "statements": [
+      {
+        "text": "Household Income",
+        "options": [
+          "A feature",
+          "A label"
+        ],
+        "correctAnswer": "A feature"
+      },
+      {
+        "text": "House Price Category",
+        "options": [
+          "A feature",
+          "A label"
+        ],
+        "correctAnswer": "A label"
+      }
+    ],
+    "explanation": "Household income is an input (feature). House Price Category is what we predict (label)."
+  },
+  {
+    "id": 42,
+    "topic": "azure_ml",
+    "type": "sentence_completion",
+    "text": "To complete the sentence, select the appropriate option in the answer area.",
+    "sentence": "Azure Machine Learning designer lets you create machine learning models by [BLANK].",
+    "options": [
+      "adding and connecting modules on a visual canvas.",
+      "automatically performing common data preparation tasks.",
+      "automatically selecting an algorithm to build the most accurate model.",
+      "using a code-first notebook experience."
+    ],
+    "correctAnswer": "adding and connecting modules on a visual canvas.",
+    "explanation": "AML designer uses a drag-and-drop canvas to connect modules visually.",
+    "reference": "https://docs.microsoft.com/en-us/azure/machine-learning/concept-designer"
+  },
+  {
+    "id": 43,
+    "topic": "azure_ml",
+    "type": "yesno",
+    "text": "For each of the following statements, select Yes if the statement is true. Otherwise, select No.",
+    "statements": [
+      {
+        "text": "Automated machine learning provides you with the ability to include custom Python scripts in a training pipeline.",
+        "correct": "Yes"
+      },
+      {
+        "text": "Automated machine learning implements machine learning solutions without the need for programming experience.",
+        "correct": "Yes"
+      },
+      {
+        "text": "Automated machine learning provides you with the ability to visually connect datasets and modules on an interactive canvas.",
+        "correct": "Yes"
+      }
+    ],
+    "explanation": "AutoML supports custom Python, no-code usage, and visual canvas for connecting modules."
+  },
+  {
+    "id": 44,
+    "topic": "ml_fundamentals",
+    "explanation": "",
+    "contextImages": [],
+    "type": "mcq",
+    "text": "A medical research project uses a large anonymized dataset of brain scan images that are categorized into predefined brain haemorrhage types.  \nYou need to use machine learning to support early detection of the different brain haemorrhage types in the images before the images are reviewed by a person.  \nThis is an example of which type of machine learning?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "clustering"
+      },
+      {
+        "letter": "B",
+        "text": "regression"
+      },
+      {
+        "letter": "C",
+        "text": "classification"
+      }
+    ],
+    "correctAnswer": "C"
+  },
+  {
+    "id": 45,
+    "topic": "ml_fundamentals",
+    "explanation": "",
+    "contextImages": [],
+    "type": "mcq",
+    "text": "When training a model, why should you randomly split the rows into separate subsets?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "to train the model twice to attain better accuracy"
+      },
+      {
+        "letter": "B",
+        "text": "to train multiple models simultaneously to attain better performance"
+      },
+      {
+        "letter": "C",
+        "text": "to test the model by using data that was not used to train the model"
+      }
+    ],
+    "correctAnswer": "C"
+  },
+  {
+    "id": 46,
+    "topic": "ml_fundamentals",
+    "explanation": "Note: Enterprise workspaces are no longer available as of September 2020. The basic workspace now has all the functionality of the enterprise workspace.",
+    "reference": "https://www.azure.cn/en-us/pricing/details/machine-learning/ https://docs.microsoft.com/en-us/azure/machine-learning/concept-workspace",
+    "contextImages": [],
+    "type": "multi",
+    "text": "You are evaluating whether to use a basic workspace or an enterprise workspace in Azure Machine Learning.  \nWhat are two tasks that require an enterprise workspace? Each correct answer presents a complete solution.  \nNote: Each correct selection is worth one point.",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Use a graphical user interface (GUI) to run automated machine learning experiments."
+      },
+      {
+        "letter": "B",
+        "text": "Create a compute instance to use as a workstation."
+      },
+      {
+        "letter": "C",
+        "text": "Use a graphical user interface (GUI) to define and run machine learning experiments from Azure Machine Learning designer."
+      },
+      {
+        "letter": "D",
+        "text": "Create a dataset from a comma-separated value (CSV) file."
+      }
+    ],
+    "correctAnswers": [
+      "A",
+      "C"
+    ]
+  },
+  {
+    "id": 47,
+    "topic": "ml_fundamentals",
+    "type": "multi",
+    "text": "You need to predict the income range of a given customer by using the following dataset. Which two fields should you use as features? Each correct answer presents a complete solution.",
+    "contextImages": [
+      "9ba34ebe-f496-4d86-adb2-8b637bbd26c1.png"
+    ],
+    "options": [
+      "Education Level",
+      "Last Name",
+      "Age",
+      "Income Range",
+      "First Name"
+    ],
+    "correctAnswers": [
+      "Education Level",
+      "Age"
+    ],
+    "explanation": "First Name, Last Name, Age and Education Level are features. Income range is the label. First Name and Last Name are irrelevant identifiers. Age and Education Level are useful features."
+  },
+  {
+    "id": 48,
+    "topic": "ml_fundamentals",
+    "explanation": "",
+    "contextImages": [],
+    "type": "mcq",
+    "text": "You are building a tool that will process images from retail stores and identify the products of competitors.  \nThe solution will use a custom model.  \nWhich Azure Cognitive Services service should you use?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Custom Vision"
+      },
+      {
+        "letter": "B",
+        "text": "Form Recognizer"
+      },
+      {
+        "letter": "C",
+        "text": "Face"
+      },
+      {
+        "letter": "D",
+        "text": "Computer Vision"
+      }
+    ],
+    "correctAnswer": "A"
+  },
+  {
+    "id": 49,
+    "topic": "ml_fundamentals",
+    "type": "yesno",
+    "text": "For each of the following statements, select Yes if the statement is true. Otherwise, select No.",
+    "statements": [
+      {
+        "text": "Organizing documents into groups based on similarities of the text contained in the documents is an example of clustering.",
+        "correct": "Yes"
+      },
+      {
+        "text": "Grouping similar patients based on symptoms and diagnostic test results is an example of clustering.",
+        "correct": "Yes"
+      },
+      {
+        "text": "Predicting whether a person will develop mild, moderate, or severe allergy symptoms based on pollen count is an example of clustering.",
+        "correct": "No"
+      }
+    ],
+    "explanation": "Grouping by similarity = clustering. Predicting categories = classification, not clustering."
+  },
+  {
+    "id": 50,
+    "topic": "ml_fundamentals",
+    "type": "yesno",
+    "text": "For each of the following statements, select Yes if the statement is true. Otherwise, select No.",
+    "statements": [
+      {
+        "text": "A validation set includes the set of input examples that will be used to train a model.",
+        "correct": "No"
+      },
+      {
+        "text": "A validation set can be used to determine how well a model predicts labels.",
+        "correct": "Yes"
+      },
+      {
+        "text": "A validation set can be used to verify that all the training data was used to train the model.",
+        "correct": "No"
+      }
+    ],
+    "explanation": "Validation sets are separate from training data and are used to evaluate model performance.",
+    "reference": "https://machinelearningmastery.com/difference-test-validation-datasets/"
+  },
+  {
+    "id": 51,
+    "topic": "ml_fundamentals",
+    "explanation": "A: R-squared (R2), or Coefficient of determination represents the predictive power of the model as a value between -inf and 1.00. 1.00 means there is a perfect fit, and the fit can be arbitrarily poor so the scores can be negative.  \nC: RMS-loss or Root Mean Squared Error (RMSE) (also called Root Mean Square Deviation, RMSD), measures the difference between values predicted by a model and the values observed from the environment that is being modeled.  \nIncorrect Answers:  \nB: F1 score also known as balanced F-score or F-measure is used to evaluate a classification model.  \nD: aucROC or area under the curve (AUC) is used to evaluate a classification model.",
+    "reference": "https://docs.microsoft.com/en-us/dotnet/machine-learning/resources/metrics",
+    "contextImages": [],
+    "type": "multi",
+    "text": "What are two metrics that you can use to evaluate a regression model? Each correct answer presents a complete solution.  \nNote: Each correct selection is worth one point.",
+    "options": [
+      {
+        "letter": "A",
+        "text": "coefficient of determination (R2)"
+      },
+      {
+        "letter": "B",
+        "text": "F1 score"
+      },
+      {
+        "letter": "C",
+        "text": "root mean squared error (RMSE)"
+      },
+      {
+        "letter": "D",
+        "text": "area under curve (AUC)"
+      },
+      {
+        "letter": "E",
+        "text": "balanced accuracy"
+      }
+    ],
+    "correctAnswers": [
+      "A",
+      "C"
+    ]
+  },
+  {
+    "id": 52,
+    "topic": "ml_fundamentals",
+    "type": "sentence_completion",
+    "text": "To complete the sentence, select the appropriate option in the answer area.",
+    "sentence": "Predicting how many vehicles will travel across a bridge on a given day is an example of [BLANK].",
+    "options": [
+      "classification.",
+      "clustering.",
+      "regression."
+    ],
+    "correctAnswer": "regression.",
+    "explanation": "Predicting a numeric quantity (vehicle count) is regression.",
+    "reference": "https://docs.microsoft.com/en-us/dotnet/machine-learning/resources/tasks"
+  },
+  {
+    "id": 53,
+    "topic": "azure_ml",
+    "type": "dragdrop",
+    "text": "You need to use Azure Machine Learning designer to build a model that will predict automobile prices. Which type of modules should you use to complete the model?",
+    "items": [
+      "Convert to CSV",
+      "K-Means Clustering",
+      "Linear Regression",
+      "Split Data",
+      "Select Columns in Dataset",
+      "Summarize Data"
+    ],
+    "targets": [
+      {
+        "text": "Filter columns from dataset (Box 1)",
+        "correctItem": "Select Columns in Dataset"
+      },
+      {
+        "text": "Split dataset for training and testing (Box 2)",
+        "correctItem": "Split Data"
+      },
+      {
+        "text": "Specify the learning algorithm (Box 3)",
+        "correctItem": "Linear Regression"
+      }
+    ],
+    "explanation": "Box 1: Select Columns in Dataset. Box 2: Split Data. Box 3: Linear Regression.",
+    "reference": "https://docs.microsoft.com/en-us/azure/machine-learning/tutorial-designer-automobile-price-train-score"
+  },
+  {
+    "id": 54,
+    "topic": "ml_fundamentals",
+    "explanation": "Clustering is a machine learning task that is used to group instances of data into clusters that contain similar characteristics. Clustering can also be used to identify relationships in a dataset",
+    "reference": "https://docs.microsoft.com/en-us/dotnet/machine-learning/resources/tasks",
+    "contextImages": [],
+    "type": "mcq",
+    "text": "Which type of machine learning should you use to identify groups of people who have similar purchasing habits?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "classification"
+      },
+      {
+        "letter": "B",
+        "text": "regression"
+      },
+      {
+        "letter": "C",
+        "text": "clustering"
+      }
+    ],
+    "correctAnswer": "C"
+  },
+  {
+    "id": 55,
+    "topic": "ml_fundamentals",
+    "type": "sentence_completion",
+    "text": "To complete the sentence, select the appropriate option in the answer area.",
+    "sentence": "[BLANK] models can be used to predict the sale price of auctioned items.",
+    "options": [
+      "Classification",
+      "Clustering",
+      "Regression"
+    ],
+    "correctAnswer": "Regression",
+    "explanation": "Sale prices are numeric values — predicting them requires regression.",
+    "reference": "https://docs.microsoft.com/en-us/dotnet/machine-learning/resources/tasks"
+  },
+  {
+    "id": 56,
+    "topic": "ml_fundamentals",
+    "explanation": "What does a good model look like?  \nAn ROC curve that approaches the top left corner with 100% true positive rate and 0% false positive rate will be the best model. A random model would display as a flat line from the bottom left to the top right corner. Worse than random would dip below the y=x line.",
+    "reference": "https://docs.microsoft.com/en-us/azure/machine-learning/how-to-understand-automated-ml#classification",
+    "contextImages": [],
+    "type": "mcq",
+    "text": "Which metric can you use to evaluate a classification model?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "true positive rate"
+      },
+      {
+        "letter": "B",
+        "text": "mean absolute error (MAE)"
+      },
+      {
+        "letter": "C",
+        "text": "coefficient of determination (R2)"
+      },
+      {
+        "letter": "D",
+        "text": "root mean squared error (RMSE)"
+      }
+    ],
+    "correctAnswer": "A"
+  },
+  {
+    "id": 57,
+    "topic": "ml_fundamentals",
+    "explanation": "You can drag-and-drop datasets and modules onto the canvas.",
+    "reference": "https://docs.microsoft.com/en-us/azure/machine-learning/concept-designer",
+    "contextImages": [],
+    "type": "multi",
+    "text": "Which two components can you drag onto a canvas in Azure Machine Learning designer? Each correct answer presents a complete solution.  \nNote: Each correct selection is worth one point.",
+    "options": [
+      {
+        "letter": "A",
+        "text": "dataset"
+      },
+      {
+        "letter": "B",
+        "text": "compute"
+      },
+      {
+        "letter": "C",
+        "text": "pipeline"
+      },
+      {
+        "letter": "D",
+        "text": "module"
+      }
+    ],
+    "correctAnswers": [
+      "A",
+      "D"
+    ]
+  },
+  {
+    "id": 58,
+    "topic": "ml_fundamentals",
+    "explanation": "A common way of evaluating a model is to divide the data into a training and test set by using Split Data, and then validate the model on the training data.  \nUse the Split Data module to divide a dataset into two distinct sets.  \nThe studio currently supports training/validation data splits",
+    "reference": "https://docs.microsoft.com/en-us/azure/machine-learning/how-to-configure-cross-validation-data-splits",
+    "contextImages": [],
+    "type": "mcq",
+    "text": "You need to create a training dataset and validation dataset from an existing dataset.  \nWhich module in the Azure Machine Learning designer should you use?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Select Columns in Dataset"
+      },
+      {
+        "letter": "B",
+        "text": "Add Rows"
+      },
+      {
+        "letter": "C",
+        "text": "Split Data"
+      },
+      {
+        "letter": "D",
+        "text": "Join Data"
+      }
+    ],
+    "correctAnswer": "C"
+  },
+  {
+    "id": 59,
+    "topic": "ml_fundamentals",
+    "type": "dragdrop",
+    "text": "Match the types of machine learning to the appropriate scenarios.",
+    "items": [
+      "Classification",
+      "Clustering",
+      "Regression"
+    ],
+    "targets": [
+      {
+        "text": "Predict how many minutes late a flight will arrive based on the amount of snowfall at an airport.",
+        "correctItem": "Regression"
+      },
+      {
+        "text": "Segment customers into different groups to support a marketing department.",
+        "correctItem": "Clustering"
+      },
+      {
+        "text": "Predict whether a student will complete a university course.",
+        "correctItem": "Classification"
+      }
+    ],
+    "explanation": "Minutes = regression. Segmentation = clustering. Binary outcome = classification.",
+    "reference": "https://docs.microsoft.com/en-us/azure/machine-learning/studio-module-reference/linear-regression"
+  },
+  {
+    "id": 60,
+    "topic": "computer_vision",
+    "type": "sentence_completion",
+    "text": "To complete the sentence, select the appropriate option in the answer area.",
+    "sentence": "[BLANK] is the calculated probability of a correct image classification.",
+    "options": [
+      "Accuracy",
+      "Confidence",
+      "Root Mean Square Error",
+      "Sentiment"
+    ],
+    "correctAnswer": "Accuracy",
+    "explanation": "Accuracy is the probability metric for correct image classification in Custom Vision.",
+    "reference": "https://docs.microsoft.com/en-us/azure/cognitive-services/custom-vision-service/getting-started-build-a-classifier"
+  },
+  {
+    "id": 61,
+    "topic": "responsible_ai",
+    "type": "sentence_completion",
+    "text": "To complete the sentence, select the appropriate option in the answer area.",
+    "sentence": "Ensuring an AI system does not provide a prediction when important fields contain unusual or missing values is [BLANK] principle for responsible AI.",
+    "options": [
+      "an inclusiveness",
+      "a privacy and security",
+      "a reliability and safety",
+      "a transparency"
+    ],
+    "correctAnswer": "a reliability and safety",
+    "explanation": "Reliability and safety covers handling unexpected inputs gracefully.",
+    "reference": "https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/innovate/best-practices/trusted-ai"
+  },
+  {
+    "id": 62,
+    "topic": "ml_fundamentals",
+    "type": "sentence_completion",
+    "text": "To complete the sentence, select the appropriate option in the answer area.",
+    "sentence": "Ensuring that the numeric variables in training data are on a similar scale is an example of [BLANK]",
+    "options": [
+      "data ingestion.",
+      "feature engineering.",
+      "feature selection.",
+      "model training."
+    ],
+    "correctAnswer": "feature engineering.",
+    "explanation": "Normalizing/scaling numeric variables is a feature engineering task.",
+    "reference": "https://docs.microsoft.com/en-us/azure/architecture/data-science-process/create-features"
+  },
+  {
+    "id": 63,
+    "topic": "ml_fundamentals",
+    "type": "sentence_completion",
+    "text": "To complete the sentence, select the appropriate option in the answer area.",
+    "sentence": "Assigning classes to images before training a classification model is an example of [BLANK]",
+    "options": [
+      "evaluation.",
+      "feature engineering",
+      "hyperparameter tuning.",
+      "labeling."
+    ],
+    "correctAnswer": "labeling.",
+    "explanation": "Assigning classes to training images is the labeling/tagging process.",
+    "reference": "https://docs.microsoft.com/en-us/azure/machine-learning/how-to-label-data"
+  },
+  {
+    "id": 64,
+    "topic": "ml_fundamentals",
+    "type": "yesno",
+    "text": "You have an Azure Machine Learning model that predicts product quality. The model has a training dataset that contains 50,000 records.",
+    "contextImages": [
+      "32017b30-5f42-4e7e-a3d0-3b92596cd2cd.png"
+    ],
+    "statements": [
+      {
+        "text": "Mass (kg) is a feature.",
+        "correct": "Yes"
+      },
+      {
+        "text": "Quality Test is a label.",
+        "correct": "Yes"
+      },
+      {
+        "text": "Temperature (C) is a label.",
+        "correct": "No"
+      }
+    ],
+    "explanation": "Mass and Temperature are input features. Quality Test is the prediction target (label).",
+    "reference": "https://docs.microsoft.com/en-us/azure/machine-learning/component-reference/filter-based-feature-selection"
+  },
+  {
+    "id": 65,
+    "topic": "ml_fundamentals",
+    "type": "yesno",
+    "text": "For each of the following statements, select Yes if the statement is true. Otherwise, select No.",
+    "statements": [
+      {
+        "text": "You train a regression model by using unlabeled data.",
+        "correct": "No"
+      },
+      {
+        "text": "The classification technique is used to predict sequential numerical data over time.",
+        "correct": "No"
+      },
+      {
+        "text": "Grouping items by their common characteristics is an example of clustering.",
+        "correct": "Yes"
+      }
+    ],
+    "explanation": "Regression requires labeled data. Time series prediction = forecasting, not classification. Grouping by characteristics = clustering."
+  },
+  {
+    "id": 66,
+    "topic": "ml_fundamentals",
+    "explanation": "",
+    "contextImages": [],
+    "type": "multi",
+    "text": "Which two actions are performed during the data ingestion and data preparation stage of an Azure Machine Learning process? Each correct answer presents part of the solution.  \nNote: Each correct selection is worth one point.",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Calculate the accuracy of the model."
+      },
+      {
+        "letter": "B",
+        "text": "Score test data by using the model."
+      },
+      {
+        "letter": "C",
+        "text": "Combine multiple datasets."
+      },
+      {
+        "letter": "D",
+        "text": "Use the model for real-time predictions."
+      },
+      {
+        "letter": "E",
+        "text": "Remove records that have missing values."
+      }
+    ],
+    "correctAnswers": [
+      "C",
+      "E"
+    ]
+  },
+  {
+    "id": 67,
+    "topic": "ml_fundamentals",
+    "explanation": "Regression is a supervised machine learning technique used to predict numeric values.",
+    "reference": "https://docs.microsoft.com/en-us/learn/modules/create-regression-model-azure-machine-learning-designer/1-introduction",
+    "contextImages": [],
+    "type": "mcq",
+    "text": "You need to predict the animal population of an area.  \nWhich Azure Machine Learning type should you use?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "regression"
+      },
+      {
+        "letter": "B",
+        "text": "clustering"
+      },
+      {
+        "letter": "C",
+        "text": "classification"
+      }
+    ],
+    "correctAnswer": "A"
+  },
+  {
+    "id": 68,
+    "topic": "ml_fundamentals",
+    "explanation": "Use Azure Machine Learning designer for customizing using Python and R code.",
+    "reference": "https://azure.microsoft.com/en-us/services/machine-learning/designer/#features",
+    "contextImages": [],
+    "type": "multi",
+    "text": "Which two languages can you use to write custom code for Azure Machine Learning designer? Each correct answer presents a complete solution.  \nNote: Each correct selection is worth one point.",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Python"
+      },
+      {
+        "letter": "B",
+        "text": "R"
+      },
+      {
+        "letter": "C",
+        "text": "C#"
+      },
+      {
+        "letter": "D",
+        "text": "Scala"
+      }
+    ],
+    "correctAnswers": [
+      "A",
+      "B"
+    ]
+  },
+  {
+    "id": 69,
+    "topic": "azure_ml",
+    "type": "yesno",
+    "text": "For each of the following statements, select Yes if the statement is true. Otherwise, select No.",
+    "statements": [
+      {
+        "text": "For a regression model, labels must be numeric.",
+        "correct": "Yes"
+      },
+      {
+        "text": "For a clustering model, labels must be used.",
+        "correct": "No"
+      },
+      {
+        "text": "For a classification model, labels must be numeric.",
+        "correct": "No"
+      }
+    ],
+    "explanation": "Regression predicts numeric values. Clustering is unsupervised (no labels). Classification labels can be categorical.",
+    "reference": "https://docs.microsoft.com/en-us/azure/machine-learning/component-reference/train-model"
+  },
+  {
+    "id": 70,
+    "topic": "ml_fundamentals",
+    "explanation": "Azure's Computer Vision service gives you access to advanced algorithms that process images and return information based on the visual features you're interested in. For example, Computer Vision can determine whether an image contains adult content, find specific brands or objects, or find human faces.",
+    "reference": "https://docs.microsoft.com/en-us/azure/cognitive-services/computer-vision/overview",
+    "contextImages": [],
+    "type": "mcq",
+    "text": "Your company wants to build a recycling machine for bottles. The recycling machine must automatically identify bottles of the correct shape and reject all other items.  \nWhich type of AI workload should the company use?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "anomaly detection"
+      },
+      {
+        "letter": "B",
+        "text": "conversational AI"
+      },
+      {
+        "letter": "C",
+        "text": "computer vision"
+      },
+      {
+        "letter": "D",
+        "text": "natural language processing"
+      }
+    ],
+    "correctAnswer": "C"
+  },
+  {
+    "id": 71,
+    "topic": "computer_vision",
+    "type": "yesno",
+    "text": "For each of the following statements, select Yes if the statement is true. Otherwise, select No.",
+    "statements": [
+      {
+        "text": "When creating an object detection model in the Custom Vision service, you must choose a classification type of either Multilabel or Multiclass.",
+        "correct": "No"
+      },
+      {
+        "text": "You can create an object detection model in the Custom Vision service to find the location of content within an image.",
+        "correct": "Yes"
+      },
+      {
+        "text": "When creating an object detection model in the Custom Vision service, you can select from a set of predefined domains.",
+        "correct": "Yes"
+      }
+    ],
+    "explanation": "Multilabel/Multiclass applies to classification, not object detection. Object detection finds locations. Predefined domains are available.",
+    "reference": "https://docs.microsoft.com/en-us/azure/cognitive-services/custom-vision-service/get-started-build-detector"
+  },
+  {
+    "id": 72,
+    "topic": "azure_cognitive",
+    "explanation": "",
+    "contextImages": [],
+    "type": "multi",
+    "text": "In which two scenarios can you use the Form Recognizer service? Each correct answer presents a complete solution.  \nNote: Each correct selection is worth one point.",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Extract the invoice number from an invoice."
+      },
+      {
+        "letter": "B",
+        "text": "Translate a form from French to English."
+      },
+      {
+        "letter": "C",
+        "text": "Find image of product in a catalog."
+      },
+      {
+        "letter": "D",
+        "text": "Identify the retailer from a receipt."
+      }
+    ],
+    "correctAnswers": [
+      "A",
+      "D"
+    ]
+  },
+  {
+    "id": 73,
+    "topic": "computer_vision",
+    "type": "sentence_completion",
+    "text": "To complete the sentence, select the appropriate option in the answer area.",
+    "sentence": "Counting the number of animals in an area based on a video feed is an example of [BLANK].",
+    "options": [
+      "forecasting.",
+      "computer vision.",
+      "conversational AI.",
+      "anomaly detection."
+    ],
+    "correctAnswer": "computer vision.",
+    "explanation": "Analyzing video feeds to count objects uses computer vision (spatial analysis)."
+  },
+  {
+    "id": 74,
+    "topic": "computer_vision",
+    "type": "yesno",
+    "text": "You have a database that contains a list of employees and their photos. You are tagging new photos of the employees. For each of the following statements select Yes if the statement is true. Otherwise, select No.",
+    "statements": [
+      {
+        "text": "The Face service can be used to perform facial recognition for employees",
+        "correct": "Yes"
+      },
+      {
+        "text": "The Face service will be more accurate if you provide more sample photos of each employee from different angles.",
+        "correct": "Yes"
+      },
+      {
+        "text": "If an employee is wearing sunglasses, the Face service will always fail to recognize the employee.",
+        "correct": "No"
+      }
+    ],
+    "explanation": "Face service supports facial recognition and improves with more samples. It does not always fail with sunglasses."
+  },
+  {
+    "id": 75,
+    "topic": "computer_vision",
+    "explanation": "Azure's Computer Vision API includes Optical Character Recognition (OCR) capabilities that extract printed or handwritten text from images. You can extract text from images, such as photos of license plates or containers with serial numbers, as well as from documents - invoices, bills, financial reports, articles, and more.",
+    "reference": "https://docs.microsoft.com/en-us/azure/cognitive-services/computer-vision/concept-recognizing-text",
+    "contextImages": [],
+    "type": "mcq",
+    "text": "You need to develop a mobile app for employees to scan and store their expenses while travelling.  \nWhich type of computer vision should you use?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "semantic segmentation"
+      },
+      {
+        "letter": "B",
+        "text": "image classification"
+      },
+      {
+        "letter": "C",
+        "text": "object detection"
+      },
+      {
+        "letter": "D",
+        "text": "optical character recognition (OCR)"
+      }
+    ],
+    "correctAnswer": "D"
+  },
+  {
+    "id": 76,
+    "topic": "computer_vision",
+    "type": "yesno",
+    "text": "For each of the following statements, select Yes if the statement is true. Otherwise, select No.",
+    "statements": [
+      {
+        "text": "The Custom Vision service can be used to detect objects in an image.",
+        "correct": "Yes"
+      },
+      {
+        "text": "The Custom Vision service requires that you provide your own data to train the model.",
+        "correct": "Yes"
+      },
+      {
+        "text": "The Custom Vision service can be used to analyze video files.",
+        "correct": "No"
+      }
+    ],
+    "explanation": "Custom Vision supports object detection with custom training data. It cannot analyze video files.",
+    "reference": "https://docs.microsoft.com/en-us/azure/cognitive-services/Custom-Vision-Service/overview"
+  },
+  {
+    "id": 77,
+    "topic": "computer_vision",
+    "explanation": "Optical character recognition (OCR) allows you to extract printed or handwritten text from images and documents.",
+    "reference": "https://docs.microsoft.com/en-us/azure/cognitive-services/computer-vision/overview-ocr",
+    "contextImages": [],
+    "type": "mcq",
+    "text": "You are processing photos of runners in a race.  \nYou need to read the numbers on the runners' shirts to identity the runners in the photos.  \nWhich type of computer vision should you use?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "facial recognition"
+      },
+      {
+        "letter": "B",
+        "text": "optical character recognition (OCR)"
+      },
+      {
+        "letter": "C",
+        "text": "image classification"
+      },
+      {
+        "letter": "D",
+        "text": "object detection"
+      }
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": 78,
+    "topic": "computer_vision",
+    "type": "dragdrop",
+    "text": "Match the machine learning types to the appropriate scenarios.",
+    "items": [
+      "Facial detection",
+      "Facial recognition",
+      "Image classification",
+      "Object detection",
+      "Optical character recognition (OCR)",
+      "Semantic segmentation"
+    ],
+    "targets": [
+      {
+        "text": "Separate images of polar bears and brown bears.",
+        "correctItem": "Image classification"
+      },
+      {
+        "text": "Determine the location of a bear in a photo.",
+        "correctItem": "Object detection"
+      },
+      {
+        "text": "Determine which pixels in an image are part of a bear.",
+        "correctItem": "Semantic segmentation"
+      }
+    ],
+    "explanation": "Classifying image content = image classification. Bounding box location = object detection. Pixel-level = semantic segmentation."
+  },
+  {
+    "id": 79,
+    "topic": "computer_vision",
+    "explanation": "Object detection is similar to tagging, but the API returns the bounding box coordinates for each tag applied. For example, if an image contains a dog, cat and person, the Detect operation will list those objects together with their coordinates in the image.  \nIncorrect Answers:  \nB: Optical character recognition (OCR) allows you to extract printed or handwritten text from images and documents.  \nC: Scene segmentation determines when a scene changes in video based on visual cues. A scene depicts a single event and it's composed by a series of consecutive shots, which are semantically related.",
+    "reference": "https://docs.microsoft.com/en-us/ai-builder/object-detection-overview https://docs.microsoft.com/en-us/azure/cognitive-services/computer-vision/overview-ocr https://docs.microsoft.com/en-us/azure/azure-video-analyzer/video-analyzer-for-media-docs/video-indexer-overview",
+    "contextImages": [],
+    "type": "mcq",
+    "text": "You use drones to identify where weeds grow between rows of crops to send an instruction for the removal of the weeds.  \nThis is an example of which type of computer vision?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "object detection"
+      },
+      {
+        "letter": "B",
+        "text": "optical character recognition (OCR)"
+      },
+      {
+        "letter": "C",
+        "text": "scene segmentation"
+      }
+    ],
+    "correctAnswer": "A"
+  },
+  {
+    "id": 80,
+    "topic": "computer_vision",
+    "type": "dragdrop",
+    "text": "Match the facial recognition tasks to the appropriate questions.",
+    "items": [
+      "grouping",
+      "identification",
+      "similarity",
+      "verification"
+    ],
+    "targets": [
+      {
+        "text": "Do two images of a face belong to the same person?",
+        "correctItem": "verification"
+      },
+      {
+        "text": "Does this person look like other people?",
+        "correctItem": "similarity"
+      },
+      {
+        "text": "Do all the faces belong together?",
+        "correctItem": "grouping"
+      },
+      {
+        "text": "Who is this person in this group of people?",
+        "correctItem": "identification"
+      }
+    ],
+    "explanation": "Verification = same person check. Similarity = likeness. Grouping = clustering faces. Identification = who is it."
+  },
+  {
+    "id": 81,
+    "topic": "computer_vision",
+    "type": "dragdrop",
+    "text": "Match the types of computer vision workloads to the appropriate scenarios.",
+    "items": [
+      "Facial recognition",
+      "Image classification",
+      "Object detection",
+      "Optical character recognition (OCR)"
+    ],
+    "targets": [
+      {
+        "text": "Identify celebrities in images.",
+        "correctItem": "Facial recognition"
+      },
+      {
+        "text": "Extract movie title names from movie poster images.",
+        "correctItem": "Optical character recognition (OCR)"
+      },
+      {
+        "text": "Locate vehicles in images.",
+        "correctItem": "Object detection"
+      }
+    ],
+    "explanation": "Celebrity identification = facial recognition. Text extraction = OCR. Locating objects = object detection."
+  },
+  {
+    "id": 82,
+    "topic": "computer_vision",
+    "explanation": "Object detection is similar to tagging, but the API returns the bounding box coordinates (in pixels) for each object found. For example, if an image contains a dog, cat and person, the Detect operation will list those objects together with their coordinates in the image. You can use this functionality to process the relationships between the objects in an image. It also lets you determine whether there are multiple instances of the same tag in an image.  \nThe Detect API applies tags based on the objects or living things identified in the image. There is currently no formal relationship between the tagging taxonomy and the object detection taxonomy. At a conceptual level, the Detect API only finds objects and living things, while the Tag API can also include contextual terms like \"indoor\", which can't be localized with bounding boxes.",
+    "reference": "https://docs.microsoft.com/en-us/azure/cognitive-services/computer-vision/concept-object-detection",
+    "contextImages": [],
+    "type": "mcq",
+    "text": "You need to determine the location of cars in an image so that you can estimate the distance between the cars.  \nWhich type of computer vision should you use?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "optical character recognition (OCR)"
+      },
+      {
+        "letter": "B",
+        "text": "object detection"
+      },
+      {
+        "letter": "C",
+        "text": "image classification"
+      },
+      {
+        "letter": "D",
+        "text": "face detection"
+      }
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": 83,
+    "topic": "computer_vision",
+    "type": "sentence_completion",
+    "text": "To complete the sentence, select the appropriate option in the answer area.",
+    "sentence": "You can use the [BLANK] service to train an object detection model by using your own images.",
+    "options": [
+      "Computer Vision",
+      "Custom Vision",
+      "Form Recognizer",
+      "Video Indexer"
+    ],
+    "correctAnswer": "Custom Vision",
+    "explanation": "Custom Vision allows training object detection models with your own labeled images."
+  },
+  {
+    "id": 84,
+    "topic": "computer_vision",
+    "type": "mcq",
+    "text": "You send an image to a Computer Vision API and receive back the annotated image shown in the exhibit. Which type of computer vision was used?",
+    "contextImages": [
+      "06c4b074-8caa-4819-ad77-d3362b9b28c9.png"
+    ],
+    "options": [
+      "object detection",
+      "face detection",
+      "optical character recognition (OCR)",
+      "image classification"
+    ],
+    "correctAnswer": "object detection",
+    "explanation": "Annotated images with bounding boxes around identified items are produced by object detection.",
+    "reference": "https://docs.microsoft.com/en-us/azure/cognitive-services/computer-vision/concept-object-detection"
+  },
+  {
+    "id": 85,
+    "topic": "ml_fundamentals",
+    "explanation": "B: Azure's Computer Vision service provides developers with access to advanced algorithms that process images and return information based on the visual features you're interested in. For example, Computer Vision can determine whether an image contains adult content, find specific brands or objects, or find human faces.  \nC: Computer Vision includes Optical Character Recognition (OCR) capabilities. You can use the new Read API to extract printed and handwritten text from images and documents.",
+    "reference": "https://docs.microsoft.com/en-us/azure/cognitive-services/computer-vision/home",
+    "contextImages": [],
+    "type": "multi",
+    "text": "What are two tasks that can be performed by using the Computer Vision service? Each correct answer presents a complete solution.  \nNote: Each correct selection is worth one point.",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Train a custom image classification model."
+      },
+      {
+        "letter": "B",
+        "text": "Detect faces in an image."
+      },
+      {
+        "letter": "C",
+        "text": "Recognize handwritten text."
+      },
+      {
+        "letter": "D",
+        "text": "Translate the text in an image between languages."
+      }
+    ],
+    "correctAnswers": [
+      "B",
+      "C"
+    ]
+  },
+  {
+    "id": 86,
+    "topic": "ml_fundamentals",
+    "explanation": "Two-class classification provides the answer to simple two-choice questions such as Yes/No or True/False.  \nIncorrect Answers:  \nA: This is Regression.  \nB: This is Clustering.  \nD: This is Regression.",
+    "reference": "https://docs.microsoft.com/en-us/azure/machine-learning/algorithm-module-reference/linear-regression https://docs.microsoft.com/en-us/azure/machine-learning/studio-module-reference/machine-learning-initialize-model-clustering",
+    "contextImages": [],
+    "type": "mcq",
+    "text": "What is a use case for classification?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "predicting how many cups of coffee a person will drink based on how many hours the person slept the previous night."
+      },
+      {
+        "letter": "B",
+        "text": "analyzing the contents of images and grouping images that have similar colors"
+      },
+      {
+        "letter": "C",
+        "text": "predicting whether someone uses a bicycle to travel to work based on the distance from home to work"
+      },
+      {
+        "letter": "D",
+        "text": "predicting how many minutes it will take someone to run a race based on past race times"
+      }
+    ],
+    "correctAnswer": "C"
+  },
+  {
+    "id": 87,
+    "topic": "computer_vision",
+    "explanation": "B: Identify commercial brands in images or videos from a database of thousands of global logos. You can use this feature, for example, to discover which brands are most popular on social media or most prevalent in media product placement.  \nC: Analyze color usage within an image. Computer Vision can determine whether an image is black & white or color and, for color images, identify the dominant and accent colors.",
+    "reference": "https://docs.microsoft.com/en-us/azure/cognitive-services/computer-vision/overview",
+    "contextImages": [],
+    "type": "multi",
+    "text": "What are two tasks that can be performed by using computer vision? Each correct answer presents a complete solution.  \nNote: Each correct selection is worth one point.",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Predict stock prices."
+      },
+      {
+        "letter": "B",
+        "text": "Detect brands in an image."
+      },
+      {
+        "letter": "C",
+        "text": "Detect the color scheme in an image"
+      },
+      {
+        "letter": "D",
+        "text": "Translate text between languages."
+      },
+      {
+        "letter": "E",
+        "text": "Extract key phrases."
+      }
+    ],
+    "correctAnswers": [
+      "B",
+      "C"
+    ]
+  },
+  {
+    "id": 88,
+    "topic": "computer_vision",
+    "explanation": "",
+    "contextImages": [],
+    "type": "mcq",
+    "text": "You need to build an image tagging solution for social media that tags images of your friends automatically.  \nWhich Azure Cognitive Services service should you use?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Face"
+      },
+      {
+        "letter": "B",
+        "text": "Form Recognizer"
+      },
+      {
+        "letter": "C",
+        "text": "Text Analytics"
+      },
+      {
+        "letter": "D",
+        "text": "Computer Vision"
+      }
+    ],
+    "correctAnswer": "A"
+  },
+  {
+    "id": 89,
+    "topic": "azure_cognitive",
+    "explanation": "",
+    "contextImages": [],
+    "type": "multi",
+    "text": "In which two scenarios can you use the Form Recognizer service? Each correct answer presents a complete solution.  \nNote: Each correct selection is worth one point.",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Identify the retailer from a receipt"
+      },
+      {
+        "letter": "B",
+        "text": "Translate from French to English"
+      },
+      {
+        "letter": "C",
+        "text": "Extract the invoice number from an invoice"
+      },
+      {
+        "letter": "D",
+        "text": "Find images of products in a catalog"
+      }
+    ],
+    "correctAnswers": [
+      "A",
+      "C"
+    ]
+  },
+  {
+    "id": 90,
+    "topic": "computer_vision",
+    "type": "dragdrop",
+    "text": "Match the facial recognition tasks to the appropriate questions.",
+    "items": [
+      "grouping",
+      "identification",
+      "similarity",
+      "verification"
+    ],
+    "targets": [
+      {
+        "text": "Do two images of a face belong to the same person?",
+        "correctItem": "verification"
+      },
+      {
+        "text": "Does this person look like other people?",
+        "correctItem": "similarity"
+      },
+      {
+        "text": "Who is this person in this group of people?",
+        "correctItem": "identification"
+      }
+    ],
+    "explanation": "Verification = same person. Similarity = resemblance. Identification = who is this person.",
+    "reference": "https://docs.microsoft.com/en-us/azure/cognitive-services/face/overview"
+  },
+  {
+    "id": 91,
+    "topic": "ml_fundamentals",
+    "explanation": "Describe images with human-readable language  \nComputer Vision can analyze an image and generate a human-readable phrase that describes its contents. The algorithm returns several descriptions based on different visual features, and each description is given a confidence score. The final output is a list of descriptions ordered from highest to lowest confidence.  \nThe image description feature is part of the Analyze Image API.",
+    "reference": "https://docs.microsoft.com/en-us/azure/cognitive-services/computer-vision/concept-describing-images",
+    "contextImages": [],
+    "type": "mcq",
+    "text": "Which Computer Vision feature can you use to generate automatic captions for digital photographs?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Recognize text."
+      },
+      {
+        "letter": "B",
+        "text": "Identify the areas of interest."
+      },
+      {
+        "letter": "C",
+        "text": "Detect objects."
+      },
+      {
+        "letter": "D",
+        "text": "Describe the images."
+      }
+    ],
+    "correctAnswer": "D"
+  },
+  {
+    "id": 92,
+    "topic": "ml_fundamentals",
+    "explanation": "Form Recognizer applies advanced machine learning to accurately extract text, key-value pairs, tables, and structures from documents.",
+    "reference": "https://azure.microsoft.com/en-us/services/form-recognizer/",
+    "contextImages": [],
+    "type": "mcq",
+    "text": "Which service should you use to extract text, key/value pairs, and table data automatically from scanned documents?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Custom Vision"
+      },
+      {
+        "letter": "B",
+        "text": "Face"
+      },
+      {
+        "letter": "C",
+        "text": "Form Recognizer"
+      },
+      {
+        "letter": "D",
+        "text": "Language"
+      }
+    ],
+    "correctAnswer": "C"
+  },
+  {
+    "id": 93,
+    "topic": "computer_vision",
+    "type": "sentence_completion",
+    "text": "Select the answer that correctly completes the sentence.",
+    "sentence": "[BLANK] extracts text from handwritten documents.",
+    "options": [
+      "Object detection",
+      "Facial recognition",
+      "Image classification",
+      "Optical character recognition (OCR)"
+    ],
+    "correctAnswer": "Optical character recognition (OCR)",
+    "explanation": "OCR extracts text from both printed and handwritten documents.",
+    "reference": "https://vidado.ai/handwriting-ocr"
+  },
+  {
+    "id": 94,
+    "topic": "nlp",
+    "explanation": "Broad entity extraction: Identify important concepts in text, including key  \nKey phrase extraction/ Broad entity extraction: Identify important concepts in text, including key phrases and named entities such as people, places, and organizations.",
+    "reference": "https://docs.microsoft.com/en-us/azure/architecture/data-guide/technology-choices/natural-language-processing",
+    "contextImages": [],
+    "type": "mcq",
+    "text": "You are developing a solution that uses the Text Analytics service.  \nYou need to identify the main talking points in a collection of documents.  \nWhich type of natural language processing should you use?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "entity recognition"
+      },
+      {
+        "letter": "B",
+        "text": "key phrase extraction"
+      },
+      {
+        "letter": "C",
+        "text": "sentiment analysis"
+      },
+      {
+        "letter": "D",
+        "text": "language detection"
+      }
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": 95,
+    "topic": "nlp",
+    "explanation": "",
+    "contextImages": [],
+    "type": "multi",
+    "text": "In which two scenarios can you use speech recognition? Each correct answer presents a complete solution.  \nNote: Each correct selection is worth one point.",
+    "options": [
+      {
+        "letter": "A",
+        "text": "an in-car system that reads text messages aloud"
+      },
+      {
+        "letter": "B",
+        "text": "providing closed captions for recorded or live videos"
+      },
+      {
+        "letter": "C",
+        "text": "creating an automated public address system for a train station"
+      },
+      {
+        "letter": "D",
+        "text": "creating a transcript of a telephone call or meeting"
+      }
+    ],
+    "correctAnswers": [
+      "B",
+      "D"
+    ]
+  },
+  {
+    "id": 96,
+    "topic": "nlp",
+    "type": "sentence_completion",
+    "text": "To complete the sentence, select the appropriate option in the answer area.",
+    "sentence": "While presenting at a conference, your session is transcribed into subtitles for the audience. This is an example of [BLANK].",
+    "options": [
+      "sentiment analysis.",
+      "speech recognition.",
+      "speech synthesis.",
+      "translation."
+    ],
+    "correctAnswer": "speech recognition.",
+    "explanation": "Converting spoken words to text is speech recognition.",
+    "reference": "https://azure.microsoft.com/en-gb/services/cognitive-services/speech-to-text/#features"
+  },
+  {
+    "id": 97,
+    "topic": "computer_vision",
+    "explanation": "",
+    "contextImages": [],
+    "type": "mcq",
+    "text": "You need to build an app that will read recipe instructions aloud to support users who have reduced vision.  \nWhich version service should you use?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Text Analytics"
+      },
+      {
+        "letter": "B",
+        "text": "Translator"
+      },
+      {
+        "letter": "C",
+        "text": "Speech"
+      },
+      {
+        "letter": "D",
+        "text": "Language Understanding (LUIS)"
+      }
+    ],
+    "correctAnswer": "C"
+  },
+  {
+    "id": 98,
+    "topic": "nlp",
+    "type": "yesno",
+    "text": "For each of the following statements, select Yes if the statement is true. Otherwise, select No.",
+    "statements": [
+      {
+        "text": "You can use the Speech service to transcribe a call to text.",
+        "correct": "Yes"
+      },
+      {
+        "text": "You can use the Text Analytics service to extract key entities from a call transcript.",
+        "correct": "Yes"
+      },
+      {
+        "text": "You can use the Speech service to translate the audio of a call to a different language.",
+        "correct": "Yes"
+      }
+    ],
+    "explanation": "Speech service supports transcription and translation. Text Analytics supports entity extraction.",
+    "reference": "https://docs.microsoft.com/en-gb/azure/cognitive-services/text-analytics/overview"
+  },
+  {
+    "id": 99,
+    "topic": "nlp",
+    "explanation": "Natural language processing (NLP) is used for tasks such as sentiment analysis, topic detection, language detection, key phrase extraction, and document categorization.  \nSentiment Analysis is the process of determining whether a piece of writing is positive, negative or neutral.",
+    "reference": "https://docs.microsoft.com/en-us/azure/architecture/data-guide/technology-choices/natural-language-processing",
+    "contextImages": [],
+    "type": "mcq",
+    "text": "Your website has a chatbot to assist customers.  \nYou need to detect when a customer is upset based on what the customer types in the chatbot.  \nWhich type of AI workload should you use?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "anomaly detection"
+      },
+      {
+        "letter": "B",
+        "text": "computer vision"
+      },
+      {
+        "letter": "C",
+        "text": "regression"
+      },
+      {
+        "letter": "D",
+        "text": "natural language processing"
+      }
+    ],
+    "correctAnswer": "D"
+  },
+  {
+    "id": 100,
+    "topic": "nlp",
+    "explanation": "",
+    "contextImages": [],
+    "type": "multi",
+    "text": "You plan to develop a bot that will enable users to query a knowledge base by using natural language processing.  \nWhich two services should you include in the solution? Each correct answer presents part of the solution.  \nNote: Each correct selection is worth one point.",
+    "options": [
+      {
+        "letter": "A",
+        "text": "QnA Maker"
+      },
+      {
+        "letter": "B",
+        "text": "Azure Bot Service"
+      },
+      {
+        "letter": "C",
+        "text": "Form Recognizer"
+      },
+      {
+        "letter": "D",
+        "text": "Anomaly Detector"
+      }
+    ],
+    "correctAnswers": [
+      "A",
+      "B"
+    ]
+  },
+  {
+    "id": 101,
+    "topic": "nlp",
+    "explanation": "Azure Text to Speech is a Speech service feature that converts text to lifelike speech.  \nIncorrect Answers:  \nC: Extracting key phrases is not speech synthesis.",
+    "reference": "https://azure.microsoft.com/en-in/services/cognitive-services/text-to-speech/",
+    "contextImages": [],
+    "type": "multi",
+    "text": "In which two scenarios can you use a speech synthesis solution? Each correct answer presents a complete solution.  \nNote: Each correct selection is worth one point.",
+    "options": [
+      {
+        "letter": "A",
+        "text": "an automated voice that reads back a credit card number entered into a telephone by using a numeric keypad"
+      },
+      {
+        "letter": "B",
+        "text": "generating live captions for a news broadcast"
+      },
+      {
+        "letter": "C",
+        "text": "extracting key phrases from the audio recording of a meeting"
+      },
+      {
+        "letter": "D",
+        "text": "an AI character in a computer game that speaks audibly to a player"
+      }
+    ],
+    "correctAnswers": [
+      "A",
+      "D"
+    ]
+  },
+  {
+    "id": 102,
+    "topic": "nlp",
+    "type": "yesno",
+    "text": "For each of the following statements, select Yes if the statement is true. Otherwise, select No.",
+    "statements": [
+      {
+        "text": "You can use the Translator service to translate text between languages.",
+        "correct": "Yes"
+      },
+      {
+        "text": "You can use the Translator service to detect the language of a given text.",
+        "correct": "Yes"
+      },
+      {
+        "text": "You can use the Translator service to transcribe audible speech into text.",
+        "correct": "No"
+      }
+    ],
+    "explanation": "Translator handles text translation and language detection. Speech-to-text requires the Speech service.",
+    "reference": "https://docs.microsoft.com/en-us/azure/cognitive-services/Translator/translator-info-overview"
+  },
+  {
+    "id": 103,
+    "topic": "nlp",
+    "type": "dragdrop",
+    "text": "You need to scan the news for articles about your customers and alert employees when there is a negative article. Positive articles must be added to a press book. Which natural language processing tasks should you use to complete the process?",
+    "items": [
+      "Entity recognition",
+      "Sentiment analysis",
+      "Speech synthesis",
+      "Translation"
+    ],
+    "targets": [
+      {
+        "text": "Filter articles that mention clients",
+        "correctItem": "Entity recognition"
+      },
+      {
+        "text": "Assess whether coverage is negative or positive",
+        "correctItem": "Sentiment analysis"
+      }
+    ],
+    "explanation": "Entity recognition identifies named entities (clients). Sentiment analysis evaluates positive/negative tone.",
+    "reference": "https://docs.microsoft.com/en-us/azure/machine-learning/studio-module-reference/named-entity-recognition"
+  },
+  {
+    "id": 104,
+    "topic": "conversational_ai",
+    "explanation": "D: Content types of documents you can add to a knowledge base:  \nContent types include many standard structured documents such as PDF, DOC, and TXT.  \nNote: The tool supports the following file formats for ingestion:  \n\\-.tsv: QnA contained in the format Question(tab)Answer.  \n\\-.txt, .docx, .pdf: QnA contained as regular FAQ content--that is, a sequence of questions and answers.  \nIncorrect Answers:  \nA: PPTX is the default presentation file format for new PowerPoint presentations.  \nB: It is not possible to ingest xml file directly.",
+    "reference": "https://docs.microsoft.com/en-us/azure/cognitive-services/qnamaker/concepts/data-sources-and-content",
+    "contextImages": [],
+    "type": "mcq",
+    "text": "You are building a knowledge base by using QnA Maker.  \nWhich file format can you use to populate the knowledge base?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "PPTX"
+      },
+      {
+        "letter": "B",
+        "text": "XML"
+      },
+      {
+        "letter": "C",
+        "text": "ZIP"
+      },
+      {
+        "letter": "D",
+        "text": "PDF"
+      }
+    ],
+    "correctAnswer": "D"
+  },
+  {
+    "id": 105,
+    "topic": "nlp",
+    "explanation": "",
+    "contextImages": [],
+    "type": "mcq",
+    "text": "In which scenario should you use key phrase extraction?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "identifying whether reviews of a restaurant are positive or negative"
+      },
+      {
+        "letter": "B",
+        "text": "generating captions for a video based on the audio track"
+      },
+      {
+        "letter": "C",
+        "text": "identifying which documents provide information about the same topics"
+      },
+      {
+        "letter": "D",
+        "text": "translating a set of documents from English to German"
+      }
+    ],
+    "correctAnswer": "C"
+  },
+  {
+    "id": 106,
+    "topic": "unknown",
+    "explanation": "",
+    "contextImages": [],
+    "type": "mcq",
+    "text": "You have insurance claim reports that are stored as text.  \nYou need to extract key terms from the reports to generate summaries.  \nWhich type of AI workload should you use?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "natural language processing"
+      },
+      {
+        "letter": "B",
+        "text": "conversational AI"
+      },
+      {
+        "letter": "C",
+        "text": "anomaly detection"
+      },
+      {
+        "letter": "D",
+        "text": "computer vision"
+      }
+    ],
+    "correctAnswer": "A"
+  },
+  {
+    "id": 107,
+    "topic": "nlp",
+    "type": "sentence_completion",
+    "text": "To complete the sentence, select the appropriate option in the answer area.",
+    "sentence": "Natural language processing can be used to [BLANK].",
+    "options": [
+      "classify email messages as work-related or personal.",
+      "predict the number of future car rentals.",
+      "predict which website visitors will make a transaction.",
+      "stop a process in a factory when extremely high temperatures are registered."
+    ],
+    "correctAnswer": "classify email messages as work-related or personal.",
+    "explanation": "Email classification by content is an NLP text classification task.",
+    "reference": "https://docs.microsoft.com/en-us/azure/architecture/data-guide/technology-choices/natural-language-processing"
+  },
+  {
+    "id": 108,
+    "topic": "nlp",
+    "explanation": "Language Understanding (LUIS) is a cloud-based AI service, that applies custom machine-learning intelligence to a user's conversational, natural language text to predict overall meaning, and pull out relevant, detailed information.",
+    "reference": "https://docs.microsoft.com/en-us/azure/cognitive-services/luis/what-is-luis",
+    "contextImages": [],
+    "type": "mcq",
+    "text": "Which AI service can you use to interpret the meaning of a user input such as \\`Call me back later?\\`",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Translator"
+      },
+      {
+        "letter": "B",
+        "text": "Text Analytics"
+      },
+      {
+        "letter": "C",
+        "text": "Speech"
+      },
+      {
+        "letter": "D",
+        "text": "Language Understanding (LUIS)"
+      }
+    ],
+    "correctAnswer": "D"
+  },
+  {
+    "id": 109,
+    "topic": "ml_fundamentals",
+    "explanation": "Language Understanding (LUIS) is a cloud-based API service that applies custom machine-learning intelligence to a user's conversational, natural language text to predict overall meaning, and pull out relevant, detailed information.  \nDesign your LUIS model with categories of user intentions called intents. Each intent needs examples of user utterances. Each utterance can provide data that needs to be extracted with machine-learning entities.",
+    "reference": "https://docs.microsoft.com/en-us/azure/cognitive-services/luis/what-is-luis",
+    "contextImages": [],
+    "type": "mcq",
+    "text": "You are developing a chatbot solution in Azure.  \nWhich service should you use to determine a user's intent?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Translator"
+      },
+      {
+        "letter": "B",
+        "text": "QnA Maker"
+      },
+      {
+        "letter": "C",
+        "text": "Speech"
+      },
+      {
+        "letter": "D",
+        "text": "Language Understanding (LUIS)"
+      }
+    ],
+    "correctAnswer": "D"
+  },
+  {
+    "id": 110,
+    "topic": "nlp",
+    "explanation": "Translator is a cloud-based machine translation service you can use to translate text in near real-time through a simple REST API call. The service uses modern neural machine translation technology and offers statistical machine translation technology. Custom Translator is an extension of Translator, which allows you to build neural translation systems.",
+    "reference": "https://docs.microsoft.com/en-us/azure/cognitive-services/translator/",
+    "contextImages": [],
+    "type": "mcq",
+    "text": "You need to make the written press releases of your company available in a range of languages.  \nWhich service should you use?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Translator"
+      },
+      {
+        "letter": "B",
+        "text": "Text Analytics"
+      },
+      {
+        "letter": "C",
+        "text": "Speech"
+      },
+      {
+        "letter": "D",
+        "text": "Language Understanding (LUIS)"
+      }
+    ],
+    "correctAnswer": "A"
+  },
+  {
+    "id": 111,
+    "topic": "nlp",
+    "type": "yesno",
+    "text": "For each of the following statements, select Yes if the statement is true. Otherwise, select No.",
+    "statements": [
+      {
+        "text": "The Text Analytics service can identify in which language text is written.",
+        "correct": "Yes"
+      },
+      {
+        "text": "The Text Analytics service can detect handwritten signatures in a document.",
+        "correct": "No"
+      },
+      {
+        "text": "The Text Analytics service can identify companies and organizations mentioned in a document.",
+        "correct": "Yes"
+      }
+    ],
+    "explanation": "Text Analytics supports language detection and entity recognition (companies). Signature detection = computer vision.",
+    "reference": "https://docs.microsoft.com/en-us/azure/cognitive-services/text-analytics/overview"
+  },
+  {
+    "id": 112,
+    "topic": "nlp",
+    "type": "dragdrop",
+    "text": "Match the types of natural language processing workloads to the appropriate scenarios.",
+    "items": [
+      "Entity recognition",
+      "Key phrase extraction",
+      "Language modeling",
+      "Sentiment analysis",
+      "Translation",
+      "Speech recognition and speech synthesis"
+    ],
+    "targets": [
+      {
+        "text": "Extracts persons, locations, and organizations from the text",
+        "correctItem": "Entity recognition"
+      },
+      {
+        "text": "Evaluates text along a positive-negative scale",
+        "correctItem": "Sentiment analysis"
+      },
+      {
+        "text": "Converts text to a different language",
+        "correctItem": "Translation"
+      }
+    ],
+    "explanation": "Named entity extraction = entity recognition. Positive/negative scale = sentiment analysis. Language conversion = translation.",
+    "reference": "https://docs.microsoft.com/en-in/azure/cognitive-services/text-analytics/how-tos/text-analytics-how-to-entity-linking"
+  },
+  {
+    "id": 113,
+    "topic": "nlp",
+    "type": "yesno",
+    "text": "For each of the following statements, select Yes if the statement is true. Otherwise, select No.",
+    "statements": [
+      {
+        "text": "Monitoring online service reviews for profanities is an example of natural language processing.",
+        "correct": "Yes"
+      },
+      {
+        "text": "Identifying brand logos in an image is an example of natural languages processing.",
+        "correct": "No"
+      },
+      {
+        "text": "Monitoring public news sites for negative mentions of a product is an example of natural language processing.",
+        "correct": "Yes"
+      }
+    ],
+    "explanation": "Text moderation and sentiment monitoring = NLP. Logo detection in images = computer vision.",
+    "reference": "https://azure.microsoft.com/es-es/blog/machine-assisted-text-classification-on-content-moderator-public-preview/"
+  },
+  {
+    "id": 114,
+    "topic": "nlp",
+    "explanation": "Sentiment Analysis is the process of determining whether a piece of writing is positive, negative or neutral.",
+    "reference": "https://docs.microsoft.com/en-us/azure/architecture/data-guide/technology-choices/natural-language-processing",
+    "contextImages": [],
+    "type": "mcq",
+    "text": "You are developing a natural language processing solution in Azure. The solution will analyze customer reviews and determine how positive or negative each review is.  \nThis is an example of which type of natural language processing workload?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "language detection"
+      },
+      {
+        "letter": "B",
+        "text": "sentiment analysis"
+      },
+      {
+        "letter": "C",
+        "text": "key phrase extraction"
+      },
+      {
+        "letter": "D",
+        "text": "entity recognition"
+      }
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": 115,
+    "topic": "nlp",
+    "type": "mcq",
+    "text": "You use natural language processing to process text from a Microsoft news story. You receive the output shown in the following exhibit. Which type of natural languages processing was performed?",
+    "contextImages": [
+      "33f2cf69-cbfd-4dcf-9ad2-272f2375ca3d.png"
+    ],
+    "options": [
+      "entity recognition",
+      "key phrase extraction",
+      "sentiment analysis",
+      "translation"
+    ],
+    "correctAnswer": "entity recognition",
+    "explanation": "The output identifies named entities (persons, organizations, locations) from text — entity recognition.",
+    "reference": "https://docs.microsoft.com/en-in/azure/cognitive-services/text-analytics/how-tos/text-analytics-how-to-entity-linking"
+  },
+  {
+    "id": 116,
+    "topic": "nlp",
+    "type": "dragdrop",
+    "text": "You plan to apply Text Analytics API features to a technical support ticketing system. Match the Text Analytics API features to the appropriate natural language processing scenarios.",
+    "items": [
+      "Entity recognition",
+      "Key phrase extraction",
+      "Language detection",
+      "Sentiment analysis"
+    ],
+    "targets": [
+      {
+        "text": "Understand how upset a customer is based on the text contained in the support ticket.",
+        "correctItem": "Sentiment analysis"
+      },
+      {
+        "text": "Summarize important information from the support ticket.",
+        "correctItem": "Key phrase extraction"
+      },
+      {
+        "text": "Extract key dates from the support ticket.",
+        "correctItem": "Entity recognition"
+      }
+    ],
+    "explanation": "Customer upset level = sentiment. Key info summary = key phrase extraction. Extracting dates = entity recognition.",
+    "reference": "https://docs.microsoft.com/en-us/azure/architecture/data-guide/technology-choices/natural-language-processing"
+  },
+  {
+    "id": 117,
+    "topic": "nlp",
+    "explanation": "Utterances are input from the user that your app needs to interpret.",
+    "reference": "https://docs.microsoft.com/en-us/azure/cognitive-services/LUIS/luis-concept-utterance",
+    "contextImages": [],
+    "type": "mcq",
+    "text": "You are authoring a Language Understanding (LUIS) application to support a music festival.  \nYou want users to be able to ask questions about scheduled shows, such as: \\`Which act is playing on the main stage?\\`  \nThe question \\`Which act is playing on the main stage?\\` is an example of which type of element?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "an intent"
+      },
+      {
+        "letter": "B",
+        "text": "an utterance"
+      },
+      {
+        "letter": "C",
+        "text": "a domain"
+      },
+      {
+        "letter": "D",
+        "text": "an entity"
+      }
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": 118,
+    "topic": "conversational_ai",
+    "explanation": "",
+    "contextImages": [],
+    "type": "mcq",
+    "text": "You build a QnA Maker bot by using a frequently asked questions (FAQ) page.  \nYou need to add professional greetings and other responses to make the bot more user friendly.  \nWhat should you do?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Increase the confidence threshold of responses"
+      },
+      {
+        "letter": "B",
+        "text": "Enable active learning"
+      },
+      {
+        "letter": "C",
+        "text": "Create multi-turn questions"
+      },
+      {
+        "letter": "D",
+        "text": "Add chit-chat"
+      }
+    ],
+    "correctAnswer": "D"
+  },
+  {
+    "id": 119,
+    "topic": "conversational_ai",
+    "explanation": "",
+    "contextImages": [],
+    "type": "mcq",
+    "text": "You need to develop a chatbot for a website. The chatbot must answer users' questions based on the information in the following documents:\n\n\\-A product troubleshooting guide in a Microsoft Word document  \n\\-A frequently asked questions (FAQ) list on a webpage\n\nWhich service should you use to process the documents?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Azure Bot Service"
+      },
+      {
+        "letter": "B",
+        "text": "Language Understanding"
+      },
+      {
+        "letter": "C",
+        "text": "Text Analytics"
+      },
+      {
+        "letter": "D",
+        "text": "QnA Maker"
+      }
+    ],
+    "correctAnswer": "D"
+  },
+  {
+    "id": 120,
+    "topic": "ml_fundamentals",
+    "explanation": "The None intent is filled with utterances that are outside of your domain.",
+    "reference": "https://docs.microsoft.com/en-us/azure/cognitive-services/LUIS/luis-concept-intent",
+    "contextImages": [],
+    "type": "mcq",
+    "text": "You are building a Language Understanding model for an e-commerce business.  \nYou need to ensure that the model detects when utterances are outside the intended scope of the model.  \nWhat should you do?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Test the model by using new utterances"
+      },
+      {
+        "letter": "B",
+        "text": "Add utterances to the None intent"
+      },
+      {
+        "letter": "C",
+        "text": "Create a prebuilt task entity"
+      },
+      {
+        "letter": "D",
+        "text": "Create a new model"
+      }
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": 121,
+    "topic": "nlp",
+    "explanation": "Natural language processing (NLP) is used for tasks such as sentiment analysis, topic detection, language detection, key phrase extraction, and document categorization.",
+    "reference": "https://docs.microsoft.com/en-us/azure/architecture/data-guide/technology-choices/natural-language-processing",
+    "contextImages": [],
+    "type": "multi",
+    "text": "Which two scenarios are examples of a natural language processing workload? Each correct answer presents a complete solution.  \nNote: Each correct selection is worth one point.",
+    "options": [
+      {
+        "letter": "A",
+        "text": "monitoring the temperature of machinery to turn on a fan when the temperature reaches a specific threshold"
+      },
+      {
+        "letter": "B",
+        "text": "a smart device in the home that responds to questions such as, \"What will the weather be like today?\""
+      },
+      {
+        "letter": "C",
+        "text": "a website that uses a knowledge base to interactively respond to users' questions"
+      },
+      {
+        "letter": "D",
+        "text": "assembly line machinery that autonomously inserts headlamps into cars"
+      }
+    ],
+    "correctAnswers": [
+      "B",
+      "C"
+    ]
+  },
+  {
+    "id": 122,
+    "topic": "ml_fundamentals",
+    "explanation": "Key phrase extraction is one of the features offered by Azure Cognitive Service for Language, a collection of machine learning and AI algorithms in the cloud for developing intelligent applications that involve written language. Use key phrase extraction to quickly identify the main concepts in text. For example, in the text  \n\"The food was delicious and the staff were wonderful.\", key phrase extraction will return the main topics: \"food\" and \"wonderful staff\".",
+    "reference": "https://docs.microsoft.com/en-us/azure/cognitive-services/language-service/key-phrase-extraction/overview",
+    "contextImages": [],
+    "type": "multi",
+    "text": "You have an AI solution that provides users with the ability to control smart devices by using verbal commands.  \nWhich two types of natural language processing (NLP) workloads does the solution use? Each correct answer presents part of the solution.  \nNote: Each correct selection is worth one point.",
+    "options": [
+      {
+        "letter": "A",
+        "text": "text-to-speech"
+      },
+      {
+        "letter": "B",
+        "text": "key phrase extraction"
+      },
+      {
+        "letter": "C",
+        "text": "speech-to-text"
+      },
+      {
+        "letter": "D",
+        "text": "language modeling"
+      },
+      {
+        "letter": "E",
+        "text": "translation"
+      }
+    ],
+    "correctAnswers": [
+      "B",
+      "C"
+    ]
+  },
+  {
+    "id": 123,
+    "topic": "nlp",
+    "type": "yesno",
+    "text": "For each of the following statements, select Yes if the statement is true. Otherwise, select No.",
+    "statements": [
+      {
+        "text": "The Language service can identify in which language text is written.",
+        "correct": "Yes"
+      },
+      {
+        "text": "The Language service can detect handwritten signatures in a document.",
+        "correct": "No"
+      },
+      {
+        "text": "The Language service can identify companies and organizations mentioned in a document.",
+        "correct": "Yes"
+      }
+    ],
+    "explanation": "Language service supports language detection and entity recognition. Signature detection = computer vision.",
+    "reference": "https://docs.microsoft.com/en-us/azure/cognitive-services/language-service/overview"
+  },
+  {
+    "id": 124,
+    "topic": "conversational_ai",
+    "type": "dragdrop",
+    "text": "You plan to use Azure Cognitive Services to develop a voice controlled personal assistant app. Match the Azure Cognitive Services to the appropriate tasks.",
+    "items": [
+      "Speech",
+      "Language service",
+      "Translator Text"
+    ],
+    "targets": [
+      {
+        "text": "Convert a user's speech to text",
+        "correctItem": "Speech"
+      },
+      {
+        "text": "Identify a user's intent",
+        "correctItem": "Language service"
+      },
+      {
+        "text": "Provide a spoken response to the user",
+        "correctItem": "Speech"
+      }
+    ],
+    "explanation": "Speech-to-text and text-to-speech = Speech service. Intent recognition = Language service.",
+    "reference": "https://docs.microsoft.com/en-us/azure/cognitive-services/speech-service/overview"
+  },
+  {
+    "id": 125,
+    "topic": "nlp",
+    "explanation": "Translator, an AI service for real-time document and text translation.  \nTranslate text instantly or in batches across more than 100 languages, powered by the latest innovations in machine translation. Support a wide range of use cases, such as translation for call centers, multilingual conversational agents, or in-app communication.",
+    "reference": "https://azure.microsoft.com/en-us/services/cognitive-services/translator/4",
+    "contextImages": [],
+    "type": "mcq",
+    "text": "You need to make the written press releases of your company available in a range of languages.  \nWhich service should you use?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Speech"
+      },
+      {
+        "letter": "B",
+        "text": "Language"
+      },
+      {
+        "letter": "C",
+        "text": "Translator"
+      },
+      {
+        "letter": "D",
+        "text": "Personalizer"
+      }
+    ],
+    "correctAnswer": "C"
+  },
+  {
+    "id": 126,
+    "topic": "ml_fundamentals",
+    "explanation": "Key phrase extraction is one of the features offered by Azure Cognitive Service for Language, a collection of machine learning and AI algorithms in the cloud for developing intelligent applications that involve written language. Use key phrase extraction to quickly identify the main concepts in text. For example, in the text  \n\"The food was delicious and the staff were wonderful.\", key phrase extraction will return the main topics: \"food\" and \"wonderful staff\".",
+    "reference": "https://docs.microsoft.com/en-us/azure/cognitive-services/language-service/key-phrase-extraction/overview",
+    "contextImages": [],
+    "type": "mcq",
+    "text": "You have insurance claim reports that are stored as text.  \nYou need to extract key terms from the reports to generate summaries.  \nWhich type of AI workload should you use?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "anomaly detection"
+      },
+      {
+        "letter": "B",
+        "text": "natural language processing"
+      },
+      {
+        "letter": "C",
+        "text": "computer vision"
+      },
+      {
+        "letter": "D",
+        "text": "knowledge mining"
+      }
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": 127,
+    "topic": "computer_vision",
+    "explanation": "Speech, a managed service offering industry-leading speech capabilities such as speech-to-text, text-to-speech, speech translation, and speaker recognition.",
+    "reference": "https://azure.microsoft.com/en-us/services/cognitive-services/speech-services/",
+    "contextImages": [],
+    "type": "mcq",
+    "text": "You need to build an app that will read recipe instructions aloud to support users who have reduced vision.  \nWhich version service should you use?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Language service"
+      },
+      {
+        "letter": "B",
+        "text": "Translator"
+      },
+      {
+        "letter": "C",
+        "text": "Speech"
+      },
+      {
+        "letter": "D",
+        "text": "Personalizer"
+      }
+    ],
+    "correctAnswer": "C"
+  },
+  {
+    "id": 128,
+    "topic": "conversational_ai",
+    "explanation": "",
+    "contextImages": [],
+    "type": "mcq",
+    "text": "You have a webchat bot that provides responses from a QnA Maker knowledge base.  \nYou need to ensure that the bot uses user feedback to improve the relevance of the responses over time.  \nWhat should you use?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "key phrase extraction"
+      },
+      {
+        "letter": "B",
+        "text": "sentiment analysis"
+      },
+      {
+        "letter": "C",
+        "text": "business logic"
+      },
+      {
+        "letter": "D",
+        "text": "active learning"
+      }
+    ],
+    "correctAnswer": "D"
+  },
+  {
+    "id": 129,
+    "topic": "conversational_ai",
+    "explanation": "",
+    "contextImages": [],
+    "type": "mcq",
+    "text": "You are developing a conversational AI solution that will communicate with users through multiple channels including email, Microsoft Teams, and webchat.  \nWhich service should you use?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Text Analytics"
+      },
+      {
+        "letter": "B",
+        "text": "Azure Bot Service"
+      },
+      {
+        "letter": "C",
+        "text": "Translator"
+      },
+      {
+        "letter": "D",
+        "text": "Form Recognizer"
+      }
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": 130,
+    "topic": "conversational_ai",
+    "type": "yesno",
+    "text": "For each of the following statements, select Yes if the statement is true. Otherwise, select No.",
+    "statements": [
+      {
+        "text": "A bot that responds to queries by internal users is an example of a conversational AI workload.",
+        "correct": "Yes"
+      },
+      {
+        "text": "An application that displays images relating to an entered search term is an example of a conversational AI workload.",
+        "correct": "No"
+      },
+      {
+        "text": "A web form used to submit a request to reset a password is an example of a conversational AI workload.",
+        "correct": "Yes"
+      }
+    ],
+    "explanation": "Bots and interactive forms are conversational AI. Image search is computer vision/search, not conversational AI.",
+    "reference": "https://docs.microsoft.com/en-us/azure/bot-service/bot-service-overview-introduction"
+  },
+  {
+    "id": 131,
+    "topic": "conversational_ai",
+    "explanation": "Automatic extraction  \nExtract question-answer pairs from semi-structured content, including FAQ pages, support websites, excel files, SharePoint documents, product manuals and policies.",
+    "reference": "https://docs.microsoft.com/en-us/azure/cognitive-services/qnamaker/concepts/content-types",
+    "contextImages": [],
+    "type": "multi",
+    "text": "You need to provide content for a business chatbot that will help answer simple user queries.  \nWhat are three ways to create question and answer text by using QnA Maker? Each correct answer presents a complete solution.  \nNote: Each correct selection is worth one point.",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Generate the questions and answers from an existing webpage."
+      },
+      {
+        "letter": "B",
+        "text": "Use automated machine learning to train a model based on a file that contains the questions."
+      },
+      {
+        "letter": "C",
+        "text": "Manually enter the questions and answers."
+      },
+      {
+        "letter": "D",
+        "text": "Connect the bot to the Cortana channel and ask questions by using Cortana."
+      },
+      {
+        "letter": "E",
+        "text": "Import chit-chat content from a predefined data source."
+      }
+    ],
+    "correctAnswers": [
+      "A",
+      "C",
+      "E"
+    ]
+  },
+  {
+    "id": 132,
+    "topic": "conversational_ai",
+    "explanation": "QnA Maker is a cloud-based API service that lets you create a conversational question-and-answer layer over your existing data. Use it to build a knowledge base by extracting questions and answers from your semi-structured content, including FAQs, manuals, and documents.",
+    "reference": "https://azure.microsoft.com/en-us/services/cognitive-services/qna-maker/ #### Gentle Reminder Please prepare for the recently added Gen AI under the AI-900 certification which is missing in this list. You can find the necessary resources at [Introduction to Generative AI](https://learn.microsoft.com/training/paths/introduction-generative-ai/). --- If you found this repository helpful, please leave a star. Feel free to reach out to me on [LinkedIn](https://linkedin.com/in/anxkhn) or [Twitter](https://x.com/anxkhn) if you need any assistance.v",
+    "contextImages": [],
+    "type": "mcq",
+    "text": "You have a frequently asked questions (FAQ) PDF file.  \nYou need to create a conversational support system based on the FAQ.  \nWhich service should you use?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "QnA Maker"
+      },
+      {
+        "letter": "B",
+        "text": "Text Analytics"
+      },
+      {
+        "letter": "C",
+        "text": "Computer Vision"
+      },
+      {
+        "letter": "D",
+        "text": "Language Understanding (LUIS)"
+      }
+    ],
+    "correctAnswer": "A"
+  }
+]

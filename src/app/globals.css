@@ -3,25 +3,114 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+  /* Brand — Azure Blue */
+  --primary: #0078D4;
+  --primary-light: #2B88D8;
+  --primary-dark: #005A9E;
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  /* Semantic */
+  --blue-400: #60a5fa;
+  --blue-500: #3b82f6;
+  --blue-600: #2563eb;
+  --green-500: #10b981;
+  --green-600: #059669;
+  --red-500: #ef4444;
+  --red-600: #dc2626;
+  --amber-500: #f59e0b;
+  --slate-400: #94a3b8;
+  --slate-500: #64748b;
+
+  /* Surface */
+  --bg: #FAFAF7;
+  --bg-elev: #FFFFFF;
+  --bg-soft: #F2F2EC;
+  --bg-sunken: #EDEDE5;
+  --border: #E4E4DC;
+  --border-strong: #D4D4C8;
+  --fg: #14171A;
+  --fg-muted: #5B6268;
+  --fg-subtle: #8A9096;
+
+  /* Sidebar */
+  --sidebar-bg: #14171A;
+  --sidebar-fg: #D4D4C8;
+  --sidebar-fg-muted: #8A9096;
+  --sidebar-active-bg: rgba(43, 136, 216, 0.13);
+  --sidebar-active-fg: #93c5fd;
+  --sidebar-border: #23272B;
+
+  /* Shadows */
+  --shadow-sm: 0 1px 2px rgba(0,0,0,0.04);
+  --shadow-md: 0 4px 16px -4px rgba(0,0,0,0.08), 0 2px 4px rgba(0,0,0,0.04);
+  --shadow-lg: 0 12px 40px -8px rgba(0,0,0,0.12), 0 4px 12px -4px rgba(0,0,0,0.06);
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  color: var(--fg);
+  background: var(--bg);
+  font-family: var(--font-inter), system-ui, sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
+
+/* Custom scrollbar */
+::-webkit-scrollbar { width: 10px; height: 10px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: var(--border-strong); border-radius: 10px; border: 2px solid var(--bg); }
+::-webkit-scrollbar-thumb:hover { background: var(--fg-subtle); }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+
+  /* Display font — Playfair Display */
+  .font-display {
+    font-family: var(--font-playfair), Georgia, serif;
+    font-feature-settings: 'lnum', 'tnum';
+  }
+
+  /* Mono font — JetBrains Mono */
+  .font-jetbrains {
+    font-family: var(--font-jetbrains), ui-monospace, monospace;
+    font-feature-settings: 'tnum';
+  }
+
+  /* Tabular numbers */
+  .tnum {
+    font-variant-numeric: tabular-nums;
+  }
+
+  .stat-number {
+    @apply text-5xl font-black tracking-tight text-ink tnum;
+    font-family: var(--font-playfair), Georgia, serif;
+  }
+
+  .label-caps {
+    font-family: var(--font-jetbrains), ui-monospace, monospace;
+    @apply text-[10px] font-semibold uppercase tracking-[0.14em] text-ink-faint;
+  }
+
+  .card {
+    @apply bg-card rounded-2xl border border-cream-200;
+    box-shadow: var(--shadow-sm);
+  }
+
+  .card:hover {
+    box-shadow: var(--shadow-md);
+  }
+
+  /* Page title — Playfair Display */
+  .page-title {
+    font-family: var(--font-playfair), Georgia, serif;
+    @apply text-[22px] font-semibold tracking-[-0.01em] text-ink;
+  }
+
+  /* Keyboard shortcut pill */
+  .kbd {
+    font-family: var(--font-jetbrains), monospace;
+    @apply text-[11px] px-1.5 py-0.5 border border-cream-200 rounded bg-cream-100 text-ink-muted;
   }
 }
