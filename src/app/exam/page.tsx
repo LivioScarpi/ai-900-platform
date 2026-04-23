@@ -146,7 +146,6 @@ export default function ExamPage() {
 
   // ── Running ────────────────────────────────────────────────────────────────
   const currentQuestion = questions[index];
-  const answered = userAnswers[index] !== undefined;
   const allAnswered = Object.keys(userAnswers).length === questions.length;
 
   return (

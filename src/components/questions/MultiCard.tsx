@@ -19,7 +19,7 @@ export function MultiCard({ question, onAnswer }: Props) {
     if (confirmed) return;
     setSelected((prev) => {
       const next = new Set(prev);
-      next.has(letter) ? next.delete(letter) : next.add(letter);
+      if (next.has(letter)) { next.delete(letter); } else { next.add(letter); }
       return next;
     });
   }
