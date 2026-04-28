@@ -66,10 +66,9 @@ body {
     text-wrap: balance;
   }
 
-  /* Display font — Playfair Display */
+  /* Display font — DM Sans */
   .font-display {
-    font-family: var(--font-playfair), Georgia, serif;
-    font-feature-settings: 'lnum', 'tnum';
+    font-family: var(--font-dm-sans), system-ui, sans-serif;
   }
 
   /* Mono font — JetBrains Mono */
@@ -85,7 +84,7 @@ body {
 
   .stat-number {
     @apply text-5xl font-black tracking-tight text-ink tnum;
-    font-family: var(--font-playfair), Georgia, serif;
+    font-family: var(--font-dm-sans), system-ui, sans-serif;
   }
 
   .label-caps {
@@ -102,9 +101,9 @@ body {
     box-shadow: var(--shadow-md);
   }
 
-  /* Page title — Playfair Display */
+  /* Page title — DM Sans */
   .page-title {
-    font-family: var(--font-playfair), Georgia, serif;
+    font-family: var(--font-dm-sans), system-ui, sans-serif;
     @apply text-[22px] font-semibold tracking-[-0.01em] text-ink;
   }
 

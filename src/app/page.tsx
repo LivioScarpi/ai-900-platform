@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { getAllQuestions } from "@/lib/questions";
 
 // ── Illustrations ──────────────────────────────────────────────────────────
 
@@ -113,14 +114,15 @@ function IllustrationDashboard() {
 
 // ── Data ───────────────────────────────────────────────────────────────────
 
-const MODES = [
+function getModes(totalQuestions: number) {
+  return [
   {
     href: "/study/sequential",
     badge: "STUDY",
     badgeColor: "bg-status-blue-bg text-status-blue border border-blue-200",
     label: "Sequential Review",
     sub: "Work through all 132 questions one by one, in order. The best way to build a solid foundation before attempting a timed exam.",
-    stat: "132",
+    stat: String(totalQuestions),
     statColor: "text-brand",
     statLabel: "questions",
     accent: "from-brand/[0.07] to-transparent",
@@ -135,7 +137,7 @@ const MODES = [
     badgeColor: "bg-purple-100 text-purple-700 border border-purple-200",
     label: "Random Sequential",
     sub: "All questions shuffled into a random order decided at the start of the session. Same thorough coverage as sequential, but in a different sequence every time.",
-    stat: "132",
+    stat: String(totalQuestions),
     statColor: "text-purple-600",
     statLabel: "questions shuffled",
     accent: "from-purple-500/[0.07] to-transparent",
@@ -189,9 +191,11 @@ const MODES = [
     color: "#16a34a",
     illustration: <IllustrationDashboard />,
   },
-];
+  ];
+}
 
 export default function HomePage() {
+  const MODES = getModes(getAllQuestions().length);
   return (
     <div className="flex flex-col">
       {/* Header */}

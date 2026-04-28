@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter, Playfair_Display, JetBrains_Mono } from "next/font/google";
+import { Inter, DM_Sans, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 import { AuthProvider } from "@/components/AuthProvider";
 
@@ -9,9 +9,9 @@ const inter = Inter({
   display: "swap",
 });
 
-const playfair = Playfair_Display({
+const dmSans = DM_Sans({
   subsets: ["latin"],
-  variable: "--font-playfair",
+  variable: "--font-dm-sans",
   weight: ["400", "500", "600", "700", "800", "900"],
   display: "swap",
 });
@@ -35,7 +35,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="scroll-smooth">
-      <body className={`${inter.variable} ${playfair.variable} ${jetbrainsMono.variable} antialiased bg-cream`}>
+      <body className={`${inter.variable} ${dmSans.variable} ${jetbrainsMono.variable} antialiased bg-cream`}>
         <AuthProvider>{children}</AuthProvider>
       </body>
     </html>
