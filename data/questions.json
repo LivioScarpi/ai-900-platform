@@ -686,9 +686,18 @@
       "3f1cd94c-3400-440a-9cc8-c7307a45eebe.png"
     ],
     "options": [
-      { "letter": "A", "text": "classification" },
-      { "letter": "B", "text": "regression" },
-      { "letter": "C", "text": "clustering" }
+      {
+        "letter": "A",
+        "text": "classification"
+      },
+      {
+        "letter": "B",
+        "text": "regression"
+      },
+      {
+        "letter": "C",
+        "text": "clustering"
+      }
     ],
     "correctAnswer": "B",
     "explanation": "Predicted vs True charts evaluate regression models by comparing predicted numeric values to actual values.",
@@ -1111,11 +1120,26 @@
       "9ba34ebe-f496-4d86-adb2-8b637bbd26c1.png"
     ],
     "options": [
-      { "letter": "A", "text": "Education Level" },
-      { "letter": "B", "text": "Last Name" },
-      { "letter": "C", "text": "Age" },
-      { "letter": "D", "text": "Income Range" },
-      { "letter": "E", "text": "First Name" }
+      {
+        "letter": "A",
+        "text": "Education Level"
+      },
+      {
+        "letter": "B",
+        "text": "Last Name"
+      },
+      {
+        "letter": "C",
+        "text": "Age"
+      },
+      {
+        "letter": "D",
+        "text": "Income Range"
+      },
+      {
+        "letter": "E",
+        "text": "First Name"
+      }
     ],
     "correctAnswers": [
       "A",
@@ -2004,10 +2028,22 @@
       "06c4b074-8caa-4819-ad77-d3362b9b28c9.png"
     ],
     "options": [
-      { "letter": "A", "text": "object detection" },
-      { "letter": "B", "text": "face detection" },
-      { "letter": "C", "text": "optical character recognition (OCR)" },
-      { "letter": "D", "text": "image classification" }
+      {
+        "letter": "A",
+        "text": "object detection"
+      },
+      {
+        "letter": "B",
+        "text": "face detection"
+      },
+      {
+        "letter": "C",
+        "text": "optical character recognition (OCR)"
+      },
+      {
+        "letter": "D",
+        "text": "image classification"
+      }
     ],
     "correctAnswer": "A",
     "explanation": "Annotated images with bounding boxes around identified items are produced by object detection.",
@@ -2815,10 +2851,22 @@
       "33f2cf69-cbfd-4dcf-9ad2-272f2375ca3d.png"
     ],
     "options": [
-      { "letter": "A", "text": "entity recognition" },
-      { "letter": "B", "text": "key phrase extraction" },
-      { "letter": "C", "text": "sentiment analysis" },
-      { "letter": "D", "text": "translation" }
+      {
+        "letter": "A",
+        "text": "entity recognition"
+      },
+      {
+        "letter": "B",
+        "text": "key phrase extraction"
+      },
+      {
+        "letter": "C",
+        "text": "sentiment analysis"
+      },
+      {
+        "letter": "D",
+        "text": "translation"
+      }
     ],
     "correctAnswer": "A",
     "explanation": "The output identifies named entities (persons, organizations, locations) from text — entity recognition.",
@@ -3300,5 +3348,196 @@
       }
     ],
     "correctAnswer": "A"
+  },
+  {
+    "id": 133,
+    "topic": "ml_fundamentals",
+    "type": "mcq",
+    "text": "Detecting a change in hospital infection rates is a scenario of Conversational AI.",
+    "options": [
+      {
+        "letter": "A",
+        "text": "False"
+      },
+      {
+        "letter": "B",
+        "text": "True"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Detecting unusual changes in data (like infection rates) is a scenario of Anomaly Detection, not Conversational AI.",
+    "contextImages": []
+  },
+  {
+    "id": 134,
+    "topic": "azure_cognitive",
+    "type": "mcq",
+    "text": "Your team member is planning to use the Form Recognizer pre-built receipt model. Which kind of Azure resource should you recommend to create?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Face Service"
+      },
+      {
+        "letter": "B",
+        "text": "Form Recognizer"
+      },
+      {
+        "letter": "C",
+        "text": "Computer Vision"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "To use the Form Recognizer pre-built receipt model, you need to create a Form Recognizer resource in Azure.",
+    "contextImages": []
+  },
+  {
+    "id": 135,
+    "topic": "nlp",
+    "type": "multi",
+    "text": "You are developing a system that scans the news for articles about your customers and alerts employees when there is a negative article. Positive articles must be added to a press book. Which natural language processing tasks should you use to complete the process?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Entity Recognition"
+      },
+      {
+        "letter": "B",
+        "text": "Translation"
+      },
+      {
+        "letter": "C",
+        "text": "Speech Synthesis"
+      },
+      {
+        "letter": "D",
+        "text": "Sentiment Analysis"
+      }
+    ],
+    "correctAnswers": [
+      "A",
+      "D"
+    ],
+    "explanation": "Entity Recognition is used to identify the customers mentioned in articles, and Sentiment Analysis is used to determine whether the coverage is positive or negative.",
+    "contextImages": [
+      "nlp-flow-diagram-q135.png"
+    ]
+  },
+  {
+    "id": 136,
+    "topic": "ml_fundamentals",
+    "type": "mcq",
+    "text": "Select the correct use case from the provided scenarios for classification.",
+    "options": [
+      {
+        "letter": "A",
+        "text": "predicting how many cups of coffee a person will drink based on how many hours the person slept the previous night."
+      },
+      {
+        "letter": "B",
+        "text": "predicting how many minutes it will take someone to run a race based on past race times."
+      },
+      {
+        "letter": "C",
+        "text": "predicting whether someone uses a bicycle to travel to work based on the distance from home to work."
+      },
+      {
+        "letter": "D",
+        "text": "analyzing the contents of images and grouping images that have similar colors."
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Predicting whether someone uses a bicycle (Yes/No) is a binary classification problem. Options A and B predict numeric values (regression). Option D groups by similarity (clustering).",
+    "contextImages": []
+  },
+  {
+    "id": 137,
+    "topic": "azure_cognitive",
+    "type": "mcq",
+    "text": "Which Azure OpenAI model can generate original images from natural language?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "DALL-E"
+      },
+      {
+        "letter": "B",
+        "text": "Whisper"
+      },
+      {
+        "letter": "C",
+        "text": "Embeddings"
+      },
+      {
+        "letter": "D",
+        "text": "GPT3.5"
+      },
+      {
+        "letter": "E",
+        "text": "GPT-4"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "DALL-E is the Azure OpenAI model designed to generate original images from natural language descriptions. Whisper is for speech-to-text, Embeddings convert text to vectors, and GPT models generate text.",
+    "contextImages": []
+  },
+  {
+    "id": 138,
+    "topic": "azure_ml",
+    "type": "mcq",
+    "text": "You have a dataset. You need to build an Azure Machine Learning classification model that will identify defective products. What should you do first?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Create a clustering model."
+      },
+      {
+        "letter": "B",
+        "text": "Split the data into training and testing datasets."
+      },
+      {
+        "letter": "C",
+        "text": "Create a classification model."
+      },
+      {
+        "letter": "D",
+        "text": "Load the dataset."
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "The first step in building any machine learning model is to load the dataset. You cannot split, train, or evaluate without first loading the data.",
+    "contextImages": []
+  },
+  {
+    "id": 139,
+    "topic": "conversational_ai",
+    "type": "multi",
+    "text": "What are the various possible channels a bot can be connected to? Select all correct options.",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Microsoft Teams"
+      },
+      {
+        "letter": "B",
+        "text": "Email"
+      },
+      {
+        "letter": "C",
+        "text": "Webchat"
+      },
+      {
+        "letter": "D",
+        "text": "Alexa"
+      }
+    ],
+    "correctAnswers": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "explanation": "Azure Bot Service supports connecting bots to multiple channels including Microsoft Teams, Email, Webchat, Alexa, and many others through the Azure Bot Framework channel connectors.",
+    "contextImages": []
   }
 ]
