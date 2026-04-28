@@ -85,11 +85,15 @@ function DropZone({
       </span>
       <div ref={setNodeRef} className={zoneClass}>
         {assignedItem ? (
-          <span
-            className={`font-semibold ${confirmed ? (isCorrect ? "text-status-green" : "text-status-red") : "text-brand"}`}
-          >
-            {assignedItem}
-          </span>
+          confirmed ? (
+            <span
+              className={`font-semibold ${isCorrect ? "text-status-green" : "text-status-red"}`}
+            >
+              {assignedItem}
+            </span>
+          ) : (
+            <DraggableChip id={assignedItem} label={assignedItem} disabled={false} />
+          )
         ) : (
           <span className="text-gray-400">Drop here</span>
         )}
@@ -125,17 +129,17 @@ export function DragDropCard({ question, onAnswer }: Props) {
   function handleDragEnd(event: DragEndEvent) {
     setActiveId(null);
     const { active, over } = event;
-    if (!over) return;
-    const targetIndex = parseInt(over.id as string, 10);
     const draggedItem = active.id as string;
 
     setAssignments((prev) => {
       const next = { ...prev };
-      // Remove this item from any other slot it was in
+      // Remove this item from any slot it was in
       for (const [k, v] of Object.entries(next)) {
         if (v === draggedItem) delete next[parseInt(k)];
       }
-      next[targetIndex] = draggedItem;
+      if (!over) return next; // dropped outside → item goes back to available list
+      const targetIndex = parseInt(over.id as string, 10);
+      if (!isNaN(targetIndex)) next[targetIndex] = draggedItem;
       return next;
     });
   }
