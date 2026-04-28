@@ -3977,5 +3977,161 @@
     ],
     "explanation": "Machine Learning = improving at tasks with experience (data-driven). Deep Learning = neural networks for complex cases. Artificial Intelligence = broad umbrella term for any technique that mimics human intelligence.",
     "contextImages": []
+  },
+  {
+    "id": 158,
+    "topic": "conversational_ai",
+    "type": "mcq",
+    "text": "'Translating speech from one language to another' is a scenario of Conversational AI. Select the correct option.",
+    "options": [
+      {
+        "letter": "A",
+        "text": "True"
+      },
+      {
+        "letter": "B",
+        "text": "False"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Translating speech from one language to another is a speech translation workload, which falls under the Speech/NLP service category — not Conversational AI. Conversational AI refers to chatbots, virtual assistants, and bot frameworks.",
+    "contextImages": []
+  },
+  {
+    "id": 159,
+    "topic": "conversational_ai",
+    "type": "mcq",
+    "text": "'Detecting spam in emails' is a scenario of Conversational AI. Select the correct option.",
+    "options": [
+      {
+        "letter": "A",
+        "text": "True"
+      },
+      {
+        "letter": "B",
+        "text": "False"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Spam detection is a classification machine learning workload, not Conversational AI. Conversational AI involves building chatbots and virtual agents that engage in dialogue.",
+    "contextImages": []
+  },
+  {
+    "id": 160,
+    "topic": "nlp",
+    "type": "mcq",
+    "text": "What are Large Language Models? Select the correct option.",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Models that use deep learning to process and understand natural language on a massive scale."
+      },
+      {
+        "letter": "B",
+        "text": "Models that only work with small amounts of data."
+      },
+      {
+        "letter": "C",
+        "text": "Models that only work with one language."
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Large Language Models (LLMs) are deep learning models trained on massive text datasets to understand and generate natural language at scale. They power services like Azure OpenAI.",
+    "contextImages": []
+  },
+  {
+    "id": 161,
+    "topic": "nlp",
+    "type": "mcq",
+    "text": "What is used to extract dates, quantities, and locations from text? Select the answer that correctly completes the sentence.",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Key phrase extraction"
+      },
+      {
+        "letter": "B",
+        "text": "Sentiment analysis"
+      },
+      {
+        "letter": "C",
+        "text": "Named Entity Recognition (NER)"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Named Entity Recognition (NER) identifies and extracts structured entities from text such as dates, quantities, locations, organizations, and people.",
+    "reference": "https://docs.microsoft.com/en-us/azure/cognitive-services/text-analytics/how-tos/text-analytics-how-to-entity-linking",
+    "contextImages": []
+  },
+  {
+    "id": 162,
+    "topic": "conversational_ai",
+    "type": "yesno",
+    "text": "For each of the following statements, select Yes if the statement is true. Otherwise, select No.",
+    "statements": [
+      {
+        "text": "You can communicate with a bot by using email.",
+        "correct": "Yes"
+      },
+      {
+        "text": "You can communicate with a bot by using Microsoft Teams.",
+        "correct": "Yes"
+      },
+      {
+        "text": "You can communicate with a bot by using a webchat interface.",
+        "correct": "Yes"
+      }
+    ],
+    "explanation": "Azure Bot Service supports multiple channels including email, Microsoft Teams, and webchat. All three are valid ways to communicate with a bot.",
+    "reference": "https://docs.microsoft.com/en-us/azure/bot-service/bot-service-channels-reference",
+    "contextImages": []
+  },
+  {
+    "id": 163,
+    "topic": "ml_fundamentals",
+    "explanation": "Azure's Computer Vision service gives you access to advanced algorithms that process images and return information based on the visual features you're interested in. Computer Vision can determine whether an image contains adult content, find specific brands or objects, or find human faces.",
+    "reference": "https://docs.microsoft.com/en-us/azure/cognitive-services/computer-vision/overview",
+    "contextImages": [],
+    "type": "mcq",
+    "text": "Your company wants to build a recycling machine for cans. The recycling machine must automatically identify cans of the correct shape and reject all other items.\nWhich type of AI workload should the company use?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "computer vision"
+      },
+      {
+        "letter": "B",
+        "text": "anomaly detection"
+      },
+      {
+        "letter": "C",
+        "text": "natural language processing"
+      },
+      {
+        "letter": "D",
+        "text": "conversational AI"
+      }
+    ],
+    "correctAnswer": "A"
+  },
+  {
+    "id": 164,
+    "topic": "azure_ml",
+    "explanation": "Automated Machine Learning (AutoML) is the process of automating the time-consuming, iterative tasks of machine learning model development. It allows data scientists, analysts, and developers to build ML models with high scale, efficiency, and productivity.",
+    "reference": "https://azure.microsoft.com/en-us/services/machine-learning/automatedml/#features",
+    "contextImages": [],
+    "type": "mcq",
+    "text": "Automated Machine Learning is the process of automating the time consuming iterative tasks of machine learning model development. Select the correct option.",
+    "options": [
+      {
+        "letter": "A",
+        "text": "True"
+      },
+      {
+        "letter": "B",
+        "text": "False"
+      }
+    ],
+    "correctAnswer": "A"
   }
 ]

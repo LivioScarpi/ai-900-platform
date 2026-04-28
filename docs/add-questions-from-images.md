@@ -280,12 +280,20 @@ Le immagini vanno salvate **sia in `data/images/`** (archivio sorgente) **che in
 
 ### 7. Verificare duplicati prima di aggiungere
 
-Prima di aggiungere una domanda, verificare se esiste già nel file con testo simile. Le domande duplicate vanno **scartate** e segnalate.
+Prima di aggiungere una domanda, verificare se esiste già nel file con testo identico. Le domande duplicate vanno **scartate** e segnalate.
 
-Criteri di duplicato:
-- Stesso testo della domanda (anche con leggere variazioni di punteggiatura)
-- Stesse opzioni e stessa risposta corretta
-- Stesso scenario (es. stessa domanda sul principio Responsible AI con le stesse opzioni)
+Criteri di duplicato (tutti e tre devono essere soddisfatti):
+- Stesso testo della domanda (sono ammesse solo variazioni minime come articoli o punteggiatura)
+- Stesse opzioni di risposta
+- Stessa risposta corretta
+
+**Una domanda NON è duplicata se:**
+- Le opzioni sono diverse (anche se il concetto è lo stesso)
+- Il testo della domanda è diverso (anche se lo scenario è simile, es. "cans" vs "bottles")
+- La risposta corretta è diversa
+- Il formato della domanda è diverso (es. `mcq` True/False vs `yesno` multi-statement)
+
+In caso di dubbio, **includere la domanda**: è meglio avere varianti dello stesso concetto che perdere domande valide.
 
 ---
 
