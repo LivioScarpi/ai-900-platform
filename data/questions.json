@@ -3827,5 +3827,155 @@
     "correctAnswer": "A",
     "explanation": "Making a travel reservation via a chatbot or virtual assistant is a classic example of conversational AI, where a user interacts in natural language with a bot to complete a task.",
     "contextImages": []
+  },
+  {
+    "id": 152,
+    "topic": "nlp",
+    "type": "mcq",
+    "text": "You need to map the right type of natural language processing workload for the following scenario: Be able to evaluate text along with a positive-negative scale.\nWhich of the following would you map to this requirement?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Language modeling"
+      },
+      {
+        "letter": "B",
+        "text": "Sentiment analysis"
+      },
+      {
+        "letter": "C",
+        "text": "Key phrase extraction"
+      },
+      {
+        "letter": "D",
+        "text": "Translation"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Sentiment analysis evaluates text on a positive-negative scale, returning a score that reflects the overall sentiment of the document.",
+    "contextImages": []
+  },
+  {
+    "id": 153,
+    "topic": "nlp",
+    "type": "mcq",
+    "text": "You are using the Text Analytics service to perform sentiment analysis on a document. The service returned a score of 0.5. What does this score indicate about the document sentiment?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "The document is positive"
+      },
+      {
+        "letter": "B",
+        "text": "The document is negative"
+      },
+      {
+        "letter": "C",
+        "text": "The document is neutral"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "In Azure Text Analytics, sentiment scores range from 0 to 1. A score near 1 indicates positive sentiment, near 0 indicates negative, and around 0.5 indicates neutral sentiment.",
+    "contextImages": []
+  },
+  {
+    "id": 154,
+    "topic": "computer_vision",
+    "type": "mcq",
+    "text": "You decided to use the Computer Vision service to analyze a set of images, which has locations, to identify well-known buildings. What should you do?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Retrieve the categories for the image, specifying the landmarks domain."
+      },
+      {
+        "letter": "B",
+        "text": "Retrieve the categories for the image, specifying the celebrities domain."
+      },
+      {
+        "letter": "C",
+        "text": "Retrieve the objects in the image."
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "The Computer Vision service supports domain-specific models. The landmarks domain is designed to identify well-known buildings and geographical locations in images.",
+    "contextImages": []
+  },
+  {
+    "id": 155,
+    "topic": "nlp",
+    "type": "mcq",
+    "text": "You have a website that includes customer reviews. You need to store the reviews in English and present the reviews to users in their respective language by recognizing each user's geographical location.\nWhich type of natural language processing workload should you use?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Translation"
+      },
+      {
+        "letter": "B",
+        "text": "Speech recognition"
+      },
+      {
+        "letter": "C",
+        "text": "Key phrase extraction"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Translation converts text from one language to another. Storing reviews in English and presenting them in the user's local language based on their geographical location is a translation workload.",
+    "contextImages": []
+  },
+  {
+    "id": 156,
+    "topic": "conversational_ai",
+    "type": "mcq",
+    "text": "You are developing a chatbot for a website, and need to implement a requirement that the chatbot must answer user's questions based on the information in the following documents:\n- A frequently asked questions (FAQ) list on a PDF file\n- A product troubleshooting guide in a Microsoft Word document\n- A frequently asked questions (FAQ) list on a webpage\nWhich service should you use to process the documents?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "QnA Maker"
+      },
+      {
+        "letter": "B",
+        "text": "Language Understanding"
+      },
+      {
+        "letter": "C",
+        "text": "Azure Bot Service"
+      },
+      {
+        "letter": "D",
+        "text": "Text Analytics"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "QnA Maker ingests content from various sources including PDF files, Word documents, and webpages to build a knowledge base that a chatbot can use to answer questions.",
+    "contextImages": []
+  },
+  {
+    "id": 157,
+    "topic": "ml_fundamentals",
+    "type": "dragdrop",
+    "text": "Match the types of AI workloads to the appropriate scenarios.",
+    "items": [
+      "Artificial Intelligence",
+      "Machine Learning",
+      "Deep Learning"
+    ],
+    "targets": [
+      {
+        "text": "Techniques that enable machines to improve at tasks with experience.",
+        "correctItem": "Machine Learning"
+      },
+      {
+        "text": "Techniques which use layers of algorithms in the form of artificial neural networks to return results for more complex use cases.",
+        "correctItem": "Deep Learning"
+      },
+      {
+        "text": "Any technique that enables computers to mimic human intelligence.",
+        "correctItem": "Artificial Intelligence"
+      }
+    ],
+    "explanation": "Machine Learning = improving at tasks with experience (data-driven). Deep Learning = neural networks for complex cases. Artificial Intelligence = broad umbrella term for any technique that mimics human intelligence.",
+    "contextImages": []
   }
 ]
