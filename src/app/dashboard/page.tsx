@@ -1,9 +1,6 @@
-"use client";
-
-import { useEffect, useState } from "react";
-import { getAttemptStats, getExamHistory, getQuestionAttempts } from "@/lib/supabase";
+import { redirect } from "next/navigation";
+import { createSupabaseServerClient } from "@/lib/supabase-server";
 import { getAllQuestions } from "@/lib/questions";
-import { useUserId } from "@/components/AuthProvider";
 import { TOPICS } from "@/lib/topics";
 import Link from "next/link";
 
@@ -15,19 +12,6 @@ interface ExamSession {
   created_at: string;
   duration_ms: number | null;
   topic_scores?: Record<string, { correct: number; total: number }>;
-}
-
-function formatDuration(ms: number | null) {
-  if (!ms) return "—";
-  const m = Math.floor(ms / 60000);
-  const s = Math.floor((ms % 60000) / 1000);
-  return `${m}m ${s}s`;
-}
-
-function accuracyBadge(pct: number) {
-  if (pct >= 70) return { label: "PASSING", color: "bg-status-green-bg text-status-green border-status-green/30" };
-  if (pct >= 50) return { label: "IMPROVING", color: "bg-status-orange-bg text-status-orange border-amber-200" };
-  return { label: "NEEDS WORK", color: "bg-status-red-bg text-status-red border-red-200" };
 }
 
 interface QuestionStat {
@@ -47,72 +31,86 @@ interface TopicStat {
   pct: number;
 }
 
-export default function DashboardPage() {
+function formatDuration(ms: number | null) {
+  if (!ms) return "—";
+  const m = Math.floor(ms / 60000);
+  const s = Math.floor((ms % 60000) / 1000);
+  return `${m}m ${s}s`;
+}
+
+function accuracyBadge(pct: number) {
+  if (pct >= 70) return { label: "PASSING", color: "bg-status-green-bg text-status-green border-status-green/30" };
+  if (pct >= 50) return { label: "IMPROVING", color: "bg-status-orange-bg text-status-orange border-amber-200" };
+  return { label: "NEEDS WORK", color: "bg-status-red-bg text-status-red border-red-200" };
+}
+
+export default async function DashboardPage() {
+  const supabase = await createSupabaseServerClient();
+  const { data: { user } } = await supabase.auth.getUser();
+
+  if (!user) redirect("/login");
+
   const allQuestions = getAllQuestions();
-  const userId = useUserId();
-  const [stats, setStats] = useState<{ total: number; correct: number } | null>(null);
-  const [history, setHistory] = useState<ExamSession[]>([]);
-  const [questionStats, setQuestionStats] = useState<QuestionStat[]>([]);
-  const [topicStats, setTopicStats] = useState<TopicStat[]>([]);
 
-  useEffect(() => {
-    if (!userId) return;
-    Promise.all([
-      getAttemptStats(userId),
-      getExamHistory(userId),
-      getQuestionAttempts(userId),
-    ]).then(([s, h, attempts]) => {
-      setStats(s);
-      setHistory(h as ExamSession[]);
+  const [attemptsRes, historyRes, questionAttemptsRes] = await Promise.all([
+    supabase.from("attempts").select("is_correct").eq("user_id", user.id),
+    supabase.from("exam_sessions").select("*").eq("user_id", user.id).order("created_at", { ascending: false }).limit(10),
+    supabase.from("attempts").select("question_id, is_correct").eq("user_id", user.id),
+  ]);
 
-      // Build per-question stats
-      const qMap: Record<number, { correct: number; total: number }> = {};
-      attempts.forEach(({ question_id, is_correct }) => {
-        if (!qMap[question_id]) qMap[question_id] = { correct: 0, total: 0 };
-        qMap[question_id].total += 1;
-        if (is_correct) qMap[question_id].correct += 1;
-      });
+  const attempts = attemptsRes.data ?? [];
+  const history = (historyRes.data ?? []) as ExamSession[];
+  const questionAttempts = questionAttemptsRes.data ?? [];
 
-      const qStats: QuestionStat[] = Object.entries(qMap).map(([qid, data]) => {
-        const q = allQuestions.find((x) => x.id === Number(qid));
-        const text = q && "text" in q ? (q.text as string).slice(0, 90) : `Question ${qid}`;
-        return {
-          questionId: Number(qid),
-          correct: data.correct,
-          total: data.total,
-          pct: Math.round((data.correct / data.total) * 100),
-          topic: q?.topic ?? "unknown",
-          text,
-        };
-      });
-      setQuestionStats(qStats.sort((a, b) => a.pct - b.pct || b.total - a.total));
+  const total = attempts.length;
+  const correct = attempts.filter((r) => r.is_correct).length;
+  const stats = { total, correct };
 
-      // Build per-topic stats from attempts (all modes)
-      const tMap: Record<string, { correct: number; total: number }> = {};
-      attempts.forEach(({ question_id, is_correct }) => {
-        const q = allQuestions.find((x) => x.id === question_id);
-        const topic = q?.topic ?? "unknown";
-        if (!tMap[topic]) tMap[topic] = { correct: 0, total: 0 };
-        tMap[topic].total += 1;
-        if (is_correct) tMap[topic].correct += 1;
-      });
-
-      const tStats: TopicStat[] = Object.entries(tMap).map(([key, data]) => ({
-        key,
-        displayName: TOPICS.find((t) => t.key === key)?.displayName ?? key.replace(/_/g, " "),
+  // Per-question stats
+  const qMap: Record<number, { correct: number; total: number }> = {};
+  questionAttempts.forEach(({ question_id, is_correct }) => {
+    if (!qMap[question_id]) qMap[question_id] = { correct: 0, total: 0 };
+    qMap[question_id].total += 1;
+    if (is_correct) qMap[question_id].correct += 1;
+  });
+  const questionStats: QuestionStat[] = Object.entries(qMap)
+    .map(([qid, data]) => {
+      const q = allQuestions.find((x) => x.id === Number(qid));
+      const text = q && "text" in q ? (q.text as string).slice(0, 90) : `Question ${qid}`;
+      return {
+        questionId: Number(qid),
         correct: data.correct,
         total: data.total,
         pct: Math.round((data.correct / data.total) * 100),
-      }));
-      setTopicStats(tStats.sort((a, b) => a.pct - b.pct));
-    });
-  }, [userId]);
+        topic: q?.topic ?? "unknown",
+        text,
+      };
+    })
+    .sort((a, b) => a.pct - b.pct || b.total - a.total);
 
-  const accuracy = stats && stats.total > 0 ? Math.round((stats.correct / stats.total) * 100) : null;
+  // Per-topic stats
+  const tMap: Record<string, { correct: number; total: number }> = {};
+  questionAttempts.forEach(({ question_id, is_correct }) => {
+    const q = allQuestions.find((x) => x.id === question_id);
+    const topic = q?.topic ?? "unknown";
+    if (!tMap[topic]) tMap[topic] = { correct: 0, total: 0 };
+    tMap[topic].total += 1;
+    if (is_correct) tMap[topic].correct += 1;
+  });
+  const topicStats: TopicStat[] = Object.entries(tMap)
+    .map(([key, data]) => ({
+      key,
+      displayName: TOPICS.find((t) => t.key === key)?.displayName ?? key.replace(/_/g, " "),
+      correct: data.correct,
+      total: data.total,
+      pct: Math.round((data.correct / data.total) * 100),
+    }))
+    .sort((a, b) => a.pct - b.pct);
+
+  const accuracy = stats.total > 0 ? Math.round((stats.correct / stats.total) * 100) : null;
   const examCount = history.length;
   const bestScore = history.length > 0 ? Math.max(...history.map((s) => Math.round((s.score / s.total) * 100))) : null;
   const avgScore = history.length > 0 ? Math.round(history.reduce((acc, s) => acc + (s.score / s.total) * 100, 0) / history.length) : null;
-
   const badge = accuracy != null ? accuracyBadge(accuracy) : null;
 
   return (
@@ -137,14 +135,14 @@ export default function DashboardPage() {
           {[
             {
               label: "Questions Answered",
-              value: stats?.total != null ? String(stats.total) : "—",
+              value: stats.total > 0 ? String(stats.total) : "—",
               sub: "all modes combined",
               accent: "border-t-brand",
             },
             {
               label: "Overall Accuracy",
               value: accuracy != null ? `${accuracy}%` : "—",
-              sub: `${stats?.correct ?? 0} correct / ${stats?.total ?? 0} total`,
+              sub: `${stats.correct} correct / ${stats.total} total`,
               accent: accuracy != null && accuracy >= 70 ? "border-t-status-green" : "border-t-status-red",
             },
             {
@@ -174,9 +172,9 @@ export default function DashboardPage() {
           <div className="card p-6 flex flex-col gap-4">
             <div className="flex items-center justify-between">
               <p className="font-semibold text-ink text-sm">Accuracy Breakdown</p>
-              <span className="label-caps">{stats?.total ?? 0} attempts</span>
+              <span className="label-caps">{stats.total} attempts</span>
             </div>
-            {stats && stats.total > 0 ? (
+            {stats.total > 0 ? (
               <>
                 <div className="w-full h-4 rounded-full overflow-hidden bg-cream-200 flex">
                   <div className="bg-status-green h-full transition-all duration-700 rounded-l-full" style={{ width: `${Math.round((stats.correct / stats.total) * 100)}%` }} />
@@ -245,9 +243,7 @@ export default function DashboardPage() {
             <div className="divide-y divide-cream-200">
               {questionStats.map((q) => (
                 <div key={q.questionId} className="px-6 py-3 flex items-center gap-4">
-                  {/* Q# */}
                   <span className="font-mono text-[11px] text-ink-faint w-8 flex-shrink-0">Q{q.questionId}</span>
-                  {/* Topic badge */}
                   <span className={`font-mono text-[9px] font-bold tracking-widest px-1.5 py-0.5 rounded uppercase flex-shrink-0 ${
                     q.pct >= 70 ? "bg-status-green-bg text-status-green" :
                     q.pct >= 50 ? "bg-status-orange-bg text-status-orange" :
@@ -255,9 +251,7 @@ export default function DashboardPage() {
                   }`}>
                     {TOPICS.find((t) => t.key === q.topic)?.displayName ?? q.topic}
                   </span>
-                  {/* Text snippet */}
                   <p className="text-xs text-ink-muted flex-1 min-w-0 truncate hidden sm:block">{q.text}…</p>
-                  {/* Bar + stats */}
                   <div className="flex items-center gap-3 flex-shrink-0 ml-auto">
                     <div className="w-20 h-1.5 rounded-full bg-cream-200 overflow-hidden hidden md:block">
                       <div
@@ -344,4 +338,3 @@ export default function DashboardPage() {
     </div>
   );
 }
-
