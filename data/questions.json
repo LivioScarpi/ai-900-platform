@@ -3770,5 +3770,62 @@
     "correctAnswer": "A",
     "explanation": "Predicting whether a loan will be repaid or not is a binary classification problem — the output is one of two discrete categories (repaid or not repaid). Regression predicts continuous numeric values, and clustering groups data points without predefined labels.",
     "contextImages": []
+  },
+  {
+    "id": 149,
+    "topic": "azure_ml",
+    "type": "sentence_completion",
+    "text": "Select the answer that correctly completes the sentence.",
+    "sentence": "Azure Machine Learning designer can be used to create machine learning models by [BLANK].",
+    "options": [
+      "Automatically selecting an algorithm to build the most accurate model",
+      "Automatically performing common data preparation tasks",
+      "Adding and connecting modules on a visual canvas",
+      "Using a code-first notebook experience"
+    ],
+    "correctAnswer": "Adding and connecting modules on a visual canvas",
+    "explanation": "Azure Machine Learning designer provides a drag-and-drop visual canvas where you can build ML pipelines by adding and connecting modules (datasets, algorithms, transformations), without writing code.",
+    "contextImages": []
+  },
+  {
+    "id": 150,
+    "topic": "conversational_ai",
+    "type": "yesno",
+    "text": "For each of the following statements, select Yes if the statement is true. Otherwise, select No.",
+    "statements": [
+      {
+        "text": "A webchat bot can interact with users visiting a website.",
+        "correct": "Yes"
+      },
+      {
+        "text": "Automatically generating captions for pre-recorded videos is an example of conversational AI.",
+        "correct": "No"
+      },
+      {
+        "text": "A smart device in the home that responds to questions such as \"What will the weather be like today?\" is an example of conversational AI.",
+        "correct": "Yes"
+      }
+    ],
+    "explanation": "A webchat bot is a classic conversational AI use case. Generating captions for pre-recorded videos is NLP/computer vision, not conversational AI (which requires real-time back-and-forth interaction). A smart home device responding to spoken questions is conversational AI.",
+    "contextImages": []
+  },
+  {
+    "id": 151,
+    "topic": "conversational_ai",
+    "type": "mcq",
+    "text": "\"Making a travel reservation\" is a scenario of Conversational AI.",
+    "options": [
+      {
+        "letter": "A",
+        "text": "True"
+      },
+      {
+        "letter": "B",
+        "text": "False"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Making a travel reservation via a chatbot or virtual assistant is a classic example of conversational AI, where a user interacts in natural language with a bot to complete a task.",
+    "contextImages": []
   }
 ]

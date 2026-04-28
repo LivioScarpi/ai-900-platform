@@ -264,12 +264,17 @@ Se la domanda ha un grafico o diagramma da mostrare prima delle opzioni:
 sips -c 490 2728 /tmp/orig.png --cropOffset 250 0 --out data/images/nome-immagine.png
 ```
 
-2. **Riferirla nel JSON** nella proprietà `contextImages`:
+2. **Copiare l'immagine anche in `public/images/`** (obbligatorio per renderla visibile nell'app):
+```bash
+cp data/images/nome-immagine.png public/images/nome-immagine.png
+```
+
+3. **Riferirla nel JSON** nella proprietà `contextImages`:
 ```json
 "contextImages": ["nome-immagine.png"]
 ```
 
-Le immagini vanno salvate in `data/images/`. Il nome è libero ma deve essere descrittivo (es. `nlp-flow-diagram-q135.png`).
+Le immagini vanno salvate **sia in `data/images/`** (archivio sorgente) **che in `public/images/`** (servite dall'app). Il nome è libero ma deve essere descrittivo (es. `nlp-flow-diagram-q135.png`).
 
 ---
 
