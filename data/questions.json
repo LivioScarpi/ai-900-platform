@@ -4783,5 +4783,220 @@
     "correctAnswer": "B",
     "explanation": "Regression is used to predict a continuous numerical value, such as the number of gift cards sold. Clustering is unsupervised grouping, and classification predicts discrete categories.",
     "contextImages": []
+  },
+  {
+    "id": 191,
+    "topic": "computer_vision",
+    "type": "mcq",
+    "text": "\"Detection of faces in an image\" can be performed by using the Computer Vision service. Select the correct option.",
+    "options": [
+      {
+        "letter": "A",
+        "text": "True"
+      },
+      {
+        "letter": "B",
+        "text": "False"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "The Azure Computer Vision service includes face detection capabilities, allowing it to detect human faces within images.",
+    "contextImages": []
+  },
+  {
+    "id": 192,
+    "topic": "responsible_ai",
+    "type": "mcq",
+    "text": "You are developing an AI system for self-driving cars. Which of the Microsoft Guiding Principle for AI you should be applying to ensure consistent operation of the system during unexpected circumstances. Select the correct option.",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Privacy and security"
+      },
+      {
+        "letter": "B",
+        "text": "Reliability and safety"
+      },
+      {
+        "letter": "C",
+        "text": "Fairness"
+      },
+      {
+        "letter": "D",
+        "text": "Accountability"
+      },
+      {
+        "letter": "E",
+        "text": "Inclusiveness"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Reliability and safety ensures that AI systems operate consistently and safely even in unexpected situations. For safety-critical systems like self-driving cars, this principle is paramount.",
+    "contextImages": []
+  },
+  {
+    "id": 193,
+    "topic": "ml_fundamentals",
+    "type": "yesno",
+    "text": "You have an Azure Machine Learning model that predicts product quality. The model has a training dataset that contains 25,000 records. A sample dataset is shown in the following table. Based on above dataset, validate the below statements and, select Yes if the statement is true. Otherwise, select No.",
+    "contextImages": [
+      "product-quality-table-q193.png"
+    ],
+    "statements": [
+      {
+        "text": "Mass (kg) is a feature.",
+        "correct": "Yes"
+      },
+      {
+        "text": "Quality Test is a label.",
+        "correct": "Yes"
+      },
+      {
+        "text": "Temperature (C) is a label",
+        "correct": "No"
+      }
+    ],
+    "explanation": "Mass and Temperature are input features used to predict the outcome. Quality Test is the prediction target (label)."
+  },
+  {
+    "id": 194,
+    "topic": "computer_vision",
+    "type": "mcq",
+    "text": "You are training an image classification model, but it achieves less than satisfactory evaluation metrics. How might you improve it?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Reduce the size of the images used to train the model"
+      },
+      {
+        "letter": "B",
+        "text": "Add a new label for \"unknown\" classes"
+      },
+      {
+        "letter": "C",
+        "text": "Add more images to the training set"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Adding more training images improves model performance by providing more examples for the model to learn from, leading to better generalization and higher accuracy.",
+    "contextImages": []
+  },
+  {
+    "id": 195,
+    "topic": "conversational_ai",
+    "type": "mcq",
+    "text": "Your company is planning to develop a web chatbot to provide automated answers to common customer queries. Which business benefit should the company expect as a result of creating the web chatbot solution?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "It will reduce the workload on the customer service agent"
+      },
+      {
+        "letter": "B",
+        "text": "Company sales will increase"
+      },
+      {
+        "letter": "C",
+        "text": "Company products quality will increase"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "A web chatbot automates responses to common queries, directly reducing the volume of requests that human customer service agents need to handle.",
+    "contextImages": []
+  },
+  {
+    "id": 196,
+    "topic": "computer_vision",
+    "type": "mcq",
+    "text": "\"Recognizing handwritten text\" can be performed by using the Computer Vision service. Select the correct option.",
+    "options": [
+      {
+        "letter": "A",
+        "text": "True"
+      },
+      {
+        "letter": "B",
+        "text": "False"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "The Azure Computer Vision service includes OCR capabilities that can recognize and extract both printed and handwritten text from images.",
+    "contextImages": []
+  },
+  {
+    "id": 197,
+    "topic": "conversational_ai",
+    "type": "multi",
+    "text": "Select the correct scenarios of conversational AI workload. Select two correct options.",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Assembly line machinery that autonomously inserts headlamps into cars."
+      },
+      {
+        "letter": "B",
+        "text": "A smart device in the home that responds to questions such as 'What will the weather be like today?'"
+      },
+      {
+        "letter": "C",
+        "text": "A website that uses a knowledge base to interactively respond to user's questions."
+      },
+      {
+        "letter": "D",
+        "text": "Monitoring the temperature of machinery to turn on a fan when the temperature reaches a specific threshold"
+      }
+    ],
+    "correctAnswers": [
+      "B",
+      "C"
+    ],
+    "explanation": "Conversational AI involves natural language interaction. A smart home device answering questions (B) and a website using a knowledge base to respond to users (C) are both conversational AI workloads. Assembly line automation (A) and temperature monitoring (D) are not conversational AI.",
+    "contextImages": []
+  },
+  {
+    "id": 198,
+    "topic": "ml_fundamentals",
+    "type": "mcq",
+    "text": "Predicting how many hours of overtime a delivery person will work based on the number of orders received is an example of what type of Machine Learning? Select the correct option.",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Clustering"
+      },
+      {
+        "letter": "B",
+        "text": "Regression"
+      },
+      {
+        "letter": "C",
+        "text": "Classification"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Regression predicts a continuous numeric value. Predicting hours of overtime (a numeric value) based on the number of orders is a regression problem.",
+    "contextImages": []
+  },
+  {
+    "id": 199,
+    "topic": "conversational_ai",
+    "type": "mcq",
+    "text": "Your organization has an existing frequently asked questions (FAQ) document. You need to create a QnA Maker knowledge base that includes the questions and answers from the FAQ with the least possible effort. What should you do?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Import a pre-defined chit-chat data source."
+      },
+      {
+        "letter": "B",
+        "text": "Import the existing FAQ document into a new knowledge base."
+      },
+      {
+        "letter": "C",
+        "text": "Create an empty knowledge base, and then manually copy and paste the FAQ entries into it."
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "QnA Maker can automatically extract question-and-answer pairs from existing documents like FAQ files. Importing the FAQ document directly is the fastest way to populate the knowledge base with minimal effort.",
+    "contextImages": []
   }
 ]
