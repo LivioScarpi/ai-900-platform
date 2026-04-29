@@ -4275,5 +4275,274 @@
     "correctAnswer": "B",
     "explanation": "Vector-based embeddings map words or text tokens to numerical vectors in a high-dimensional space, capturing their semantic meaning and relationships. Words with similar meanings are placed closer together in this vector space. They are not used for spell correction or multilingual tokenization.",
     "contextImages": []
+  },
+  {
+    "id": 171,
+    "topic": "azure_ml",
+    "type": "mcq",
+    "text": "You are using Azure Machine Learning designer to build a model that will predict automobile prices. Which type of modules should you use to complete the model?",
+    "contextImages": [
+      "azure-ml-designer-pipeline-q171.png"
+    ],
+    "options": [
+      {
+        "letter": "A",
+        "text": "1 - Split Data, 2 - Summarize Data, 3 - Linear Regression"
+      },
+      {
+        "letter": "B",
+        "text": "1 - Split Data, 2 - Convert to CSV, 3 - K-Means Clustering"
+      },
+      {
+        "letter": "C",
+        "text": "1 - Select columns in Dataset, 2 - Split Data, 3 - Linear Regression"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "The correct pipeline order for predicting automobile prices is: 1 - Select columns in Dataset (select relevant features), 2 - Split Data (split into training/validation sets), 3 - Linear Regression (the regression algorithm). This is then connected to Train Model and Score Model.",
+    "reference": "https://docs.microsoft.com/en-us/azure/machine-learning/tutorial-designer-automobile-price-train-score"
+  },
+  {
+    "id": 172,
+    "topic": "computer_vision",
+    "type": "mcq",
+    "text": "You have an app that identifies birds in images. The app performs the following tasks:\n- Identifies the location of the birds in the image\n- Identifies the species of the birds in the image\nWhich type of computer vision does each task use?",
+    "contextImages": [],
+    "options": [
+      {
+        "letter": "A",
+        "text": "Object detection, Image classification"
+      },
+      {
+        "letter": "B",
+        "text": "Object detection, Optical character recognition (OCR)"
+      },
+      {
+        "letter": "C",
+        "text": "Optical character recognition (OCR), Image classification"
+      },
+      {
+        "letter": "D",
+        "text": "Image classification, Object detection"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Identifying the location of birds uses Object detection (returns bounding boxes). Identifying the species uses Image classification (assigns a class label to the detected object).",
+    "reference": "https://docs.microsoft.com/en-us/azure/cognitive-services/computer-vision/concept-object-detection"
+  },
+  {
+    "id": 173,
+    "topic": "azure_cognitive",
+    "type": "yesno",
+    "text": "From the use-cases listed below, select the correct use-case of anomaly detection.",
+    "statements": [
+      {
+        "text": "Forecasting housing prices based on historical data is an example of anomaly detection.",
+        "correct": "No"
+      },
+      {
+        "text": "Identifying suspicious sign-ins by looking for deviations from usual patterns is an example of anomaly detection.",
+        "correct": "Yes"
+      },
+      {
+        "text": "Predicting whether a patient will develop diabetes based on the patient's medical history is an example of anomaly detection.",
+        "correct": "No"
+      }
+    ],
+    "explanation": "Forecasting housing prices = regression (predicts numeric values). Identifying suspicious sign-ins by detecting deviations from patterns = anomaly detection. Predicting diabetes from medical history = classification.",
+    "contextImages": []
+  },
+  {
+    "id": 174,
+    "topic": "azure_ml",
+    "type": "mcq",
+    "text": "During the process of Machine Learning, when should you review evaluation metrics?",
+    "contextImages": [],
+    "options": [
+      {
+        "letter": "A",
+        "text": "Before you train a model."
+      },
+      {
+        "letter": "B",
+        "text": "After you test a model on the validation data."
+      },
+      {
+        "letter": "C",
+        "text": "After you clean the data."
+      },
+      {
+        "letter": "D",
+        "text": "Before you choose the type of model."
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Evaluation metrics are reviewed after the model has been tested on validation data. This is the stage where you assess performance (accuracy, precision, recall, etc.) to determine if the model meets requirements.",
+    "reference": "https://docs.microsoft.com/en-us/azure/machine-learning/how-to-understand-automated-ml"
+  },
+  {
+    "id": 175,
+    "topic": "computer_vision",
+    "type": "mcq",
+    "text": "You are designing an AI solution to monitor meetings. The AI model should be able to indicate when people are happy or sad using their facial expressions. Which cognitive service should you use for the solution?",
+    "contextImages": [],
+    "options": [
+      {
+        "letter": "A",
+        "text": "Text Analytics"
+      },
+      {
+        "letter": "B",
+        "text": "Face API"
+      },
+      {
+        "letter": "C",
+        "text": "Computer Vision"
+      },
+      {
+        "letter": "D",
+        "text": "Speech-to-text"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "The Face API detects and analyzes human faces in images, including facial expressions for emotions such as happiness or sadness. Computer Vision can detect faces but does not provide emotion analysis.",
+    "reference": "https://docs.microsoft.com/en-us/azure/cognitive-services/face/overview"
+  },
+  {
+    "id": 176,
+    "topic": "ml_fundamentals",
+    "type": "mcq",
+    "text": "You have been provided the following dataset of employees:\n\n| Income | Postcode | Income Range |\n|--------|----------|--------------|\n| 25000  | 2000     | Low          |\n| 32000  | 2002     | Medium       |\n| 95000  | 2000     | High         |\n\nYou have to use the dataset to train a model that will predict Income Range of an employee. Which of the following correctly classifies Income and Income Range?",
+    "contextImages": [],
+    "options": [
+      {
+        "letter": "A",
+        "text": "Label, Label"
+      },
+      {
+        "letter": "B",
+        "text": "Feature, Feature"
+      },
+      {
+        "letter": "C",
+        "text": "Label, Feature"
+      },
+      {
+        "letter": "D",
+        "text": "Feature, Label"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Income is a Feature (input used to make predictions). Income Range is the Label (the value being predicted). Postcode is also a feature but is not asked about here.",
+    "reference": "https://docs.microsoft.com/en-us/azure/machine-learning/component-reference/filter-based-feature-selection"
+  },
+  {
+    "id": 177,
+    "topic": "azure_ml",
+    "type": "mcq",
+    "text": "Automated Machine Learning works by running multiple training iterations that are scored and ranked by the metrics you specify. Is this statement true or false?",
+    "contextImages": [],
+    "options": [
+      {
+        "letter": "A",
+        "text": "True"
+      },
+      {
+        "letter": "B",
+        "text": "False"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "True. Azure Automated Machine Learning (AutoML) runs multiple pipeline iterations, each trying different algorithms and hyperparameters. Each iteration produces a model that is scored with a metric you specify, and the iterations are ranked by that metric.",
+    "reference": "https://docs.microsoft.com/en-us/azure/machine-learning/concept-automated-ml"
+  },
+  {
+    "id": 178,
+    "topic": "ml_fundamentals",
+    "type": "mcq",
+    "text": "Predicting how many vehicles will travel across a bridge on a given day is an example of what type of machine learning?",
+    "contextImages": [],
+    "options": [
+      {
+        "letter": "A",
+        "text": "classification"
+      },
+      {
+        "letter": "B",
+        "text": "regression"
+      },
+      {
+        "letter": "C",
+        "text": "clustering"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Predicting a numeric value (number of vehicles) is a regression task. Classification predicts categories, and clustering groups data by similarity without a predefined label.",
+    "reference": "https://docs.microsoft.com/en-us/dotnet/machine-learning/resources/tasks"
+  },
+  {
+    "id": 179,
+    "topic": "conversational_ai",
+    "type": "mcq",
+    "text": "You are setting up a webchat bot that provides responses from a QnA Maker knowledge base. You need to ensure that the bot uses user feedback to improve the relevance of the responses over time. What should you use?",
+    "contextImages": [],
+    "options": [
+      {
+        "letter": "A",
+        "text": "Sentiment analysis"
+      },
+      {
+        "letter": "B",
+        "text": "Active learning"
+      },
+      {
+        "letter": "C",
+        "text": "Business logic"
+      },
+      {
+        "letter": "D",
+        "text": "Key phrase extraction"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Active learning in QnA Maker uses user feedback (the questions users ask) to continuously improve the knowledge base. It suggests alternative questions based on real usage, which you can accept or reject to refine responses over time.",
+    "reference": "https://docs.microsoft.com/en-us/azure/cognitive-services/qnamaker/how-to/improve-knowledge-base"
+  },
+  {
+    "id": 180,
+    "topic": "azure_cognitive",
+    "type": "multi",
+    "text": "Select the correct options for OpenAI code generation capability.\nNote: Each correct selection is worth one point.",
+    "contextImages": [],
+    "options": [
+      {
+        "letter": "A",
+        "text": "GPT can convert a function from one programming language into another."
+      },
+      {
+        "letter": "B",
+        "text": "GPT can explain SQL queries or tables."
+      },
+      {
+        "letter": "C",
+        "text": "GPT can't write unit tests for our function."
+      },
+      {
+        "letter": "D",
+        "text": "GPT can summarize functions that are already written."
+      },
+      {
+        "letter": "E",
+        "text": "GPT models can help developers code faster."
+      }
+    ],
+    "correctAnswers": [
+      "A",
+      "B",
+      "D",
+      "E"
+    ],
+    "explanation": "GPT models can convert code between programming languages (A), explain SQL queries/tables (B), summarize existing functions (D), and help developers code faster (E). Option C is incorrect — GPT CAN write unit tests for functions.",
+    "reference": "https://learn.microsoft.com/en-us/azure/ai-services/openai/overview"
   }
 ]
