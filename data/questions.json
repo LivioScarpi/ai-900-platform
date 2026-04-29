@@ -4133,5 +4133,147 @@
       }
     ],
     "correctAnswer": "A"
+  },
+  {
+    "id": 165,
+    "topic": "azure_ml",
+    "type": "dragdrop",
+    "text": "Match the tool to the Azure Machine Learning task.",
+    "items": [
+      "Automated machine learning",
+      "Machine learning designer",
+      "The Azure Portal"
+    ],
+    "targets": [
+      {
+        "text": "Use a wizard to select configurations for a machine learning run.",
+        "correctItem": "Automated machine learning"
+      },
+      {
+        "text": "Create a Machine learning workspace.",
+        "correctItem": "The Azure Portal"
+      },
+      {
+        "text": "Use a drag-and-drop interface to train and deploy models.",
+        "correctItem": "Machine learning designer"
+      }
+    ],
+    "explanation": "Automated machine learning provides a wizard-based interface to configure and run ML experiments. The Azure Portal is used to create and manage Azure resources including ML workspaces. Machine learning designer offers a drag-and-drop interface to build, train, and deploy models visually.",
+    "contextImages": []
+  },
+  {
+    "id": 166,
+    "topic": "azure_ml",
+    "type": "mcq",
+    "text": "You want to create a model to predict sales of ice cream based on historic data that includes daily ice cream sales totals and weather measurements. Which Azure service should you use?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Azure Machine Learning"
+      },
+      {
+        "letter": "B",
+        "text": "Language"
+      },
+      {
+        "letter": "C",
+        "text": "Azure Bot"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Azure Machine Learning is the appropriate service for training a regression model to predict numeric values (ice cream sales) based on historical data with multiple features (weather measurements, past sales). Language and Azure Bot are not designed for predictive modeling tasks.",
+    "contextImages": []
+  },
+  {
+    "id": 167,
+    "topic": "computer_vision",
+    "type": "mcq",
+    "text": "Which service should you use to train an object detection model by using your own images?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Computer Vision"
+      },
+      {
+        "letter": "B",
+        "text": "Form Recognizer"
+      },
+      {
+        "letter": "C",
+        "text": "Custom Vision"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Custom Vision allows you to upload your own images and train a custom object detection or image classification model. Computer Vision provides pre-built vision capabilities but does not let you train custom models with your own images. Form Recognizer is designed for extracting data from documents and forms.",
+    "contextImages": []
+  },
+  {
+    "id": 168,
+    "topic": "ml_fundamentals",
+    "type": "mcq",
+    "text": "Which of these methods is used to generate additional features?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Model evaluation"
+      },
+      {
+        "letter": "B",
+        "text": "Feature engineering"
+      },
+      {
+        "letter": "C",
+        "text": "Feature selection"
+      },
+      {
+        "letter": "D",
+        "text": "Model training"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Feature engineering is the process of using domain knowledge to create or derive new features from existing raw data, thereby enhancing model performance. Feature selection removes irrelevant or redundant features. Model evaluation measures model performance. Model training fits the model to the data.",
+    "contextImages": []
+  },
+  {
+    "id": 169,
+    "topic": "azure_ml",
+    "type": "mcq",
+    "text": "Automated machine learning can automatically infer the training data from the use case provided.",
+    "options": [
+      {
+        "letter": "A",
+        "text": "True"
+      },
+      {
+        "letter": "B",
+        "text": "False"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "This statement is False. Automated machine learning (AutoML) automates the selection of algorithms, hyperparameter tuning, and feature engineering, but it still requires you to explicitly provide the training dataset. It cannot automatically infer or generate training data from a use case description.",
+    "contextImages": []
+  },
+  {
+    "id": 170,
+    "topic": "nlp",
+    "type": "mcq",
+    "text": "What is the purpose of vector-based embeddings?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "To correct misspellings in the training data."
+      },
+      {
+        "letter": "B",
+        "text": "To represent semantic meaning of text tokens."
+      },
+      {
+        "letter": "C",
+        "text": "To create tokens that include multiple representations of a word in different languages."
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Vector-based embeddings map words or text tokens to numerical vectors in a high-dimensional space, capturing their semantic meaning and relationships. Words with similar meanings are placed closer together in this vector space. They are not used for spell correction or multilingual tokenization.",
+    "contextImages": []
   }
 ]

@@ -23,14 +23,18 @@ interface Props {
   onAnswer: (isCorrect: boolean, selectedAnswers: string[]) => void;
 }
 
+const SRC_PREFIX = "src__";
+
 function DraggableChip({
   id,
   label,
   disabled,
+  used,
 }: {
   id: string;
   label: string;
   disabled: boolean;
+  used?: boolean;
 }) {
   const { attributes, listeners, setNodeRef, isDragging } = useDraggable({ id, disabled });
   return (
@@ -39,12 +43,16 @@ function DraggableChip({
       {...listeners}
       {...attributes}
       style={{ touchAction: "none" }}
-      className={`px-4 py-2.5 rounded-xl border-2 text-[13px] font-semibold select-none transition-all
+      className={`px-4 py-2.5 rounded-xl border-2 text-[13px] font-semibold select-none transition-all flex items-center gap-2
         ${disabled ? "cursor-default" : "cursor-grab active:cursor-grabbing"}
         ${isDragging ? "opacity-30" : ""}
-        border-brand/50 bg-[rgba(0,120,212,0.06)] text-brand`}
+        ${used && !disabled ? "opacity-50 border-brand/30 bg-[rgba(0,120,212,0.03)]" : "border-brand/50 bg-[rgba(0,120,212,0.06)]"}
+        text-brand`}
     >
-      {label}
+      <span>{label}</span>
+      {used && !disabled && (
+        <span className="text-[10px] font-normal opacity-60">✓ used</span>
+      )}
     </div>
   );
 }
@@ -55,17 +63,19 @@ function DropZone({
   assignedItem,
   confirmed,
   isCorrect,
+  onClear,
 }: {
   id: string;
   targetText: string;
   assignedItem: string | null;
   confirmed: boolean;
   isCorrect: boolean | null;
+  onClear: () => void;
 }) {
   const { setNodeRef, isOver } = useDroppable({ id });
 
   let zoneClass =
-    "min-h-[52px] rounded-xl border-2 border-dashed flex items-center justify-center text-xs font-medium px-3 transition-colors";
+    "min-h-[52px] rounded-xl border-2 border-dashed flex items-center px-3 transition-colors";
   if (!confirmed) {
     zoneClass +=
       isOver
@@ -80,22 +90,33 @@ function DropZone({
 
   return (
     <div className="flex flex-col gap-1">
-      <span className="text-xs text-ink-muted">
-        {targetText}
-      </span>
+      <span className="text-xs text-ink-muted">{targetText}</span>
       <div ref={setNodeRef} className={zoneClass}>
         {assignedItem ? (
-          confirmed ? (
+          <div className="flex items-center justify-between w-full">
             <span
-              className={`font-semibold ${isCorrect ? "text-status-green" : "text-status-red"}`}
+              className={`text-[13px] font-semibold ${
+                confirmed
+                  ? isCorrect
+                    ? "text-status-green"
+                    : "text-status-red"
+                  : "text-brand"
+              }`}
             >
               {assignedItem}
             </span>
-          ) : (
-            <DraggableChip id={assignedItem} label={assignedItem} disabled={false} />
-          )
+            {!confirmed && (
+              <button
+                onClick={onClear}
+                className="ml-2 text-ink-faint hover:text-ink text-lg leading-none"
+                aria-label="Clear"
+              >
+                ×
+              </button>
+            )}
+          </div>
         ) : (
-          <span className="text-gray-400">Drop here</span>
+          <span className="text-xs text-gray-400">Drop here</span>
         )}
       </div>
     </div>
@@ -118,9 +139,8 @@ export function DragDropCard({ question, onAnswer }: Props) {
     useSensor(KeyboardSensor),
   );
 
-  // Items not yet placed in any drop zone
+  // Set of item labels currently placed in any drop zone
   const placedItems = new Set(Object.values(assignments));
-  const availableItems = question.items.filter((item) => !placedItems.has(item));
 
   function handleDragStart(event: DragStartEvent) {
     setActiveId(event.active.id as string);
@@ -129,17 +149,23 @@ export function DragDropCard({ question, onAnswer }: Props) {
   function handleDragEnd(event: DragEndEvent) {
     setActiveId(null);
     const { active, over } = event;
-    const draggedItem = active.id as string;
+    const draggedId = active.id as string;
+    // Source items use "src__" prefix; extract real item name
+    const realItem = draggedId.startsWith(SRC_PREFIX)
+      ? draggedId.slice(SRC_PREFIX.length)
+      : draggedId;
 
+    if (!over) return;
+    const targetIndex = parseInt(over.id as string, 10);
+    if (isNaN(targetIndex)) return;
+    // Set target assignment — other slots are untouched (allows item reuse)
+    setAssignments((prev) => ({ ...prev, [targetIndex]: realItem }));
+  }
+
+  function clearAssignment(targetIndex: number) {
     setAssignments((prev) => {
       const next = { ...prev };
-      // Remove this item from any slot it was in
-      for (const [k, v] of Object.entries(next)) {
-        if (v === draggedItem) delete next[parseInt(k)];
-      }
-      if (!over) return next; // dropped outside → item goes back to available list
-      const targetIndex = parseInt(over.id as string, 10);
-      if (!isNaN(targetIndex)) next[targetIndex] = draggedItem;
+      delete next[targetIndex];
       return next;
     });
   }
@@ -176,20 +202,18 @@ export function DragDropCard({ question, onAnswer }: Props) {
         onDragEnd={handleDragEnd}
       >
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          {/* Left: draggable chips */}
+          {/* Left: draggable chips — always all items, used ones are dimmed */}
           <div className="flex flex-col gap-2">
             <p className="label-caps text-ink-faint mb-1">Items</p>
-            {availableItems.map((item) => (
+            {question.items.map((item) => (
               <DraggableChip
                 key={item}
-                id={item}
+                id={`${SRC_PREFIX}${item}`}
                 label={item}
                 disabled={confirmed}
+                used={placedItems.has(item)}
               />
             ))}
-            {availableItems.length === 0 && (
-              <p className="font-mono text-[11px] text-ink-faint italic">All items placed</p>
-            )}
           </div>
 
           {/* Right: drop zones */}
@@ -208,6 +232,7 @@ export function DragDropCard({ question, onAnswer }: Props) {
                   assignedItem={assigned}
                   confirmed={confirmed}
                   isCorrect={isCorrect}
+                  onClear={() => clearAssignment(i)}
                 />
               );
             })}
@@ -217,7 +242,7 @@ export function DragDropCard({ question, onAnswer }: Props) {
         <DragOverlay>
           {activeId && (
             <div className="px-4 py-2.5 rounded-xl border-2 border-brand bg-[rgba(0,120,212,0.08)] text-brand text-[13px] font-semibold shadow-lg">
-              {activeId}
+              {activeId.startsWith(SRC_PREFIX) ? activeId.slice(SRC_PREFIX.length) : activeId}
             </div>
           )}
         </DragOverlay>
