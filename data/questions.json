@@ -4544,5 +4544,244 @@
     ],
     "explanation": "GPT models can convert code between programming languages (A), explain SQL queries/tables (B), summarize existing functions (D), and help developers code faster (E). Option C is incorrect — GPT CAN write unit tests for functions.",
     "reference": "https://learn.microsoft.com/en-us/azure/ai-services/openai/overview"
+  },
+  {
+    "id": 181,
+    "topic": "nlp",
+    "type": "mcq",
+    "text": "You are developing a natural language processing solution in Azure for the following use case: The solution should analyze customer reviews and determine how positive or negative each review is. This is an example of which type of natural language processing workload?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "key phrase extraction"
+      },
+      {
+        "letter": "B",
+        "text": "sentiment analysis"
+      },
+      {
+        "letter": "C",
+        "text": "language detection"
+      },
+      {
+        "letter": "D",
+        "text": "entity recognition"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Sentiment analysis is the NLP technique used to determine how positive, negative, or neutral a piece of text is. It is the correct choice for analyzing customer reviews to gauge overall sentiment.",
+    "contextImages": []
+  },
+  {
+    "id": 182,
+    "topic": "ml_fundamentals",
+    "type": "yesno",
+    "text": "For each of the following statements, select Yes if the statement is true. Otherwise, select No.",
+    "statements": [
+      {
+        "text": "You train a regression model by using unlabeled data.",
+        "correct": "No"
+      },
+      {
+        "text": "The classification technique is used to predict sequential numerical data over time.",
+        "correct": "No"
+      },
+      {
+        "text": "Grouping items by their common characteristics is an example of clustering.",
+        "correct": "Yes"
+      }
+    ],
+    "explanation": "Regression is supervised learning and requires labeled data. Predicting sequential numerical data over time is a time series (regression) task, not classification. Clustering is an unsupervised technique that groups items by common characteristics.",
+    "contextImages": []
+  },
+  {
+    "id": 183,
+    "topic": "responsible_ai",
+    "type": "mcq",
+    "text": "According to which Microsoft principle of responsible AI should an AI system not reflect biases from the datasets used to train the systems?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "inclusiveness"
+      },
+      {
+        "letter": "B",
+        "text": "privacy and security"
+      },
+      {
+        "letter": "C",
+        "text": "fairness"
+      },
+      {
+        "letter": "D",
+        "text": "accountability"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "The Fairness principle requires that AI systems treat all people fairly and avoid affecting similarly situated groups of people in different ways. This includes ensuring the system does not reflect biases from training data.",
+    "contextImages": []
+  },
+  {
+    "id": 184,
+    "topic": "azure_cognitive",
+    "type": "mcq",
+    "text": "How are ChatGPT, OpenAI, and Azure OpenAI related?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Azure OpenAI is Microsoft's version of ChatGPT, a chatbot that uses generative AI models."
+      },
+      {
+        "letter": "B",
+        "text": "ChatGPT and OpenAI are chatbots that generate natural language, code, and images. Azure OpenAI provides access to these two chatbots."
+      },
+      {
+        "letter": "C",
+        "text": "OpenAI is a research company that developed ChatGPT, a chatbot that uses generative AI models. Azure OpenAI provides access to many of OpenAI's AI models."
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "OpenAI is an AI research company that created ChatGPT (a conversational AI built on generative models). Azure OpenAI is Microsoft's service that provides access to OpenAI's models (GPT-4, DALL-E, etc.) through Azure, not just ChatGPT.",
+    "contextImages": []
+  },
+  {
+    "id": 185,
+    "topic": "nlp",
+    "type": "yesno",
+    "text": "For each of the following statements, select Yes if the statement is true. Otherwise, select No.",
+    "statements": [
+      {
+        "text": "You can use the Translator service to translate text between languages.",
+        "correct": "Yes"
+      },
+      {
+        "text": "You can use the Translator service to detect the language of a given text.",
+        "correct": "Yes"
+      },
+      {
+        "text": "You can use the Translator service to transcribe audible speech into text.",
+        "correct": "No"
+      }
+    ],
+    "explanation": "The Azure Translator service supports text translation between languages and language detection. Transcribing speech to text is handled by the Azure Speech service, not the Translator service.",
+    "contextImages": []
+  },
+  {
+    "id": 186,
+    "topic": "azure_cognitive",
+    "type": "mcq",
+    "text": "You have to extract Total and Subtotal from a receipt. Which of the following services should you use?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Ink recognizer"
+      },
+      {
+        "letter": "B",
+        "text": "Form recognizer"
+      },
+      {
+        "letter": "C",
+        "text": "Custom Vision"
+      },
+      {
+        "letter": "D",
+        "text": "Text analytics"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Azure Form Recognizer (now Azure AI Document Intelligence) has a pre-built receipt model that can extract structured fields such as Total, Subtotal, tax, merchant name, and date from receipts.",
+    "contextImages": []
+  },
+  {
+    "id": 187,
+    "topic": "computer_vision",
+    "type": "mcq",
+    "text": "Training of a custom image classification model can be performed by using the Computer Vision service.",
+    "options": [
+      {
+        "letter": "A",
+        "text": "True"
+      },
+      {
+        "letter": "B",
+        "text": "False"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Training custom image classification models requires the Custom Vision service (Azure AI Custom Vision). The Computer Vision service provides pre-built image analysis capabilities but does not support training custom classification models.",
+    "contextImages": []
+  },
+  {
+    "id": 188,
+    "topic": "computer_vision",
+    "type": "mcq",
+    "text": "What extracts text from handwritten documents?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Image classification"
+      },
+      {
+        "letter": "B",
+        "text": "Object detection"
+      },
+      {
+        "letter": "C",
+        "text": "Facial recognition"
+      },
+      {
+        "letter": "D",
+        "text": "Optical character recognition (OCR)"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Optical Character Recognition (OCR) is the technology used to extract text from images, including printed and handwritten documents. Azure AI Vision includes OCR capabilities for handwritten text.",
+    "contextImages": []
+  },
+  {
+    "id": 189,
+    "topic": "conversational_ai",
+    "type": "yesno",
+    "text": "For each of the following statements, select Yes if the statement is true. Otherwise, select No.",
+    "statements": [
+      {
+        "text": "A restaurant can use a chatbot to empower customers to make reservations by using a website or an app.",
+        "correct": "Yes"
+      },
+      {
+        "text": "A restaurant can use a chatbot to answer inquiries about business hours from a webpage.",
+        "correct": "Yes"
+      },
+      {
+        "text": "A restaurant can use a chatbot to automate responses to customer reviews on an external website.",
+        "correct": "Yes"
+      }
+    ],
+    "explanation": "Chatbots can handle reservation flows and answer FAQs like business hours on channels the bot is deployed on. However, automating responses to reviews on external websites (e.g., Google Reviews, Yelp) is outside the scope of typical chatbot deployments.",
+    "contextImages": []
+  },
+  {
+    "id": 190,
+    "topic": "ml_fundamentals",
+    "type": "mcq",
+    "text": "You have to predict the number of gift cards that will be sold next year. Which type of machine learning should you use?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "clustering"
+      },
+      {
+        "letter": "B",
+        "text": "regression"
+      },
+      {
+        "letter": "C",
+        "text": "classification"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Regression is used to predict a continuous numerical value, such as the number of gift cards sold. Clustering is unsupervised grouping, and classification predicts discrete categories.",
+    "contextImages": []
   }
 ]
