@@ -4998,5 +4998,151 @@
     "correctAnswer": "B",
     "explanation": "QnA Maker can automatically extract question-and-answer pairs from existing documents like FAQ files. Importing the FAQ document directly is the fastest way to populate the knowledge base with minimal effort.",
     "contextImages": []
+  },
+  {
+    "id": 200,
+    "topic": "computer_vision",
+    "type": "mcq",
+    "text": "What type of AI workload should you use in the following scenario?\n\nCounting the number of animals in an area based on a video feed.",
+    "options": [
+      {"letter": "A", "text": "Computer Vision"},
+      {"letter": "B", "text": "Forecasting"},
+      {"letter": "C", "text": "Conversational AI"},
+      {"letter": "D", "text": "Anomaly detection"}
+    ],
+    "correctAnswer": "A",
+    "explanation": "Analyzing video feeds to count animals uses Computer Vision (spatial analysis and object counting).",
+    "contextImages": []
+  },
+  {
+    "id": 201,
+    "topic": "computer_vision",
+    "type": "mcq",
+    "text": "\"Translating the text in an image between languages\" can be performed by using the Computer Vision service. Select the correct option.",
+    "options": [
+      {"letter": "A", "text": "True"},
+      {"letter": "B", "text": "False"}
+    ],
+    "correctAnswer": "B",
+    "explanation": "Computer Vision can recognize and extract text (OCR) but cannot translate it between languages. Translation requires the Azure Translator service.",
+    "contextImages": []
+  },
+  {
+    "id": 202,
+    "topic": "nlp",
+    "type": "mcq",
+    "text": "You have a solution that analyzes social media posts to extract the mentions of city names discussed most frequently. Which type of natural language processing (NLP) workload does the solution use?",
+    "options": [
+      {"letter": "A", "text": "Key phrase extraction"},
+      {"letter": "B", "text": "Speech recognition"},
+      {"letter": "C", "text": "Entity recognition"},
+      {"letter": "D", "text": "Sentiment analysis"}
+    ],
+    "correctAnswer": "C",
+    "explanation": "City names are named entities. Entity recognition identifies and classifies named entities such as people, places, and organizations in text.",
+    "contextImages": []
+  },
+  {
+    "id": 203,
+    "topic": "azure_cognitive",
+    "type": "mcq",
+    "text": "Which Azure OpenAI model can transcribe and translate speech to text?",
+    "options": [
+      {"letter": "A", "text": "Embeddings"},
+      {"letter": "B", "text": "GPT-3.5"},
+      {"letter": "C", "text": "Whisper"},
+      {"letter": "D", "text": "GPT-4"},
+      {"letter": "E", "text": "DALL-E"}
+    ],
+    "correctAnswer": "C",
+    "explanation": "Whisper is the Azure OpenAI model designed specifically for speech transcription and translation to text.",
+    "contextImages": []
+  },
+  {
+    "id": 204,
+    "topic": "azure_cognitive",
+    "type": "mcq",
+    "text": "You need to convert receipts into transactions in a spreadsheet. The spreadsheet must include the date of the transaction, the merchant, the total spent, and any taxes paid. Which Azure AI service should you use?",
+    "options": [
+      {"letter": "A", "text": "Face"},
+      {"letter": "B", "text": "Custom Vision"},
+      {"letter": "C", "text": "Form Recognizer"},
+      {"letter": "D", "text": "Language Understanding (LUIS)"}
+    ],
+    "correctAnswer": "C",
+    "explanation": "Form Recognizer includes a prebuilt receipt model that can extract structured data such as merchant name, date, total, and tax from receipt images.",
+    "contextImages": []
+  },
+  {
+    "id": 205,
+    "topic": "conversational_ai",
+    "type": "mcq",
+    "text": "You are building a knowledge base by using QnA Maker. Which file format can you use to populate the knowledge base?",
+    "options": [
+      {"letter": "A", "text": "PPTX"},
+      {"letter": "B", "text": "XML"},
+      {"letter": "C", "text": "ZIP"},
+      {"letter": "D", "text": "PDF"}
+    ],
+    "correctAnswer": "D",
+    "explanation": "QnA Maker supports populating the knowledge base from PDF, DOCX, TXT, and TSV files, as well as from URLs.",
+    "contextImages": []
+  },
+  {
+    "id": 206,
+    "topic": "ml_fundamentals",
+    "type": "sentence_completion",
+    "text": "Select the answer that correctly completes the sentence.",
+    "sentence": "In a machine learning model, the data that is used as inputs are called [BLANK].",
+    "options": ["variables", "labels", "dataset"],
+    "correctAnswer": "variables",
+    "explanation": "The inputs to a machine learning model are the independent variables (also called features). Labels are the outputs the model predicts.",
+    "contextImages": []
+  },
+  {
+    "id": 207,
+    "topic": "conversational_ai",
+    "type": "multi",
+    "text": "Select two correct options for Copilot.",
+    "options": [
+      {"letter": "A", "text": "Microsoft refers \"Microsoft Copilot\" as first-party copilot."},
+      {"letter": "B", "text": "Microsoft refers \"Microsoft Copilot\" as third-party copilot."},
+      {"letter": "C", "text": "Microsoft refers \"plugins developed by other companies\" as first-party copilot."},
+      {"letter": "D", "text": "Microsoft refers \"plugins developed by other companies\" as third-party copilot."}
+    ],
+    "correctAnswers": ["A", "D"],
+    "explanation": "Microsoft refers to its own products as first-party copilots (e.g., Microsoft Copilot). Plugins and extensions developed by third-party companies are referred to as third-party copilots.",
+    "contextImages": []
+  },
+  {
+    "id": 208,
+    "topic": "azure_ml",
+    "type": "mcq",
+    "text": "You are building a machine learning model by using the automated machine learning user interface (UI) and need to ensure that the model meets the Microsoft transparency principle for responsible AI. What should you do?",
+    "options": [
+      {"letter": "A", "text": "Enable Explain best model."},
+      {"letter": "B", "text": "Set Validation type to Auto."},
+      {"letter": "C", "text": "Set Max concurrent iterations to 0."},
+      {"letter": "D", "text": "Set Primary metric to accuracy."}
+    ],
+    "correctAnswer": "A",
+    "explanation": "Enabling 'Explain best model' in AutoML generates model explanations, making the model's decisions interpretable. This directly supports the Microsoft transparency principle for responsible AI.",
+    "contextImages": []
+  },
+  {
+    "id": 209,
+    "topic": "nlp",
+    "type": "mcq",
+    "text": "You need to return text translated to a specified target language. Which type of natural language processing workload would you use for this requirement?",
+    "options": [
+      {"letter": "A", "text": "Key phrase extraction"},
+      {"letter": "B", "text": "Sentiment analysis"},
+      {"letter": "C", "text": "Translation"},
+      {"letter": "D", "text": "Entity recognition"},
+      {"letter": "E", "text": "Language modeling"}
+    ],
+    "correctAnswer": "C",
+    "explanation": "Translation is the NLP workload that converts text from one language to another. Azure Cognitive Services Translator provides this capability.",
+    "contextImages": []
   }
 ]
