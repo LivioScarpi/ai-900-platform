@@ -3072,8 +3072,8 @@
       }
     ],
     "correctAnswers": [
-      "B",
-      "C"
+      "C",
+      "D"
     ]
   },
   {
@@ -5931,6 +5931,150 @@
     ],
     "correctAnswer": "A",
     "explanation": "Explaining why a loan application was approved or denied is a direct example of the Transparency principle, which requires that AI systems are understandable and that their decisions can be explained to those affected.",
+    "contextImages": []
+  },
+  {
+    "id": 237,
+    "topic": "nlp",
+    "type": "mcq",
+    "text": "From the listed scenarios, select the correct scenario where Natural language processing can be used.",
+    "options": [
+      {
+        "letter": "A",
+        "text": "stop a process in a factory when extremely high temperatures are registered."
+      },
+      {
+        "letter": "B",
+        "text": "predict which website visitors will make a transaction."
+      },
+      {
+        "letter": "C",
+        "text": "classify email messages as work-related or personal."
+      },
+      {
+        "letter": "D",
+        "text": "predict the number of future car rentals."
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Classifying email messages as work-related or personal is an NLP text classification task. NLP analyzes and interprets written language. Predicting transactions or rentals is regression/ML. Stopping a factory process based on temperature is anomaly detection.",
+    "reference": "https://docs.microsoft.com/en-us/azure/architecture/data-guide/technology-choices/natural-language-processing",
+    "contextImages": []
+  },
+  {
+    "id": 238,
+    "topic": "azure_cognitive",
+    "type": "dragdrop",
+    "text": "Match the Azure OpenAI models with their appropriate purpose.",
+    "items": [
+      "GPT-4",
+      "GPT-3.5",
+      "Embeddings",
+      "DALL-E"
+    ],
+    "targets": [
+      {
+        "text": "models that convert text to numeric vectors for analysis.",
+        "correctItem": "Embeddings"
+      },
+      {
+        "text": "models that can generate natural language and code responses based on prompts.",
+        "correctItem": "GPT-3.5"
+      },
+      {
+        "text": "models that generate images based on natural language descriptions.",
+        "correctItem": "DALL-E"
+      },
+      {
+        "text": "models that represent the latest generative models for natural language and code.",
+        "correctItem": "GPT-4"
+      }
+    ],
+    "explanation": "Embeddings convert text to numeric vectors for analysis (similarity, search). GPT-3.5 generates natural language and code responses. DALL-E generates images from natural language descriptions. GPT-4 represents the latest generative models for natural language and code.",
+    "contextImages": []
+  },
+  {
+    "id": 239,
+    "topic": "computer_vision",
+    "type": "mcq",
+    "text": "You are building a service to process images from fashion stores and identify the products of competitors. The solution will use a custom model. Which Azure Cognitive Services service should you use?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Custom Vision"
+      },
+      {
+        "letter": "B",
+        "text": "Form Recognizer"
+      },
+      {
+        "letter": "C",
+        "text": "Computer Vision"
+      },
+      {
+        "letter": "D",
+        "text": "Face"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Custom Vision allows you to train custom image classification and object detection models using your own labeled data. It is the correct choice when a custom model is required.",
+    "reference": "https://docs.microsoft.com/en-us/azure/cognitive-services/custom-vision-service/overview",
+    "contextImages": []
+  },
+  {
+    "id": 240,
+    "topic": "computer_vision",
+    "type": "mcq",
+    "text": "Returning a bounding box that indicates the location of a vehicle in an image is an example of which computer vision capability?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Object detection"
+      },
+      {
+        "letter": "B",
+        "text": "semantic segmentation"
+      },
+      {
+        "letter": "C",
+        "text": "optical character recognizer (OCR)"
+      },
+      {
+        "letter": "D",
+        "text": "Image classification"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Object detection identifies objects in an image and returns their bounding box coordinates. Image classification categorizes the whole image. Semantic segmentation labels individual pixels. OCR reads text.",
+    "reference": "https://docs.microsoft.com/en-us/azure/cognitive-services/computer-vision/concept-object-detection",
+    "contextImages": []
+  },
+  {
+    "id": 241,
+    "topic": "responsible_ai",
+    "type": "mcq",
+    "text": "You have a natural language processing (NLP) model that was created by using data obtained without permission. Which Microsoft principle for responsible AI does this breach?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "transparency"
+      },
+      {
+        "letter": "B",
+        "text": "privacy and security"
+      },
+      {
+        "letter": "C",
+        "text": "inclusiveness"
+      },
+      {
+        "letter": "D",
+        "text": "reliability and safety"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Using data obtained without permission violates the privacy and security principle. Microsoft's responsible AI principles require that data is collected and used with proper consent and protection.",
+    "reference": "https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/innovate/best-practices/trusted-ai",
     "contextImages": []
   }
 ]
