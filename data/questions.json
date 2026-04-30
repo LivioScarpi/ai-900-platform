@@ -5487,5 +5487,241 @@
     ],
     "explanation": "Azure Bot Service provides the framework to build and deploy conversational bots. QnA Maker creates a knowledge base that bots can query in natural language.",
     "contextImages": []
+  },
+  {
+    "id": 219,
+    "topic": "ml_fundamentals",
+    "type": "sentence_completion",
+    "text": "Select the answer that correctly completes the sentence.",
+    "sentence": "When building a regression model, labels must have a data type of [BLANK].",
+    "options": [
+      "text",
+      "numeric",
+      "datetime",
+      "boolean"
+    ],
+    "correctAnswer": "numeric",
+    "explanation": "Regression models predict continuous numeric values, so the label column must have a numeric data type. Text, datetime, and boolean types are not valid label types for regression.",
+    "contextImages": []
+  },
+  {
+    "id": 220,
+    "topic": "computer_vision",
+    "type": "mcq",
+    "text": "You are processing photos of runners in a race and need to read the numbers on the runners' shirts to identify the runners in the photos. Which type of computer vision should you use?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "optical character recognition (OCR)"
+      },
+      {
+        "letter": "B",
+        "text": "semantic segmentation"
+      },
+      {
+        "letter": "C",
+        "text": "object detection"
+      },
+      {
+        "letter": "D",
+        "text": "facial recognition"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Optical Character Recognition (OCR) reads printed or written text from images. Reading race numbers on runners' shirts is a text-reading task, making OCR the correct choice.",
+    "contextImages": []
+  },
+  {
+    "id": 221,
+    "topic": "conversational_ai",
+    "type": "mcq",
+    "text": "A company has a team of customer service agents to provide telephone support to customers. The company is developing a webchat bot to provide automated answers to common customer queries. Which business benefit should the company expect as a result of creating the webchat bot solution?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "a reduced workload for the customer service agents"
+      },
+      {
+        "letter": "B",
+        "text": "increased sales"
+      },
+      {
+        "letter": "C",
+        "text": "improved product reliability"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "A webchat bot that handles common queries automatically reduces the volume of calls and messages that human customer service agents need to handle, directly lowering their workload.",
+    "contextImages": []
+  },
+  {
+    "id": 222,
+    "topic": "nlp",
+    "type": "mcq",
+    "text": "You are using natural language processing to process text from a Microsoft news story. You receive the output shown in the following exhibit.\n\nWhich type of natural language processing was performed?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "key phrase extraction"
+      },
+      {
+        "letter": "B",
+        "text": "translation"
+      },
+      {
+        "letter": "C",
+        "text": "entity recognition"
+      },
+      {
+        "letter": "D",
+        "text": "sentiment analysis"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "The output shows words and phrases tagged with entity types such as DateTime, PersonType, Location, Organization, and Quantity. This is Named Entity Recognition (NER), which identifies and classifies named entities in text.",
+    "contextImages": [
+      "nlp-entity-recognition-exhibit-q114.png"
+    ]
+  },
+  {
+    "id": 223,
+    "topic": "azure_ml",
+    "type": "yesno",
+    "text": "For each of the following statements, select Yes if the statement is true. Otherwise, select No.",
+    "statements": [
+      {
+        "text": "Automated machine learning provides you with the ability to include custom Python scripts in a training pipeline.",
+        "correct": "No"
+      },
+      {
+        "text": "Automated Machine Learning implements machine learning solutions without the need for programming experience.",
+        "correct": "Yes"
+      },
+      {
+        "text": "Automated machine learning provides you with the ability to visually connect datasets and modules on an interactive canvas.",
+        "correct": "Yes"
+      }
+    ],
+    "explanation": "AutoML does not support arbitrary custom Python scripts in the training pipeline (that is an ML SDK/Designer feature). AutoML is designed to be accessible without programming experience. Visually connecting datasets on a drag-and-drop canvas is a feature of Azure ML Designer, not AutoML.",
+    "contextImages": []
+  },
+  {
+    "id": 224,
+    "topic": "responsible_ai",
+    "type": "mcq",
+    "text": "You are building an AI system and need to ensure that the service meets the Microsoft transparency principle for responsible AI. Which task should you include?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Provide documentation to help developers debug code."
+      },
+      {
+        "letter": "B",
+        "text": "Ensure that all visuals have an associated text that can be read by a screen reader."
+      },
+      {
+        "letter": "C",
+        "text": "Enable autoscaling to ensure that a service scales based on demand."
+      },
+      {
+        "letter": "D",
+        "text": "Ensure that a training dataset is representative of the population."
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "The Transparency principle requires that AI systems be understandable and explainable. Providing documentation to help developers understand and debug the system directly supports transparency. Option B relates to Inclusiveness, C to Reliability, and D to Fairness.",
+    "contextImages": []
+  },
+  {
+    "id": 225,
+    "topic": "azure_cognitive",
+    "type": "mcq",
+    "text": "Which machine learning technique can be used for anomaly detection?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "A machine learning technique that classifies images based on their contents."
+      },
+      {
+        "letter": "B",
+        "text": "A machine learning technique that analyzes data over time and identifies unusual changes."
+      },
+      {
+        "letter": "C",
+        "text": "A machine learning technique that classifies objects based on user-supplied images."
+      },
+      {
+        "letter": "D",
+        "text": "A machine learning technique that understands written and spoken language."
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Anomaly detection analyzes data over time to identify unusual patterns or deviations from expected behavior. It is used for detecting fraud, equipment failures, security breaches, and other outliers. The other options describe image classification (A), Custom Vision (C), and NLP (D).",
+    "contextImages": []
+  },
+  {
+    "id": 226,
+    "topic": "azure_cognitive",
+    "type": "mcq",
+    "text": "What is the potential impact of copilots?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Copilots can only be used for certain natural language tasks like summarizing text."
+      },
+      {
+        "letter": "B",
+        "text": "Copilots only impact applications used in professional settings."
+      },
+      {
+        "letter": "C",
+        "text": "Copilots can help with first drafts, information synthesis, strategic planning, and much more."
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Microsoft Copilots have a broad potential impact across many tasks and settings — including writing first drafts, synthesizing information, strategic planning, coding assistance, and more. They are not limited to specific tasks or professional contexts.",
+    "contextImages": []
+  },
+  {
+    "id": 227,
+    "topic": "responsible_ai",
+    "type": "mcq",
+    "text": "\"A triage bot that prioritizes insurance claims based on injuries\" is an example of the Microsoft Reliability and Safety principle for responsible AI. Select the correct option.",
+    "options": [
+      {
+        "letter": "A",
+        "text": "True"
+      },
+      {
+        "letter": "B",
+        "text": "False"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "A triage bot that prioritizes insurance claims based on injuries is an example of the Fairness principle, not Reliability and Safety. It involves making decisions that affect different people differently, which relates to treating all groups equitably. Reliability and Safety concerns consistent and safe operation of AI systems.",
+    "contextImages": []
+  },
+  {
+    "id": 228,
+    "topic": "ml_fundamentals",
+    "type": "mcq",
+    "text": "You are evaluating a medical research project which uses a large anonymized dataset of brain scan images that are categorised into predefined brain hemorrhage types. You need to use machine learning to support early detection of the different brain hemorrhage types in the images before the images are reviewed by a person.\n\nThis is an example of which type of machine learning?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "regression"
+      },
+      {
+        "letter": "B",
+        "text": "classification"
+      },
+      {
+        "letter": "C",
+        "text": "clustering"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Assigning brain scan images to predefined categories (hemorrhage types) is a classification problem. The model learns to assign each image to one of several known classes. Regression predicts numeric values and clustering groups data without predefined labels.",
+    "contextImages": []
   }
 ]
