@@ -6076,5 +6076,200 @@
     "explanation": "Using data obtained without permission violates the privacy and security principle. Microsoft's responsible AI principles require that data is collected and used with proper consent and protection.",
     "reference": "https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/innovate/best-practices/trusted-ai",
     "contextImages": []
+  },
+  {
+    "id": 242,
+    "topic": "computer_vision",
+    "type": "mcq",
+    "text": "A traffic monitoring system that collects vehicle registration numbers from CCTV footage is an example of which Computer Vision service?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "image classification"
+      },
+      {
+        "letter": "B",
+        "text": "text detection"
+      },
+      {
+        "letter": "C",
+        "text": "object detection"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Reading vehicle registration numbers (license plates) from CCTV images involves extracting text from images, which is text detection (OCR).",
+    "contextImages": []
+  },
+  {
+    "id": 243,
+    "topic": "responsible_ai",
+    "type": "mcq",
+    "text": "Arrange the stages in correct sequence to plan a responsible generative AI solution.",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Measure > Mitigate > Identify > Operate"
+      },
+      {
+        "letter": "B",
+        "text": "Measure > Identify > Mitigate > Operate"
+      },
+      {
+        "letter": "C",
+        "text": "Identify > Measure > Mitigate > Operate"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "The correct sequence for planning a responsible generative AI solution is: Identify potential harms → Measure those harms → Mitigate the harms → Operate the solution responsibly.",
+    "contextImages": []
+  },
+  {
+    "id": 244,
+    "topic": "azure_cognitive",
+    "type": "mcq",
+    "text": "Azure OpenAI image generation models can generate images only from prompt text.",
+    "options": [
+      {
+        "letter": "A",
+        "text": "True"
+      },
+      {
+        "letter": "B",
+        "text": "False"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Azure OpenAI image generation models (such as DALL-E) can generate images from text prompts, but also from existing images (image editing and variations), so the statement is false.",
+    "contextImages": []
+  },
+  {
+    "id": 245,
+    "topic": "computer_vision",
+    "type": "mcq",
+    "text": "You are building an image tagging solution for social media that tags your friends automatically in images. Which Azure Cognitive Services service should you use?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Computer Vision"
+      },
+      {
+        "letter": "B",
+        "text": "Text Analytics"
+      },
+      {
+        "letter": "C",
+        "text": "Face"
+      },
+      {
+        "letter": "D",
+        "text": "Form Recognizer"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "The Face service provides facial detection and recognition capabilities, which is exactly what automatic friend tagging in photos requires.",
+    "contextImages": []
+  },
+  {
+    "id": 246,
+    "topic": "conversational_ai",
+    "type": "multi",
+    "text": "Select the correct scenarios of conversational AI workload. Select two correct options.",
+    "options": [
+      {
+        "letter": "A",
+        "text": "A telephone answering service that has a pre-recorded message."
+      },
+      {
+        "letter": "B",
+        "text": "Telephone voice menus to reduce the load on human resources."
+      },
+      {
+        "letter": "C",
+        "text": "A service that creates frequently asked questions (FAQ) documents by crawling public websites."
+      },
+      {
+        "letter": "D",
+        "text": "A chatbot that provides users with the ability to find answers on a website by themselves."
+      }
+    ],
+    "correctAnswers": [
+      "B",
+      "D"
+    ],
+    "explanation": "Conversational AI involves interactive, two-way communication. Voice menus (IVR) and chatbots are conversational AI. A pre-recorded message is one-way and not conversational. Creating FAQ documents is knowledge mining.",
+    "contextImages": []
+  },
+  {
+    "id": 247,
+    "topic": "ml_fundamentals",
+    "type": "mcq",
+    "text": "An automobile company wants to use historic car sales data to train a machine learning model. The model should predict the price of a pre-owned car based on its make, model, engine size, and mileage. What kind of machine learning model should the dealership use automated machine learning to create?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "clustering"
+      },
+      {
+        "letter": "B",
+        "text": "Classification"
+      },
+      {
+        "letter": "C",
+        "text": "Regression"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Predicting a numeric value (car price) based on input features is regression.",
+    "contextImages": []
+  },
+  {
+    "id": 248,
+    "topic": "nlp",
+    "type": "mcq",
+    "text": "You are building a Language Understanding model for an e-commerce business. You need to ensure that the model detects when utterances are outside the intended scope of the model. What should you do?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Test the model by using new utterances"
+      },
+      {
+        "letter": "B",
+        "text": "Add utterances to the None intent"
+      },
+      {
+        "letter": "C",
+        "text": "Create a new model"
+      },
+      {
+        "letter": "D",
+        "text": "Create a prebuilt task entity"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "The None intent in Language Understanding (LUIS) is designed to catch utterances that do not match any defined intent, effectively detecting out-of-scope requests.",
+    "contextImages": []
+  },
+  {
+    "id": 249,
+    "topic": "azure_ml",
+    "type": "mcq",
+    "text": "You plan to deploy an Azure Machine Learning model by using the Machine Learning designer. Which actions should you perform in sequence?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "1. Ingest and prepare dataset.\n2. Split data randomly into training and validation data.\n3. Train the model.\n4. Evaluate model against original dataset."
+      },
+      {
+        "letter": "B",
+        "text": "1. Ingest and prepare dataset.\n2. Train the model.\n3. Split data randomly into training and validation data.\n4. Evaluate model against validation dataset."
+      },
+      {
+        "letter": "C",
+        "text": "1. Ingest and prepare dataset.\n2. Split data randomly into training and validation data.\n3. Train the model.\n4. Evaluate model against validation dataset."
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "The correct ML designer pipeline sequence is: Ingest and prepare dataset → Split data into training/validation → Train the model → Evaluate against the validation dataset (not the original dataset).",
+    "contextImages": []
   }
 ]
