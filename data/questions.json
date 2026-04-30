@@ -5723,5 +5723,214 @@
     "correctAnswer": "B",
     "explanation": "Assigning brain scan images to predefined categories (hemorrhage types) is a classification problem. The model learns to assign each image to one of several known classes. Regression predicts numeric values and clustering groups data without predefined labels.",
     "contextImages": []
+  },
+  {
+    "id": 229,
+    "topic": "responsible_ai",
+    "type": "mcq",
+    "text": "Consider the below scenario:\nDeploying an AI service that monitors people of certain ethnicity for closer inspection in a retail store.\nThe above scenario is a violation of which Microsoft responsible AI principle?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Privacy and security"
+      },
+      {
+        "letter": "B",
+        "text": "Fairness"
+      },
+      {
+        "letter": "C",
+        "text": "Transparency"
+      },
+      {
+        "letter": "D",
+        "text": "Inclusiveness"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Targeting people based on ethnicity is a violation of the Fairness principle, which requires that AI systems treat all people equitably and do not discriminate based on race, gender, or other protected characteristics.",
+    "contextImages": []
+  },
+  {
+    "id": 230,
+    "topic": "responsible_ai",
+    "type": "mcq",
+    "text": "What is an example of the Microsoft responsible AI principle of transparency?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Ensuring that opportunities are allocated equally to all applicants."
+      },
+      {
+        "letter": "B",
+        "text": "Ensuring that the privileged data of users is stored in a secure manner."
+      },
+      {
+        "letter": "C",
+        "text": "Helping users understand the decisions made by an AI system."
+      },
+      {
+        "letter": "D",
+        "text": "Ensuring that developers are accountable for the solutions they create."
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Transparency means helping users understand how AI systems work and why they make specific decisions. Explaining outcomes to users is a core example of this principle. Option A is Fairness, B is Privacy and security, and D is Accountability.",
+    "contextImages": []
+  },
+  {
+    "id": 231,
+    "topic": "responsible_ai",
+    "type": "mcq",
+    "text": "The following statement follows which Microsoft principle for responsible AI?\n\"The handling of unusual or missing values provided to an AI system.\"\nSelect the correct option.",
+    "options": [
+      {
+        "letter": "A",
+        "text": "inclusiveness"
+      },
+      {
+        "letter": "B",
+        "text": "transparency"
+      },
+      {
+        "letter": "C",
+        "text": "reliability and safety"
+      },
+      {
+        "letter": "D",
+        "text": "privacy and security"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Properly handling unusual or missing input values is part of the Reliability and Safety principle, which ensures AI systems behave predictably and safely even in edge cases.",
+    "contextImages": []
+  },
+  {
+    "id": 232,
+    "topic": "ml_fundamentals",
+    "type": "dragdrop",
+    "text": "Match the types of AI workloads to the appropriate scenarios.",
+    "items": [
+      "Anomaly detection",
+      "Machine Learning (Regression)",
+      "Computer vision",
+      "Natural language processing"
+    ],
+    "targets": [
+      {
+        "text": "Identify handwritten letters.",
+        "correctItem": "Computer vision"
+      },
+      {
+        "text": "Predict the sentiment of a media post.",
+        "correctItem": "Natural language processing"
+      },
+      {
+        "text": "Identify a fraudulent credit card payment.",
+        "correctItem": "Anomaly detection"
+      },
+      {
+        "text": "Predict next month's sale.",
+        "correctItem": "Machine Learning (Regression)"
+      }
+    ],
+    "explanation": "Identifying handwritten letters is a Computer Vision task. Predicting sentiment in text is Natural Language Processing. Detecting fraudulent payments is Anomaly Detection (unusual patterns). Predicting future sales values is a Machine Learning Regression task.",
+    "contextImages": []
+  },
+  {
+    "id": 233,
+    "topic": "azure_cognitive",
+    "type": "mcq",
+    "text": "You are analyzing images and text from an image. You are using Computer Vision service to analyze images and Text Analytics service to analyze text. You have decided to use only one key and endpoint to access all of your services.\nWhat kind of resource should you create in your Azure subscription?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Custom Vision"
+      },
+      {
+        "letter": "B",
+        "text": "Cognitive Services"
+      },
+      {
+        "letter": "C",
+        "text": "Computer Vision"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Cognitive Services is a multi-service resource that provides a single key and endpoint to access multiple Azure AI services, including Computer Vision and Text Analytics. Custom Vision and Computer Vision are single-service resources.",
+    "contextImages": []
+  },
+  {
+    "id": 234,
+    "topic": "conversational_ai",
+    "type": "mcq",
+    "text": "Which of the following workload types matches the below workload?\n\"An automated chat to answer questions about refunds and exchanges on an e-commerce site.\"\nSelect the correct option.",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Computer Vision"
+      },
+      {
+        "letter": "B",
+        "text": "Sentiment Analysis"
+      },
+      {
+        "letter": "C",
+        "text": "Conversational AI"
+      },
+      {
+        "letter": "D",
+        "text": "Anomaly detection"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "An automated chat that answers customer questions is a classic Conversational AI workload. It uses natural language understanding to interpret user intent and provide relevant responses.",
+    "contextImages": []
+  },
+  {
+    "id": 235,
+    "topic": "conversational_ai",
+    "type": "mcq",
+    "text": "In the given scenario, select which type of AI service should you use.\n\"Create a bot from a frequently asked questions (FAQ) document.\"\nSelect the correct option.",
+    "options": [
+      {
+        "letter": "A",
+        "text": "QnA Maker"
+      },
+      {
+        "letter": "B",
+        "text": "Text Analytics"
+      },
+      {
+        "letter": "C",
+        "text": "Speech"
+      },
+      {
+        "letter": "D",
+        "text": "Language Understanding (LUIS)"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "QnA Maker (now part of Azure AI Language as Custom Question Answering) is designed specifically to create a question-and-answer bot from existing documents such as FAQ pages. LUIS is for intent recognition, not Q&A extraction.",
+    "contextImages": []
+  },
+  {
+    "id": 236,
+    "topic": "responsible_ai",
+    "type": "mcq",
+    "text": "\"Providing an explanation of the outcome of a credit loan application\" is an example of the Microsoft transparency principle for responsible AI. Select the correct option.",
+    "options": [
+      {
+        "letter": "A",
+        "text": "True"
+      },
+      {
+        "letter": "B",
+        "text": "False"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Explaining why a loan application was approved or denied is a direct example of the Transparency principle, which requires that AI systems are understandable and that their decisions can be explained to those affected.",
+    "contextImages": []
   }
 ]
