@@ -6967,5 +6967,239 @@
     ],
     "explanation": "The four steps in the first stage (identifying harms) of responsible generative AI are: (C) Identify potential harms, (D) Prioritize them by likelihood and severity, (E) Test and verify the prioritized harms, and (A) Document and share the verified harms. Option B (Define) is a distractor overlapping with Identify.",
     "contextImages": []
+  },
+  {
+    "id": 277,
+    "topic": "ml_fundamentals",
+    "type": "mcq",
+    "text": "Which type of machine learning should you use for the following scenario: Predict the sale price of auctioned items. Select the correct option.",
+    "options": [
+      {
+        "letter": "A",
+        "text": "classification"
+      },
+      {
+        "letter": "B",
+        "text": "regression"
+      },
+      {
+        "letter": "C",
+        "text": "clustering"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Predicting a sale price is a numeric output prediction task — that is regression. Classification predicts categories; clustering groups unlabeled data.",
+    "contextImages": []
+  },
+  {
+    "id": 278,
+    "topic": "nlp",
+    "type": "mcq",
+    "text": "\"An automated voice that reads back a credit card number entered into a telephone by using a numeric keypad\" is an example of Speech Synthesis solution. Select the correct option.",
+    "options": [
+      {
+        "letter": "A",
+        "text": "True"
+      },
+      {
+        "letter": "B",
+        "text": "False"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Speech Synthesis (text-to-speech) converts text into spoken audio. Reading back digits entered via keypad is a classic text-to-speech use case.",
+    "contextImages": []
+  },
+  {
+    "id": 279,
+    "topic": "ml_fundamentals",
+    "type": "mcq",
+    "text": "You are building a machine learning model to determine a local taxi price at a specific time of a day using historic data from a taxi service database. Which type of machine learning model should you build?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Reinforcement Learning"
+      },
+      {
+        "letter": "B",
+        "text": "Semi-supervised Learning"
+      },
+      {
+        "letter": "C",
+        "text": "Unsupervised Learning"
+      },
+      {
+        "letter": "D",
+        "text": "Supervised Learning"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Predicting taxi prices from labeled historic data (input features + known prices) is a supervised regression task.",
+    "contextImages": []
+  },
+  {
+    "id": 280,
+    "topic": "ml_fundamentals",
+    "type": "mcq",
+    "text": "Consider the below scenario: Ensuring that the numeric variables in training data are on a similar scale. The above scenario is an example of which of the following category?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "data ingestion"
+      },
+      {
+        "letter": "B",
+        "text": "model training"
+      },
+      {
+        "letter": "C",
+        "text": "feature engineering"
+      },
+      {
+        "letter": "D",
+        "text": "feature selection"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Scaling/normalizing numeric features so they share a similar range is a feature engineering step performed before model training.",
+    "contextImages": []
+  },
+  {
+    "id": 281,
+    "topic": "computer_vision",
+    "type": "sentence_completion",
+    "text": "Select the answer that correctly completes the sentence.",
+    "sentence": "Computer vision capabilities can be deployed to [BLANK].",
+    "options": [
+      "integrate a facial recognition feature into an app.",
+      "develop a text-based chatbot for a website.",
+      "suggest automated response to incoming email."
+    ],
+    "correctAnswer": "integrate a facial recognition feature into an app.",
+    "explanation": "Facial recognition is a computer vision capability. Text chatbots and email response suggestions are NLP tasks, not computer vision.",
+    "contextImages": []
+  },
+  {
+    "id": 282,
+    "topic": "azure_cognitive",
+    "type": "mcq",
+    "text": "What is an example of a potential task a generative AI application can help solve? Select the correct option.",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Monitoring the temperature in a manufacturing facility."
+      },
+      {
+        "letter": "B",
+        "text": "Collecting real time data and storing it in a database."
+      },
+      {
+        "letter": "C",
+        "text": "Creating a draft for an email."
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Generative AI excels at creating original text content such as email drafts. Temperature monitoring and data collection are IoT/data engineering tasks, not generative AI use cases.",
+    "contextImages": []
+  },
+  {
+    "id": 283,
+    "topic": "nlp",
+    "type": "mcq",
+    "text": "\"An AI character in a computer game that speaks audibly to a player\" is an example of Speech Synthesis solution. Select the correct option.",
+    "options": [
+      {
+        "letter": "A",
+        "text": "True"
+      },
+      {
+        "letter": "B",
+        "text": "False"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "An AI character generating spoken dialogue for a player is a speech synthesis (text-to-speech) use case.",
+    "contextImages": []
+  },
+  {
+    "id": 284,
+    "topic": "ml_fundamentals",
+    "type": "sentence_completion",
+    "text": "When evaluating the performance of a model, select the answer that correctly completes the sentence.",
+    "sentence": "When evaluating the performance of a model, the [BLANK] displays the predicted and actual positives and negatives by using a grid of 0 and 1 values.",
+    "options": [
+      "Threshold",
+      "Confusion matrix",
+      "AUC metric",
+      "ROC curve"
+    ],
+    "correctAnswer": "Confusion matrix",
+    "explanation": "A confusion matrix is a grid showing true positives, false positives, true negatives, and false negatives, used to evaluate classification model performance.",
+    "contextImages": []
+  },
+  {
+    "id": 285,
+    "topic": "azure_cognitive",
+    "type": "multi",
+    "text": "Select the correct Azure OpenAI Service models. Select all that apply.",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Embeddings"
+      },
+      {
+        "letter": "B",
+        "text": "GPT-4"
+      },
+      {
+        "letter": "C",
+        "text": "DALL-E"
+      },
+      {
+        "letter": "D",
+        "text": "GPT-3.5"
+      },
+      {
+        "letter": "E",
+        "text": "Bard"
+      }
+    ],
+    "correctAnswers": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "explanation": "Azure OpenAI Service offers Embeddings, GPT-4, DALL-E, and GPT-3.5 models. Bard is Google's model and is not available in Azure OpenAI Service.",
+    "contextImages": []
+  },
+  {
+    "id": 286,
+    "topic": "responsible_ai",
+    "type": "dragdrop",
+    "text": "Match the principles of responsible AI to appropriate requirements.",
+    "items": [
+      "Fairness",
+      "Privacy and security",
+      "Reliability and safety",
+      "Transparency",
+      "Accountability"
+    ],
+    "targets": [
+      {
+        "text": "The system must not discriminate based on gender, race.",
+        "correctItem": "Fairness"
+      },
+      {
+        "text": "Personal data must be visible only to approved entities.",
+        "correctItem": "Privacy and security"
+      },
+      {
+        "text": "It's important to keep record of the automated decision-making processes, so that authorized individuals can understand the reasoning behind a decision.",
+        "correctItem": "Transparency"
+      }
+    ],
+    "explanation": "Non-discrimination based on gender/race = Fairness. Restricting data access to approved entities = Privacy and security. Recording decision-making processes for explainability = Transparency.",
+    "contextImages": []
   }
 ]
