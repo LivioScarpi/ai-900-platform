@@ -6509,5 +6509,222 @@
     "correctAnswer": "A",
     "explanation": "QnA Maker (now part of Azure AI Language as Custom Question Answering) is designed to build a knowledge base from FAQs and documents, enabling a web app to guide users to the best answer — the ideal service for a customer support bot.",
     "contextImages": []
+  },
+  {
+    "id": 260,
+    "topic": "computer_vision",
+    "type": "multi",
+    "text": "Select the correct capability of object detection.",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Object detection can identify multiple types of damaged products in an image."
+      },
+      {
+        "letter": "B",
+        "text": "Object detection can identify the location of a damaged product in an image."
+      },
+      {
+        "letter": "C",
+        "text": "Object detection can identify multiple instances of a damaged product in an image."
+      }
+    ],
+    "correctAnswers": [
+      "A",
+      "B",
+      "C"
+    ],
+    "explanation": "Object detection can identify multiple types of objects, locate them with bounding boxes, and detect multiple instances of the same object — all in a single image.",
+    "contextImages": []
+  },
+  {
+    "id": 261,
+    "topic": "ml_fundamentals",
+    "type": "sentence_completion",
+    "text": "Using RFM (Recency, Frequency, Monetary) values to identify segments of a customer base is an example of —\nSelect the answer that correctly completes the sentence.",
+    "sentence": "Using RFM values to identify segments of a customer base is an example of [BLANK].",
+    "options": [
+      "Regularization",
+      "Classification",
+      "Regression",
+      "Clustering"
+    ],
+    "correctAnswer": "Clustering",
+    "explanation": "RFM analysis groups customers into segments based on behavioral similarities — this is unsupervised learning (clustering), not a classification or regression task.",
+    "contextImages": []
+  },
+  {
+    "id": 262,
+    "topic": "computer_vision",
+    "type": "mcq",
+    "text": "You are processing an image using Computer Vision API, which generated an annotated image shown in the exhibit.\n\nWhich type of computer vision was used?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "object detection"
+      },
+      {
+        "letter": "B",
+        "text": "image classification"
+      },
+      {
+        "letter": "C",
+        "text": "optical character recognition (OCR)"
+      },
+      {
+        "letter": "D",
+        "text": "semantic segmentation"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "The exhibit shows bounding boxes around individual objects (banana, orange, apple) with confidence scores — this is the output of object detection, which locates and labels multiple objects in an image.",
+    "contextImages": [
+      "object-detection-exhibit-q164.png"
+    ]
+  },
+  {
+    "id": 263,
+    "topic": "computer_vision",
+    "type": "mcq",
+    "text": "Which of the following workload types matches the below workload:\nDetermining whether a photo contains a person\n\nSelect the correct option.",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Sentiment Analysis"
+      },
+      {
+        "letter": "B",
+        "text": "Anomaly detection"
+      },
+      {
+        "letter": "C",
+        "text": "Conversational AI"
+      },
+      {
+        "letter": "D",
+        "text": "Computer Vision"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Detecting whether a person is present in a photo is a Computer Vision task (specifically image classification or object detection).",
+    "contextImages": []
+  },
+  {
+    "id": 264,
+    "topic": "computer_vision",
+    "type": "dragdrop",
+    "text": "Match the types of machine learning to the appropriate scenarios.",
+    "items": [
+      "Facial detection",
+      "Image classification",
+      "Object detection",
+      "Optical character recognition (OCR)",
+      "Semantic segmentation"
+    ],
+    "targets": [
+      {
+        "text": "Separate images of polar bears and brown bears.",
+        "correctItem": "Image classification"
+      },
+      {
+        "text": "Determine the location of a bear in a photo.",
+        "correctItem": "Object detection"
+      },
+      {
+        "text": "Determine which pixels in an image are part of a bear.",
+        "correctItem": "Semantic segmentation"
+      }
+    ],
+    "explanation": "Image classification labels the whole image (bear type). Object detection finds where the bear is (bounding box). Semantic segmentation identifies which individual pixels belong to the bear.",
+    "contextImages": []
+  },
+  {
+    "id": 265,
+    "topic": "responsible_ai",
+    "type": "mcq",
+    "text": "In the given scenario, select the correct principle of Responsible AI.\nA predictive app provides audio output for visually impaired users.\n\nSelect the correct option.",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Transparency"
+      },
+      {
+        "letter": "B",
+        "text": "Accountability"
+      },
+      {
+        "letter": "C",
+        "text": "Fairness"
+      },
+      {
+        "letter": "D",
+        "text": "Inclusiveness"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Providing audio output for visually impaired users is an example of Inclusiveness — designing AI systems that empower everyone and avoid barriers, including those with disabilities.",
+    "contextImages": []
+  },
+  {
+    "id": 266,
+    "topic": "computer_vision",
+    "type": "mcq",
+    "text": "Which of the provided options is considered the calculated probability of a correct image classification?\n\nSelect the correct option.",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Accuracy"
+      },
+      {
+        "letter": "B",
+        "text": "Confidence"
+      },
+      {
+        "letter": "C",
+        "text": "Sentiment"
+      },
+      {
+        "letter": "D",
+        "text": "Root Mean Square Error"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Confidence is the predicted probability score that a classification result is correct. Accuracy measures overall model performance across many predictions.",
+    "contextImages": []
+  },
+  {
+    "id": 267,
+    "topic": "azure_ml",
+    "type": "multi",
+    "text": "You are planning to deploy an Azure Machine Learning model as a service that will be used by client applications. Which three processes should you perform before you deploy the model?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Model Evaluation"
+      },
+      {
+        "letter": "B",
+        "text": "Model Training"
+      },
+      {
+        "letter": "C",
+        "text": "Data Encryption"
+      },
+      {
+        "letter": "D",
+        "text": "Model Retraining"
+      },
+      {
+        "letter": "E",
+        "text": "Data Preparation"
+      }
+    ],
+    "correctAnswers": [
+      "A",
+      "B",
+      "E"
+    ],
+    "explanation": "Before deploying a model you must: prepare the data (Data Preparation), train the model (Model Training), and evaluate its performance (Model Evaluation). Data Encryption and Model Retraining are not required pre-deployment steps.",
+    "contextImages": []
   }
 ]
