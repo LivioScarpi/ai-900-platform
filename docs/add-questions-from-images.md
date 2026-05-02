@@ -130,6 +130,8 @@ Usare il tool:
 
 **Come interpretare il risultato:** confrontare la percentuale Y del verde con la percentuale Y delle opzioni estratte dall'OCR. L'opzione più vicina è la risposta corretta.
 
+> **Attenzione — domande `yesno`:** le domande di tipo Yes/No usano **pallini blu** (radio button selezionato) per indicare la risposta corretta, non testo verde. Il tool `find_green` restituirà `No green text found` per queste immagini. In questo caso **leggere l'immagine visivamente** con il tool `Read` (che mostra l'immagine inline) per vedere quale colonna (Yes / No) ha il pallino pieno per ogni affermazione.
+
 ---
 
 ### 4. Struttura delle domande nel JSON

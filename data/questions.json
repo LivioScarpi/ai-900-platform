@@ -6726,5 +6726,246 @@
     ],
     "explanation": "Before deploying a model you must: prepare the data (Data Preparation), train the model (Model Training), and evaluate its performance (Model Evaluation). Data Encryption and Model Retraining are not required pre-deployment steps.",
     "contextImages": []
+  },
+  {
+    "id": 268,
+    "topic": "conversational_ai",
+    "type": "yesno",
+    "text": "For each of the following statement, select Yes if the statement is true. Otherwise, select No.\nNote: Each correct selection is worth one point.",
+    "statements": [
+      {
+        "text": "Azure Bot Service and Azure Cognitive Services can be integrated.",
+        "correct": "Yes"
+      },
+      {
+        "text": "Azure Bot Service engages with customers in a conversational manner.",
+        "correct": "Yes"
+      },
+      {
+        "text": "Azure Bot Service can import frequently asked questions (FAQ) to question and answer sets.",
+        "correct": "No"
+      }
+    ],
+    "explanation": "Azure Bot Service integrates natively with Azure Cognitive Services and is designed for conversational interactions with users. However, importing FAQs to create question-and-answer sets is a feature of QnA Maker (Azure AI Language), not of Azure Bot Service itself. Azure Bot Service can connect to QnA Maker, but the import functionality belongs to QnA Maker.",
+    "contextImages": []
+  },
+  {
+    "id": 269,
+    "topic": "azure_ml",
+    "type": "mcq",
+    "text": "From Azure Machine Learning designer, to deploy a real-time inference pipeline as a service for others to consume, you must deploy the model to which of the following service? Select the correct option.",
+    "options": [
+      {
+        "letter": "A",
+        "text": "a local web service"
+      },
+      {
+        "letter": "B",
+        "text": "Azure Container Instances"
+      },
+      {
+        "letter": "C",
+        "text": "Azure Machine Learning Compute"
+      },
+      {
+        "letter": "D",
+        "text": "Azure Kubernetes Service (AKS)"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Azure Kubernetes Service (AKS) is the required deployment target for real-time inference pipelines in Azure ML designer when the service needs to be consumed by others in production. Local web service and ACI are for testing; Azure ML Compute is for training.",
+    "contextImages": []
+  },
+  {
+    "id": 270,
+    "topic": "azure_cognitive",
+    "type": "mcq",
+    "text": "You have 100 instructional videos that do NOT contain any audio. Each instructional video has a script. You need to generate a narration audio file for each video based on the script. Which type of workload should you use?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "speech synthesis"
+      },
+      {
+        "letter": "B",
+        "text": "translation"
+      },
+      {
+        "letter": "C",
+        "text": "language modeling"
+      },
+      {
+        "letter": "D",
+        "text": "speech recognition"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Speech synthesis (text-to-speech) converts written text (the script) into spoken audio. Speech recognition converts audio to text (the opposite direction). Translation converts between languages. Language modeling predicts word sequences.",
+    "contextImages": []
+  },
+  {
+    "id": 271,
+    "topic": "responsible_ai",
+    "type": "mcq",
+    "text": "What is one action Microsoft takes to support ethical AI practices in Azure OpenAI? Select the correct option.",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Logs users out of Azure OpenAI Studio after a period of inactivity to ensure it's only used by one user."
+      },
+      {
+        "letter": "B",
+        "text": "Provides Transparency Notes that share how technology is built and asks users to consider its implications."
+      },
+      {
+        "letter": "C",
+        "text": "Allows users to build any application, regardless of harmful effects, to ensure fairness."
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Microsoft publishes Transparency Notes for Azure AI services to explain how the technology works, its intended uses, and potential harms — helping users make responsible decisions. Option C contradicts responsible AI principles, and option A is a security feature unrelated to ethical AI.",
+    "contextImages": []
+  },
+  {
+    "id": 272,
+    "topic": "nlp",
+    "type": "yesno",
+    "text": "For each of the following statement, select Yes if the statement is true. Otherwise, select No.\nNote: Each correct selection is worth one point.",
+    "statements": [
+      {
+        "text": "The Text Analytics service can identify in which language text is written.",
+        "correct": "Yes"
+      },
+      {
+        "text": "The Text Analytics service can detect handwritten signatures in a document.",
+        "correct": "No"
+      },
+      {
+        "text": "The Text Analytics service can identify companies and organizations mentioned in a document.",
+        "correct": "Yes"
+      }
+    ],
+    "explanation": "Text Analytics supports language detection and Named Entity Recognition (NER), which identifies entities such as companies and organizations. Detecting handwritten signatures is not a Text Analytics feature — it belongs to Form Recognizer (Document Intelligence).",
+    "contextImages": []
+  },
+  {
+    "id": 273,
+    "topic": "responsible_ai",
+    "type": "mcq",
+    "text": "Your company is exploring the use of voice recognition technologies in its smart home devices. The company wants to identify any barriers that might unintentionally leave out specific user groups. This is an example of which Microsoft guiding principle for responsible AI?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Reliability and safety"
+      },
+      {
+        "letter": "B",
+        "text": "Inclusiveness"
+      },
+      {
+        "letter": "C",
+        "text": "Privacy and security"
+      },
+      {
+        "letter": "D",
+        "text": "Accountability"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Inclusiveness means AI systems should empower everyone, including people with disabilities, and should not unintentionally exclude specific user groups. Identifying barriers in voice recognition for different demographics directly reflects this principle.",
+    "contextImages": []
+  },
+  {
+    "id": 274,
+    "topic": "responsible_ai",
+    "type": "mcq",
+    "text": "You have an AI-based loan approval system. During testing, you discover that the system has a gender bias. Which responsible AI principle does this violate?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "reliability and safety"
+      },
+      {
+        "letter": "B",
+        "text": "fairness"
+      },
+      {
+        "letter": "C",
+        "text": "accountability"
+      },
+      {
+        "letter": "D",
+        "text": "transparency"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Fairness requires that AI systems treat all people equitably and do not discriminate based on characteristics such as gender, race, or age. A gender bias in a loan approval system is a direct violation of the fairness principle.",
+    "contextImages": []
+  },
+  {
+    "id": 275,
+    "topic": "conversational_ai",
+    "type": "multi",
+    "text": "You are planning to develop a reservation system for restaurants. Which of the following services would you need? Select two correct options.",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Azure Bot Service"
+      },
+      {
+        "letter": "B",
+        "text": "Language Understanding"
+      },
+      {
+        "letter": "C",
+        "text": "Azure QnA"
+      },
+      {
+        "letter": "D",
+        "text": "Cognitive Services"
+      }
+    ],
+    "correctAnswers": [
+      "A",
+      "C"
+    ],
+    "explanation": "Azure Bot Service provides the conversational interface to interact with users. Azure QnA (QnA Maker) enables the bot to answer common restaurant-related questions (e.g. opening hours, location). Together they cover the core needs of a restaurant reservation assistant.",
+    "contextImages": []
+  },
+  {
+    "id": 276,
+    "topic": "responsible_ai",
+    "type": "multi",
+    "text": "The first stage in a responsible generative AI process is to identify the potential harms that could affect your planned solution. Select the four steps in this stage.",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Document and share the verified harms"
+      },
+      {
+        "letter": "B",
+        "text": "Define Potential harms"
+      },
+      {
+        "letter": "C",
+        "text": "Identify potential harms"
+      },
+      {
+        "letter": "D",
+        "text": "Prioritize identified harms"
+      },
+      {
+        "letter": "E",
+        "text": "Test and verify the prioritized harms"
+      }
+    ],
+    "correctAnswers": [
+      "A",
+      "C",
+      "D",
+      "E"
+    ],
+    "explanation": "The four steps in the first stage (identifying harms) of responsible generative AI are: (C) Identify potential harms, (D) Prioritize them by likelihood and severity, (E) Test and verify the prioritized harms, and (A) Document and share the verified harms. Option B (Define) is a distractor overlapping with Identify.",
+    "contextImages": []
   }
 ]
