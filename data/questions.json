@@ -7201,5 +7201,243 @@
     ],
     "explanation": "Non-discrimination based on gender/race = Fairness. Restricting data access to approved entities = Privacy and security. Recording decision-making processes for explainability = Transparency.",
     "contextImages": []
+  },
+  {
+    "id": 287,
+    "topic": "responsible_ai",
+    "type": "mcq",
+    "text": "Cultural denigration is a violation of which Microsoft responsible AI principle? Select the correct option.",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Transparency"
+      },
+      {
+        "letter": "B",
+        "text": "Fairness"
+      },
+      {
+        "letter": "C",
+        "text": "Inclusiveness"
+      },
+      {
+        "letter": "D",
+        "text": "Accountability"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Cultural denigration violates the Fairness principle, which requires AI systems to treat all people equitably and avoid discriminatory or demeaning treatment based on cultural, ethnic, or other characteristics.",
+    "contextImages": []
+  },
+  {
+    "id": 288,
+    "topic": "ml_fundamentals",
+    "type": "yesno",
+    "text": "For each of the following statement, select Yes if the statement is true. Otherwise, select No.",
+    "statements": [
+      {
+        "text": "For a regression model, labels must be numeric.",
+        "correct": "Yes"
+      },
+      {
+        "text": "For a clustering model, labels must be used.",
+        "correct": "No"
+      },
+      {
+        "text": "For a classification model, labels must be numeric.",
+        "correct": "No"
+      }
+    ],
+    "explanation": "Regression models predict numeric values so labels must be numeric. Clustering is unsupervised and does not use labels. Classification models predict categories (not necessarily numeric) — labels are class names like 'cat' or 'dog'.",
+    "contextImages": []
+  },
+  {
+    "id": 289,
+    "topic": "azure_cognitive",
+    "type": "yesno",
+    "text": "For each of the following statement, select Yes if the statement is true. Otherwise, select No.",
+    "statements": [
+      {
+        "text": "The Custom Vision service can be used to detect objects in an image.",
+        "correct": "Yes"
+      },
+      {
+        "text": "The Custom Vision service requires that you provide your own data to train the model.",
+        "correct": "Yes"
+      },
+      {
+        "text": "The Custom Vision service can be used to analyze video files.",
+        "correct": "No"
+      }
+    ],
+    "explanation": "Custom Vision supports object detection and image classification, and it is a supervised service requiring user-provided training images. It does not natively analyze video files — Video Indexer is the appropriate service for that.",
+    "contextImages": []
+  },
+  {
+    "id": 290,
+    "topic": "azure_ml",
+    "type": "mcq",
+    "text": "You need to track multiple versions of a model that was trained by using Azure Machine Learning. What should you do?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Explain the model"
+      },
+      {
+        "letter": "B",
+        "text": "Provision an inference cluster"
+      },
+      {
+        "letter": "C",
+        "text": "Register the training data"
+      },
+      {
+        "letter": "D",
+        "text": "Register the model"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "In Azure Machine Learning, you register a model to the model registry to track multiple versions of it. The registry stores each version with metadata such as metrics and tags, enabling version management and deployment.",
+    "contextImages": []
+  },
+  {
+    "id": 291,
+    "topic": "ml_fundamentals",
+    "type": "mcq",
+    "text": "You are developing a model to predict events by using classification. You have a confusion matrix for the model scored on test data. Identify how many correctly predicted positives and false negatives there are.",
+    "options": [
+      {
+        "letter": "A",
+        "text": "True Positive: 11, False Negative: 13,951"
+      },
+      {
+        "letter": "B",
+        "text": "True Positive: 5, False Negative: 13,951"
+      },
+      {
+        "letter": "C",
+        "text": "True Positive: 11, False Negative: 1,033"
+      },
+      {
+        "letter": "D",
+        "text": "True Positive: 5, False Negative: 1,033"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "In the confusion matrix, True Positives (correctly predicted positives) = 11, and False Negatives (actual positives predicted as negative) = 1,033.",
+    "contextImages": [
+      "confusion-matrix-q291.png"
+    ]
+  },
+  {
+    "id": 292,
+    "topic": "computer_vision",
+    "type": "multi",
+    "text": "What are the tasks that can be performed by using computer vision? Select two correct options.",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Translate text between languages."
+      },
+      {
+        "letter": "B",
+        "text": "Predict stock prices."
+      },
+      {
+        "letter": "C",
+        "text": "Detect brands in an image."
+      },
+      {
+        "letter": "D",
+        "text": "Detect the color scheme in an image."
+      },
+      {
+        "letter": "E",
+        "text": "Extract key phrases."
+      }
+    ],
+    "correctAnswers": [
+      "C",
+      "D"
+    ],
+    "explanation": "Computer Vision can detect brands and analyze the color scheme of images. Translating text is an NLP task, predicting stock prices is a regression/forecasting task, and extracting key phrases is also an NLP task.",
+    "contextImages": []
+  },
+  {
+    "id": 293,
+    "topic": "ml_fundamentals",
+    "type": "mcq",
+    "text": "Which of the following terms would you correctly use for data values that influence the prediction of a model? Select the correct option.",
+    "options": [
+      {
+        "letter": "A",
+        "text": "features"
+      },
+      {
+        "letter": "B",
+        "text": "labels"
+      },
+      {
+        "letter": "C",
+        "text": "dependent variables"
+      },
+      {
+        "letter": "D",
+        "text": "identifiers"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Features are the input variables used by a model to make predictions. Labels (also called dependent variables) represent the output the model is trying to predict. Identifiers are unique keys for records, not predictive inputs.",
+    "contextImages": []
+  },
+  {
+    "id": 294,
+    "topic": "conversational_ai",
+    "type": "mcq",
+    "text": "Which of the listed scenarios is an example of a webchat bot? Select the correct option.",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Translate into English questions entered by customers at a kiosk so that the appropriate person can call the customers back."
+      },
+      {
+        "letter": "B",
+        "text": "Accept questions through email, and then route the email messages to the correct person based on the content of the message."
+      },
+      {
+        "letter": "C",
+        "text": "From a website interface, answer common questions about scheduled events and ticket purchases for a music festival."
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "A webchat bot interacts with users through a website chat interface in real time. Option C describes exactly this scenario. Option A involves a kiosk translation service and Option B is email routing — neither is a webchat bot.",
+    "contextImages": []
+  },
+  {
+    "id": 295,
+    "topic": "nlp",
+    "type": "mcq",
+    "text": "An app that analyzes social media posts to identify their tone is an example of which type of natural language processing (NLP) workload? Select the correct option.",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Entity recognition"
+      },
+      {
+        "letter": "B",
+        "text": "Key phrase extraction"
+      },
+      {
+        "letter": "C",
+        "text": "Sentiment analysis"
+      },
+      {
+        "letter": "D",
+        "text": "Speech recognition"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Sentiment analysis identifies the emotional tone or opinion expressed in text (positive, negative, neutral). Analyzing social media posts to identify tone is a classic sentiment analysis use case.",
+    "contextImages": []
   }
 ]
