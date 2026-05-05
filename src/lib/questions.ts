@@ -1,8 +1,18 @@
 import { Question } from "@/types/question";
 import questionsJson from "../../data/questions.json";
 
+const data = questionsJson as { video: Question[]; microsoft: Question[] };
+
 export function getAllQuestions(): Question[] {
-  return questionsJson as Question[];
+  return [...data.video, ...data.microsoft];
+}
+
+export function getVideoQuestions(): Question[] {
+  return data.video;
+}
+
+export function getMicrosoftQuestions(): Question[] {
+  return data.microsoft;
 }
 
 export function pickRandom<T>(arr: T[], count: number): T[] {

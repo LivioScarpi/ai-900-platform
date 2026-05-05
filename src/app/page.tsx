@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { getAllQuestions } from "@/lib/questions";
+import { getAllQuestions, getMicrosoftQuestions } from "@/lib/questions";
 
 // ── Illustrations ──────────────────────────────────────────────────────────
 
@@ -88,6 +88,19 @@ function IllustrationRandom() {
   );
 }
 
+function IllustrationMicrosoft() {
+  return (
+    <svg viewBox="0 0 96 80" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-full h-full">
+      <rect x="8" y="8" width="80" height="64" rx="10" fill="#0f172a" />
+      {/* Microsoft logo squares */}
+      <rect x="24" y="22" width="20" height="16" rx="2" fill="#F25022" />
+      <rect x="46" y="22" width="20" height="16" rx="2" fill="#7FBA00" />
+      <rect x="24" y="40" width="20" height="16" rx="2" fill="#00A4EF" />
+      <rect x="46" y="40" width="20" height="16" rx="2" fill="#FFB900" />
+    </svg>
+  );
+}
+
 function IllustrationDashboard() {
   return (
     <svg viewBox="0 0 96 80" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-full h-full">
@@ -145,6 +158,21 @@ function getModes(totalQuestions: number) {
     cta: "Shuffle & start",
     color: "#7c3aed",
     illustration: <IllustrationRandom />,
+  },
+  {
+    href: "/study/microsoft",
+    badge: "MICROSOFT",
+    badgeColor: "bg-sky-100 text-sky-700 border border-sky-200",
+    label: "Microsoft Simulation",
+    sub: "Domande tratte dalle simulazioni ufficiali Microsoft. Ordine casuale, pool dedicato. Ideali per chi vuole allenarsi sulle domande reali del sito Microsoft.",
+    stat: String(getMicrosoftQuestions().length),
+    statColor: "text-sky-600",
+    statLabel: "official questions",
+    accent: "from-sky-500/[0.07] to-transparent",
+    accentBar: "bg-sky-500",
+    cta: "Start simulation",
+    color: "#0ea5e9",
+    illustration: <IllustrationMicrosoft />,
   },
   {
     href: "/exam",
