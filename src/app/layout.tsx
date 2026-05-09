@@ -26,6 +26,14 @@ const jetbrainsMono = JetBrains_Mono({
 export const metadata: Metadata = {
   title: "AI-900 Study Platform",
   description: "Prepare for the Microsoft Azure AI Fundamentals exam",
+  appleWebApp: {
+    capable: true,
+    statusBarStyle: "default",
+    title: "AI-900",
+  },
+  icons: {
+    apple: "/apple-touch-icon.png",
+  },
 };
 
 export default function RootLayout({
