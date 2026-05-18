@@ -3280,7 +3280,7 @@
         },
         {
           "text": "A web form used to submit a request to reset a password is an example of a conversational AI workload.",
-          "correct": "Yes"
+          "correct": "No"
         }
       ],
       "explanation": "Bots and interactive forms are conversational AI. Image search is computer vision/search, not conversational AI.",
@@ -4756,7 +4756,7 @@
         },
         {
           "text": "A restaurant can use a chatbot to automate responses to customer reviews on an external website.",
-          "correct": "Yes"
+          "correct": "No"
         }
       ],
       "explanation": "Chatbots can handle reservation flows and answer FAQs like business hours on channels the bot is deployed on. However, automating responses to reviews on external websites (e.g., Google Reviews, Yelp) is outside the scope of typical chatbot deployments.",
@@ -7440,6 +7440,1705 @@
       "correctAnswer": "C",
       "explanation": "Sentiment analysis identifies the emotional tone or opinion expressed in text (positive, negative, neutral). Analyzing social media posts to identify tone is a classic sentiment analysis use case.",
       "contextImages": []
+    },
+    {
+      "id": 296,
+      "topic": "computer_vision",
+      "type": "mcq",
+      "text": "You need to identify street names based on street signs in photographs. Which type of computer vision should you use?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "object detection"
+        },
+        {
+          "letter": "B",
+          "text": "optical character recognition (OCR)"
+        },
+        {
+          "letter": "C",
+          "text": "image classification"
+        },
+        {
+          "letter": "D",
+          "text": "facial recognition"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "OCR (Optical Character Recognition) is designed to read and extract text from images, such as street signs. Object detection locates objects, image classification categorizes the whole image, and facial recognition identifies people.",
+      "contextImages": []
+    },
+    {
+      "id": 297,
+      "topic": "ml_fundamentals",
+      "type": "mcq",
+      "text": "Predicting agricultural yields based on weather conditions and soil quality measurements is an example of which type of machine learning model?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "classification"
+        },
+        {
+          "letter": "B",
+          "text": "regression"
+        },
+        {
+          "letter": "C",
+          "text": "clustering"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Regression models predict a continuous numeric value (such as yield quantity) based on input features. Classification predicts discrete categories, and clustering groups unlabeled data.",
+      "contextImages": []
+    },
+    {
+      "id": 298,
+      "topic": "azure_cognitive",
+      "type": "mcq",
+      "text": "You are building a tool that will process images from retail stores and identify the products of competitors. The solution must be trained on images provided by your company. Which Azure AI service should you use?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Document Intelligence"
+        },
+        {
+          "letter": "B",
+          "text": "Custom Vision"
+        },
+        {
+          "letter": "C",
+          "text": "Face"
+        },
+        {
+          "letter": "D",
+          "text": "Computer Vision"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Custom Vision allows you to train image classification and object detection models using your own labeled images, making it ideal for identifying specific products. Document Intelligence handles forms/documents, Face handles facial analysis, and Computer Vision uses pre-built models.",
+      "contextImages": []
+    },
+    {
+      "id": 299,
+      "topic": "nlp",
+      "type": "mcq",
+      "text": "A smart device that responds to the question \"What is the stock price of Contoso. Ltd.?\" is an example of which AI workload?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "knowledge mining"
+        },
+        {
+          "letter": "B",
+          "text": "natural language processing"
+        },
+        {
+          "letter": "C",
+          "text": "computer vision"
+        },
+        {
+          "letter": "D",
+          "text": "anomaly detection"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Natural language processing (NLP) enables machines to understand and respond to human language. A smart device interpreting and answering spoken or typed questions is a core NLP use case.",
+      "contextImages": []
+    },
+    {
+      "id": 300,
+      "topic": "azure_cognitive",
+      "type": "mcq",
+      "text": "Which Azure Cognitive Services service can be used to identify documents that contain sensitive information?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Custom Vision"
+        },
+        {
+          "letter": "B",
+          "text": "Conversational Language Understanding"
+        },
+        {
+          "letter": "C",
+          "text": "Document Intelligence"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "Document Intelligence (formerly Form Recognizer) analyzes and extracts information from documents, including identifying sensitive content. Custom Vision is for image tasks, and Conversational Language Understanding handles conversational intents.",
+      "contextImages": []
+    },
+    {
+      "id": 301,
+      "topic": "conversational_ai",
+      "type": "mcq",
+      "text": "You plan to build a conversational AI solution that can be surfaced in Microsoft Teams, Microsoft Cortana, and Amazon Alexa. Which service should you use?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Azure Bot Service"
+        },
+        {
+          "letter": "B",
+          "text": "Azure Cognitive Search"
+        },
+        {
+          "letter": "C",
+          "text": "Speech"
+        },
+        {
+          "letter": "D",
+          "text": "Language service"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Azure Bot Service supports multi-channel deployment, allowing bots to be published across Microsoft Teams, Cortana, Amazon Alexa, and many other channels from a single bot codebase.",
+      "contextImages": []
+    },
+    {
+      "id": 302,
+      "topic": "conversational_ai",
+      "type": "mcq",
+      "text": "Which of the following can be used to build no-code apps that use built-in natural language processing models?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Azure Health Bot"
+        },
+        {
+          "letter": "B",
+          "text": "Microsoft Bot Framework"
+        },
+        {
+          "letter": "C",
+          "text": "Microsoft Copilot Studio"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "Microsoft Copilot Studio (formerly Power Virtual Agents) is a no-code/low-code platform for building chatbots with built-in NLP capabilities, without requiring coding knowledge. Azure Health Bot is domain-specific, and Bot Framework requires coding.",
+      "contextImages": []
+    },
+    {
+      "id": 303,
+      "topic": "nlp",
+      "type": "mcq",
+      "text": "You are building a Language Understanding model for an e-commerce business. You need to ensure that the model detects when utterances are outside the intended scope of the model. What should you do?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Export the model"
+        },
+        {
+          "letter": "B",
+          "text": "Add utterances to the None intent"
+        },
+        {
+          "letter": "C",
+          "text": "Create a prebuilt task entity"
+        },
+        {
+          "letter": "D",
+          "text": "Create a new model"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "The None intent acts as a catch-all for utterances that don't belong to any defined intent, signaling that the input is outside the model's scope. Adding diverse out-of-scope examples to None intent helps the model correctly identify irrelevant queries.",
+      "contextImages": []
+    },
+    {
+      "id": 304,
+      "topic": "nlp",
+      "type": "mcq",
+      "text": "You have a solution that reads manuscripts in different languages and categorizes the manuscripts based on topic. Which types of natural language processing (NLP) workloads does the solution use?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "speech recognition and entity recognition"
+        },
+        {
+          "letter": "B",
+          "text": "speech recognition and language modeling"
+        },
+        {
+          "letter": "C",
+          "text": "translation and key phrase extraction"
+        },
+        {
+          "letter": "D",
+          "text": "translation and sentiment analysis"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "Reading manuscripts in different languages requires translation. Categorizing them by topic uses key phrase extraction to identify the main themes.",
+      "reference": "https://learn.microsoft.com/en-us/azure/ai-services/language-service/key-phrase-extraction/overview"
+    },
+    {
+      "id": 305,
+      "topic": "computer_vision",
+      "type": "mcq",
+      "text": "A traffic monitoring system that collects vehicle registration numbers from the CCTV footage is an example of which of the following in the Computer vision service?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "image classification"
+        },
+        {
+          "letter": "B",
+          "text": "object detection"
+        },
+        {
+          "letter": "C",
+          "text": "Spatial Analysis"
+        },
+        {
+          "letter": "D",
+          "text": "Text extraction"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "Collecting vehicle registration numbers from images is an example of Text extraction (OCR), which reads text from images and video frames."
+    },
+    {
+      "id": 306,
+      "topic": "computer_vision",
+      "type": "mcq",
+      "text": "You have an app that identifies the coordinates of a product in an image of a supermarket shelf. Which service does the app use?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Custom Vision classification"
+        },
+        {
+          "letter": "B",
+          "text": "Custom Vision object detection"
+        },
+        {
+          "letter": "C",
+          "text": "Computer Vision Read"
+        },
+        {
+          "letter": "D",
+          "text": "Computer Vision optical character recognition (OCR)"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Identifying the coordinates (location) of an object in an image is object detection. Custom Vision object detection allows training a model to locate and identify specific objects."
+    },
+    {
+      "id": 307,
+      "topic": "computer_vision",
+      "type": "multi",
+      "text": "For which two workloads can you use computer vision?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "assigning the color pixels in an image to object names"
+        },
+        {
+          "letter": "B",
+          "text": "detecting inconsistencies and anomalies in a stream of data"
+        },
+        {
+          "letter": "C",
+          "text": "creating visual representations of numerical data"
+        },
+        {
+          "letter": "D",
+          "text": "creating photorealistic images by using three dimensional models"
+        },
+        {
+          "letter": "E",
+          "text": "describing the contents of an image"
+        }
+      ],
+      "correctAnswers": [
+        "A",
+        "E"
+      ],
+      "explanation": "Computer vision can assign color pixels to object names (semantic segmentation) and describe the contents of an image (image captioning). The other options relate to anomaly detection, data visualization, and 3D rendering respectively."
+    },
+    {
+      "id": 308,
+      "topic": "conversational_ai",
+      "type": "mcq",
+      "text": "You need to provide customers with the ability to query the status of orders by using phones, social media, or digital assistants. What should you use?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "an Azure Machine Learning model"
+        },
+        {
+          "letter": "B",
+          "text": "the Translator service"
+        },
+        {
+          "letter": "C",
+          "text": "a Form Recognizer model"
+        },
+        {
+          "letter": "D",
+          "text": "Azure Bot Service"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "Azure Bot Service enables building conversational bots that can be deployed across multiple channels including phone, social media, and digital assistants."
+    },
+    {
+      "id": 309,
+      "topic": "ml_fundamentals",
+      "type": "mcq",
+      "text": "What do you call the data that is used as input in a machine learning model?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Features"
+        },
+        {
+          "letter": "B",
+          "text": "Functions"
+        },
+        {
+          "letter": "C",
+          "text": "Labels"
+        },
+        {
+          "letter": "D",
+          "text": "Instances"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Features are the input variables used by a machine learning model to make predictions. Labels are the output/target variable the model learns to predict.",
+      "reference": "https://learn.microsoft.com/en-us/dotnet/machine-learning/mldotnet-api#basic"
+    },
+    {
+      "id": 310,
+      "topic": "computer_vision",
+      "type": "dragdrop",
+      "text": "Match the types of computer vision workloads to the appropriate scenarios. Each workload type may be used once, more than once, or not at all.",
+      "items": [
+        "Image Classification",
+        "Object detection",
+        "Optical Character recognition (OCR)"
+      ],
+      "targets": [
+        {
+          "text": "Generate captions for Images.",
+          "correctItem": "Image Classification"
+        },
+        {
+          "text": "Extract movie title names from movie poster images.",
+          "correctItem": "Optical Character recognition (OCR)"
+        },
+        {
+          "text": "Locate Vehicle in images.",
+          "correctItem": "Object detection"
+        }
+      ],
+      "explanation": "Image classification assigns labels to images (generating captions). OCR extracts text from images (movie title names). Object detection locates objects within images (vehicles)."
+    },
+    {
+      "id": 311,
+      "topic": "conversational_ai",
+      "type": "mcq",
+      "text": "Which AI service can you use to extract intent from a user input such as \"Call me back later\"?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Azure Cognitive Search"
+        },
+        {
+          "letter": "B",
+          "text": "Translator"
+        },
+        {
+          "letter": "C",
+          "text": "Language"
+        },
+        {
+          "letter": "D",
+          "text": "Speech"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "The Azure Language service includes Conversational Language Understanding (CLU), which is designed to extract intent and entities from natural language user inputs.",
+      "reference": "https://learn.microsoft.com/en-us/azure/ai-services/language-service/overview#conversational-language-understanding"
+    },
+    {
+      "id": 312,
+      "topic": "ml_fundamentals",
+      "type": "mcq",
+      "text": "Which of the following is an example of detecting unusual temperature fluctuations for a large machine?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "A computer vision workload"
+        },
+        {
+          "letter": "B",
+          "text": "A knowledge mining workload"
+        },
+        {
+          "letter": "C",
+          "text": "A natural language processing (NLP) workload"
+        },
+        {
+          "letter": "D",
+          "text": "An anomaly detection workload"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "Detecting unusual temperature fluctuations is anomaly detection — identifying deviations from expected patterns in sensor or time-series data.",
+      "reference": "https://learn.microsoft.com/en-us/azure/ai-services/anomaly-detector/overview"
+    },
+    {
+      "id": 313,
+      "topic": "azure_cognitive",
+      "type": "mcq",
+      "text": "You need to convert receipts into transactions in a spreadsheet. The spreadsheet must include the date of the transaction, the merchant, the total spent, and any taxes paid. Which Azure AI service should you use?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Custom Vision"
+        },
+        {
+          "letter": "B",
+          "text": "Document Intelligence"
+        },
+        {
+          "letter": "C",
+          "text": "Face"
+        },
+        {
+          "letter": "D",
+          "text": "Language"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Azure AI Document Intelligence (formerly Form Recognizer) can extract structured data from receipts, including date, merchant, total, and tax fields.",
+      "reference": "https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/overview?view=doc-intel-4.0.0#document-analysis-models"
+    },
+    {
+      "id": 314,
+      "topic": "ml_fundamentals",
+      "type": "mcq",
+      "text": "Which of the following displays the predicted and actual positives and negatives by using a grid of 0 and 1 values when evaluating the performance of a model?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "AUC metric"
+        },
+        {
+          "letter": "B",
+          "text": "Confusion matrix"
+        },
+        {
+          "letter": "C",
+          "text": "ROC curve"
+        },
+        {
+          "letter": "D",
+          "text": "Threshold"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "A confusion matrix shows predicted vs. actual classification results in a grid format using true/false positives and negatives (0s and 1s).",
+      "reference": "https://learn.microsoft.com/en-us/azure/machine-learning/how-to-understand-automated-ml?view=azureml-api-2#confusion-matrix"
+    },
+    {
+      "id": 315,
+      "topic": "nlp",
+      "type": "mcq",
+      "text": "Which type of natural language processing (NLP) entity is used to identify a phone number?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "regular expression"
+        },
+        {
+          "letter": "B",
+          "text": "machine-learned"
+        },
+        {
+          "letter": "C",
+          "text": "list"
+        },
+        {
+          "letter": "D",
+          "text": "Pattern.any"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Regular expression entities use defined patterns to match structured data like phone numbers, email addresses, or postal codes.",
+      "reference": "https://learn.microsoft.com/en-us/azure/ai-services/luis/concepts/entities"
+    },
+    {
+      "id": 316,
+      "topic": "nlp",
+      "type": "mcq",
+      "text": "You are developing a solution that uses the Language service. You need to identify the main talking points in a collection of documents. Which type of natural language processing should you use?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "language detection"
+        },
+        {
+          "letter": "B",
+          "text": "sentiment analysis"
+        },
+        {
+          "letter": "C",
+          "text": "entity recognition"
+        },
+        {
+          "letter": "D",
+          "text": "key phrase extraction"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "Key phrase extraction identifies the main topics and talking points within text documents.",
+      "reference": "https://learn.microsoft.com/en-us/azure/ai-services/language-service/key-phrase-extraction/overview"
+    },
+    {
+      "id": 317,
+      "topic": "nlp",
+      "type": "yesno",
+      "text": "For each of the following statements, select Yes if the statement is true. Otherwise, select No.",
+      "statements": [
+        {
+          "text": "A bot that responds to queries by internal users is an example of a natural language processing model.",
+          "correct": "Yes"
+        },
+        {
+          "text": "A mobile application that displays images relating to an entered search term is an example of a natural language processing workload.",
+          "correct": "No"
+        },
+        {
+          "text": "A web form used to submit a request to reset a password is an example of a natural language processing workload.",
+          "correct": "No"
+        }
+      ],
+      "explanation": "A bot uses NLP to understand user queries (Yes). Displaying images from a search term is a computer vision/search workload, not NLP (No). A password reset form is a basic web form with no NLP involved (No).",
+      "reference": "https://learn.microsoft.com/en-us/azure/ai-services/language-service/overview"
+    },
+    {
+      "id": 318,
+      "topic": "nlp",
+      "type": "mcq",
+      "text": "You have a website that includes customer reviews. You need to store the reviews in English and present the reviews to users in their respective language by recognizing each user's geographical location. Which type of natural language processing workload should you use?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "key phrase extraction"
+        },
+        {
+          "letter": "B",
+          "text": "speech recognition"
+        },
+        {
+          "letter": "C",
+          "text": "language modeling"
+        },
+        {
+          "letter": "D",
+          "text": "Translation"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "Translation converts text from one language to another, enabling the reviews stored in English to be presented to users in their own language.",
+      "reference": "https://learn.microsoft.com/en-us/azure/ai-services/translator/text-translation/overview"
+    },
+    {
+      "id": 319,
+      "topic": "ml_fundamentals",
+      "type": "dragdrop",
+      "text": "Match the machine learning models to the appropriate description. Each model type may be used once, more than once, or not at all.",
+      "items": [
+        "Classification",
+        "Clustering",
+        "Regression"
+      ],
+      "targets": [
+        {
+          "text": "A supervised machine learning model used to predict numeric values.",
+          "correctItem": "Regression"
+        },
+        {
+          "text": "A supervised machine learning model used to predict categories.",
+          "correctItem": "Classification"
+        },
+        {
+          "text": "An unsupervised machine learning model used to group similar entities based on features.",
+          "correctItem": "Clustering"
+        }
+      ],
+      "source": "tech_with_jaspal"
+    },
+    {
+      "id": 320,
+      "topic": "nlp",
+      "type": "sentence_completion",
+      "text": "Select the answer that correctly completes the sentence.",
+      "sentence": "The interactive answering of questions entered by a user as part of an application is an example of [BLANK].",
+      "options": [
+        "Anomaly detection",
+        "Computer vision",
+        "Natural language processing",
+        "forecasting"
+      ],
+      "correctAnswer": "Natural language processing",
+      "source": "tech_with_jaspal"
+    },
+    {
+      "id": 321,
+      "topic": "nlp",
+      "type": "mcq",
+      "text": "You are building a chatbot that will use natural language processing (NLP) to perform the following actions based on the text input of a user:\n• Accept customer orders.\n• Retrieve support documents.\n• Retrieve order status updates.\nWhich type of NLP should you use?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "sentiment analysis"
+        },
+        {
+          "letter": "B",
+          "text": "named entity recognition"
+        },
+        {
+          "letter": "C",
+          "text": "translation"
+        },
+        {
+          "letter": "D",
+          "text": "language modeling"
+        }
+      ],
+      "correctAnswer": "B",
+      "source": "tech_with_jaspal"
+    },
+    {
+      "id": 322,
+      "topic": "conversational_ai",
+      "type": "multi",
+      "text": "You plan to develop a bot that will enable users to query a knowledge base by using natural language processing. Which two services should you include in the solution?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Language Service"
+        },
+        {
+          "letter": "B",
+          "text": "Azure Bot Service"
+        },
+        {
+          "letter": "C",
+          "text": "Form Recognizer"
+        },
+        {
+          "letter": "D",
+          "text": "Anomaly Detector"
+        }
+      ],
+      "correctAnswers": [
+        "A",
+        "B"
+      ],
+      "source": "tech_with_jaspal"
+    },
+    {
+      "id": 323,
+      "topic": "nlp",
+      "type": "mcq",
+      "text": "Select the answer that correctly completes the sentence. Natural language processing can be used to ___.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Analyze video content"
+        },
+        {
+          "letter": "B",
+          "text": "Generate speech"
+        },
+        {
+          "letter": "C",
+          "text": "Classify email messages as work-related or personal."
+        },
+        {
+          "letter": "D",
+          "text": "Classify images"
+        }
+      ],
+      "correctAnswer": "C",
+      "source": "tech_with_jaspal"
+    },
+    {
+      "id": 324,
+      "topic": "computer_vision",
+      "type": "mcq",
+      "text": "You need to develop a mobile app for employees to scan and store their expenses while travelling. Which type of computer vision should you use?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "face detection"
+        },
+        {
+          "letter": "B",
+          "text": "image classification"
+        },
+        {
+          "letter": "C",
+          "text": "object detection"
+        },
+        {
+          "letter": "D",
+          "text": "optical character recognition (OCR)"
+        }
+      ],
+      "correctAnswer": "D",
+      "source": "tech_with_jaspal"
+    },
+    {
+      "id": 325,
+      "topic": "computer_vision",
+      "type": "mcq",
+      "text": "Your company manufactures widgets. You have 1,000 digital photos of the widgets. You need to identify the location of the widgets within the photos. What should you use?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Computer Vision Spatial Analysis"
+        },
+        {
+          "letter": "B",
+          "text": "Custom Vision object detection"
+        },
+        {
+          "letter": "C",
+          "text": "Computer Vision Image Analysis"
+        },
+        {
+          "letter": "D",
+          "text": "Custom Vision classification"
+        }
+      ],
+      "correctAnswer": "B",
+      "source": "tech_with_jaspal"
+    },
+    {
+      "id": 326,
+      "topic": "conversational_ai",
+      "type": "yesno",
+      "text": "For each of the following statements, select Yes if the statement is true. Otherwise, select No.",
+      "statements": [
+        {
+          "text": "A smart device in the home that responds to questions such as \"when is my next appointment?\" is an example of conversational AI.",
+          "correct": "Yes"
+        },
+        {
+          "text": "An interactive webchat feature on a company website can be implemented by using Azure Bot Service.",
+          "correct": "Yes"
+        },
+        {
+          "text": "Automatically generating captions for pre-recorded videos is an example of conversational AI.",
+          "correct": "No"
+        }
+      ],
+      "source": "tech_with_jaspal"
+    },
+    {
+      "id": 327,
+      "type": "mcq",
+      "topic": "computer_vision",
+      "text": "You need to implement a pre-built solution that will identify well-known brands in digital photographs. Which Azure Cognitive Services service should you use?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Custom Vision"
+        },
+        {
+          "letter": "B",
+          "text": "Document Intelligence"
+        },
+        {
+          "letter": "C",
+          "text": "Face"
+        },
+        {
+          "letter": "D",
+          "text": "Computer Vision"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "",
+      "contextImages": []
+    },
+    {
+      "id": 328,
+      "type": "dragdrop",
+      "topic": "azure_cognitive",
+      "text": "Match the Azure Cognitive Services to the appropriate actions. Each service may be used once, more than once, or not at all.",
+      "items": [
+        "Custom Vision",
+        "Face",
+        "Document Intelligence"
+      ],
+      "targets": [
+        {
+          "text": "Identify objects in an Image.",
+          "correctItem": "Custom Vision"
+        },
+        {
+          "text": "Automatically import data from an invoice to a database.",
+          "correctItem": "Document Intelligence"
+        },
+        {
+          "text": "Identify people in an image.",
+          "correctItem": "Face"
+        }
+      ]
+    },
+    {
+      "id": 329,
+      "type": "mcq",
+      "topic": "unknown",
+      "text": "Which Azure service can you use as a security information and event management (SIEM) solution?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Azure Analysis Services"
+        },
+        {
+          "letter": "B",
+          "text": "Microsoft Sentinel"
+        },
+        {
+          "letter": "C",
+          "text": "Azure Information Protection"
+        },
+        {
+          "letter": "D",
+          "text": "Azure Cognitive Services"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "",
+      "contextImages": []
+    },
+    {
+      "id": 330,
+      "type": "yesno",
+      "topic": "ml_fundamentals",
+      "text": "For each of the following statements, select Yes if the statement is true. Otherwise, select No.",
+      "statements": [
+        {
+          "text": "Organizing documents into groups based on different usage statistics is an example of clustering.",
+          "correct": "Yes"
+        },
+        {
+          "text": "Grouping similar patients based on symptoms and diagnostics test results is an example of clustering.",
+          "correct": "Yes"
+        },
+        {
+          "text": "Predicting whether a person will develop mild, moderate, or severe allergy symptoms based on pollen count is an example of clustering.",
+          "correct": "No"
+        }
+      ]
+    },
+    {
+      "id": 331,
+      "type": "dragdrop",
+      "topic": "azure_ml",
+      "text": "You plan to deploy an Azure Machine Learning model by using the Machine Learning designer. Which four actions should you perform in sequence?",
+      "items": [
+        "A. Train the model.",
+        "B. Split the data randomly into training data and validation data.",
+        "C. Evaluate the model against the original dataset.",
+        "D. Evaluate the model against the validation dataset.",
+        "E. Ingest and prepare a dataset."
+      ],
+      "targets": [
+        {
+          "text": "Step 1",
+          "correctItem": "E. Ingest and prepare a dataset."
+        },
+        {
+          "text": "Step 2",
+          "correctItem": "B. Split the data randomly into training data and validation data."
+        },
+        {
+          "text": "Step 3",
+          "correctItem": "A. Train the model."
+        },
+        {
+          "text": "Step 4",
+          "correctItem": "D. Evaluate the model against the validation dataset."
+        }
+      ]
+    },
+    {
+      "id": 332,
+      "type": "sentence_completion",
+      "topic": "ml_fundamentals",
+      "text": "Select the answer that correctly completes the sentence.",
+      "sentence": "In a machine learning model, the data that is used as inputs are called [BLANK].",
+      "options": [
+        "Dataset",
+        "Labels",
+        "Variables"
+      ],
+      "correctAnswer": "Variables",
+      "explanation": ""
+    },
+    {
+      "id": 333,
+      "topic": "conversational_ai",
+      "type": "mcq",
+      "text": "You need to create a customer support solution to help customers access information. The solution must support email, phone, and live chat channels. Which type of AI solution should you use?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "machine learning"
+        },
+        {
+          "letter": "B",
+          "text": "computer vision"
+        },
+        {
+          "letter": "C",
+          "text": "chatbot"
+        },
+        {
+          "letter": "D",
+          "text": "natural language processing (NLP)"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "A chatbot is designed to support multi-channel communication including email, phone, and live chat, providing automated customer support across all these channels.",
+      "reference": ""
+    },
+    {
+      "id": 334,
+      "topic": "azure_ml",
+      "type": "mcq",
+      "text": "You use Azure Machine Learning designer to build a model pipeline. What should you create before you can run the pipeline?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "a registered model"
+        },
+        {
+          "letter": "B",
+          "text": "a compute resource"
+        },
+        {
+          "letter": "C",
+          "text": "a Jupyter notebook"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Before running a pipeline in Azure Machine Learning designer, you must attach a compute resource (compute target) to execute the pipeline steps.",
+      "reference": "https://learn.microsoft.com/en-us/azure/machine-learning/concept-compute-target"
+    },
+    {
+      "id": 335,
+      "topic": "computer_vision",
+      "type": "mcq",
+      "text": "Which of the following is used to identify multiple types of items in one image?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Object detection"
+        },
+        {
+          "letter": "B",
+          "text": "Image description"
+        },
+        {
+          "letter": "C",
+          "text": "Image classification"
+        },
+        {
+          "letter": "D",
+          "text": "Optical character recognition (OCR)"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Object detection identifies and locates multiple different types of objects within a single image by generating bounding boxes for each detected item.",
+      "reference": ""
+    },
+    {
+      "id": 336,
+      "topic": "conversational_ai",
+      "type": "yesno",
+      "text": "For each of the following statements, select Yes if the statement is true. Otherwise, select No.",
+      "statements": [
+        {
+          "text": "A webchat bot can interact with users visiting a website.",
+          "correct": "Yes"
+        },
+        {
+          "text": "Automatically generating captions for pre-recorded videos is an example of natural language processing.",
+          "correct": "Yes"
+        },
+        {
+          "text": "A smart device in the home that responds to questions such as \"what will the weather be like today\" is an example of natural language processing.",
+          "correct": "Yes"
+        }
+      ],
+      "explanation": "Webchat bots are deployed on websites to interact with visitors. Caption generation from audio/video is NLP. Smart home assistants use NLP to interpret and respond to spoken questions.",
+      "reference": "https://learn.microsoft.com/en-us/azure/bot-service/bot-service-channel-connect-webchat"
+    },
+    {
+      "id": 337,
+      "topic": "computer_vision",
+      "type": "mcq",
+      "text": "Which of the following services can you use to train an object detection model by using your own images?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Computer Vision"
+        },
+        {
+          "letter": "B",
+          "text": "Custom Vision"
+        },
+        {
+          "letter": "C",
+          "text": "Document Intelligence"
+        },
+        {
+          "letter": "D",
+          "text": "Azure Video Analyzer for Media"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Custom Vision allows you to upload your own labeled images and train a custom object detection model to identify specific objects relevant to your use case.",
+      "reference": ""
+    },
+    {
+      "id": 338,
+      "topic": "computer_vision",
+      "type": "sentence_completion",
+      "text": "An AI solution that helps photographers take better portrait photographs by providing feedback on exposure, noise, and occlusion is an example of facial ___.",
+      "options": [
+        "analysis",
+        "detection",
+        "recognition"
+      ],
+      "correctAnswer": "analysis",
+      "explanation": "Facial analysis evaluates attributes of faces such as exposure, noise, and occlusion quality, making it suitable for photography feedback systems.",
+      "reference": ""
+    },
+    {
+      "id": 339,
+      "topic": "conversational_ai",
+      "type": "yesno",
+      "text": "For each of the following statements, select Yes if the statement is true. Otherwise, select No.",
+      "statements": [
+        {
+          "text": "Chatbots can support voice input.",
+          "correct": "Yes"
+        },
+        {
+          "text": "A separate chatbot is required for each communication channel.",
+          "correct": "No"
+        },
+        {
+          "text": "Chatbots manage conversation flows by using a combination of natural language and constrained option responses.",
+          "correct": "Yes"
+        }
+      ],
+      "explanation": "Chatbots support voice via speech recognition. One bot can connect to multiple channels (Teams, webchat, email) through Azure Bot Service. Conversation flows typically combine NLP understanding with structured menu options.",
+      "reference": "https://learn.microsoft.com/en-us/azure/bot-service/bot-service-manage-channels"
+    },
+    {
+      "id": 340,
+      "topic": "responsible_ai",
+      "type": "mcq",
+      "text": "You are designing a system to predict the prices of insurance for drivers in the United Kingdom. You need to minimize bias in the system. What should you do?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Remove information about protected characteristics from the data before sampling."
+        },
+        {
+          "letter": "B",
+          "text": "Take a training sample that is representative of the population in the United Kingdom."
+        },
+        {
+          "letter": "C",
+          "text": "Create a training dataset that uses data from global insurers."
+        },
+        {
+          "letter": "D",
+          "text": "Take a completely random training sample."
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "To minimize bias, the training data should be representative of the actual population (UK drivers). A random or global sample may not reflect the UK population accurately, and removing protected characteristics alone does not ensure representativeness.",
+      "reference": "https://learn.microsoft.com/en-us/azure/machine-learning/concept-fairness-ml"
+    },
+    {
+      "id": 341,
+      "topic": "azure_ml",
+      "type": "dragdrop",
+      "text": "Match the tool to the Azure Machine Learning task. Each tool may be used once, more than once, or not at all.",
+      "items": [
+        "Automated Machine Learning",
+        "The Azure Portal",
+        "Machine Learning Designer"
+      ],
+      "targets": [
+        {
+          "text": "Create a machine learning workspace",
+          "correctItem": "The Azure Portal"
+        },
+        {
+          "text": "Use a drag-and-drop interface used to train and deploy models",
+          "correctItem": "Machine Learning Designer"
+        },
+        {
+          "text": "Use a wizard to select configurations for a machine learning run",
+          "correctItem": "Automated Machine Learning"
+        }
+      ],
+      "explanation": "Azure Portal is used to create and manage workspaces. Machine Learning Designer provides a drag-and-drop interface. Automated Machine Learning uses a wizard to auto-select model configurations.",
+      "reference": "https://learn.microsoft.com/en-us/azure/machine-learning/overview-what-is-azure-machine-learning"
+    },
+    {
+      "id": 342,
+      "topic": "computer_vision",
+      "type": "mcq",
+      "text": "You need to create a model that labels a collection of your personal digital photographs. Which Azure Cognitive Services service should you use?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Document Intelligence"
+        },
+        {
+          "letter": "B",
+          "text": "Custom Vision"
+        },
+        {
+          "letter": "C",
+          "text": "Language"
+        },
+        {
+          "letter": "D",
+          "text": "Computer Vision"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Custom Vision allows you to build, deploy, and improve your own image classifiers with custom labels. It is specifically designed for training models on your own image datasets.",
+      "reference": "https://learn.microsoft.com/en-us/azure/cognitive-services/custom-vision-service/overview"
+    },
+    {
+      "id": 343,
+      "topic": "azure_cognitive",
+      "type": "dragdrop",
+      "text": "Match the Azure Cognitive Services to the appropriate actions. Each service may be used once, more than once, or not at all.",
+      "items": [
+        "Language Service",
+        "Speech",
+        "Translator"
+      ],
+      "targets": [
+        {
+          "text": "Convert spoken requests into text.",
+          "correctItem": "Speech"
+        },
+        {
+          "text": "Identify the intent of a user's requests.",
+          "correctItem": "Language Service"
+        },
+        {
+          "text": "Apply intent to entities and utterances.",
+          "correctItem": "Language Service"
+        }
+      ],
+      "explanation": "Speech service handles speech-to-text conversion. Language Service provides intent recognition (CLU/LUIS) and entity extraction from text.",
+      "reference": "https://learn.microsoft.com/en-us/azure/cognitive-services/speech-service/overview"
+    },
+    {
+      "id": 344,
+      "topic": "ml_fundamentals",
+      "type": "mcq",
+      "text": "You have a dataset that contains columns ColumnA (Integer), ColumnB (Numeric), ColumnC (Numeric), ColumnD (Numeric), and ColumnE (Numeric). You have a machine learning model that predicts the value of ColumnE based on the other numeric columns. Which type of model is this?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Analysis"
+        },
+        {
+          "letter": "B",
+          "text": "Clustering"
+        },
+        {
+          "letter": "C",
+          "text": "Regression"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "A model that predicts a numeric value (ColumnE) based on other numeric features is a regression model. Clustering groups unlabeled data, and analysis is not a standard ML model type.",
+      "reference": "https://learn.microsoft.com/en-us/azure/machine-learning/concept-automated-ml",
+      "contextImages": [
+        "cf1793b9-907d-4b79-9532-f09b3ea8714e.png"
+      ]
+    },
+    {
+      "id": 345,
+      "topic": "conversational_ai",
+      "type": "yesno",
+      "text": "For each of the following statements, select Yes if the statement is true. Otherwise, select No.",
+      "statements": [
+        {
+          "text": "Chatbots can only be built by using custom code.",
+          "correct": "No"
+        },
+        {
+          "text": "The Azure Bot Service provides services that can be used to host conversational bots.",
+          "correct": "Yes"
+        },
+        {
+          "text": "Bots built by using the Azure Bot Service can communicate with Microsoft Teams users.",
+          "correct": "Yes"
+        }
+      ],
+      "explanation": "Azure Bot Service allows building bots without custom code using templates and the Bot Framework. It provides hosting for conversational bots and supports multiple channels including Microsoft Teams.",
+      "contextImages": []
+    },
+    {
+      "id": 346,
+      "topic": "conversational_ai",
+      "type": "mcq",
+      "text": "You have a knowledge base of frequently asked questions (FAQ). You create a bot that uses the knowledge base to respond to customer requests. You need to identify what the bot can perform without adding additional skills. What should you identify?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Register customer purchases."
+        },
+        {
+          "letter": "B",
+          "text": "Register customer complaints."
+        },
+        {
+          "letter": "C",
+          "text": "Answer questions from multiple users simultaneously."
+        },
+        {
+          "letter": "D",
+          "text": "Provide customers with return materials authorization (RMA) numbers."
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "A FAQ-based bot can answer questions from multiple users simultaneously as its core capability. Registering purchases, complaints, or providing RMA numbers require additional skills beyond a simple knowledge base.",
+      "contextImages": []
+    },
+    {
+      "id": 347,
+      "topic": "conversational_ai",
+      "type": "multi",
+      "text": "Which two scenarios are examples of a conversational AI workload?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "A telephone answering service that has a pre-recorded message."
+        },
+        {
+          "letter": "B",
+          "text": "A chatbot that provides users with the ability to find answers on a website by themselves."
+        },
+        {
+          "letter": "C",
+          "text": "Telephone voice menus to reduce the load on human resources."
+        },
+        {
+          "letter": "D",
+          "text": "A service that creates frequently asked questions (FAQ) documents by crawling public websites."
+        }
+      ],
+      "correctAnswers": [
+        "B",
+        "C"
+      ],
+      "explanation": "Conversational AI involves interactive two-way dialogue. A chatbot (B) and telephone voice menus (C) both engage users in conversation. A pre-recorded message (A) is one-way, and a FAQ crawler (D) generates documents rather than conversing.",
+      "contextImages": []
+    },
+    {
+      "id": 348,
+      "topic": "conversational_ai",
+      "type": "mcq",
+      "text": "Which scenario is an example of a webchat bot?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Determine whether reviews entered on a website for a concert are positive or negative, and then add a thumbs up or thumbs down emoji to reviews."
+        },
+        {
+          "letter": "B",
+          "text": "Translate into English questions entered by customers at a kiosk so that the appropriate person can call the customers back."
+        },
+        {
+          "letter": "C",
+          "text": "Accept questions through email, and then route the email messages to the correct person based on the content of the message."
+        },
+        {
+          "letter": "D",
+          "text": "From a website interface, answer common questions about scheduled events and ticket purchases for a music festival."
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "A webchat bot interacts with users through a website interface. Option D describes a chatbot answering questions directly on a website. The other options involve sentiment analysis, translation, or email routing.",
+      "contextImages": []
+    },
+    {
+      "id": 349,
+      "topic": "conversational_ai",
+      "type": "mcq",
+      "text": "You need to develop a web-based AI solution for a customer support system. Users must be able to interact with a web app that will guide them to the best resource or answer. Which service should you use?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Custom Vision"
+        },
+        {
+          "letter": "B",
+          "text": "Language Service"
+        },
+        {
+          "letter": "C",
+          "text": "Translator Text"
+        },
+        {
+          "letter": "D",
+          "text": "Face"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Azure Language Service (which includes Question Answering, formerly QnA Maker) is used to build conversational AI solutions that guide users to the best resource or answer based on natural language queries.",
+      "contextImages": []
+    },
+    {
+      "id": 350,
+      "topic": "ml_fundamentals",
+      "type": "mcq",
+      "text": "You need to identify groups of rows with similar numeric values in a dataset. Which type of machine learning should you use?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Clustering"
+        },
+        {
+          "letter": "B",
+          "text": "Regression"
+        },
+        {
+          "letter": "C",
+          "text": "Classification"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Clustering is an unsupervised machine learning technique used to group data points with similar characteristics. It is ideal for identifying groups of rows with similar numeric values in a dataset.",
+      "contextImages": []
+    },
+    {
+      "id": 351,
+      "topic": "responsible_ai",
+      "type": "dragdrop",
+      "text": "You are designing a system that will generate insurance quotes automatically. Match the Microsoft responsible AI principles to the appropriate requirements. Each principle may be used once, more than once, or not at all.",
+      "items": [
+        "Accountability",
+        "Fairness",
+        "Inclusiveness",
+        "Privacy and Security",
+        "Reliability and Safety",
+        "Transparency"
+      ],
+      "targets": [
+        {
+          "text": "A customer's personal information must be visible only to staff who are involved in the decision-making process.",
+          "correctItem": "Privacy and Security"
+        },
+        {
+          "text": "The decision-making process must be recorded so that staff can identify the reasoning behind a particular quote.",
+          "correctItem": "Transparency"
+        },
+        {
+          "text": "The system must be accessible to customers who use screen readers or other assistive technology.",
+          "correctItem": "Inclusiveness"
+        }
+      ],
+      "explanation": "Privacy and Security protects personal data access. Transparency ensures decision processes are recorded and understandable. Inclusiveness ensures systems are accessible to all users, including those using assistive technology.",
+      "contextImages": []
+    },
+    {
+      "id": 352,
+      "topic": "conversational_ai",
+      "type": "yesno",
+      "text": "For each of the following statements, select Yes if the statement is true. Otherwise, select No.",
+      "statements": [
+        {
+          "text": "Azure Bot Service and Azure AI Services can be integrated.",
+          "correct": "Yes"
+        },
+        {
+          "text": "Azure Bot Service engages with customers in a conversational manner.",
+          "correct": "Yes"
+        },
+        {
+          "text": "Azure Bot Service can import frequently asked questions (FAQ) to question and answer sets.",
+          "correct": "Yes"
+        }
+      ],
+      "explanation": "Azure Bot Service integrates natively with Azure AI Services (e.g. Language, Speech). Bots are designed for conversational interaction with users. Azure Bot Service supports importing FAQ documents to build question-and-answer knowledge bases.",
+      "reference": "https://learn.microsoft.com/en-us/azure/bot-service/bot-service-overview"
+    },
+    {
+      "id": 353,
+      "topic": "computer_vision",
+      "type": "sentence_completion",
+      "text": "Select the answer that correctly completes the sentence.",
+      "sentence": "A historian can use [BLANK] to digitize newspaper articles.",
+      "options": [
+        "Object detection",
+        "Facial recognition",
+        "Image classification",
+        "Optical character recognition (OCR)"
+      ],
+      "correctAnswer": "Optical character recognition (OCR)",
+      "explanation": "OCR (Optical Character Recognition) extracts text from images, making it the right tool to digitize printed newspaper articles. Azure AI Vision provides OCR capabilities for this use case.",
+      "reference": "https://learn.microsoft.com/en-us/azure/ai-services/computer-vision/overview-ocr"
+    },
+    {
+      "id": 354,
+      "topic": "azure_cognitive",
+      "type": "mcq",
+      "text": "You need to build an app that will read recipe instructions aloud to support users who have reduced vision. Which Azure AI service should you use?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Language Service"
+        },
+        {
+          "letter": "B",
+          "text": "Translator"
+        },
+        {
+          "letter": "C",
+          "text": "Speech"
+        },
+        {
+          "letter": "D",
+          "text": "Content Safety"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "Azure AI Speech provides text-to-speech (TTS) synthesis, enabling apps to convert text into spoken audio. This is ideal for reading recipe instructions aloud to visually impaired users.",
+      "reference": "https://learn.microsoft.com/en-us/azure/ai-services/speech-service/text-to-speech"
+    },
+    {
+      "id": 355,
+      "topic": "conversational_ai",
+      "type": "mcq",
+      "text": "You are authoring a Conversational Language Understanding application to support a music festival. You want users to be able to ask questions about scheduled shows, such as: 'Which act is playing on the main stage?' The question 'Which act is playing on the main stage?' is an example of which type of element?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Intent"
+        },
+        {
+          "letter": "B",
+          "text": "Utterance"
+        },
+        {
+          "letter": "C",
+          "text": "Entity"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "An utterance is the actual text or speech a user provides to the application. 'Which act is playing on the main stage?' is the literal input phrase. The intent would be what the user wants to do (e.g. GetScheduleInfo), and an entity would be a specific value like 'main stage'.",
+      "reference": "https://learn.microsoft.com/en-us/azure/ai-services/language-service/conversational-language-understanding/concepts/utterances-intents-entities"
+    },
+    {
+      "id": 356,
+      "topic": "nlp",
+      "type": "yesno",
+      "text": "For each of the following statements, select Yes if the statement is true. Otherwise, select No.",
+      "statements": [
+        {
+          "text": "Azure Language service can identify in which language text is written.",
+          "correct": "Yes"
+        },
+        {
+          "text": "Azure Language service can detect handwritten signatures in a document.",
+          "correct": "No"
+        },
+        {
+          "text": "Azure Language service can identify companies and organizations mentioned in a document.",
+          "correct": "Yes"
+        }
+      ],
+      "explanation": "Language detection is a core feature of Azure Language service. Handwritten signature detection belongs to Azure AI Document Intelligence (Form Recognizer), not the Language service. Named Entity Recognition (NER) in Azure Language service can identify organizations and companies.",
+      "reference": "https://learn.microsoft.com/en-us/azure/ai-services/language-service/language-detection/overview"
+    },
+    {
+      "id": 357,
+      "topic": "computer_vision",
+      "type": "mcq",
+      "text": "You have a bot that identifies the brand names of products in images of supermarket shelves. Which service does the bot use?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "AI enrichment for Azure search capabilities"
+        },
+        {
+          "letter": "B",
+          "text": "Computer Vision Image Analysis capabilities"
+        },
+        {
+          "letter": "C",
+          "text": "Custom Vision Image Classification capabilities"
+        },
+        {
+          "letter": "D",
+          "text": "Conversational Language Understanding capabilities"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "Identifying specific brand names on products requires training a custom model on those specific brands. Azure Custom Vision Image Classification allows you to train a model on your own labeled images (e.g. product brand images) to classify them accurately.",
+      "reference": "https://learn.microsoft.com/en-us/azure/ai-services/custom-vision-service/getting-started-build-a-classifier"
+    },
+    {
+      "id": 358,
+      "topic": "nlp",
+      "type": "sentence_completion",
+      "text": "Select the answer that correctly completes the sentence.",
+      "sentence": "While presenting at a conference, your session is transcribed into subtitles for the audience. This is an example of [BLANK].",
+      "options": [
+        "Sentiment analysis",
+        "Speech recognition",
+        "Speech synthesis",
+        "translation"
+      ],
+      "correctAnswer": "Speech recognition",
+      "explanation": "Speech recognition (speech-to-text) converts spoken audio into written text, which is exactly what transcribing a conference session into subtitles does.",
+      "reference": "https://learn.microsoft.com/en-us/azure/ai-services/speech-service/speech-to-text"
+    },
+    {
+      "id": 359,
+      "topic": "computer_vision",
+      "type": "mcq",
+      "text": "Which of the following can be performed using Azure AI vision capabilities?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Develop a text-based chatbot for a website."
+        },
+        {
+          "letter": "B",
+          "text": "Identify anomalous customer behaviour on an online store."
+        },
+        {
+          "letter": "C",
+          "text": "Integrate a facial recognition feature into an app."
+        },
+        {
+          "letter": "D",
+          "text": "Suggest automated responses to incoming email."
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "Azure AI Vision (Face service) provides facial recognition capabilities. Options A and D are NLP/conversational AI tasks; B is anomaly detection.",
+      "reference": "https://learn.microsoft.com/en-us/azure/ai-services/computer-vision/overview"
+    },
+    {
+      "id": 360,
+      "topic": "computer_vision",
+      "type": "yesno",
+      "text": "For each of the following statements, select Yes if the statement is true. Otherwise, select No.",
+      "statements": [
+        {
+          "text": "Object detection can identify the location of a damaged product in an image.",
+          "correct": "Yes"
+        },
+        {
+          "text": "Object detection can identify multiple instances of a damaged product in an image.",
+          "correct": "Yes"
+        },
+        {
+          "text": "Object detection can identify multiple types of damaged products in an image.",
+          "correct": "Yes"
+        }
+      ],
+      "explanation": "Object detection identifies what objects are present (with bounding boxes), their location, and can detect multiple instances and types in a single image.",
+      "reference": "https://learn.microsoft.com/en-us/azure/ai-services/computer-vision/concept-object-detection"
+    },
+    {
+      "id": 361,
+      "topic": "azure_cognitive",
+      "type": "mcq",
+      "text": "Which service should you use to extract text, key/value pairs, and table data automatically from scanned documents?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Custom Vision"
+        },
+        {
+          "letter": "B",
+          "text": "Face"
+        },
+        {
+          "letter": "C",
+          "text": "Document Intelligence"
+        },
+        {
+          "letter": "D",
+          "text": "Language"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "Azure AI Document Intelligence (formerly Form Recognizer) extracts text, key/value pairs, and table data from documents. Custom Vision is for image classification/detection; Face is for facial analysis; Language is for NLP.",
+      "reference": "https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/overview"
+    },
+    {
+      "id": 362,
+      "topic": "computer_vision",
+      "type": "mcq",
+      "text": "Which Azure AI Vision feature can you use to generate automatic captions for digital photographs?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Image tagging"
+        },
+        {
+          "letter": "B",
+          "text": "Image Categorization"
+        },
+        {
+          "letter": "C",
+          "text": "Image descriptions"
+        },
+        {
+          "letter": "D",
+          "text": "Image type detection"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "Image descriptions (caption generation) in Azure AI Vision generates human-readable captions for images. Image tagging assigns keywords; categorization classifies images; type detection identifies image types (clip art, line drawing, etc.).",
+      "reference": "https://learn.microsoft.com/en-us/azure/ai-services/computer-vision/concept-describing-images"
+    },
+    {
+      "id": 363,
+      "topic": "azure_ml",
+      "type": "sentence_completion",
+      "text": "Select the answer that correctly completes the sentence.",
+      "sentence": "Azure Machine Learning designer lets you create machine learning models by [BLANK].",
+      "options": [
+        "adding and connecting modules on a visual canvas",
+        "automatically performing common data preparation tasks",
+        "automatically selecting an algorithm to build the most accurate model",
+        "using a code-first notebook experience"
+      ],
+      "correctAnswer": "adding and connecting modules on a visual canvas",
+      "explanation": "Azure ML Designer is a drag-and-drop interface where you build pipelines by adding and connecting modules on a visual canvas. AutoML handles automatic algorithm selection; Data preparation tasks are separate; Notebooks are a code-first experience.",
+      "reference": "https://learn.microsoft.com/en-us/azure/machine-learning/concept-designer"
     }
   ],
   "microsoft": [
