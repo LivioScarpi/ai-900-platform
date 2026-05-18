@@ -1,24 +1,25 @@
 import type { Metadata } from "next";
-import { Inter, DM_Sans, JetBrains_Mono } from "next/font/google";
+import { Syne, IBM_Plex_Sans, IBM_Plex_Mono } from "next/font/google";
 import "./globals.css";
 import { AuthProvider } from "@/components/AuthProvider";
 
-const inter = Inter({
+const syne = Syne({
   subsets: ["latin"],
-  variable: "--font-inter",
+  variable: "--font-syne",
+  weight: ["400", "500", "600", "700", "800"],
   display: "swap",
 });
 
-const dmSans = DM_Sans({
+const ibmPlexSans = IBM_Plex_Sans({
   subsets: ["latin"],
-  variable: "--font-dm-sans",
-  weight: ["400", "500", "600", "700", "800", "900"],
+  variable: "--font-ibm",
+  weight: ["300", "400", "500", "600"],
   display: "swap",
 });
 
-const jetbrainsMono = JetBrains_Mono({
+const ibmPlexMono = IBM_Plex_Mono({
   subsets: ["latin"],
-  variable: "--font-jetbrains",
+  variable: "--font-mono",
   weight: ["400", "500", "600"],
   display: "swap",
 });
@@ -43,10 +44,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="scroll-smooth">
-      <body className={`${inter.variable} ${dmSans.variable} ${jetbrainsMono.variable} antialiased bg-cream`}>
+      <body
+        className={`${syne.variable} ${ibmPlexSans.variable} ${ibmPlexMono.variable} antialiased bg-cream`}
+      >
         <AuthProvider>{children}</AuthProvider>
       </body>
     </html>
   );
 }
-

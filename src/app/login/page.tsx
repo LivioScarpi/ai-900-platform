@@ -38,25 +38,31 @@ export default function LoginPage() {
   return (
     <div className="min-h-screen bg-cream flex items-center justify-center px-4">
       <div className="w-full max-w-sm">
-        {/* Logo */}
-        <div className="text-center mb-8">
-          <p className="font-display text-4xl font-bold tracking-[-0.02em] text-ink">AI-900</p>
-          <p className="font-mono text-[10px] mt-1.5 tracking-[0.18em] uppercase text-ink-faint">
-            Azure AI Fundamentals · Study Platform
+        {/* Brand mark */}
+        <div className="mb-10">
+          <div className="flex items-center gap-2 mb-2">
+            <span className="w-2 h-2 rounded-sm bg-brand" />
+            <p className="font-display text-[22px] font-extrabold tracking-[-0.03em] text-ink leading-none">
+              AI-900
+            </p>
+          </div>
+          <p className="font-mono text-[9px] tracking-[0.18em] uppercase text-ink-faint pl-4">
+            Azure AI Fundamentals
           </p>
         </div>
 
-        <div className="bg-card rounded-2xl border border-cream-200 p-8" style={{ boxShadow: "var(--shadow-sm)" }}>
-          <h1 className="font-display text-xl font-bold text-ink mb-1">
-            {mode === "signin" ? "Accedi" : "Crea account"}
+        {/* Card */}
+        <div className="bg-card rounded-xl border border-cream-200 p-7" style={{ boxShadow: "var(--shadow-md)" }}>
+          <h1 className="font-display text-[20px] font-extrabold text-ink tracking-[-0.02em] mb-1">
+            {mode === "signin" ? "Sign in" : "Create account"}
           </h1>
-          <p className="text-sm text-ink-muted mb-6">
-            {mode === "signin" ? "Inserisci email e password per accedere." : "Scegli email e password per il tuo account."}
+          <p className="font-mono text-[10px] text-ink-faint mb-6 tracking-[0.05em]">
+            {mode === "signin" ? "Enter your credentials to continue." : "Choose your email and password."}
           </p>
 
           <form onSubmit={handleSubmit} className="flex flex-col gap-4">
             <div className="flex flex-col gap-1.5">
-              <label htmlFor="email" className="label-caps">Email</label>
+              <label htmlFor="email" className="font-mono text-[9px] text-ink-faint uppercase tracking-[0.12em]">Email</label>
               <input
                 id="email"
                 type="email"
@@ -66,12 +72,12 @@ export default function LoginPage() {
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 placeholder="you@example.com"
-                className="w-full px-4 py-2.5 rounded-lg border border-cream-200 bg-cream text-ink text-sm font-mono placeholder:text-ink-faint focus:outline-none focus:ring-2 focus:ring-brand/30 focus:border-brand transition-colors"
+                className="w-full px-4 py-2.5 rounded-lg border border-cream-200 bg-cream text-ink text-[13px] font-mono placeholder:text-ink-faint focus:outline-none focus:ring-2 focus:ring-brand/25 focus:border-brand transition-colors"
               />
             </div>
 
             <div className="flex flex-col gap-1.5">
-              <label htmlFor="password" className="label-caps">Password</label>
+              <label htmlFor="password" className="font-mono text-[9px] text-ink-faint uppercase tracking-[0.12em]">Password</label>
               <input
                 id="password"
                 type="password"
@@ -80,17 +86,17 @@ export default function LoginPage() {
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
                 placeholder="••••••••"
-                className="w-full px-4 py-2.5 rounded-lg border border-cream-200 bg-cream text-ink text-sm font-mono placeholder:text-ink-faint focus:outline-none focus:ring-2 focus:ring-brand/30 focus:border-brand transition-colors"
+                className="w-full px-4 py-2.5 rounded-lg border border-cream-200 bg-cream text-ink text-[13px] font-mono placeholder:text-ink-faint focus:outline-none focus:ring-2 focus:ring-brand/25 focus:border-brand transition-colors"
               />
             </div>
 
             {error && (
-              <p className="text-xs text-status-red bg-status-red-bg rounded-lg px-3 py-2 border border-red-200">
+              <p className="font-mono text-[11px] text-status-red bg-status-red-bg rounded-lg px-3 py-2 border border-red-200">
                 {error}
               </p>
             )}
             {message && (
-              <p className="text-xs text-status-green bg-status-green-bg rounded-lg px-3 py-2 border border-status-green/20">
+              <p className="font-mono text-[11px] text-status-green bg-status-green-bg rounded-lg px-3 py-2 border border-status-green/20">
                 {message}
               </p>
             )}
@@ -98,18 +104,18 @@ export default function LoginPage() {
             <button
               type="submit"
               disabled={loading || !email || !password}
-              className="w-full py-2.5 rounded-lg bg-brand text-white text-sm font-semibold hover:bg-brand-dark disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
+              className="w-full py-2.5 rounded-lg bg-ink text-white text-[13px] font-semibold hover:bg-ink/85 disabled:opacity-40 disabled:cursor-not-allowed transition-colors"
             >
-              {loading ? "…" : mode === "signin" ? "Accedi →" : "Crea account →"}
+              {loading ? "…" : mode === "signin" ? "Sign in →" : "Create account →"}
             </button>
           </form>
 
           <div className="mt-5 pt-4 border-t border-cream-200 text-center">
             <button
               onClick={() => { setMode(mode === "signin" ? "signup" : "signin"); setError(null); setMessage(null); }}
-              className="font-mono text-[11px] text-ink-faint hover:text-ink-muted transition-colors"
+              className="font-mono text-[10px] text-ink-faint hover:text-ink-muted transition-colors"
             >
-              {mode === "signin" ? "Non hai un account? Registrati" : "Hai già un account? Accedi"}
+              {mode === "signin" ? "No account? Sign up" : "Already have one? Sign in"}
             </button>
           </div>
         </div>

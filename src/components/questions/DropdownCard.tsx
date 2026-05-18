@@ -9,9 +9,10 @@ import { TopicBadge } from "@/components/TopicBadge";
 interface Props {
   question: DropdownQuestion;
   onAnswer: (isCorrect: boolean, selectedAnswers: string[]) => void;
+  hideExplanation?: boolean;
 }
 
-export function DropdownCard({ question, onAnswer }: Props) {
+export function DropdownCard({ question, onAnswer, hideExplanation }: Props) {
   const [answers, setAnswers] = useState<string[]>(
     question.statements.map(() => "")
   );
@@ -29,24 +30,27 @@ export function DropdownCard({ question, onAnswer }: Props) {
   function confirm() {
     if (answers.some((a) => !a)) return;
     setConfirmed(true);
-    const isCorrect = question.statements.every(
-      (s, i) => answers[i] === s.correctAnswer
-    );
+    const isCorrect = question.statements.every((s, i) => answers[i] === s.correctAnswer);
     onAnswer(isCorrect, answers);
   }
 
-  function selectClass(index: number) {
-    if (!confirmed) return "border-brand/40 bg-white focus:border-brand";
+  function getSelectStyle(index: number): string {
+    if (!confirmed) {
+      return "border border-cream-200 bg-white text-ink hover:border-brand/50 focus:border-brand focus:ring-2 focus:ring-brand/15";
+    }
     return answers[index] === question.statements[index].correctAnswer
-      ? "border-status-green bg-status-green-bg"
-      : "border-status-red bg-status-red-bg";
+      ? "border border-status-green bg-status-green-bg text-status-green"
+      : "border border-status-red bg-status-red-bg text-status-red";
   }
 
+  const allAnswered = answers.every((a) => Boolean(a));
+
   return (
-    <div className="flex flex-col gap-4">
+    <div className="flex flex-col gap-5">
+      {/* Badges */}
       <div className="flex items-center gap-2 flex-wrap">
         <TopicBadge topic={question.topic} />
-        <span className="font-mono text-[10px] font-semibold tracking-[0.14em] px-2 py-0.5 rounded-full bg-status-orange-bg text-status-orange uppercase border border-amber-200">
+        <span className="font-mono text-[9px] font-medium tracking-[0.15em] px-2 py-0.5 rounded-full bg-amber-50 text-amber-700 uppercase border border-amber-100">
           Dropdown
         </span>
       </div>
@@ -56,36 +60,42 @@ export function DropdownCard({ question, onAnswer }: Props) {
       ))}
 
       {question.text && (
-        <p className="text-[15px] font-semibold text-ink leading-relaxed">
+        <p className="text-[15px] font-semibold text-ink leading-relaxed tracking-[-0.01em]">
           {question.text}
         </p>
       )}
 
-      <div className="flex flex-col gap-3">
+      <div className="flex flex-col gap-2">
         {question.statements.map((stmt, i) => {
           const parts = stmt.text.split("[BLANK]");
+          const isWrong = confirmed && answers[i] !== stmt.correctAnswer;
+
           return (
             <div
               key={i}
-              className="p-4 rounded-xl border border-cream-200 bg-white text-[13.5px] text-ink leading-relaxed"
+              className={`px-4 py-4 rounded-xl border text-[13.5px] text-ink leading-relaxed transition-colors ${
+                confirmed
+                  ? answers[i] === stmt.correctAnswer
+                    ? "border-status-green/30 bg-status-green-bg/40"
+                    : "border-status-red/30 bg-status-red-bg/40"
+                  : "border-cream-200 bg-white"
+              }`}
             >
-              {parts[0]}
+              <span>{parts[0]}</span>
               <select
                 value={answers[i]}
                 onChange={(e) => setAnswer(i, e.target.value)}
                 disabled={confirmed}
-                className={`inline-block mx-1 px-2 py-1 rounded border-2 text-sm font-semibold bg-white text-ink focus:outline-none transition-colors ${selectClass(i)}`}
+                className={`inline-block mx-1.5 px-2.5 py-1 rounded-lg text-[13px] font-medium focus:outline-none transition-colors ${getSelectStyle(i)}`}
               >
-                <option value="">Select...</option>
+                <option value="">Select…</option>
                 {stmt.options.map((opt) => (
-                  <option key={opt} value={opt}>
-                    {opt}
-                  </option>
+                  <option key={opt} value={opt}>{opt}</option>
                 ))}
               </select>
-              {parts[1]}
-              {confirmed && answers[i] !== stmt.correctAnswer && (
-                <span className="ml-2 text-xs text-status-green font-semibold">
+              <span>{parts[1]}</span>
+              {isWrong && (
+                <span className="ml-2 font-mono text-[11px] text-status-green font-semibold">
                   → {stmt.correctAnswer}
                 </span>
               )}
@@ -97,18 +107,15 @@ export function DropdownCard({ question, onAnswer }: Props) {
       {!confirmed && (
         <button
           onClick={confirm}
-          disabled={answers.some((a) => !a)}
-          className="mt-1 w-full py-3 rounded-xl bg-brand text-white font-semibold text-sm disabled:opacity-40 hover:bg-brand-dark transition-colors tracking-wide"
+          disabled={!allAnswered}
+          className="w-full py-3 rounded-xl bg-brand text-white font-semibold text-sm disabled:opacity-35 disabled:cursor-not-allowed transition-all duration-150 hover:bg-brand-dark tracking-wide"
         >
           Confirm Answer
         </button>
       )}
 
-      {confirmed && (
-        <ExplanationDrawer
-          explanation={question.explanation}
-          reference={question.reference}
-        />
+      {confirmed && !hideExplanation && (
+        <ExplanationDrawer explanation={question.explanation} reference={question.reference} />
       )}
     </div>
   );
