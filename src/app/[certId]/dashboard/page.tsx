@@ -55,12 +55,6 @@ export default async function DashboardPage({ params }: { params: Promise<{ cert
     qMap[question_id].total += 1;
     if (is_correct) qMap[question_id].correct += 1;
   });
-  const questionStats = Object.entries(qMap).map(([qid, data]) => {
-    const q = allQuestions.find((x) => x.id === Number(qid));
-    const text = q && "text" in q ? (q.text as string).slice(0, 90) : `Question ${qid}`;
-    return { questionId: Number(qid), correct: data.correct, total: data.total, pct: Math.round((data.correct / data.total) * 100), topic: q?.topic ?? "unknown", text };
-  }).sort((a, b) => a.pct - b.pct || b.total - a.total);
-
   const tMap: Record<string, { correct: number; total: number }> = {};
   questionAttempts.forEach(({ question_id, is_correct }) => {
     const q = allQuestions.find((x) => x.id === question_id);
@@ -78,8 +72,6 @@ export default async function DashboardPage({ params }: { params: Promise<{ cert
   const bestScore = history.length > 0 ? Math.max(...history.map((s) => Math.round((s.score / s.total) * 100))) : null;
   const avgScore = history.length > 0 ? Math.round(history.reduce((acc, s) => acc + (s.score / s.total) * 100, 0) / history.length) : null;
   const badge = accuracy != null ? accuracyBadge(accuracy) : null;
-  const homeHref = `/${certId}`;
-
   return (
     <div className="flex flex-col h-screen overflow-hidden">
       <div className="px-7 md:px-10 pt-8 pb-6 border-b border-cream-200 flex-shrink-0">
