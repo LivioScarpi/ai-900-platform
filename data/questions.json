@@ -10502,6 +10502,684 @@
       "correctAnswer": "A",
       "explanation": "The Microsoft Foundry models catalog provides a centralized catalog of generative AI models that can be discovered and compared when designing AI solutions. It does not provide datasets, model management capabilities such as monitoring or tuning, or prebuilt applications.",
       "contextImages": []
+    },
+    {
+      "id": 1051,
+      "topic": "computer_vision",
+      "type": "mcq",
+      "text": "Which computer vision service provides bounding coordinates as part of its output?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "image analysis"
+        },
+        {
+          "letter": "B",
+          "text": "image classification"
+        },
+        {
+          "letter": "C",
+          "text": "object detection"
+        },
+        {
+          "letter": "D",
+          "text": "semantic segmentation"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "Object detection provides the ability to generate bounding boxes that identify the locations of different types of objects in an image, including the bounding box coordinates. Semantic segmentation classifies individual pixels. Image classification classifies images based on their contents. Image analysis extracts information from the image to label it with tags or captions.",
+      "contextImages": []
+    },
+    {
+      "id": 1052,
+      "topic": "computer_vision",
+      "type": "mcq",
+      "text": "Which feature of computer vision involves associating an image with metadata that summarizes the attributes of the image?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "categorizing"
+        },
+        {
+          "letter": "B",
+          "text": "content organization"
+        },
+        {
+          "letter": "C",
+          "text": "detecting image types"
+        },
+        {
+          "letter": "D",
+          "text": "tagging"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "Tagging involves associating an image with metadata that summarizes the attributes of the image. Detecting image types involves identifying clip art images or line drawings. Content organization involves identifying people or objects in photos and organizing them based on the identification. Categorizing involves associating the contents of an image with a limited set of categories.",
+      "contextImages": []
+    },
+    {
+      "id": 1053,
+      "topic": "computer_vision",
+      "type": "mcq",
+      "text": "Which additional piece of information is included with each phrase returned by an image description task of the Azure Vision in Foundry Tools?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "bounding box coordinates"
+        },
+        {
+          "letter": "B",
+          "text": "confidence score"
+        },
+        {
+          "letter": "C",
+          "text": "endpoint"
+        },
+        {
+          "letter": "D",
+          "text": "key"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Each phrase returned by an image description task of the Azure Vision in Foundry Tools includes the confidence score. An endpoint and a key must be provided to access the service. Bounding box coordinates are returned by services such as object detection, but not image description.",
+      "contextImages": []
+    },
+    {
+      "id": 1054,
+      "topic": "computer_vision",
+      "type": "mcq",
+      "text": "When using the Face Detect API of the Azure Face in Foundry Tools service, which feature helps identify whether a human face has glasses or headwear?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "face attributes"
+        },
+        {
+          "letter": "B",
+          "text": "face ID"
+        },
+        {
+          "letter": "C",
+          "text": "face landmarks"
+        },
+        {
+          "letter": "D",
+          "text": "face rectangle"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Face attributes are a set of features that can be detected by the Face Detect API. Attributes such as accessories (glasses, mask, headwear etc.) can be detected. Face rectangle, face ID, and face landmarks do not allow you to determine whether a person is wearing glasses or headwear.",
+      "contextImages": []
+    },
+    {
+      "id": 1055,
+      "topic": "computer_vision",
+      "type": "mcq",
+      "text": "You need a solution that analyzes images to identify objects and scenes, such as vehicles, buildings, and outdoor environments. Which service should you use?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Azure AI Video Indexer"
+        },
+        {
+          "letter": "B",
+          "text": "Azure Document Intelligence in Foundry Tools"
+        },
+        {
+          "letter": "C",
+          "text": "Azure Face service"
+        },
+        {
+          "letter": "D",
+          "text": "Azure Vision in Foundry Tools"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "Azure Vision in Foundry Tools provides general image analysis capabilities, including identifying objects, scenes, and visual features in images. Azure AI Face in Foundry Tools focuses on face-related scenarios, Azure Document Intelligence in Foundry Tools is used to extract information from documents, and Azure AI Video Indexer is intended for analyzing video content rather than still images.",
+      "contextImages": []
+    },
+    {
+      "id": 1056,
+      "topic": "ml_fundamentals",
+      "type": "mcq",
+      "text": "A healthcare organization has a dataset consisting of bone fracture scans that are categorized by using predefined fracture types. The organization wants to use machine learning to detect the different types of bone fractures for new scans before the scans are sent to a medical practitioner. Which type of machine learning is this?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "classification"
+        },
+        {
+          "letter": "B",
+          "text": "clustering"
+        },
+        {
+          "letter": "C",
+          "text": "featurization"
+        },
+        {
+          "letter": "D",
+          "text": "regression"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Classification is used to predict categories of data. In this example, a machine learning model trained by using classification with labeled data can be used to determine the type of bone fracture in a new scan. Featurization is not a machine learning type. Regression is used to predict numeric values. Clustering analyzes unlabeled data to find similarities in the data.",
+      "contextImages": []
+    },
+    {
+      "id": 1057,
+      "topic": "ml_fundamentals",
+      "type": "mcq",
+      "text": "Which feature makes regression an example of supervised machine learning?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "use of historical data with known label values to train a model"
+        },
+        {
+          "letter": "B",
+          "text": "use of historical data with unknown label values to train a model"
+        },
+        {
+          "letter": "C",
+          "text": "use of randomly generated data with known label values to train a model"
+        },
+        {
+          "letter": "D",
+          "text": "use of randomly generated data with unknown label values to train a model"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Regression is an example of supervised machine learning due to the use of historical data with known label values to train a model. Regression does not rely on randomly generated data for training.",
+      "contextImages": []
+    },
+    {
+      "id": 1058,
+      "topic": "ml_fundamentals",
+      "type": "mcq",
+      "text": "A company is using machine learning to predict house prices based on appropriate house attributes. For the machine learning model, which attribute is the label?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "age of the house"
+        },
+        {
+          "letter": "B",
+          "text": "floor space size"
+        },
+        {
+          "letter": "C",
+          "text": "number of bedrooms"
+        },
+        {
+          "letter": "D",
+          "text": "price of the house"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "The price of the house is the label you are attempting to predict through the machine learning model. This is typically done by using a regression model. Floor space size, number of bedrooms, and age of the house are all input variables (features) for the model to help predict the house price label.",
+      "contextImages": []
+    },
+    {
+      "id": 1059,
+      "topic": "ml_fundamentals",
+      "type": "mcq",
+      "text": "What is the purpose of a validation dataset used as part of the development of a machine learning model?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "cleaning missing data"
+        },
+        {
+          "letter": "B",
+          "text": "evaluating the trained model"
+        },
+        {
+          "letter": "C",
+          "text": "feature engineering"
+        },
+        {
+          "letter": "D",
+          "text": "summarizing the data"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "The validation dataset is a sample of data held back from a training dataset. It is then used to evaluate the performance of the trained model. Cleaning missing data is used to detect missing values and perform operations to fix the data or create new values. Feature engineering is part of preparing the dataset and related data transformation processes. Summarizing the data is used to provide summary statistics, such as the mean or count of distinct values in a column.",
+      "contextImages": []
+    },
+    {
+      "id": 1060,
+      "topic": "azure_ml",
+      "type": "mcq",
+      "text": "You need to use the Azure Machine Learning designer to deploy a predictive service from a newly trained model. What should you do first in the Machine Learning designer?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Add a dataset."
+        },
+        {
+          "letter": "B",
+          "text": "Add training modules."
+        },
+        {
+          "letter": "C",
+          "text": "Create an inference pipeline."
+        },
+        {
+          "letter": "D",
+          "text": "Create an inferencing cluster."
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "To deploy a predictive service from a newly trained model by using the Machine Learning designer, you must first create an inference pipeline. Adding training modules takes place before creating a trained model, which already exists. Adding a dataset requires that a pipeline already exists. To create an inferencing cluster, you must use Machine Learning studio.",
+      "contextImages": []
+    },
+    {
+      "id": 1061,
+      "topic": "azure_ml",
+      "type": "mcq",
+      "text": "Which machine learning algorithm module in the Azure Machine Learning designer is used to train a model?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Clean Missing Data"
+        },
+        {
+          "letter": "B",
+          "text": "Evaluate Model"
+        },
+        {
+          "letter": "C",
+          "text": "Linear Regression"
+        },
+        {
+          "letter": "D",
+          "text": "Select Columns in Dataset"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "Linear regression is a machine learning algorithm module used for training regression models. The Clean Missing Data module is part of preparing the data and data transformation process. Select Columns in Dataset is used to choose a subset of columns of interest from a dataset. Evaluate Model is a component used to measure the accuracy of trained models.",
+      "contextImages": []
+    },
+    {
+      "id": 1062,
+      "topic": "ml_fundamentals",
+      "type": "sentence_completion",
+      "text": "Select the answer that correctly completes the sentence.",
+      "sentence": "A key feature of a generative AI model is that it can [BLANK].",
+      "options": [
+        "assign labels to data by using classification logic",
+        "follow predefined rules to make deterministic decisions",
+        "identify anomalies in large volumes of structured data",
+        "produce original outputs based on patterns learned from training data"
+      ],
+      "correctAnswer": "produce original outputs based on patterns learned from training data",
+      "explanation": "A generative AI model can produce original outputs based on patterns learned from training data. This reflects the defining capability of generative models, which create new content rather than simply categorizing, detecting anomalies, and following predefined rules.",
+      "contextImages": []
+    },
+    {
+      "id": 1063,
+      "topic": "ml_fundamentals",
+      "type": "multi",
+      "text": "Which two scenarios are common use cases for generative AI? Each correct answer presents a complete solution.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "anomaly detection"
+        },
+        {
+          "letter": "B",
+          "text": "image generation"
+        },
+        {
+          "letter": "C",
+          "text": "summarization"
+        },
+        {
+          "letter": "D",
+          "text": "translation"
+        }
+      ],
+      "correctAnswers": [
+        "B",
+        "C"
+      ],
+      "explanation": "Image generation and summarization are common use cases for generative AI, as both involve producing new content. Anomaly detection focuses on identifying unusual patterns and is associated with traditional machine learning. Translation, although it can use generative models, is commonly categorized as a general NLP workload rather than a primary generative AI scenario.",
+      "contextImages": []
+    },
+    {
+      "id": 1064,
+      "topic": "ml_fundamentals",
+      "type": "multi",
+      "text": "Which three capabilities are examples of image generation features for a generative AI model? Each correct answer presents a complete solution.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "animation of static images"
+        },
+        {
+          "letter": "B",
+          "text": "creating variations of an image"
+        },
+        {
+          "letter": "C",
+          "text": "editing an image"
+        },
+        {
+          "letter": "D",
+          "text": "extracting RGB values from an image"
+        },
+        {
+          "letter": "E",
+          "text": "new image creation"
+        }
+      ],
+      "correctAnswers": [
+        "B",
+        "C",
+        "E"
+      ],
+      "explanation": "Image generation models can take a prompt, a base image, or both, and create something new. These generative AI models can create both realistic and artistic images, change the layout or style of an image, and create variations of a provided image.",
+      "contextImages": []
+    },
+    {
+      "id": 1065,
+      "topic": "azure_cognitive",
+      "type": "sentence_completion",
+      "text": "Select the answer that correctly completes the sentence.",
+      "sentence": "[BLANK] can search, classify, and compare sources of text for similarity.",
+      "options": [
+        "Data grounding",
+        "Embeddings",
+        "Machine learning",
+        "System messages"
+      ],
+      "correctAnswer": "Embeddings",
+      "explanation": "Embeddings is an Azure OpenAI model that converts text into numerical vectors for analysis. Embeddings can be used to search, classify, and compare sources of text for similarity.",
+      "contextImages": []
+    },
+    {
+      "id": 1066,
+      "topic": "azure_cognitive",
+      "type": "sentence_completion",
+      "text": "Select the answer that correctly completes the sentence.",
+      "sentence": "Azure OpenAI in Foundry Models can be used to [BLANK].",
+      "options": [
+        "access and deploy models, such as GPT, for generative AI solutions",
+        "build and train computer vision models from labeled images",
+        "manage API keys and secrets used by Azure AI services",
+        "orchestrate model training pipelines for custom machine learning workflows"
+      ],
+      "correctAnswer": "access and deploy models, such as GPT, for generative AI solutions",
+      "explanation": "Azure OpenAI in Foundry Models can be used to access and deploy OpenAI foundation models, such as GPT, for generative AI solutions. Training computer vision models, orchestrating custom machine learning pipelines, or managing API keys and secrets are responsibilities of other Azure services.",
+      "contextImages": []
+    },
+    {
+      "id": 1067,
+      "topic": "nlp",
+      "type": "multi",
+      "text": "Which two artificial intelligence (AI) workload scenarios are examples of natural language processing (NLP)? Each correct answer presents a complete solution.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "extracting handwritten text from online images"
+        },
+        {
+          "letter": "B",
+          "text": "generating tags and descriptions for images"
+        },
+        {
+          "letter": "C",
+          "text": "monitoring network traffic for sudden spikes"
+        },
+        {
+          "letter": "D",
+          "text": "performing sentiment analysis on social media data"
+        },
+        {
+          "letter": "E",
+          "text": "translating text between different languages from product reviews"
+        }
+      ],
+      "correctAnswers": [
+        "D",
+        "E"
+      ],
+      "explanation": "Translating text between different languages from product reviews is an NLP workload using the Azure Translator service. Performing sentiment analysis on social media data is an NLP workload using the sentiment analysis feature of the Azure AI Service for Language. Extracting handwritten text and generating image tags are computer vision workloads. Monitoring network traffic is an anomaly detection workload.",
+      "contextImages": []
+    },
+    {
+      "id": 1068,
+      "topic": "responsible_ai",
+      "type": "mcq",
+      "text": "Which principle of responsible artificial intelligence (AI) involves evaluating and mitigating the bias introduced by the features of a model?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "accountability"
+        },
+        {
+          "letter": "B",
+          "text": "fairness"
+        },
+        {
+          "letter": "C",
+          "text": "privacy"
+        },
+        {
+          "letter": "D",
+          "text": "transparency"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Fairness involves evaluating and mitigating the bias introduced by the features of a model. Privacy is meant to ensure that privacy provisions are included in AI solutions. Transparency provides clarity regarding the purpose of AI solutions and their limitations. Accountability is focused on ensuring that AI solutions meet ethical and legal standards.",
+      "contextImages": []
+    },
+    {
+      "id": 1069,
+      "topic": "responsible_ai",
+      "type": "mcq",
+      "text": "Which principle of responsible artificial intelligence (AI) defines the framework of governance and organization principles that meet ethical and legal standards of AI solutions?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "accountability"
+        },
+        {
+          "letter": "B",
+          "text": "fairness"
+        },
+        {
+          "letter": "C",
+          "text": "inclusiveness"
+        },
+        {
+          "letter": "D",
+          "text": "transparency"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Accountability defines the framework of governance and organizational principles, which are meant to ensure that AI solutions meet ethical and legal standards that are clearly defined. The other answer choices provide guidance regarding the ethical and legal aspects of the corresponding standards but do not define the governance framework.",
+      "contextImages": []
+    },
+    {
+      "id": 1070,
+      "topic": "nlp",
+      "type": "mcq",
+      "text": "Which natural language processing (NLP) technique normalizes words before counting them?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "frequency analysis"
+        },
+        {
+          "letter": "B",
+          "text": "N-grams"
+        },
+        {
+          "letter": "C",
+          "text": "stemming"
+        },
+        {
+          "letter": "D",
+          "text": "vectorization"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "Stemming normalizes words before counting them. Frequency analysis counts how often a word appears in a text. N-grams extend frequency analysis to include multi-term phrases. Vectorization captures semantic relationships between words by assigning them to locations in n-dimensional space.",
+      "contextImages": []
+    },
+    {
+      "id": 1071,
+      "topic": "conversational_ai",
+      "type": "multi",
+      "text": "Which two types of files can be imported to generate a knowledge base for use with a Microsoft Foundry Agent? Each correct answer presents a complete solution.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "CSV"
+        },
+        {
+          "letter": "B",
+          "text": "DOC"
+        },
+        {
+          "letter": "C",
+          "text": "MP4"
+        },
+        {
+          "letter": "D",
+          "text": "PDF"
+        },
+        {
+          "letter": "E",
+          "text": "ZIP"
+        }
+      ],
+      "correctAnswers": [
+        "B",
+        "D"
+      ],
+      "explanation": "Structured and unstructured DOC files and PDF files can be imported to generate a knowledge base. ZIP files must first be extracted before they can be imported. MP4 files and CSV files are not supported to generate question-and-answer pairs for use with Azure AI Bot Service.",
+      "contextImages": []
+    },
+    {
+      "id": 1072,
+      "topic": "nlp",
+      "type": "mcq",
+      "text": "Which Azure AI Service for Language feature can be used to analyze online user reviews to identify whether users view a product positively or negatively?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "key phrase extraction"
+        },
+        {
+          "letter": "B",
+          "text": "language detection"
+        },
+        {
+          "letter": "C",
+          "text": "named entity recognition"
+        },
+        {
+          "letter": "D",
+          "text": "sentiment analysis"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "Sentiment analysis provides sentiment labels, such as negative, neutral, and positive, based on a confidence score from text analysis. This makes it suitable for understanding user sentiment for product reviews. Named entity recognition, key phrase extraction, and language detection cannot perform sentiment analysis for product reviews.",
+      "contextImages": []
+    },
+    {
+      "id": 1073,
+      "topic": "nlp",
+      "type": "mcq",
+      "text": "Which Azure resource provides direct access to both Azure Translator in Foundry Tools and Azure AI Speech services through a single endpoint and authentication key?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Azure AI Bot Service"
+        },
+        {
+          "letter": "B",
+          "text": "Microsoft Foundry"
+        },
+        {
+          "letter": "C",
+          "text": "Azure Machine Learning"
+        },
+        {
+          "letter": "D",
+          "text": "Azure Language in Foundry Tools service"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Microsoft Foundry provides direct access to both Azure Translator in Foundry Tools and Azure AI Speech services through a single endpoint and authentication key. Azure Language in Foundry Tools service provides access to language capabilities, but not the Translator and Speech services together. Azure Machine Learning is used to design and deploy machine learning models. Azure AI Bot Service provides a framework for developing and managing bots.",
+      "contextImages": []
+    },
+    {
+      "id": 1074,
+      "topic": "nlp",
+      "type": "multi",
+      "text": "Which three features are elements of the Azure Language in Foundry Tools Service? Each correct answer presents a complete solution.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Azure Vision in Foundry Tools"
+        },
+        {
+          "letter": "B",
+          "text": "Azure AI Content Moderator"
+        },
+        {
+          "letter": "C",
+          "text": "Entity Linking"
+        },
+        {
+          "letter": "D",
+          "text": "Personally Identifiable Information (PII) detection"
+        },
+        {
+          "letter": "E",
+          "text": "Sentiment analysis"
+        }
+      ],
+      "correctAnswers": [
+        "C",
+        "D",
+        "E"
+      ],
+      "explanation": "Entity Linking, PII detection, and Sentiment analysis are all elements of the Azure AI Service for Azure Language in Foundry Tools. Azure Vision in Foundry Tools deals with image processing. Azure AI Content Moderator is an Azure AI Services service used to check text, image, and video content for material that is potentially offensive.",
+      "contextImages": []
+    },
+    {
+      "id": 1075,
+      "topic": "nlp",
+      "type": "multi",
+      "text": "What are the two main schema components of a Language Understanding app model? Each correct answer presents part of the solution.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "entities"
+        },
+        {
+          "letter": "B",
+          "text": "entity linking"
+        },
+        {
+          "letter": "C",
+          "text": "intents"
+        },
+        {
+          "letter": "D",
+          "text": "utterances"
+        }
+      ],
+      "correctAnswers": [
+        "A",
+        "C"
+      ],
+      "explanation": "The two main schema components of a Language Understanding app model are entities and intents. Utterances play an important role in training the model, but they are not part of its schema. Entity Linking is part of the entity recognition service, which returns links to external websites to disambiguate terms identified in a text.",
+      "contextImages": []
     }
   ]
 }
