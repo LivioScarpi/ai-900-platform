@@ -324,7 +324,7 @@ export default function ExamPage({ params }: { params: { certId: string } }) {
                 <button onClick={() => setReviewIndex((i) => Math.min(wrongQuestions.length - 1, i + 1))} disabled={reviewIndex === wrongQuestions.length - 1} className="px-5 py-2 rounded-lg bg-ink text-white font-mono text-[10px] uppercase tracking-[0.12em] disabled:opacity-40 hover:bg-ink/85 transition-colors">Next →</button>
               </div>
             </div>
-            <aside className="hidden xl:flex flex-col flex-1 border-l border-cream-200">
+            <aside className="hidden md:flex flex-col md:w-64 xl:flex-1 border-l border-cream-200">
               <div className="px-6 py-4 border-b border-cream-200 flex items-center justify-between">
                 <div className="flex items-center gap-2"><span className="w-1.5 h-1.5 rounded-full bg-amber-400" /><span className="font-mono text-[9px] font-medium tracking-[0.15em] text-ink-faint uppercase">Explanation</span></div>
                 <span className="font-mono text-[9px] text-ink-faint">#{reviewQ?.id}</span>
@@ -394,7 +394,7 @@ export default function ExamPage({ params }: { params: { certId: string } }) {
           </div>
         </div>
 
-        <aside className="hidden xl:flex flex-col flex-1 border-l border-cream-200">
+        <aside className="hidden md:flex flex-col md:w-64 xl:flex-1 border-l border-cream-200">
           <div className="px-6 py-4 border-b border-cream-200 flex items-center justify-between">
             <div className="flex items-center gap-2"><span className={`w-1.5 h-1.5 rounded-full ${urgent ? "bg-status-red" : "bg-amber-400"}`} /><span className="font-mono text-[9px] font-medium tracking-[0.15em] text-ink-faint uppercase">Explanation</span></div>
             <span className="font-mono text-[9px] text-ink-faint">#{currentQuestion.id}</span>
