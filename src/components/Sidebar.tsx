@@ -82,7 +82,7 @@ export function Sidebar() {
       {/* Footer */}
       <div className="px-4 py-5 border-t border-sidebar-border">
         {user && (
-          <div className="mb-3 space-y-1">
+          <div className="space-y-1">
             <p className="font-mono text-[9px] text-sidebar-text truncate">{user.email}</p>
             <button
               onClick={signOut}
@@ -92,10 +92,6 @@ export function Sidebar() {
             </button>
           </div>
         )}
-        <div className="flex items-center gap-1.5">
-          <span className="w-1.5 h-1.5 rounded-full bg-green-500 shrink-0" />
-          <p className="font-mono text-[9px] text-sidebar-text">70% to pass · 45 min</p>
-        </div>
       </div>
     </aside>
   );

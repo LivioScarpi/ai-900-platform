@@ -78,7 +78,7 @@ export default function RandomSequentialPage() {
           <Link href="/" className="font-mono text-[10px] text-ink-faint hover:text-ink transition-colors tracking-[0.1em] uppercase">
             ← Home
           </Link>
-          <span className="font-mono text-[12px] font-medium text-ink-muted xl:hidden">
+          <span className="font-mono text-[12px] font-medium text-ink-muted md:hidden">
             {index + 1}<span className="text-ink-faint font-normal"> / {questions.length}</span>
           </span>
         </div>
@@ -107,10 +107,42 @@ export default function RandomSequentialPage() {
               Next →
             </button>
           </div>
+
+          {/* Mobile explanation — only below md */}
+          {answered && (
+            <div className="md:hidden mt-6 pt-6 border-t border-cream-200">
+              <div className="flex items-center gap-2 mb-3">
+                <span className="w-1.5 h-1.5 rounded-full bg-amber-400" />
+                <span className="font-mono text-[9px] font-medium tracking-[0.15em] text-ink-faint uppercase">Explanation</span>
+              </div>
+              <div className="animate-reveal space-y-3">
+                {question.explanation ? (
+                  <p className="text-[13px] text-ink-muted leading-relaxed whitespace-pre-line">
+                    {question.explanation}
+                  </p>
+                ) : (
+                  <p className="font-mono text-[10px] text-ink-faint leading-relaxed tracking-[0.05em]">
+                    No notes for this one —<br />your reasoning is the answer.
+                  </p>
+                )}
+                {question.reference && (
+                  <a href={question.reference} target="_blank" rel="noopener noreferrer"
+                    className="inline-flex items-center gap-1 font-mono text-[11px] text-brand underline underline-offset-2 break-all hover:text-brand-dark transition-colors">
+                    {question.reference}
+                    <svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                      <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                      <polyline points="15 3 21 3 21 9" />
+                      <line x1="10" y1="14" x2="21" y2="3" />
+                    </svg>
+                  </a>
+                )}
+              </div>
+            </div>
+          )}
         </div>
 
         {/* Explanation panel */}
-        <aside className="hidden xl:flex flex-col flex-1 border-l border-cream-200">
+        <aside className="hidden md:flex flex-col md:w-64 xl:flex-1 border-l border-cream-200">
           <div className="px-6 py-4 border-b border-cream-200 flex items-center justify-between">
             <div className="flex items-center gap-2">
               <span className="w-1.5 h-1.5 rounded-full bg-amber-400" />

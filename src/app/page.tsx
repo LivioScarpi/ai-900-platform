@@ -88,7 +88,7 @@ export default function HomePage() {
           </span>
           <span className="font-mono text-[10px] text-ink-faint opacity-40">·</span>
           <span className="font-mono text-[10px] uppercase tracking-[0.14em] text-ink-faint">
-            5 study modes
+            4 study modes
           </span>
         </div>
       </div>
