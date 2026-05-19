@@ -3,7 +3,7 @@
 import { useState } from "react";
 
 interface Props {
-  explanation: string;
+  explanation?: string;
   reference?: string;
 }
 

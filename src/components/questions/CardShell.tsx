@@ -1,6 +1,7 @@
 import { TopicBadge } from "@/components/TopicBadge";
 import { ContextImage } from "@/components/ContextImage";
 import { ExplanationDrawer } from "@/components/ExplanationDrawer";
+import { Topic } from "@/types/question";
 
 interface BadgeProps {
   label: string;
@@ -8,7 +9,7 @@ interface BadgeProps {
 }
 
 interface CardShellProps {
-  topic: string;
+  topic: Topic;
   badge: BadgeProps;
   contextImages?: string[];
   text?: string;

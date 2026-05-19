@@ -70,7 +70,8 @@ function pickDiverse(pool: Question[], count: number): Question[] {
   const pickedFps: Set<string>[] = [];
   for (const candidate of shuffled) {
     if (picked.length >= count) break;
-    const fp = fingerprint(candidate.text);
+    const raw = "text" in candidate ? (candidate as { text: string }).text : (candidate as { sentence: string }).sentence;
+    const fp = fingerprint(raw);
     if (!pickedFps.some((existing) => jaccard(fp, existing) > 0.5)) {
       picked.push(candidate);
       pickedFps.push(fp);
