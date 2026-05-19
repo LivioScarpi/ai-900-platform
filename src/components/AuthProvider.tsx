@@ -4,8 +4,6 @@ import { createContext, useContext, useEffect, useState, useCallback } from "rea
 import { useRouter, usePathname } from "next/navigation";
 import { supabase } from "@/lib/supabase";
 import type { User } from "@supabase/supabase-js";
-import { Sidebar } from "@/components/Sidebar";
-import { MobileNav } from "@/components/MobileNav";
 
 interface AuthContextValue {
   user: User | null;
@@ -80,11 +78,7 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
 
   return (
     <AuthContext.Provider value={{ user, loading, signOut }}>
-      <Sidebar />
-      <MobileNav />
-      <main className="md:ml-[200px] min-h-screen bg-cream overflow-y-auto pb-16 md:pb-0">
-        {children}
-      </main>
+      {children}
     </AuthContext.Provider>
   );
 }

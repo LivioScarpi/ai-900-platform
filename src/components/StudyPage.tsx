@@ -1,7 +1,6 @@
 "use client";
 
 import { useState } from "react";
-import { getAllQuestions } from "@/lib/questions";
 import { QuestionCard } from "@/components/QuestionCard";
 import { ProgressBar } from "@/components/ProgressBar";
 import { saveAttempt } from "@/lib/supabase";
@@ -9,60 +8,89 @@ import { useUserId } from "@/components/AuthProvider";
 import { Question } from "@/types/question";
 import Link from "next/link";
 
-function CheckIcon() {
+interface StudyPageProps {
+  questions: Question[];
+  certId: string;
+  title: string;
+  mode: string;
+  accentColor?: string;
+}
+
+function LockIcon() {
   return (
-    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-      <path d="M20 6L9 17l-5-5" />
+    <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-ink-faint shrink-0">
+      <rect x="3" y="11" width="18" height="11" rx="2" ry="2" />
+      <path d="M7 11V7a5 5 0 0 1 10 0v4" />
     </svg>
   );
 }
 
-export default function RandomSequentialPage() {
-  const userId = useUserId();
-  const [questions] = useState<Question[]>(() =>
-    [...getAllQuestions()].sort(() => Math.random() - 0.5)
+function ExternalLinkIcon() {
+  return (
+    <svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+      <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+      <polyline points="15 3 21 3 21 9" />
+      <line x1="10" y1="14" x2="21" y2="3" />
+    </svg>
   );
+}
+
+export function StudyPage({ questions: allQuestions, certId, title, mode, accentColor = "#0066CC" }: StudyPageProps) {
+  const userId = useUserId();
   const [index, setIndex] = useState(0);
   const [answered, setAnswered] = useState(false);
-  const question = questions[index];
+  const question = allQuestions[index];
 
   function restart() { setIndex(0); setAnswered(false); }
 
   async function handleAnswer(isCorrect: boolean, selectedAnswers: string[]) {
     setAnswered(true);
-    await saveAttempt({ userId, questionId: question.id, mode: "random_sequential", selectedAnswers, isCorrect });
+    await saveAttempt({ userId, questionId: question.id, mode, selectedAnswers, isCorrect });
   }
 
   function next() { setIndex((i) => i + 1); setAnswered(false); }
   function prev() { setIndex((i) => Math.max(0, i - 1)); setAnswered(false); }
 
+  const homeHref = `/${certId}`;
+
+  if (allQuestions.length === 0) {
+    return (
+      <div className="flex flex-col min-h-screen">
+        <div className="px-7 md:px-10 pt-8 pb-6 border-b border-cream-200">
+          <h1 className="font-display text-[28px] md:text-[34px] font-extrabold text-ink tracking-[-0.025em] leading-none">{title}</h1>
+        </div>
+        <div className="px-7 md:px-10 py-10">
+          <p className="text-[13px] text-ink-muted mb-6 max-w-sm">No questions available for this mode.</p>
+          <Link href={homeHref} className="px-5 py-2 rounded-lg border border-cream-200 font-mono text-[10px] uppercase tracking-[0.12em] text-ink-muted hover:bg-cream-100 hover:text-ink transition-colors">
+            Overview
+          </Link>
+        </div>
+      </div>
+    );
+  }
+
   if (!question) {
     return (
       <div className="flex flex-col min-h-screen">
         <div className="px-7 md:px-10 pt-8 pb-6 border-b border-cream-200">
-          <Link href="/" className="font-mono text-[10px] text-ink-faint hover:text-ink transition-colors tracking-[0.1em] uppercase">
-            ← Home
-          </Link>
-          <h1 className="font-display text-[28px] md:text-[34px] font-extrabold text-ink tracking-[-0.025em] leading-none mt-4">
-            Random Shuffle
-          </h1>
+          <h1 className="font-display text-[28px] md:text-[34px] font-extrabold text-ink tracking-[-0.025em] leading-none">{title}</h1>
         </div>
         <div className="px-7 md:px-10 py-10">
           <div className="flex items-center gap-3 mb-3">
             <div className="w-8 h-8 rounded-full bg-status-green flex items-center justify-center text-white">
-              <CheckIcon />
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M20 6L9 17l-5-5" /></svg>
             </div>
             <p className="font-display text-[20px] font-bold text-ink">All done!</p>
           </div>
           <p className="text-[13px] text-ink-muted mb-6 max-w-sm">
-            You&apos;ve worked through all {questions.length} questions in random order.
+            You&apos;ve worked through all {allQuestions.length} questions. Great work.
           </p>
           <div className="flex gap-3">
             <button onClick={restart} className="px-7 py-3 rounded-xl bg-ink text-white font-display font-bold text-[15px] tracking-[-0.01em] hover:bg-ink/85 transition-colors">
-              Shuffle again →
+              Restart →
             </button>
-            <Link href="/" className="px-5 py-2 rounded-lg border border-cream-200 font-mono text-[10px] uppercase tracking-[0.12em] text-ink-muted hover:bg-cream-100 hover:text-ink transition-colors">
-              Home
+            <Link href={homeHref} className="px-5 py-2 rounded-lg border border-cream-200 font-mono text-[10px] uppercase tracking-[0.12em] text-ink-muted hover:bg-cream-100 hover:text-ink transition-colors self-center">
+              Overview
             </Link>
           </div>
         </div>
@@ -75,15 +103,13 @@ export default function RandomSequentialPage() {
       {/* Header */}
       <div className="px-7 md:px-10 pt-8 pb-5 border-b border-cream-200">
         <div className="flex items-center justify-between mb-4">
-          <Link href="/" className="font-mono text-[10px] text-ink-faint hover:text-ink transition-colors tracking-[0.1em] uppercase">
-            ← Home
-          </Link>
+          <span className="font-mono text-[10px] text-ink-faint tracking-[0.1em] uppercase">{title}</span>
           <span className="font-mono text-[12px] font-medium text-ink-muted md:hidden">
-            {index + 1}<span className="text-ink-faint font-normal"> / {questions.length}</span>
+            {index + 1}<span className="text-ink-faint font-normal"> / {allQuestions.length}</span>
           </span>
         </div>
         <h1 className="font-display text-[28px] md:text-[34px] font-extrabold text-ink tracking-[-0.025em] leading-none">
-          Random Shuffle
+          {title}
         </h1>
         <p className="font-mono text-[10px] text-ink-faint mt-2 tracking-[0.1em] uppercase">
           Question {question.id}
@@ -92,7 +118,7 @@ export default function RandomSequentialPage() {
 
       {/* Progress */}
       <div className="px-7 md:px-10 py-3 border-b border-cream-200">
-        <ProgressBar current={index + 1} total={questions.length} />
+        <ProgressBar current={index + 1} total={allQuestions.length} />
       </div>
 
       {/* Content */}
@@ -108,7 +134,6 @@ export default function RandomSequentialPage() {
             </button>
           </div>
 
-          {/* Mobile explanation — only below md */}
           {answered && (
             <div className="md:hidden mt-6 pt-6 border-t border-cream-200">
               <div className="flex items-center gap-2 mb-3">
@@ -117,23 +142,13 @@ export default function RandomSequentialPage() {
               </div>
               <div className="animate-reveal space-y-3">
                 {question.explanation ? (
-                  <p className="text-[13px] text-ink-muted leading-relaxed whitespace-pre-line">
-                    {question.explanation}
-                  </p>
+                  <p className="text-[13px] text-ink-muted leading-relaxed whitespace-pre-line">{question.explanation}</p>
                 ) : (
-                  <p className="font-mono text-[10px] text-ink-faint leading-relaxed tracking-[0.05em]">
-                    No notes for this one —<br />your reasoning is the answer.
-                  </p>
+                  <p className="font-mono text-[10px] text-ink-faint leading-relaxed tracking-[0.05em]">No notes for this one —<br />your reasoning is the answer.</p>
                 )}
                 {question.reference && (
-                  <a href={question.reference} target="_blank" rel="noopener noreferrer"
-                    className="inline-flex items-center gap-1 font-mono text-[11px] text-brand underline underline-offset-2 break-all hover:text-brand-dark transition-colors">
-                    {question.reference}
-                    <svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-                      <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
-                      <polyline points="15 3 21 3 21 9" />
-                      <line x1="10" y1="14" x2="21" y2="3" />
-                    </svg>
+                  <a href={question.reference} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 font-mono text-[11px] text-brand underline underline-offset-2 break-all hover:text-brand-dark transition-colors">
+                    {question.reference} <ExternalLinkIcon />
                   </a>
                 )}
               </div>
@@ -160,33 +175,20 @@ export default function RandomSequentialPage() {
                   ))}
                 </div>
                 <div className="flex items-center gap-2 mt-1">
-                  <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-ink-faint shrink-0">
-                    <rect x="3" y="11" width="18" height="11" rx="2" ry="2" />
-                    <path d="M7 11V7a5 5 0 0 1 10 0v4" />
-                  </svg>
+                  <LockIcon />
                   <span className="font-mono text-[10px] text-ink-faint">Answer to reveal</span>
                 </div>
               </div>
             ) : (
               <div className="animate-reveal space-y-3">
                 {question.explanation ? (
-                  <p className="text-[13px] text-ink-muted leading-relaxed whitespace-pre-line">
-                    {question.explanation}
-                  </p>
+                  <p className="text-[13px] text-ink-muted leading-relaxed whitespace-pre-line">{question.explanation}</p>
                 ) : (
-                  <p className="font-mono text-[10px] text-ink-faint leading-relaxed tracking-[0.05em]">
-                    No notes for this one —<br />your reasoning is the answer.
-                  </p>
+                  <p className="font-mono text-[10px] text-ink-faint leading-relaxed tracking-[0.05em]">No notes for this one —<br />your reasoning is the answer.</p>
                 )}
                 {question.reference && (
-                  <a href={question.reference} target="_blank" rel="noopener noreferrer"
-                    className="inline-flex items-center gap-1 font-mono text-[11px] text-brand underline underline-offset-2 break-all hover:text-brand-dark transition-colors">
-                    {question.reference}
-                    <svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-                      <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
-                      <polyline points="15 3 21 3 21 9" />
-                      <line x1="10" y1="14" x2="21" y2="3" />
-                    </svg>
+                  <a href={question.reference} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 font-mono text-[11px] text-brand underline underline-offset-2 break-all hover:text-brand-dark transition-colors">
+                    {question.reference} <ExternalLinkIcon />
                   </a>
                 )}
               </div>
@@ -196,9 +198,9 @@ export default function RandomSequentialPage() {
           <div className="border-t border-cream-200 px-6 py-4 flex items-center justify-between">
             <div className="flex items-center gap-2.5">
               <div className="w-24 h-[3px] rounded-full bg-cream-200 overflow-hidden">
-                <div className="h-full bg-[#7C3AED] rounded-full transition-all duration-500" style={{ width: `${((index + 1) / questions.length) * 100}%` }} />
+                <div className="h-full rounded-full transition-all duration-500" style={{ width: `${((index + 1) / allQuestions.length) * 100}%`, backgroundColor: accentColor }} />
               </div>
-              <span className="font-mono text-[9px] text-ink-faint tnum">{index + 1}/{questions.length}</span>
+              <span className="font-mono text-[9px] text-ink-faint tnum">{index + 1}/{allQuestions.length}</span>
             </div>
             <button onClick={restart} className="font-mono text-[9px] text-ink-faint hover:text-status-red transition-colors tracking-[0.1em] uppercase">
               Restart →

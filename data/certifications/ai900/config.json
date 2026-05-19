@@ -1,0 +1,12 @@
+{
+  "id": "ai900",
+  "name": "AI-900",
+  "fullName": "Microsoft Azure AI Fundamentals",
+  "provider": "Microsoft",
+  "description": "Foundational knowledge of machine learning, AI concepts, and related Azure services.",
+  "color": "#0066CC",
+  "examQuestions": 50,
+  "examDurationMin": 45,
+  "passmarkPct": 70,
+  "hasMicrosoftQuestions": true
+}

@@ -10,23 +10,23 @@ interface Props {
   question: Question;
   onAnswer: (isCorrect: boolean, selectedAnswers: string[]) => void;
   hideExplanation?: boolean;
+  examMode?: boolean;
+  initialAnswer?: string[];
 }
 
-export function QuestionCard({ question, onAnswer, hideExplanation }: Props) {
+export function QuestionCard({ question, onAnswer, hideExplanation, examMode, initialAnswer }: Props) {
   switch (question.type) {
     case "mcq":
-      return <McqCard question={question} onAnswer={onAnswer} hideExplanation={hideExplanation} />;
+      return <McqCard question={question} onAnswer={onAnswer} hideExplanation={hideExplanation} examMode={examMode} initialAnswer={initialAnswer} />;
     case "multi":
-      return <MultiCard question={question} onAnswer={onAnswer} hideExplanation={hideExplanation} />;
+      return <MultiCard question={question} onAnswer={onAnswer} hideExplanation={hideExplanation} examMode={examMode} initialAnswer={initialAnswer} />;
     case "sentence_completion":
-      return (
-        <SentenceCompletionCard question={question} onAnswer={onAnswer} hideExplanation={hideExplanation} />
-      );
+      return <SentenceCompletionCard question={question} onAnswer={onAnswer} hideExplanation={hideExplanation} examMode={examMode} initialAnswer={initialAnswer} />;
     case "yesno":
-      return <YesNoCard question={question} onAnswer={onAnswer} hideExplanation={hideExplanation} />;
+      return <YesNoCard question={question} onAnswer={onAnswer} hideExplanation={hideExplanation} examMode={examMode} initialAnswer={initialAnswer} />;
     case "dropdown":
-      return <DropdownCard question={question} onAnswer={onAnswer} hideExplanation={hideExplanation} />;
+      return <DropdownCard question={question} onAnswer={onAnswer} hideExplanation={hideExplanation} examMode={examMode} initialAnswer={initialAnswer} />;
     case "dragdrop":
-      return <DragDropCard question={question} onAnswer={onAnswer} hideExplanation={hideExplanation} />;
+      return <DragDropCard question={question} onAnswer={onAnswer} hideExplanation={hideExplanation} examMode={examMode} initialAnswer={initialAnswer} />;
   }
 }

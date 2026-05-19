@@ -56,11 +56,11 @@ export default function SequentialPage() {
             You&apos;ve worked through all {questions.length} questions in order. Great work.
           </p>
           <div className="flex gap-3">
-            <button onClick={restart} className="px-5 py-2.5 rounded-lg bg-brand text-white text-[13px] font-semibold hover:bg-brand-dark transition-colors">
-              Restart
+            <button onClick={restart} className="px-7 py-3 rounded-xl bg-ink text-white font-display font-bold text-[15px] tracking-[-0.01em] hover:bg-ink/85 transition-colors">
+              Restart →
             </button>
-            <Link href="/" className="px-5 py-2.5 rounded-lg border border-cream-200 bg-card text-ink-muted text-[13px] font-semibold hover:bg-cream-100 transition-colors">
-              Back to home
+            <Link href="/" className="px-5 py-2 rounded-lg border border-cream-200 font-mono text-[10px] uppercase tracking-[0.12em] text-ink-muted hover:bg-cream-100 hover:text-ink transition-colors">
+              Home
             </Link>
           </div>
         </div>
@@ -102,14 +102,14 @@ export default function SequentialPage() {
             <button
               onClick={prev}
               disabled={index === 0}
-              className="px-5 py-2.5 rounded-lg border border-cream-200 bg-card text-[13px] font-semibold text-ink-muted disabled:opacity-40 hover:bg-cream-100 transition-colors"
+              className="px-5 py-2 rounded-lg border border-cream-200 font-mono text-[10px] uppercase tracking-[0.12em] text-ink-muted disabled:opacity-40 hover:bg-cream-100 hover:text-ink transition-colors"
             >
               ← Prev
             </button>
             <button
               onClick={next}
               disabled={!answered}
-              className="px-5 py-2.5 rounded-lg bg-brand text-white text-[13px] font-semibold disabled:opacity-40 hover:bg-brand-dark transition-colors"
+              className="px-5 py-2 rounded-lg bg-ink text-white font-mono text-[10px] uppercase tracking-[0.12em] disabled:opacity-40 hover:bg-ink/85 transition-colors"
             >
               Next →
             </button>

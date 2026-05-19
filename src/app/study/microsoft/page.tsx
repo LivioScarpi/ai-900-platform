@@ -51,8 +51,8 @@ export default function MicrosoftSimulationPage() {
           <p className="text-[13px] text-ink-muted mb-6 max-w-sm">
             No Microsoft simulation questions available yet.
           </p>
-          <Link href="/" className="px-5 py-2.5 rounded-lg border border-cream-200 bg-card text-ink-muted text-[13px] font-semibold hover:bg-cream-100 transition-colors">
-            Back to home
+          <Link href="/" className="px-5 py-2 rounded-lg border border-cream-200 font-mono text-[10px] uppercase tracking-[0.12em] text-ink-muted hover:bg-cream-100 hover:text-ink transition-colors">
+            Home
           </Link>
         </div>
       </div>
@@ -81,11 +81,11 @@ export default function MicrosoftSimulationPage() {
             You&apos;ve completed all {questions.length} Microsoft simulation questions.
           </p>
           <div className="flex gap-3">
-            <button onClick={restart} className="px-5 py-2.5 rounded-lg bg-[#0284C7] text-white text-[13px] font-semibold hover:opacity-90 transition-opacity">
-              Restart
+            <button onClick={restart} className="px-7 py-3 rounded-xl bg-ink text-white font-display font-bold text-[15px] tracking-[-0.01em] hover:bg-ink/85 transition-colors">
+              Restart →
             </button>
-            <Link href="/" className="px-5 py-2.5 rounded-lg border border-cream-200 bg-card text-ink-muted text-[13px] font-semibold hover:bg-cream-100 transition-colors">
-              Back to home
+            <Link href="/" className="px-5 py-2 rounded-lg border border-cream-200 font-mono text-[10px] uppercase tracking-[0.12em] text-ink-muted hover:bg-cream-100 hover:text-ink transition-colors">
+              Home
             </Link>
           </div>
         </div>
@@ -123,10 +123,10 @@ export default function MicrosoftSimulationPage() {
         <div className="flex-1 min-w-0 max-w-2xl px-7 md:px-10 py-8">
           <QuestionCard key={question.id} question={question} onAnswer={handleAnswer} hideExplanation />
           <div className="flex justify-between gap-3 mt-8 pt-6 border-t border-cream-200">
-            <button onClick={prev} disabled={index === 0} className="px-5 py-2.5 rounded-lg border border-cream-200 bg-card text-[13px] font-semibold text-ink-muted disabled:opacity-40 hover:bg-cream-100 transition-colors">
+            <button onClick={prev} disabled={index === 0} className="px-5 py-2 rounded-lg border border-cream-200 font-mono text-[10px] uppercase tracking-[0.12em] text-ink-muted disabled:opacity-40 hover:bg-cream-100 hover:text-ink transition-colors">
               ← Prev
             </button>
-            <button onClick={next} disabled={!answered} className="px-5 py-2.5 rounded-lg bg-brand text-white text-[13px] font-semibold disabled:opacity-40 hover:bg-brand-dark transition-colors">
+            <button onClick={next} disabled={!answered} className="px-5 py-2 rounded-lg bg-ink text-white font-mono text-[10px] uppercase tracking-[0.12em] disabled:opacity-40 hover:bg-ink/85 transition-colors">
               Next →
             </button>
           </div>
