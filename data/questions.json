@@ -10354,6 +10354,1140 @@
       "correctAnswer": "C",
       "explanation": "Embeddings map words or sentences to dense numeric vectors in a high-dimensional space where semantically similar terms are close together.",
       "contextImages": []
+    },
+    {
+      "id": 409,
+      "topic": "nlp",
+      "type": "mcq",
+      "text": "A chatbot summarizes long customer queries and responds in natural language. Which type of AI model enables this behavior?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Classification model"
+        },
+        {
+          "letter": "B",
+          "text": "Regression model"
+        },
+        {
+          "letter": "C",
+          "text": "Large Language Model (LLM)"
+        },
+        {
+          "letter": "D",
+          "text": "Clustering model"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "",
+      "contextImages": []
+    },
+    {
+      "id": 410,
+      "topic": "computer_vision",
+      "type": "mcq",
+      "text": "Identifying whether an image contains a cat or a dog is an example of which computer-vision task?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Object detection"
+        },
+        {
+          "letter": "B",
+          "text": "Image classification"
+        },
+        {
+          "letter": "C",
+          "text": "Semantic segmentation"
+        },
+        {
+          "letter": "D",
+          "text": "OCR"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "",
+      "contextImages": []
+    },
+    {
+      "id": 411,
+      "topic": "azure_cognitive",
+      "type": "mcq",
+      "text": "A call center needs to transcribe customer conversations in real time. Which Azure AI service should be used?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Azure AI Vision"
+        },
+        {
+          "letter": "B",
+          "text": "Azure AI Speech"
+        },
+        {
+          "letter": "C",
+          "text": "Azure AI Language"
+        },
+        {
+          "letter": "D",
+          "text": "Azure AI Search"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "",
+      "contextImages": []
+    },
+    {
+      "id": 412,
+      "topic": "azure_cognitive",
+      "type": "mcq",
+      "text": "Which Azure resource is required to create and manage Speech-to-Text capabilities?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Azure AI Vision"
+        },
+        {
+          "letter": "B",
+          "text": "Azure AI Language"
+        },
+        {
+          "letter": "C",
+          "text": "Azure AI Speech"
+        },
+        {
+          "letter": "D",
+          "text": "Azure AI Search"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "",
+      "contextImages": []
+    },
+    {
+      "id": 413,
+      "topic": "ml_fundamentals",
+      "type": "mcq",
+      "text": "A business wants to automatically generate marketing content from short prompts. Which AI capability does this represent?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Predictive analytics"
+        },
+        {
+          "letter": "B",
+          "text": "Computer vision"
+        },
+        {
+          "letter": "C",
+          "text": "Generative AI"
+        },
+        {
+          "letter": "D",
+          "text": "Anomaly detection"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "",
+      "contextImages": []
+    },
+    {
+      "id": 414,
+      "topic": "responsible_ai",
+      "type": "mcq",
+      "text": "Testing an AI system to ensure it performs equally well across demographic groups aligns with which Responsible AI principle?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Transparency"
+        },
+        {
+          "letter": "B",
+          "text": "Accountability"
+        },
+        {
+          "letter": "C",
+          "text": "Fairness"
+        },
+        {
+          "letter": "D",
+          "text": "Reliability and safety"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "",
+      "contextImages": []
+    },
+    {
+      "id": 415,
+      "topic": "ml_fundamentals",
+      "type": "mcq",
+      "text": "Using a trained model to make predictions on new, unseen data is known as what stage of the ML process?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Training"
+        },
+        {
+          "letter": "B",
+          "text": "Validation"
+        },
+        {
+          "letter": "C",
+          "text": "Inference"
+        },
+        {
+          "letter": "D",
+          "text": "Feature engineering"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "",
+      "contextImages": []
+    },
+    {
+      "id": 416,
+      "topic": "ml_fundamentals",
+      "type": "mcq",
+      "text": "In machine learning, what does a label represent?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "An input feature"
+        },
+        {
+          "letter": "B",
+          "text": "A model parameter"
+        },
+        {
+          "letter": "C",
+          "text": "The known output value"
+        },
+        {
+          "letter": "D",
+          "text": "A preprocessing step"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "",
+      "contextImages": []
+    },
+    {
+      "id": 417,
+      "topic": "ml_fundamentals",
+      "type": "mcq",
+      "text": "In machine learning, what does a feature vector represent?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "The model's predictions"
+        },
+        {
+          "letter": "B",
+          "text": "A collection of input feature values for one data instance"
+        },
+        {
+          "letter": "C",
+          "text": "A set of labels used for training"
+        },
+        {
+          "letter": "D",
+          "text": "A model evaluation metric"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "",
+      "contextImages": []
+    },
+    {
+      "id": 418,
+      "topic": "ml_fundamentals",
+      "type": "mcq",
+      "text": "Which metric measures how well a regression model explains variance in the data?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Mean Absolute Error (MAE)"
+        },
+        {
+          "letter": "B",
+          "text": "Root Mean Squared Error (RMSE)"
+        },
+        {
+          "letter": "C",
+          "text": "R-squared (R²)"
+        },
+        {
+          "letter": "D",
+          "text": "Accuracy"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "",
+      "contextImages": []
+    },
+    {
+      "id": 419,
+      "topic": "ml_fundamentals",
+      "type": "mcq",
+      "text": "Iterative training of a machine-learning model is primarily used to do what?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Increase dataset size"
+        },
+        {
+          "letter": "B",
+          "text": "Reduce prediction error by updating model parameters"
+        },
+        {
+          "letter": "C",
+          "text": "Deploy the model to production"
+        },
+        {
+          "letter": "D",
+          "text": "Normalize input features"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "",
+      "contextImages": []
+    },
+    {
+      "id": 420,
+      "topic": "azure_ml",
+      "type": "mcq",
+      "text": "In Automated ML, each data instance can belong to multiple classes at the same time. Which task configuration is appropriate?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Binary classification"
+        },
+        {
+          "letter": "B",
+          "text": "Multiclass classification"
+        },
+        {
+          "letter": "C",
+          "text": "Multi-label classification"
+        },
+        {
+          "letter": "D",
+          "text": "Regression"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "",
+      "contextImages": []
+    },
+    {
+      "id": 421,
+      "topic": "ml_fundamentals",
+      "type": "mcq",
+      "text": "In a classification model, what does the decision threshold control?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "The number of input features"
+        },
+        {
+          "letter": "B",
+          "text": "The model's training speed"
+        },
+        {
+          "letter": "C",
+          "text": "The probability cutoff for assigning a class label"
+        },
+        {
+          "letter": "D",
+          "text": "The size of the training dataset"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "",
+      "contextImages": []
+    },
+    {
+      "id": 422,
+      "topic": "ml_fundamentals",
+      "type": "mcq",
+      "text": "Which evaluation metric is most useful when working with imbalanced classification datasets?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Accuracy"
+        },
+        {
+          "letter": "B",
+          "text": "Precision"
+        },
+        {
+          "letter": "C",
+          "text": "Recall"
+        },
+        {
+          "letter": "D",
+          "text": "F1-score"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "",
+      "contextImages": []
+    },
+    {
+      "id": 423,
+      "topic": "nlp",
+      "type": "mcq",
+      "text": "You need to identify domain-specific terms not recognized by prebuilt NER models. How can this be achieved?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Increase dataset size"
+        },
+        {
+          "letter": "B",
+          "text": "Custom Named Entity Recognition model"
+        },
+        {
+          "letter": "C",
+          "text": "Apply text normalization"
+        },
+        {
+          "letter": "D",
+          "text": "Enable language detection"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "",
+      "contextImages": []
+    },
+    {
+      "id": 424,
+      "topic": "ml_fundamentals",
+      "type": "mcq",
+      "text": "During training, a neural network updates which component to reduce prediction error?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Input data"
+        },
+        {
+          "letter": "B",
+          "text": "Model weights"
+        },
+        {
+          "letter": "C",
+          "text": "Labels"
+        },
+        {
+          "letter": "D",
+          "text": "Features"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "",
+      "contextImages": []
+    },
+    {
+      "id": 425,
+      "topic": "ml_fundamentals",
+      "type": "mcq",
+      "text": "What is typically the first step in the machine-learning lifecycle?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Model evaluation"
+        },
+        {
+          "letter": "B",
+          "text": "Model deployment"
+        },
+        {
+          "letter": "C",
+          "text": "Data collection and preparation"
+        },
+        {
+          "letter": "D",
+          "text": "Hyperparameter tuning"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "",
+      "contextImages": []
+    },
+    {
+      "id": 426,
+      "topic": "ml_fundamentals",
+      "type": "mcq",
+      "text": "Dividing data into training and test sets primarily helps with what objective?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Increasing model complexity"
+        },
+        {
+          "letter": "B",
+          "text": "Preventing overfitting and evaluating generalization"
+        },
+        {
+          "letter": "C",
+          "text": "Improving data quality"
+        },
+        {
+          "letter": "D",
+          "text": "Reducing training time"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "",
+      "contextImages": []
+    },
+    {
+      "id": 427,
+      "topic": "nlp",
+      "type": "mcq",
+      "text": "Large Language Models (LLMs) are trained to generate what type of output from prompts?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Images"
+        },
+        {
+          "letter": "B",
+          "text": "Structured tables"
+        },
+        {
+          "letter": "C",
+          "text": "Natural language text"
+        },
+        {
+          "letter": "D",
+          "text": "Audio signals"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "",
+      "contextImages": []
+    },
+    {
+      "id": 428,
+      "topic": "azure_cognitive",
+      "type": "mcq",
+      "text": "Which Azure AI service enables applications to understand natural language commands and instructions?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Azure AI Vision"
+        },
+        {
+          "letter": "B",
+          "text": "Azure AI Speech"
+        },
+        {
+          "letter": "C",
+          "text": "Azure AI Language"
+        },
+        {
+          "letter": "D",
+          "text": "Azure AI Search"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "",
+      "contextImages": []
+    },
+    {
+      "id": 429,
+      "topic": "conversational_ai",
+      "type": "mcq",
+      "text": "A company wants users to interact with an app using natural conversation. Which Azure service should be used?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Azure AI Vision"
+        },
+        {
+          "letter": "B",
+          "text": "Azure Bot Service"
+        },
+        {
+          "letter": "C",
+          "text": "Azure AI Search"
+        },
+        {
+          "letter": "D",
+          "text": "Azure Machine Learning"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "",
+      "contextImages": []
+    },
+    {
+      "id": 430,
+      "topic": "nlp",
+      "type": "mcq",
+      "text": "Which Azure AI service is best suited for generating human-like text?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Azure AI Search"
+        },
+        {
+          "letter": "B",
+          "text": "Azure AI Language"
+        },
+        {
+          "letter": "C",
+          "text": "Azure OpenAI Service"
+        },
+        {
+          "letter": "D",
+          "text": "Azure AI Vision"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "",
+      "contextImages": []
+    },
+    {
+      "id": 431,
+      "topic": "responsible_ai",
+      "type": "mcq",
+      "text": "Which Responsible AI principle focuses on dependable and accurate system behavior?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Fairness"
+        },
+        {
+          "letter": "B",
+          "text": "Transparency"
+        },
+        {
+          "letter": "C",
+          "text": "Reliability and safety"
+        },
+        {
+          "letter": "D",
+          "text": "Accountability"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "",
+      "contextImages": []
+    },
+    {
+      "id": 432,
+      "topic": "responsible_ai",
+      "type": "mcq",
+      "text": "Which Responsible AI principle ensures AI outputs are explainable to users?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Inclusiveness"
+        },
+        {
+          "letter": "B",
+          "text": "Transparency"
+        },
+        {
+          "letter": "C",
+          "text": "Privacy and security"
+        },
+        {
+          "letter": "D",
+          "text": "Fairness"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "",
+      "contextImages": []
+    },
+    {
+      "id": 433,
+      "topic": "azure_cognitive",
+      "type": "mcq",
+      "text": "Which Azure AI service converts spoken audio into text?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Azure AI Vision"
+        },
+        {
+          "letter": "B",
+          "text": "Azure AI Speech"
+        },
+        {
+          "letter": "C",
+          "text": "Azure AI Language"
+        },
+        {
+          "letter": "D",
+          "text": "Azure AI Search"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "",
+      "contextImages": []
+    },
+    {
+      "id": 434,
+      "topic": "nlp",
+      "type": "mcq",
+      "text": "Which Azure AI service is used to analyze sentiment in customer reviews?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Azure AI Vision"
+        },
+        {
+          "letter": "B",
+          "text": "Azure AI Speech"
+        },
+        {
+          "letter": "C",
+          "text": "Azure AI Language"
+        },
+        {
+          "letter": "D",
+          "text": "Azure AI Search"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "",
+      "contextImages": []
+    },
+    {
+      "id": 435,
+      "topic": "computer_vision",
+      "type": "mcq",
+      "text": "Which Azure AI service extracts printed and handwritten text from images?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Azure AI Vision"
+        },
+        {
+          "letter": "B",
+          "text": "Azure AI Language"
+        },
+        {
+          "letter": "C",
+          "text": "Azure AI Search"
+        },
+        {
+          "letter": "D",
+          "text": "Azure Machine Learning"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "",
+      "contextImages": []
+    },
+    {
+      "id": 436,
+      "topic": "azure_cognitive",
+      "type": "mcq",
+      "text": "A video platform wants to generate subtitles automatically. Which AI capability is required?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Text-to-speech"
+        },
+        {
+          "letter": "B",
+          "text": "Speech-to-text"
+        },
+        {
+          "letter": "C",
+          "text": "Language detection"
+        },
+        {
+          "letter": "D",
+          "text": "Text summarization"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "",
+      "contextImages": []
+    },
+    {
+      "id": 437,
+      "topic": "nlp",
+      "type": "mcq",
+      "text": "A customer service team wants to analyze call sentiment and identify recurring issues. Which AI workload should they use?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Computer vision"
+        },
+        {
+          "letter": "B",
+          "text": "Speech analytics"
+        },
+        {
+          "letter": "C",
+          "text": "Document processing"
+        },
+        {
+          "letter": "D",
+          "text": "Anomaly detection"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "",
+      "contextImages": []
+    },
+    {
+      "id": 438,
+      "topic": "azure_cognitive",
+      "type": "mcq",
+      "text": "Which AI capability allows chatbots to respond using natural-sounding voices?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Speech-to-text"
+        },
+        {
+          "letter": "B",
+          "text": "Text analytics"
+        },
+        {
+          "letter": "C",
+          "text": "Text-to-speech"
+        },
+        {
+          "letter": "D",
+          "text": "Language detection"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "",
+      "contextImages": []
+    },
+    {
+      "id": 439,
+      "topic": "conversational_ai",
+      "type": "mcq",
+      "text": "Voice-based AI systems typically involve recognition, understanding, and what final step?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Translation"
+        },
+        {
+          "letter": "B",
+          "text": "Response generation"
+        },
+        {
+          "letter": "C",
+          "text": "Text summarization"
+        },
+        {
+          "letter": "D",
+          "text": "Image analysis"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "",
+      "contextImages": []
+    },
+    {
+      "id": 440,
+      "topic": "azure_cognitive",
+      "type": "mcq",
+      "text": "Which factor most directly impacts speech recognition accuracy?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Screen resolution"
+        },
+        {
+          "letter": "B",
+          "text": "Audio quality"
+        },
+        {
+          "letter": "C",
+          "text": "Image clarity"
+        },
+        {
+          "letter": "D",
+          "text": "Text length"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "",
+      "contextImages": []
+    },
+    {
+      "id": 441,
+      "topic": "nlp",
+      "type": "mcq",
+      "text": "Standardizing text (for example, converting “U.S.A.” to “USA”) is an example of which preprocessing task?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Tokenization"
+        },
+        {
+          "letter": "B",
+          "text": "Normalization"
+        },
+        {
+          "letter": "C",
+          "text": "Vectorization"
+        },
+        {
+          "letter": "D",
+          "text": "Translation"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "",
+      "contextImages": []
+    },
+    {
+      "id": 442,
+      "topic": "computer_vision",
+      "type": "mcq",
+      "text": "Identifying whether an image contains a car, a tree, or a building is an example of which vision task?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Object detection"
+        },
+        {
+          "letter": "B",
+          "text": "Image classification"
+        },
+        {
+          "letter": "C",
+          "text": "Semantic segmentation"
+        },
+        {
+          "letter": "D",
+          "text": "OCR"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "",
+      "contextImages": []
+    },
+    {
+      "id": 443,
+      "topic": "computer_vision",
+      "type": "mcq",
+      "text": "Which type of neural network is most commonly used for image recognition?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "RNN"
+        },
+        {
+          "letter": "B",
+          "text": "CNN"
+        },
+        {
+          "letter": "C",
+          "text": "GAN"
+        },
+        {
+          "letter": "D",
+          "text": "Transformer"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Le CNN (Convolutional Neural Networks) sono progettate per dati a griglia come le immagini. Usano layer convoluzionali con filtri che scorrono sull’immagine per rilevare feature locali (bordi, texture, forme), rendendole ideali per il riconoscimento visivo. Le RNN gestiscono sequenze, le GAN generano dati sintetici, i Transformer elaborano sequenze con meccanismi di attenzione.",
+      "contextImages": []
+    },
+    {
+      "id": 444,
+      "topic": "computer_vision",
+      "type": "mcq",
+      "text": "Which computer-vision technique applies filters to detect edges and visual patterns?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Image segmentation"
+        },
+        {
+          "letter": "B",
+          "text": "Convolution"
+        },
+        {
+          "letter": "C",
+          "text": "Object detection"
+        },
+        {
+          "letter": "D",
+          "text": "Image labeling"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "La convoluzione è l’operazione fondamentale delle CNN: un piccolo filtro (kernel) scorre sull’immagine calcolando prodotti scalari per rilevare pattern locali come bordi, angoli e texture. Questo preserva le relazioni spaziali e consente alla rete di apprendere feature visive in modo gerarchico.",
+      "contextImages": []
+    },
+    {
+      "id": 445,
+      "topic": "azure_cognitive",
+      "type": "mcq",
+      "text": "Extracting structured information from scanned forms is an example of which AI process?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Image classification"
+        },
+        {
+          "letter": "B",
+          "text": "Document processing"
+        },
+        {
+          "letter": "C",
+          "text": "Speech recognition"
+        },
+        {
+          "letter": "D",
+          "text": "Text translation"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "",
+      "contextImages": []
+    },
+    {
+      "id": 446,
+      "topic": "azure_cognitive",
+      "type": "mcq",
+      "text": "Which Azure AI service is primarily used to extract structured data from invoices and forms?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Azure AI Vision"
+        },
+        {
+          "letter": "B",
+          "text": "Azure AI Language"
+        },
+        {
+          "letter": "C",
+          "text": "Azure AI Document Intelligence"
+        },
+        {
+          "letter": "D",
+          "text": "Azure AI Search"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "",
+      "contextImages": []
+    },
+    {
+      "id": 447,
+      "topic": "azure_cognitive",
+      "type": "mcq",
+      "text": "Azure AI Document Intelligence is designed to extract information from which type of data?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Audio streams"
+        },
+        {
+          "letter": "B",
+          "text": "Images and documents"
+        },
+        {
+          "letter": "C",
+          "text": "Video files"
+        },
+        {
+          "letter": "D",
+          "text": "Sensor data"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "",
+      "contextImages": []
+    },
+    {
+      "id": 448,
+      "topic": "nlp",
+      "type": "mcq",
+      "text": "Which Azure AI service allows developers to integrate large language models into applications?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Azure AI Search"
+        },
+        {
+          "letter": "B",
+          "text": "Azure OpenAI Service"
+        },
+        {
+          "letter": "C",
+          "text": "Azure AI Vision"
+        },
+        {
+          "letter": "D",
+          "text": "Azure AI Language"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "",
+      "contextImages": []
+    },
+    {
+      "id": 449,
+      "topic": "azure_ml",
+      "type": "mcq",
+      "text": "A team wants Azure to automatically try different models and preprocessing steps without deep ML expertise. Which feature should they use?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Azure Pipelines"
+        },
+        {
+          "letter": "B",
+          "text": "Automated ML"
+        },
+        {
+          "letter": "C",
+          "text": "Data labeling"
+        },
+        {
+          "letter": "D",
+          "text": "Azure AI Studio"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "",
+      "contextImages": []
+    },
+    {
+      "id": 450,
+      "topic": "computer_vision",
+      "type": "mcq",
+      "text": "Which Azure AI service allows developers to extract insights directly from images?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Azure AI Vision"
+        },
+        {
+          "letter": "B",
+          "text": "Azure AI Search"
+        },
+        {
+          "letter": "C",
+          "text": "Azure AI Language"
+        },
+        {
+          "letter": "D",
+          "text": "Azure AI Speech"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "",
+      "contextImages": []
     }
   ],
   "microsoft": [
