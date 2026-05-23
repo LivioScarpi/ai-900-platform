@@ -52,15 +52,19 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
 
   useEffect(() => {
     if (loading) return;
-    if (!user && pathname !== "/login") {
+    if (!user && pathname !== "/login" && pathname !== "/") {
       router.push("/login");
     }
     if (user && pathname === "/login") {
-      router.push("/");
+      router.push("/certs");
+    }
+    if (user && pathname === "/") {
+      router.push("/certs");
     }
   }, [user, loading, pathname, router]);
 
   if (loading) {
+    if (pathname === "/") return <>{children}</>;
     return (
       <div className="min-h-screen bg-cream flex items-center justify-center">
         <div className="flex flex-col items-center gap-3">
@@ -72,7 +76,7 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
   }
 
   if (!user) {
-    if (pathname === "/login") return <>{children}</>;
+    if (pathname === "/login" || pathname === "/") return <>{children}</>;
     return null;
   }
 
