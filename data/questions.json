@@ -9139,6 +9139,1221 @@
       "correctAnswer": "adding and connecting modules on a visual canvas",
       "explanation": "Azure ML Designer is a drag-and-drop interface where you build pipelines by adding and connecting modules on a visual canvas. AutoML handles automatic algorithm selection; Data preparation tasks are separate; Notebooks are a code-first experience.",
       "reference": "https://learn.microsoft.com/en-us/azure/machine-learning/concept-designer"
+    },
+    {
+      "id": 364,
+      "topic": "computer_vision",
+      "type": "mcq",
+      "text": "Identifying whether an image contains a fruit is an example of which computer-vision task?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Object detection"
+        },
+        {
+          "letter": "B",
+          "text": "Image classification"
+        },
+        {
+          "letter": "C",
+          "text": "Semantic segmentation"
+        },
+        {
+          "letter": "D",
+          "text": "Optical character recognition (OCR)"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Image classification determines what category an image belongs to. Detecting a fruit in an image is a classification task — it returns a label ('fruit') without locating the object.",
+      "contextImages": []
+    },
+    {
+      "id": 365,
+      "topic": "computer_vision",
+      "type": "mcq",
+      "text": "Which computer-vision task returns the location of an object in an image using bounding boxes?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Image classification"
+        },
+        {
+          "letter": "B",
+          "text": "Object detection"
+        },
+        {
+          "letter": "C",
+          "text": "Semantic segmentation"
+        },
+        {
+          "letter": "D",
+          "text": "Image analysis"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Object detection identifies objects and returns bounding-box coordinates. Image classification only labels the image; semantic segmentation labels each pixel.",
+      "contextImages": []
+    },
+    {
+      "id": 366,
+      "topic": "computer_vision",
+      "type": "mcq",
+      "text": "Labeling every pixel in an image as road, building, or vegetation is an example of which vision task?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Image classification"
+        },
+        {
+          "letter": "B",
+          "text": "Object detection"
+        },
+        {
+          "letter": "C",
+          "text": "Semantic segmentation"
+        },
+        {
+          "letter": "D",
+          "text": "Image analysis"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "Semantic segmentation assigns a class label to every pixel in an image, enabling pixel-level understanding of scenes.",
+      "contextImages": []
+    },
+    {
+      "id": 367,
+      "topic": "ml_fundamentals",
+      "type": "mcq",
+      "text": "Grouping customers by similarity when no labels are available is an example of which learning type?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Supervised learning"
+        },
+        {
+          "letter": "B",
+          "text": "Unsupervised learning"
+        },
+        {
+          "letter": "C",
+          "text": "Reinforcement learning"
+        },
+        {
+          "letter": "D",
+          "text": "Deep learning"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Unsupervised learning finds patterns in unlabeled data. Clustering customers without pre-defined categories is a classic unsupervised task.",
+      "contextImages": []
+    },
+    {
+      "id": 368,
+      "topic": "ml_fundamentals",
+      "type": "mcq",
+      "text": "Predicting house prices based on historical data is an example of which machine-learning task?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Classification"
+        },
+        {
+          "letter": "B",
+          "text": "Clustering"
+        },
+        {
+          "letter": "C",
+          "text": "Regression"
+        },
+        {
+          "letter": "D",
+          "text": "Anomaly detection"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "Regression predicts a continuous numeric value (e.g., house price). Classification predicts a discrete category.",
+      "contextImages": []
+    },
+    {
+      "id": 369,
+      "topic": "ml_fundamentals",
+      "type": "mcq",
+      "text": "Classifying emails as spam or not spam using labeled examples is an example of which learning paradigm?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Supervised learning"
+        },
+        {
+          "letter": "B",
+          "text": "Unsupervised learning"
+        },
+        {
+          "letter": "C",
+          "text": "Reinforcement learning"
+        },
+        {
+          "letter": "D",
+          "text": "Transfer learning"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Supervised learning trains on labeled data (spam / not-spam) to learn a mapping from inputs to outputs.",
+      "contextImages": []
+    },
+    {
+      "id": 370,
+      "topic": "ml_fundamentals",
+      "type": "mcq",
+      "text": "Which evaluation metric is most appropriate when classes in a classification dataset are balanced?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Precision"
+        },
+        {
+          "letter": "B",
+          "text": "Recall"
+        },
+        {
+          "letter": "C",
+          "text": "Accuracy"
+        },
+        {
+          "letter": "D",
+          "text": "F1-score"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "Accuracy is a reliable metric when class distributions are balanced. For imbalanced classes, precision, recall, or F1-score give a better picture.",
+      "contextImages": []
+    },
+    {
+      "id": 371,
+      "topic": "ml_fundamentals",
+      "type": "mcq",
+      "text": "A model performs very well on training data but poorly on new, unseen data. What issue does this indicate?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Underfitting"
+        },
+        {
+          "letter": "B",
+          "text": "Overfitting"
+        },
+        {
+          "letter": "C",
+          "text": "Data normalization"
+        },
+        {
+          "letter": "D",
+          "text": "Feature scaling"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Overfitting occurs when a model memorizes the training data instead of generalizing, leading to poor performance on unseen data.",
+      "contextImages": []
+    },
+    {
+      "id": 372,
+      "topic": "ml_fundamentals",
+      "type": "mcq",
+      "text": "In a regression task predicting employee salaries, what is the role of the validation dataset?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "To train the model"
+        },
+        {
+          "letter": "B",
+          "text": "To tune model parameters and prevent overfitting"
+        },
+        {
+          "letter": "C",
+          "text": "To deploy the model"
+        },
+        {
+          "letter": "D",
+          "text": "To generate final predictions"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "The validation dataset is used during development to tune hyperparameters and detect overfitting, without contaminating the final test evaluation.",
+      "contextImages": []
+    },
+    {
+      "id": 373,
+      "topic": "ml_fundamentals",
+      "type": "mcq",
+      "text": "In a classification algorithm, what do the features and labels in a test dataset represent?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Inputs and outputs used for training"
+        },
+        {
+          "letter": "B",
+          "text": "Inputs and outputs used to tune hyperparameters"
+        },
+        {
+          "letter": "C",
+          "text": "Inputs and known outputs used to evaluate model performance"
+        },
+        {
+          "letter": "D",
+          "text": "Random samples without labels"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "The test dataset is held out entirely for final evaluation; features are inputs and labels are the known correct outputs used to measure how well the model generalizes.",
+      "contextImages": []
+    },
+    {
+      "id": 374,
+      "topic": "computer_vision",
+      "type": "mcq",
+      "text": "A company wants to extract printed text from scanned receipts. Which Azure AI service should they use?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Azure AI Vision"
+        },
+        {
+          "letter": "B",
+          "text": "Azure AI Speech"
+        },
+        {
+          "letter": "C",
+          "text": "Azure AI Language"
+        },
+        {
+          "letter": "D",
+          "text": "Azure AI Search"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Azure AI Vision includes OCR capabilities (Read API) that can extract printed and handwritten text from images and scanned documents.",
+      "contextImages": []
+    },
+    {
+      "id": 375,
+      "topic": "computer_vision",
+      "type": "mcq",
+      "text": "You're developing an application for a museum that needs to analyze scanned documents, identify images within them, and generate descriptive summaries of the visual content. Which Azure service is most suitable?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Azure AI Search"
+        },
+        {
+          "letter": "B",
+          "text": "Azure AI Vision"
+        },
+        {
+          "letter": "C",
+          "text": "Azure AI Document Intelligence"
+        },
+        {
+          "letter": "D",
+          "text": "Azure AI Language"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Azure AI Vision can analyze images, describe visual content, and extract text. It is the most suitable service for analyzing visual content and generating descriptions.",
+      "contextImages": []
+    },
+    {
+      "id": 376,
+      "topic": "computer_vision",
+      "type": "mcq",
+      "text": "Detecting and counting animals in images while returning their coordinates requires which vision task?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Image classification"
+        },
+        {
+          "letter": "B",
+          "text": "Semantic segmentation"
+        },
+        {
+          "letter": "C",
+          "text": "Object detection"
+        },
+        {
+          "letter": "D",
+          "text": "OCR"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "Object detection identifies objects and returns their locations as bounding-box coordinates, enabling counting and localization.",
+      "contextImages": []
+    },
+    {
+      "id": 377,
+      "topic": "azure_cognitive",
+      "type": "mcq",
+      "text": "Automatically extracting totals and dates from scanned invoices is an example of which AI workload?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Image classification"
+        },
+        {
+          "letter": "B",
+          "text": "Document processing"
+        },
+        {
+          "letter": "C",
+          "text": "Speech recognition"
+        },
+        {
+          "letter": "D",
+          "text": "Text translation"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Document processing (e.g., Azure AI Document Intelligence) extracts structured data such as fields, key-value pairs, and tables from forms and invoices.",
+      "contextImages": []
+    },
+    {
+      "id": 378,
+      "topic": "computer_vision",
+      "type": "mcq",
+      "text": "Which computer vision capability provides the ability to identify the emotional state of a person from a photograph?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Optical character recognition"
+        },
+        {
+          "letter": "B",
+          "text": "Image classification"
+        },
+        {
+          "letter": "C",
+          "text": "Face analysis"
+        },
+        {
+          "letter": "D",
+          "text": "Object detection"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "Face analysis can detect faces and infer attributes such as emotional state, age, and head pose from photographs.",
+      "contextImages": []
+    },
+    {
+      "id": 379,
+      "topic": "nlp",
+      "type": "mcq",
+      "text": "Determining whether customer reviews express positive, negative, or neutral opinions uses which NLP feature?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Entity recognition"
+        },
+        {
+          "letter": "B",
+          "text": "Sentiment analysis"
+        },
+        {
+          "letter": "C",
+          "text": "Language detection"
+        },
+        {
+          "letter": "D",
+          "text": "Key phrase extraction"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Sentiment analysis classifies text into positive, negative, or neutral sentiment, making it suitable for opinion mining from reviews.",
+      "contextImages": []
+    },
+    {
+      "id": 380,
+      "topic": "nlp",
+      "type": "mcq",
+      "text": "Extracting names, locations, and dates from text documents uses which NLP capability?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Text translation"
+        },
+        {
+          "letter": "B",
+          "text": "Sentiment analysis"
+        },
+        {
+          "letter": "C",
+          "text": "Named Entity Recognition"
+        },
+        {
+          "letter": "D",
+          "text": "Text summarization"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "Named Entity Recognition (NER) identifies and classifies entities such as people, places, organizations, and dates within text.",
+      "contextImages": []
+    },
+    {
+      "id": 381,
+      "topic": "nlp",
+      "type": "mcq",
+      "text": "Identifying the main topics discussed in a document uses which NLP feature?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Language detection"
+        },
+        {
+          "letter": "B",
+          "text": "Topic modeling"
+        },
+        {
+          "letter": "C",
+          "text": "Optical character recognition"
+        },
+        {
+          "letter": "D",
+          "text": "Text normalization"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Topic modeling discovers abstract topics in a document corpus, helping surface the main themes discussed.",
+      "contextImages": []
+    },
+    {
+      "id": 382,
+      "topic": "nlp",
+      "type": "mcq",
+      "text": "Removing common words such as 'a', 'the', and 'and' during text preprocessing is called what?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Tokenization"
+        },
+        {
+          "letter": "B",
+          "text": "Lemmatization"
+        },
+        {
+          "letter": "C",
+          "text": "Stop-word removal"
+        },
+        {
+          "letter": "D",
+          "text": "Stemming"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "Stop-word removal filters out high-frequency, low-information words to reduce noise in text data before further NLP processing.",
+      "contextImages": []
+    },
+    {
+      "id": 383,
+      "topic": "nlp",
+      "type": "mcq",
+      "text": "Breaking text into smaller units such as words or sub-words is known as what process?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Normalization"
+        },
+        {
+          "letter": "B",
+          "text": "Tokenization"
+        },
+        {
+          "letter": "C",
+          "text": "Encoding"
+        },
+        {
+          "letter": "D",
+          "text": "Vectorization"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Tokenization splits text into tokens (words, sub-words, or characters), which is a fundamental first step in most NLP pipelines.",
+      "contextImages": []
+    },
+    {
+      "id": 384,
+      "topic": "nlp",
+      "type": "mcq",
+      "text": "Which Azure AI service converts spoken audio into written text?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Azure AI Vision"
+        },
+        {
+          "letter": "B",
+          "text": "Azure AI Language"
+        },
+        {
+          "letter": "C",
+          "text": "Azure AI Speech"
+        },
+        {
+          "letter": "D",
+          "text": "Azure AI Search"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "Azure AI Speech provides speech-to-text (STT) capabilities, converting spoken audio into written text in real time or from audio files.",
+      "contextImages": []
+    },
+    {
+      "id": 385,
+      "topic": "nlp",
+      "type": "mcq",
+      "text": "Automatically generating subtitles for videos uses which AI capability?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Text translation"
+        },
+        {
+          "letter": "B",
+          "text": "Speech-to-text"
+        },
+        {
+          "letter": "C",
+          "text": "Text-to-speech"
+        },
+        {
+          "letter": "D",
+          "text": "Language detection"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Speech-to-text converts the audio track of a video into written text, which can then be displayed as subtitles.",
+      "contextImages": []
+    },
+    {
+      "id": 386,
+      "topic": "nlp",
+      "type": "mcq",
+      "text": "Translating spoken conversations into another language in near real time uses which Azure AI service?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Azure AI Vision"
+        },
+        {
+          "letter": "B",
+          "text": "Azure AI Language"
+        },
+        {
+          "letter": "C",
+          "text": "Azure AI Speech"
+        },
+        {
+          "letter": "D",
+          "text": "Azure AI Search"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "Azure AI Speech includes Speech Translation, which transcribes and translates spoken audio in near real time.",
+      "contextImages": []
+    },
+    {
+      "id": 387,
+      "topic": "nlp",
+      "type": "mcq",
+      "text": "A chatbot that understands user intent and extracts entities such as order numbers uses which Azure AI feature?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Azure AI Vision"
+        },
+        {
+          "letter": "B",
+          "text": "Azure AI Speech"
+        },
+        {
+          "letter": "C",
+          "text": "Azure AI Language"
+        },
+        {
+          "letter": "D",
+          "text": "Azure AI Search"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "Azure AI Language includes Conversational Language Understanding (CLU), which identifies intents and extracts entities from user utterances.",
+      "contextImages": []
+    },
+    {
+      "id": 388,
+      "topic": "conversational_ai",
+      "type": "mcq",
+      "text": "Which Azure service is used to host and manage conversational bots integrated with Microsoft Teams?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Azure AI Language"
+        },
+        {
+          "letter": "B",
+          "text": "Azure Bot Service"
+        },
+        {
+          "letter": "C",
+          "text": "Azure AI Speech"
+        },
+        {
+          "letter": "D",
+          "text": "Azure AI Vision"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Azure Bot Service provides the hosting and channel integration framework for bots, including native integration with Microsoft Teams.",
+      "contextImages": []
+    },
+    {
+      "id": 389,
+      "topic": "ml_fundamentals",
+      "type": "mcq",
+      "text": "Which type of AI model is designed to generate new text based on prompts?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Classification model"
+        },
+        {
+          "letter": "B",
+          "text": "Regression model"
+        },
+        {
+          "letter": "C",
+          "text": "Generative model"
+        },
+        {
+          "letter": "D",
+          "text": "Clustering model"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "Generative models (such as large language models) produce new content — text, images, or other data — conditioned on an input prompt.",
+      "contextImages": []
+    },
+    {
+      "id": 390,
+      "topic": "azure_cognitive",
+      "type": "mcq",
+      "text": "Which Azure service allows developers to integrate GPT-based models into their applications?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Azure AI Search"
+        },
+        {
+          "letter": "B",
+          "text": "Azure Machine Learning"
+        },
+        {
+          "letter": "C",
+          "text": "Azure OpenAI Service"
+        },
+        {
+          "letter": "D",
+          "text": "Azure AI Language"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "Azure OpenAI Service provides access to OpenAI models (GPT-4, DALL-E, etc.) through a managed Azure endpoint with enterprise security.",
+      "contextImages": []
+    },
+    {
+      "id": 391,
+      "topic": "nlp",
+      "type": "mcq",
+      "text": "Automatically summarizing long documents into short bullet points is an example of which AI workload?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Text translation"
+        },
+        {
+          "letter": "B",
+          "text": "Text classification"
+        },
+        {
+          "letter": "C",
+          "text": "Text summarization"
+        },
+        {
+          "letter": "D",
+          "text": "Entity recognition"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "Text summarization condenses long documents into shorter versions while preserving key information.",
+      "contextImages": []
+    },
+    {
+      "id": 392,
+      "topic": "nlp",
+      "type": "mcq",
+      "text": "Reducing hallucinations by grounding LLM responses in a knowledge base is known as which practice?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Fine-tuning"
+        },
+        {
+          "letter": "B",
+          "text": "Prompt engineering"
+        },
+        {
+          "letter": "C",
+          "text": "Retrieval-Augmented Generation (RAG)"
+        },
+        {
+          "letter": "D",
+          "text": "Model compression"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "RAG retrieves relevant documents from a knowledge base and injects them into the prompt, grounding the LLM's response in factual sources and reducing hallucinations.",
+      "contextImages": []
+    },
+    {
+      "id": 393,
+      "topic": "responsible_ai",
+      "type": "mcq",
+      "text": "Ensuring AI systems treat individuals and groups fairly aligns with which Responsible AI principle?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Transparency"
+        },
+        {
+          "letter": "B",
+          "text": "Fairness"
+        },
+        {
+          "letter": "C",
+          "text": "Reliability and safety"
+        },
+        {
+          "letter": "D",
+          "text": "Accountability"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "The Fairness principle requires that AI systems avoid bias and treat all individuals and groups equitably, regardless of characteristics such as race or gender.",
+      "contextImages": []
+    },
+    {
+      "id": 394,
+      "topic": "responsible_ai",
+      "type": "mcq",
+      "text": "Protecting user data throughout the AI lifecycle supports which Responsible AI principle?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Inclusiveness"
+        },
+        {
+          "letter": "B",
+          "text": "Transparency"
+        },
+        {
+          "letter": "C",
+          "text": "Privacy and security"
+        },
+        {
+          "letter": "D",
+          "text": "Reliability and safety"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "The Privacy and security principle mandates that AI systems safeguard personal data and respect privacy rights throughout their lifecycle.",
+      "contextImages": []
+    },
+    {
+      "id": 395,
+      "topic": "responsible_ai",
+      "type": "mcq",
+      "text": "Making AI system decisions understandable and explainable relates to which principle?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Fairness"
+        },
+        {
+          "letter": "B",
+          "text": "Accountability"
+        },
+        {
+          "letter": "C",
+          "text": "Transparency"
+        },
+        {
+          "letter": "D",
+          "text": "Inclusiveness"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "Transparency requires that AI systems be open about how they work and that their decisions be explainable to users and stakeholders.",
+      "contextImages": []
+    },
+    {
+      "id": 396,
+      "topic": "responsible_ai",
+      "type": "mcq",
+      "text": "Ensuring consistent and dependable AI system performance relates to which Responsible AI consideration?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Fairness"
+        },
+        {
+          "letter": "B",
+          "text": "Reliability and safety"
+        },
+        {
+          "letter": "C",
+          "text": "Privacy and security"
+        },
+        {
+          "letter": "D",
+          "text": "Transparency"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Reliability and safety requires that AI systems perform consistently as designed and behave safely, even in unexpected situations.",
+      "contextImages": []
+    },
+    {
+      "id": 397,
+      "topic": "responsible_ai",
+      "type": "mcq",
+      "text": "Allowing humans to review, override, or appeal AI decisions supports which Responsible AI principle?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Inclusiveness"
+        },
+        {
+          "letter": "B",
+          "text": "Accountability"
+        },
+        {
+          "letter": "C",
+          "text": "Fairness"
+        },
+        {
+          "letter": "D",
+          "text": "Transparency"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Accountability ensures that humans remain in control of AI decisions, with mechanisms for review, override, and appeal to prevent unchecked automation.",
+      "contextImages": []
+    },
+    {
+      "id": 398,
+      "topic": "azure_ml",
+      "type": "mcq",
+      "text": "Which Azure service is used to train, deploy, and manage machine-learning models?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Azure AI Vision"
+        },
+        {
+          "letter": "B",
+          "text": "Azure AI Language"
+        },
+        {
+          "letter": "C",
+          "text": "Azure Machine Learning"
+        },
+        {
+          "letter": "D",
+          "text": "Azure AI Search"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "Azure Machine Learning is the end-to-end MLOps platform for training, deploying, and managing ML models at scale.",
+      "contextImages": []
+    },
+    {
+      "id": 399,
+      "topic": "azure_ml",
+      "type": "mcq",
+      "text": "Which Azure Machine Learning feature automates model selection and hyperparameter tuning?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Azure Pipelines"
+        },
+        {
+          "letter": "B",
+          "text": "Automated ML"
+        },
+        {
+          "letter": "C",
+          "text": "Azure AI Studio"
+        },
+        {
+          "letter": "D",
+          "text": "Data labeling"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Automated ML (AutoML) in Azure Machine Learning automatically tries multiple algorithms and hyperparameter combinations to find the best model for a dataset.",
+      "contextImages": []
+    },
+    {
+      "id": 400,
+      "topic": "ml_fundamentals",
+      "type": "mcq",
+      "text": "Which dataset should never be used during model training or hyperparameter tuning?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Training dataset"
+        },
+        {
+          "letter": "B",
+          "text": "Validation dataset"
+        },
+        {
+          "letter": "C",
+          "text": "Test dataset"
+        },
+        {
+          "letter": "D",
+          "text": "Feature dataset"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "The test dataset is reserved exclusively for final evaluation. Using it during training or tuning would leak information and produce overly optimistic metrics.",
+      "contextImages": []
+    },
+    {
+      "id": 401,
+      "topic": "ml_fundamentals",
+      "type": "mcq",
+      "text": "Which evaluation metric is most useful for classification problems with imbalanced classes?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Accuracy"
+        },
+        {
+          "letter": "B",
+          "text": "Precision"
+        },
+        {
+          "letter": "C",
+          "text": "Recall"
+        },
+        {
+          "letter": "D",
+          "text": "F1-score"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "F1-score is the harmonic mean of precision and recall. It is preferred for imbalanced datasets because accuracy can be misleading when one class dominates.",
+      "contextImages": []
+    },
+    {
+      "id": 402,
+      "topic": "ml_fundamentals",
+      "type": "mcq",
+      "text": "Which metric measures the average magnitude of prediction error in regression models?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Accuracy"
+        },
+        {
+          "letter": "B",
+          "text": "Mean Absolute Error"
+        },
+        {
+          "letter": "C",
+          "text": "Precision"
+        },
+        {
+          "letter": "D",
+          "text": "Recall"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Mean Absolute Error (MAE) calculates the average absolute difference between predicted and actual values, measuring prediction error magnitude.",
+      "contextImages": []
+    },
+    {
+      "id": 403,
+      "topic": "ml_fundamentals",
+      "type": "mcq",
+      "text": "A retailer uses machine learning to forecast product sales. Which attribute is most likely the label?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Product category"
+        },
+        {
+          "letter": "B",
+          "text": "Historical sales data"
+        },
+        {
+          "letter": "C",
+          "text": "Forecasted sales value"
+        },
+        {
+          "letter": "D",
+          "text": "Store location"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "The label is the value the model is trained to predict. In sales forecasting, the forecasted sales value is the target output; the other attributes are features.",
+      "contextImages": []
+    },
+    {
+      "id": 404,
+      "topic": "computer_vision",
+      "type": "mcq",
+      "text": "Which scenario demonstrates a valid application of object detection?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Identifying whether an image contains a dog"
+        },
+        {
+          "letter": "B",
+          "text": "Translating text between languages"
+        },
+        {
+          "letter": "C",
+          "text": "Detecting cars and drawing bounding boxes around them"
+        },
+        {
+          "letter": "D",
+          "text": "Grouping customers by behavior"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "Object detection locates objects and draws bounding boxes around them. Detecting and localizing cars in an image is the canonical example.",
+      "contextImages": []
+    },
+    {
+      "id": 405,
+      "topic": "ml_fundamentals",
+      "type": "mcq",
+      "text": "Combining predictions from multiple trained models to improve accuracy is known as what technique?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Transfer learning"
+        },
+        {
+          "letter": "B",
+          "text": "Ensemble learning"
+        },
+        {
+          "letter": "C",
+          "text": "Reinforcement learning"
+        },
+        {
+          "letter": "D",
+          "text": "Feature engineering"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Ensemble learning combines multiple models (e.g., bagging, boosting, stacking) to produce a stronger predictor than any single model.",
+      "contextImages": []
+    },
+    {
+      "id": 406,
+      "topic": "azure_cognitive",
+      "type": "mcq",
+      "text": "Which Azure service provides semantic search capabilities using vector embeddings?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Azure AI Vision"
+        },
+        {
+          "letter": "B",
+          "text": "Azure OpenAI Service"
+        },
+        {
+          "letter": "C",
+          "text": "Azure AI Search"
+        },
+        {
+          "letter": "D",
+          "text": "Azure AI Language"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "Azure AI Search supports vector search using embeddings, enabling semantic similarity search beyond keyword matching.",
+      "contextImages": []
+    },
+    {
+      "id": 407,
+      "topic": "azure_ml",
+      "type": "mcq",
+      "text": "Monitoring deployed models and retraining them when performance declines is part of which ML lifecycle phase?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Data preparation"
+        },
+        {
+          "letter": "B",
+          "text": "Model training"
+        },
+        {
+          "letter": "C",
+          "text": "Model deployment and monitoring"
+        },
+        {
+          "letter": "D",
+          "text": "Feature engineering"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "Model deployment and monitoring is the MLOps phase that tracks model performance in production and triggers retraining when drift or degradation is detected.",
+      "contextImages": []
+    },
+    {
+      "id": 408,
+      "topic": "nlp",
+      "type": "mcq",
+      "text": "Representing text as numeric vectors that capture semantic meaning uses which technique?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Tokenization"
+        },
+        {
+          "letter": "B",
+          "text": "Text normalization"
+        },
+        {
+          "letter": "C",
+          "text": "Embeddings"
+        },
+        {
+          "letter": "D",
+          "text": "Stop-word removal"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "Embeddings map words or sentences to dense numeric vectors in a high-dimensional space where semantically similar terms are close together.",
+      "contextImages": []
     }
   ],
   "microsoft": [
