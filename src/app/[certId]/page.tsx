@@ -1,7 +1,7 @@
 import Link from "next/link";
 import type { CSSProperties } from "react";
 import { getCertConfig } from "@/lib/certifications";
-import { getCertQuestions, getCertMicrosoftQuestions } from "@/lib/questions";
+import { getCertVideoQuestions, getCertMicrosoftQuestions } from "@/lib/questions";
 import { notFound } from "next/navigation";
 
 export default async function CertOverviewPage({
@@ -13,7 +13,7 @@ export default async function CertOverviewPage({
   const config = getCertConfig(certId);
   if (!config) notFound();
 
-  const total = getCertQuestions(certId).length;
+  const total = getCertVideoQuestions(certId).length;
   const msTotal = getCertMicrosoftQuestions(certId).length;
 
   const modes = [

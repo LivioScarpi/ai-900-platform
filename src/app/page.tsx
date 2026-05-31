@@ -1,9 +1,9 @@
 import Link from "next/link";
 import { getAllCertConfigs, type CertConfig } from "@/lib/certifications";
-import { getCertQuestions } from "@/lib/questions";
+import { getCertVideoQuestions } from "@/lib/questions";
 
 function CertCard({ cert }: { cert: CertConfig }) {
-  const total = getCertQuestions(cert.id).length;
+  const total = getCertVideoQuestions(cert.id).length;
 
   return (
     <Link

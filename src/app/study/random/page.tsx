@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { getAllQuestions } from "@/lib/questions";
+import { getVideoQuestions } from "@/lib/questions";
 import { QuestionCard } from "@/components/QuestionCard";
 import { ProgressBar } from "@/components/ProgressBar";
 import { saveAttempt } from "@/lib/supabase";
@@ -20,7 +20,7 @@ function CheckIcon() {
 export default function RandomSequentialPage() {
   const userId = useUserId();
   const [questions] = useState<Question[]>(() =>
-    [...getAllQuestions()].sort(() => Math.random() - 0.5)
+    [...getVideoQuestions()].sort(() => Math.random() - 0.5)
   );
   const [index, setIndex] = useState(0);
   const [answered, setAnswered] = useState(false);

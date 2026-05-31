@@ -30,6 +30,10 @@ export function getCertQuestions(certId: string): Question[] {
   return [...data.video, ...data.microsoft];
 }
 
+export function getCertVideoQuestions(certId: string): Question[] {
+  return CERT_DATA[certId]?.video ?? [];
+}
+
 export function getCertMicrosoftQuestions(certId: string): Question[] {
   return CERT_DATA[certId]?.microsoft ?? [];
 }
