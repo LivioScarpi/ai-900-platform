@@ -95,8 +95,16 @@ export function pickProportional(questions: Question[], total: number): Question
   const result: Question[] = [];
   const perTopic = Math.floor(total / topics.length);
   const remainder = total % topics.length;
+  const pickedIds = new Set<number>();
   topics.forEach((topic, i) => {
-    result.push(...pickDiverse(byTopic[topic], perTopic + (i < remainder ? 1 : 0)));
+    const picked = pickDiverse(byTopic[topic], perTopic + (i < remainder ? 1 : 0));
+    picked.forEach((q) => pickedIds.add(q.id));
+    result.push(...picked);
   });
+  // Top up if some topics had fewer questions than their quota
+  if (result.length < total) {
+    const remaining = questions.filter((q) => !pickedIds.has(q.id)).sort(() => Math.random() - 0.5);
+    result.push(...remaining.slice(0, total - result.length));
+  }
   return result.sort(() => Math.random() - 0.5);
 }

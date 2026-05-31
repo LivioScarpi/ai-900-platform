@@ -2616,7 +2616,7 @@
     },
     {
       "id": 106,
-      "topic": "unknown",
+      "topic": "nlp",
       "explanation": "",
       "contextImages": [],
       "type": "mcq",
@@ -8297,7 +8297,7 @@
     {
       "id": 329,
       "type": "mcq",
-      "topic": "unknown",
+      "topic": "responsible_ai",
       "text": "Which Azure service can you use as a security information and event management (SIEM) solution?",
       "options": [
         {
@@ -8524,7 +8524,8 @@
       ],
       "correctAnswer": "analysis",
       "explanation": "Facial analysis evaluates attributes of faces such as exposure, noise, and occlusion quality, making it suitable for photography feedback systems.",
-      "reference": ""
+      "reference": "",
+      "sentence": "An AI solution that helps photographers take better portrait photographs by providing feedback on exposure, noise, and occlusion is an example of facial [BLANK]."
     },
     {
       "id": 339,
