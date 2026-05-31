@@ -23,7 +23,7 @@ export function SentenceCompletionCard({ question, onAnswer, hideExplanation, ex
     if (examMode && value) onAnswer(value === question.correctAnswer, [value]);
   }
 
-  const parts = (question.sentence ?? question.text ?? "").split("[BLANK]");
+  const parts = (question.sentence ?? "").split("[BLANK]");
   const isCorrect = confirmed && selected === question.correctAnswer;
   const isWrong = confirmed && selected !== question.correctAnswer;
 
