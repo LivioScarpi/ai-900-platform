@@ -136,10 +136,11 @@ export default async function DashboardPage({ params }: { params: Promise<{ cert
             {topicStats.length > 0 ? (
               <div className="space-y-3">
                 {topicStats.map((t) => (
-                  <div key={t.key}>
+                  <Link key={t.key} href={`/${certId}/study/topic/${t.key}`} className="group block hover:bg-cream-100 -mx-2 px-2 py-1 rounded transition-colors duration-150">
                     <div className="flex items-center justify-between mb-1">
-                      <span className="font-mono text-[11px] text-ink-muted">{t.displayName}</span>
+                      <span className="font-mono text-[11px] text-ink-muted group-hover:text-ink transition-colors">{t.displayName}</span>
                       <div className="flex items-center gap-3">
+                        <span className="font-mono text-[10px] text-ink-faint opacity-0 group-hover:opacity-100 transition-opacity" style={{ color: "#D97706" }}>Practice →</span>
                         <span className="font-mono text-[10px] text-ink-faint">{t.correct}/{t.total}</span>
                         <span className={`font-mono text-[11px] font-bold w-8 text-right ${t.pct >= 70 ? "text-status-green" : t.pct >= 50 ? "text-status-orange" : "text-status-red"}`}>{t.pct}%</span>
                       </div>
@@ -147,7 +148,7 @@ export default async function DashboardPage({ params }: { params: Promise<{ cert
                     <div className="w-full h-1.5 rounded-full bg-cream-200 overflow-hidden">
                       <div className={`h-full rounded-full transition-all duration-500 ${t.pct >= 70 ? "bg-status-green" : t.pct >= 50 ? "bg-status-orange" : "bg-status-red"}`} style={{ width: `${t.pct}%` }} />
                     </div>
-                  </div>
+                  </Link>
                 ))}
               </div>
             ) : (

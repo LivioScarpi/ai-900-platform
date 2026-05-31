@@ -2,6 +2,7 @@ import Link from "next/link";
 import type { CSSProperties } from "react";
 import { getCertConfig } from "@/lib/certifications";
 import { getCertVideoQuestions, getCertMicrosoftQuestions } from "@/lib/questions";
+import { TOPICS } from "@/lib/topics";
 import { notFound } from "next/navigation";
 
 export default async function CertOverviewPage({
@@ -37,9 +38,19 @@ export default async function CertOverviewPage({
       cta: "Shuffle & start",
       color: "#7C3AED",
     },
+    {
+      href: `/${certId}/study/topic`,
+      num: "03",
+      label: "By Topic",
+      sub: "Pick a topic and drill exclusively into those questions. Ideal when the dashboard shows a weak area that needs focused practice.",
+      stat: String(TOPICS.length),
+      statLabel: "topics",
+      cta: "Choose topic",
+      color: "#D97706",
+    },
     ...(config.hasMicrosoftQuestions ? [{
       href: `/${certId}/study/microsoft`,
-      num: "03",
+      num: "04",
       label: "Microsoft Simulation",
       sub: "Questions from official Microsoft practice tests. Dedicated pool, random order. Ideal for candidates using the Microsoft learning portal.",
       stat: String(msTotal),
@@ -49,7 +60,7 @@ export default async function CertOverviewPage({
     }] : []),
     {
       href: `/${certId}/exam`,
-      num: config.hasMicrosoftQuestions ? "04" : "03",
+      num: config.hasMicrosoftQuestions ? "05" : "04",
       label: "Exam Simulator",
       sub: `${config.examQuestions} random questions, ${config.examDurationMin} minutes on the clock. Mirrors the real ${config.name} exam experience. Pass mark is ${config.passmarkPct}%.`,
       stat: `${config.examDurationMin}′`,
@@ -59,7 +70,7 @@ export default async function CertOverviewPage({
     },
     {
       href: `/${certId}/dashboard`,
-      num: config.hasMicrosoftQuestions ? "05" : "04",
+      num: config.hasMicrosoftQuestions ? "06" : "05",
       label: "Performance Dashboard",
       sub: "Track accuracy over time, review past exam sessions, and identify which topics need the most attention.",
       stat: "→",

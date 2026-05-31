@@ -36,6 +36,7 @@ export function Sidebar({ certId, certName }: SidebarProps) {
     { href: base, label: "Overview" },
     { href: `${base}/study/sequential`, label: "Sequential" },
     { href: `${base}/study/random`, label: "Random" },
+    { href: `${base}/study/topic`, label: "By Topic" },
     { href: `${base}/study/microsoft`, label: "Microsoft" },
     { href: `${base}/exam`, label: "Exam" },
     { href: `${base}/dashboard`, label: "Dashboard" },
