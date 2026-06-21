@@ -9,6 +9,7 @@ export const supabase = createBrowserClient(supabaseUrl, supabaseAnonKey);
 
 export async function saveAttempt(params: {
   userId: string;
+  certId: string;
   questionId: number;
   mode: string;
   selectedAnswers: string[];
@@ -17,6 +18,7 @@ export async function saveAttempt(params: {
 }) {
   await supabase.from("attempts").insert({
     user_id: params.userId,
+    cert_id: params.certId,
     question_id: params.questionId,
     mode: params.mode,
     selected_answers: params.selectedAnswers,
@@ -29,6 +31,7 @@ export async function saveAttempt(params: {
 
 export async function saveExamSession(params: {
   userId: string;
+  certId: string;
   mode: string;
   score: number;
   total: number;
@@ -37,6 +40,7 @@ export async function saveExamSession(params: {
 }) {
   await supabase.from("exam_sessions").insert({
     user_id: params.userId,
+    cert_id: params.certId,
     mode: params.mode,
     score: params.score,
     total: params.total,

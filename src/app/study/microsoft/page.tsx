@@ -30,7 +30,7 @@ export default function MicrosoftSimulationPage() {
 
   async function handleAnswer(isCorrect: boolean, selectedAnswers: string[]) {
     setAnswered(true);
-    await saveAttempt({ userId, questionId: question.id, mode: "microsoft_simulation", selectedAnswers, isCorrect });
+    await saveAttempt({ userId, certId: "ai900", questionId: question.id, mode: "microsoft_simulation", selectedAnswers, isCorrect });
   }
 
   function next() { setIndex((i) => i + 1); setAnswered(false); }

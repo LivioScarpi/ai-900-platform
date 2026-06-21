@@ -45,7 +45,7 @@ export function StudyPage({ questions: allQuestions, certId, title, mode, accent
 
   async function handleAnswer(isCorrect: boolean, selectedAnswers: string[]) {
     setAnswered(true);
-    await saveAttempt({ userId, questionId: question.id, mode, selectedAnswers, isCorrect });
+    await saveAttempt({ userId, certId, questionId: question.id, mode, selectedAnswers, isCorrect });
   }
 
   function next() { setIndex((i) => i + 1); setAnswered(false); }

@@ -6,6 +6,7 @@
 create table if not exists attempts (
   id uuid primary key default gen_random_uuid(),
   user_id text not null,
+  cert_id text not null default 'ai900',
   question_id int not null,
   mode text not null,
   selected_answers text[],
@@ -17,6 +18,7 @@ create table if not exists attempts (
 create table if not exists exam_sessions (
   id uuid primary key default gen_random_uuid(),
   user_id text not null,
+  cert_id text not null default 'ai900',
   mode text not null,
   score int not null,
   total int not null,
@@ -44,7 +46,9 @@ create table if not exists bookmarks (
 -- ── Indexes ───────────────────────────────────────────────────────────────────
 
 create index if not exists attempts_user_id_idx on attempts(user_id);
+create index if not exists attempts_cert_id_idx on attempts(user_id, cert_id);
 create index if not exists exam_sessions_user_id_idx on exam_sessions(user_id);
+create index if not exists exam_sessions_cert_id_idx on exam_sessions(user_id, cert_id);
 create index if not exists flashcard_ratings_user_id_idx on flashcard_ratings(user_id);
 create index if not exists bookmarks_user_id_idx on bookmarks(user_id);
 

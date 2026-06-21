@@ -199,7 +199,7 @@ export default function ExamPage({ params }: { params: { certId: string } }) {
       if (ans?.isCorrect) topicScores[q.topic].correct += 1;
     });
     if (userId) await deleteExamDraft(userId);
-    await saveExamSession({ userId, mode: timedOut ? "exam_timeout" : "exam", score, total: questions.length, topicScores, durationMs });
+    await saveExamSession({ userId, certId, mode: timedOut ? "exam_timeout" : "exam", score, total: questions.length, topicScores, durationMs });
     setState("finished");
   }
 

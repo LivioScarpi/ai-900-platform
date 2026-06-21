@@ -8,6 +8,11 @@ const TOPIC_COLORS: Record<Topic, string> = {
   conversational_ai: "bg-amber-50 text-amber-700 border-amber-100",
   azure_cognitive:   "bg-violet-50 text-violet-700 border-violet-100",
   azure_ml:          "bg-teal-50 text-teal-700 border-teal-100",
+  cloud_concepts:    "bg-blue-50 text-blue-700 border-blue-100",
+  core_services:     "bg-sky-50 text-sky-700 border-sky-100",
+  security_identity: "bg-red-50 text-red-700 border-red-100",
+  governance:        "bg-indigo-50 text-indigo-700 border-indigo-100",
+  pricing_sla:       "bg-green-50 text-green-700 border-green-100",
   unknown:           "bg-cream-100 text-ink-muted border-cream-200",
 };
 
@@ -19,6 +24,11 @@ const TOPIC_LABELS: Record<Topic, string> = {
   conversational_ai: "Conversational AI",
   azure_cognitive:   "Azure Cognitive",
   azure_ml:          "Azure ML",
+  cloud_concepts:    "Cloud Concepts",
+  core_services:     "Core Services",
+  security_identity: "Security & Identity",
+  governance:        "Governance",
+  pricing_sla:       "Pricing & SLA",
   unknown:           "General",
 };
 

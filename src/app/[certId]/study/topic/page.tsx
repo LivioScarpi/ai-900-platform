@@ -24,7 +24,8 @@ export default async function TopicSelectorPage({
   const { data: questionAttempts } = await supabase
     .from("attempts")
     .select("question_id, is_correct")
-    .eq("user_id", user.id);
+    .eq("user_id", user.id)
+    .eq("cert_id", certId);
 
   const tMap: Record<string, { correct: number; total: number }> = {};
   (questionAttempts ?? []).forEach(({ question_id, is_correct }) => {
@@ -35,12 +36,14 @@ export default async function TopicSelectorPage({
     if (is_correct) tMap[topic].correct += 1;
   });
 
-  const topics = TOPICS.map((t, i) => {
+  const topics = TOPICS.map((t) => {
     const count = allQuestions.filter((q) => q.topic === t.key).length;
     const stats = tMap[t.key];
     const pct = stats && stats.total > 0 ? Math.round((stats.correct / stats.total) * 100) : null;
-    return { ...t, count, stats, pct, index: String(i + 1).padStart(2, "0") };
-  }).filter((t) => t.count > 0);
+    return { ...t, count, stats, pct };
+  })
+    .filter((t) => t.count > 0)
+    .map((t, i) => ({ ...t, index: String(i + 1).padStart(2, "0") }));
 
   return (
     <div className="flex flex-col min-h-screen">

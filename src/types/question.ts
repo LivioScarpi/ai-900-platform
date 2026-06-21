@@ -6,6 +6,11 @@ export type Topic =
   | "conversational_ai"
   | "azure_cognitive"
   | "azure_ml"
+  | "core_services"
+  | "cloud_concepts"
+  | "pricing_sla"
+  | "governance"
+  | "security_identity"
   | "unknown";
 
 export interface BaseQuestion {
