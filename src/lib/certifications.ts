@@ -12,9 +12,11 @@ export interface CertConfig {
 }
 
 import ai900Config from "../../data/certifications/ai900/config.json";
+import az900Config from "../../data/certifications/az900/config.json";
 
 const REGISTRY: Record<string, CertConfig> = {
   ai900: ai900Config as CertConfig,
+  az900: az900Config as CertConfig,
 };
 
 export function getCertConfig(certId: string): CertConfig | null {

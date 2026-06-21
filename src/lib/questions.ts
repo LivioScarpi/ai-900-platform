@@ -1,11 +1,13 @@
 import { Question } from "@/types/question";
 import legacyData from "../../data/questions.json";
 import ai900Questions from "../../data/certifications/ai900/questions.json";
+import az900Questions from "../../data/certifications/az900/questions.json";
 
 type CertData = { video: Question[]; microsoft: Question[] };
 
 const CERT_DATA: Record<string, CertData> = {
   ai900: ai900Questions as CertData,
+  az900: az900Questions as CertData,
 };
 
 // ── Legacy (backwards compat) ─────────────────────────────────────────────

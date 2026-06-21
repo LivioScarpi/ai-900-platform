@@ -1,0 +1,12 @@
+{
+  "id": "az900",
+  "name": "AZ-900",
+  "fullName": "Microsoft Azure Fundamentals",
+  "provider": "Microsoft",
+  "description": "Foundational knowledge of cloud concepts, core Azure services, security, and pricing.",
+  "color": "#0078D4",
+  "examQuestions": 50,
+  "examDurationMin": 45,
+  "passmarkPct": 70,
+  "hasMicrosoftQuestions": true
+}
