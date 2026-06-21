@@ -111,7 +111,7 @@ export default function LoginPage() {
           </form>
 
           {/* Toggle signin/signup — hidden for presentation */}
-          <div className="mt-5 pt-4 border-t border-cream-200 text-center hidden">
+          <div className="mt-5 pt-4 border-t border-cream-200 text-center">
             <button
               onClick={() => { setMode(mode === "signin" ? "signup" : "signin"); setError(null); setMessage(null); }}
               className="font-mono text-[10px] text-ink-faint hover:text-ink-muted transition-colors"
