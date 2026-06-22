@@ -5158,6 +5158,2660 @@
       "correctAnswer": "A",
       "explanation": "Azure Government is a cloud solution designed specifically for US federal, state, local, and tribal government entities and their solution providers. It provides highly secure, compliant, and isolated cloud environments that meet government-specific regulations.",
       "contextImages": []
+    },
+    {
+      "id": 200,
+      "topic": "core_services",
+      "type": "mcq",
+      "text": "What is an Azure resource?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "A physical device in an Azure datacenter."
+        },
+        {
+          "letter": "B",
+          "text": "A software component that provides a service."
+        },
+        {
+          "letter": "C",
+          "text": "A logical entity that represents a cloud resource."
+        },
+        {
+          "letter": "D",
+          "text": "A subscription to Azure services."
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "In Azure, a resource is a logical entity that represents an instance of a cloud service, such as virtual machines, storage accounts, databases, or networking components. Resources are managed within resource groups and can be organized using tags and policies for better governance.",
+      "contextImages": []
+    },
+    {
+      "id": 201,
+      "topic": "security_identity",
+      "type": "mcq",
+      "text": "What is the principle of least privilege in the context of Azure RBAC?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Assigning the \"Owner\" role to all users."
+        },
+        {
+          "letter": "B",
+          "text": "Disabling user accounts when they are not in use."
+        },
+        {
+          "letter": "C",
+          "text": "Granting users the maximum amount of access necessary to perform their job duties."
+        },
+        {
+          "letter": "D",
+          "text": "Granting users the minimum amount of access necessary to perform their job duties."
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "The principle of least privilege (PoLP) ensures that users, applications, and services only have the minimum permissions needed to perform their tasks. In Azure Role-Based Access Control (RBAC), this helps reduce security risks by limiting unauthorized access to resources.",
+      "contextImages": []
+    },
+    {
+      "id": 202,
+      "topic": "core_services",
+      "type": "mcq",
+      "text": "Which is the lowest-cost storage redundancy option?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "GRS"
+        },
+        {
+          "letter": "B",
+          "text": "LRS"
+        },
+        {
+          "letter": "C",
+          "text": "GZRS"
+        },
+        {
+          "letter": "D",
+          "text": "ZRS"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "LRS (Locally Redundant Storage) is the lowest-cost Azure storage redundancy option because it keeps three copies of data within a single datacenter in the same region. Unlike GRS or ZRS, LRS does not provide protection against datacenter failures, making it the most cost-effective but least resilient option.",
+      "contextImages": []
+    },
+    {
+      "id": 203,
+      "topic": "security_identity",
+      "type": "multi",
+      "text": "Which of the following can be considered a benefit of using the cloud regarding security? Select all that apply.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Regular updates and patches"
+        },
+        {
+          "letter": "B",
+          "text": "Adheres to industry-standard compliance frameworks"
+        },
+        {
+          "letter": "C",
+          "text": "Ability to disable security measures such as encryption for specific applications or uses"
+        },
+        {
+          "letter": "D",
+          "text": "Centralized management and monitoring"
+        }
+      ],
+      "correctAnswers": [
+        "A",
+        "B",
+        "D"
+      ],
+      "explanation": "Cloud providers like Azure continuously update and patch their systems to protect against vulnerabilities, adhere to compliance standards like ISO, GDPR, and FedRAMP, and provide centralized security management and monitoring through tools like Microsoft Defender for Cloud.",
+      "contextImages": []
+    },
+    {
+      "id": 204,
+      "topic": "core_services",
+      "type": "mcq",
+      "text": "Which compute type is designed to package and deploy applications along with their dependencies, ensuring consistent behavior across different environments?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Serverless"
+        },
+        {
+          "letter": "B",
+          "text": "Container"
+        },
+        {
+          "letter": "C",
+          "text": "Function"
+        },
+        {
+          "letter": "D",
+          "text": "Virtual Machine"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Containers are designed to package applications along with their dependencies (libraries, runtime, and configuration) into a single, lightweight unit. This ensures consistent behavior across different environments. Azure Kubernetes Service (AKS) and Azure Container Apps are popular Azure solutions for managing containers.",
+      "contextImages": []
+    },
+    {
+      "id": 205,
+      "topic": "core_services",
+      "type": "mcq",
+      "text": "Which Azure Storage access tier is optimized (including for cost) for data rarely accessed and must be stored for at least 180 days, with flexible latency requirements?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Cool access"
+        },
+        {
+          "letter": "B",
+          "text": "Hot access"
+        },
+        {
+          "letter": "C",
+          "text": "Archive access"
+        },
+        {
+          "letter": "D",
+          "text": "Premium storage"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "The Archive access tier in Azure Storage is optimized for data that is rarely accessed and must be stored for at least 180 days to avoid early deletion fees. It offers the lowest storage cost but has higher retrieval latency, making it ideal for long-term backup, compliance, and archival storage.",
+      "contextImages": []
+    },
+    {
+      "id": 206,
+      "topic": "core_services",
+      "type": "mcq",
+      "text": "Which of the following is an example of a serverless computing service?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Azure Functions"
+        },
+        {
+          "letter": "B",
+          "text": "App Services"
+        },
+        {
+          "letter": "C",
+          "text": "Storage Accounts"
+        },
+        {
+          "letter": "D",
+          "text": "Virtual Machines"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Azure Functions is a serverless computing service that allows you to run code without managing infrastructure. It automatically scales based on demand and charges only for execution time, making it ideal for event-driven applications, background tasks, and automation.",
+      "contextImages": []
+    },
+    {
+      "id": 207,
+      "topic": "core_services",
+      "type": "mcq",
+      "text": "Fill in the blank: ___ is a cloud-based file sharing service that allows you to access your files from anywhere using standard SMB or NFS protocols.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Azure File Storage"
+        },
+        {
+          "letter": "B",
+          "text": "Azure Blob Storage"
+        },
+        {
+          "letter": "C",
+          "text": "Azure Table Storage"
+        },
+        {
+          "letter": "D",
+          "text": "General Purpose V2"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Azure File Storage is a cloud-based file sharing service that allows users to access files from anywhere using standard SMB (Server Message Block) or NFS (Network File System) protocols. It enables fully managed file shares that can be mounted on Windows, Linux, and macOS environments.",
+      "contextImages": []
+    },
+    {
+      "id": 208,
+      "topic": "cloud_concepts",
+      "type": "mcq",
+      "text": "Who typically owns the IT infrastructure in the cloud computing model?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "The vendor such as Microsoft Azure or Amazon AWS"
+        },
+        {
+          "letter": "B",
+          "text": "The client such as you"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "In the cloud computing model, the cloud provider (vendor) owns and manages the IT infrastructure, including servers, storage, networking, and data centers. Clients rent or subscribe to these resources instead of purchasing and maintaining their own infrastructure.",
+      "contextImages": []
+    },
+    {
+      "id": 209,
+      "topic": "cloud_concepts",
+      "type": "mcq",
+      "text": "A large financial institution with strict compliance requirements and a need to maintain control over sensitive data would be best suited for which cloud model?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Public Cloud"
+        },
+        {
+          "letter": "B",
+          "text": "Community Cloud"
+        },
+        {
+          "letter": "C",
+          "text": "Private Cloud"
+        },
+        {
+          "letter": "D",
+          "text": "Hybrid Cloud"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "A Private Cloud is ideal for organizations like a large financial institution with strict compliance requirements and a need to maintain control over sensitive data. The cloud infrastructure is dedicated exclusively to that organization, offering greater control, security, and customization.",
+      "contextImages": []
+    },
+    {
+      "id": 210,
+      "topic": "governance",
+      "type": "mcq",
+      "text": "Why is it beneficial to organize Azure resources into resource groups?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "To enhance security."
+        },
+        {
+          "letter": "B",
+          "text": "To simplify management and deployment."
+        },
+        {
+          "letter": "C",
+          "text": "To improve performance."
+        },
+        {
+          "letter": "D",
+          "text": "To reduce costs."
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Resource groups in Azure help organize and manage related resources, making it easier to deploy, monitor, and control access to them as a single unit. They allow for logical grouping, consistent access control, and bulk operations.",
+      "contextImages": []
+    },
+    {
+      "id": 211,
+      "topic": "security_identity",
+      "type": "mcq",
+      "text": "What is the primary purpose of Microsoft Entra Conditional Access?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "To protect against phishing attacks."
+        },
+        {
+          "letter": "B",
+          "text": "To enforce strong password policies."
+        },
+        {
+          "letter": "C",
+          "text": "To implement granular access controls based on specific conditions."
+        },
+        {
+          "letter": "D",
+          "text": "To provide multi-factor authentication for all users."
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "Microsoft Entra Conditional Access is a security feature that allows organizations to control access to resources based on specific conditions such as user location, device status, risk level, and application being accessed. It helps enforce Zero Trust security.",
+      "contextImages": []
+    },
+    {
+      "id": 212,
+      "topic": "core_services",
+      "type": "mcq",
+      "text": "By design, when an entire Azure region fails as it may during a natural disaster in that region, where do some Azure services automatically fail over to?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Its region pair, which is at least 300 miles away in the same geography"
+        },
+        {
+          "letter": "B",
+          "text": "Another region, which is usually located in another geography"
+        },
+        {
+          "letter": "C",
+          "text": "There are no Azure services that fail over if its region were to fail"
+        },
+        {
+          "letter": "D",
+          "text": "Most regions fail over to US East"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Azure follows the Region Pair strategy, where each region is paired with another region at least 300 miles away within the same geography. In the event of a regional failure, some services automatically fail over to their paired region, minimizing downtime and data loss.",
+      "contextImages": []
+    },
+    {
+      "id": 213,
+      "topic": "governance",
+      "type": "mcq",
+      "text": "Can subscriptions be nested?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Yes"
+        },
+        {
+          "letter": "B",
+          "text": "No"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Azure subscriptions cannot be nested. Each subscription exists as a separate entity under an Azure account (tenant). However, multiple subscriptions can be managed under a single Azure tenant using management groups.",
+      "contextImages": []
+    },
+    {
+      "id": 214,
+      "topic": "core_services",
+      "type": "mcq",
+      "text": "What is the primary purpose of Availability Zones in Azure?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "To ensure data residency compliance"
+        },
+        {
+          "letter": "B",
+          "text": "To provide redundancy and fault tolerance"
+        },
+        {
+          "letter": "C",
+          "text": "To offer discounts for customers in certain regions"
+        },
+        {
+          "letter": "D",
+          "text": "To provide access to Azure services in specific geographic locations"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Azure Availability Zones are physically separate locations within an Azure region, each with independent power, cooling, and networking. They help ensure high availability and fault tolerance by allowing workloads to be distributed across multiple zones.",
+      "contextImages": []
+    },
+    {
+      "id": 215,
+      "topic": "core_services",
+      "type": "multi",
+      "text": "Which of the following are required in order to create an Azure Virtual Machine? Select all that apply.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "A virtual network"
+        },
+        {
+          "letter": "B",
+          "text": "A subscription to Azure"
+        },
+        {
+          "letter": "C",
+          "text": "A resource group"
+        },
+        {
+          "letter": "D",
+          "text": "A name for the VM"
+        }
+      ],
+      "correctAnswers": [
+        "B",
+        "C",
+        "D"
+      ],
+      "explanation": "To create an Azure Virtual Machine, you must have an Azure subscription to provision resources, a resource group to manage and organize the VM, and a name to identify it. While a virtual network is typically needed for connectivity, Azure can automatically create one for you if none is specified.",
+      "contextImages": []
+    },
+    {
+      "id": 216,
+      "topic": "core_services",
+      "type": "mcq",
+      "text": "What is the maximum number of instances that can be in a virtual machine scale set?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "100"
+        },
+        {
+          "letter": "B",
+          "text": "There is no limit"
+        },
+        {
+          "letter": "C",
+          "text": "1000"
+        },
+        {
+          "letter": "D",
+          "text": "10000"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "Azure Virtual Machine Scale Sets (VMSS) can support up to 1,000 instances for standard images. However, if you use custom images, the limit is 600 instances. VMSS allows automatic scaling of virtual machines to handle varying workloads efficiently.",
+      "contextImages": []
+    },
+    {
+      "id": 217,
+      "topic": "core_services",
+      "type": "mcq",
+      "text": "Which of the following is an example of a PaaS offering from Azure?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Azure App Service"
+        },
+        {
+          "letter": "B",
+          "text": "Microsoft Entra ID (formerly Azure Active Directory)"
+        },
+        {
+          "letter": "C",
+          "text": "Azure Storage (General Purpose V2)"
+        },
+        {
+          "letter": "D",
+          "text": "Azure Virtual Machines"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Azure App Service is a Platform as a Service (PaaS) offering that allows developers to deploy and manage web applications without worrying about the underlying infrastructure. It provides built-in scaling, security, and integration with DevOps tools.",
+      "contextImages": []
+    },
+    {
+      "id": 218,
+      "topic": "core_services",
+      "type": "mcq",
+      "text": "What is the primary benefit of using containers for deploying applications to Azure?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Increased storage capacity"
+        },
+        {
+          "letter": "B",
+          "text": "Improved network performance"
+        },
+        {
+          "letter": "C",
+          "text": "Improved portability and consistency"
+        },
+        {
+          "letter": "D",
+          "text": "Enhanced security"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "Containers package applications along with their dependencies, ensuring they run consistently across different environments, such as development, testing, and production. This makes them highly portable and reduces compatibility issues when deploying applications.",
+      "contextImages": []
+    },
+    {
+      "id": 219,
+      "topic": "core_services",
+      "type": "mcq",
+      "text": "Queue storage can be used when two programs need to communicate. Which type of communication is this best suited for?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Real-time communication"
+        },
+        {
+          "letter": "B",
+          "text": "Broadcast communication (one-to-many)"
+        },
+        {
+          "letter": "C",
+          "text": "Asynchronous communication"
+        },
+        {
+          "letter": "D",
+          "text": "Synchronous communication"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "Azure Queue Storage is best suited for asynchronous communication, where messages are placed in a queue and processed later. This allows decoupling between components, enabling scalability and reliability without requiring both programs to be online at the same time.",
+      "contextImages": []
+    },
+    {
+      "id": 220,
+      "topic": "security_identity",
+      "type": "mcq",
+      "text": "How does a defense-in-depth model improve overall security?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "By eliminating the need for user training."
+        },
+        {
+          "letter": "B",
+          "text": "By simplifying the security infrastructure."
+        },
+        {
+          "letter": "C",
+          "text": "By reducing the need for security updates."
+        },
+        {
+          "letter": "D",
+          "text": "By making it more difficult for attackers to breach multiple layers of security."
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "The defense-in-depth model improves security by implementing multiple layers of protection, such as firewalls, encryption, access controls, and monitoring. This layered approach ensures that even if one security measure is bypassed, others are still in place.",
+      "contextImages": []
+    },
+    {
+      "id": 221,
+      "topic": "core_services",
+      "type": "mcq",
+      "text": "Which Azure service can be used to create a highly available application across multiple Availability Zones?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Azure App Service"
+        },
+        {
+          "letter": "B",
+          "text": "Azure Storage"
+        },
+        {
+          "letter": "C",
+          "text": "All answers are correct"
+        },
+        {
+          "letter": "D",
+          "text": "Azure Virtual Machines"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "Azure App Service, Azure Storage, and Azure Virtual Machines all support high availability across multiple Availability Zones. VMs can be deployed across Availability Zones for redundancy, App Service provides built-in high availability, and Storage offers geo-redundancy.",
+      "contextImages": []
+    },
+    {
+      "id": 222,
+      "topic": "core_services",
+      "type": "mcq",
+      "text": "What does redundancy mean in the context of Azure?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Implementing failover to a secondary data center in case of a disaster."
+        },
+        {
+          "letter": "B",
+          "text": "Monitoring system health to detect and prevent issues."
+        },
+        {
+          "letter": "C",
+          "text": "Using a single instance of a resource to avoid failures."
+        },
+        {
+          "letter": "D",
+          "text": "Having multiple copies of a resource to ensure availability."
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "Redundancy in Azure refers to maintaining multiple copies of a resource, such as data or virtual machines, to ensure high availability and fault tolerance. This helps protect against failures by providing backup systems that can take over if the primary resource fails.",
+      "contextImages": []
+    },
+    {
+      "id": 223,
+      "topic": "security_identity",
+      "type": "mcq",
+      "text": "There is a well-defined division of responsibilities in the cloud. The cloud vendor is typically responsible for the physical and network security of the cloud. Who is typically responsible for the security and protection of customer data in the cloud?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "The cloud provider and the customer are both equally responsible"
+        },
+        {
+          "letter": "B",
+          "text": "The customer, such as you"
+        },
+        {
+          "letter": "C",
+          "text": "It's really difficult to say anyone is responsible for it"
+        },
+        {
+          "letter": "D",
+          "text": "The cloud provider, such as Microsoft Azure or Amazon AWS"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "In the shared responsibility model, the cloud provider is responsible for securing the infrastructure (physical security, networking, hypervisor). However, customers are responsible for securing their own data, applications, and configurations within the cloud, including access controls and encryption.",
+      "contextImages": []
+    },
+    {
+      "id": 224,
+      "topic": "pricing_sla",
+      "type": "mcq",
+      "text": "What is a key benefit of using Azure Budgets?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Enforcing security policies"
+        },
+        {
+          "letter": "B",
+          "text": "Automating resource provisioning"
+        },
+        {
+          "letter": "C",
+          "text": "Setting spending limits and alerts"
+        },
+        {
+          "letter": "D",
+          "text": "Optimizing virtual machine performance"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "Azure Budgets helps organizations monitor and control their cloud spending by allowing them to set budgets for their Azure usage and costs. It provides alerts when spending approaches or exceeds predefined thresholds, ensuring better financial management.",
+      "contextImages": []
+    },
+    {
+      "id": 225,
+      "topic": "governance",
+      "type": "mcq",
+      "text": "How does Azure Policy help manage Azure resources?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "By optimizing resource utilization and cost"
+        },
+        {
+          "letter": "B",
+          "text": "By providing real-time alerts for security threats"
+        },
+        {
+          "letter": "C",
+          "text": "By defining rules that govern resource configuration and usage"
+        },
+        {
+          "letter": "D",
+          "text": "By automatically scaling resources based on demand"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "Azure Policy helps organizations enforce compliance by defining and applying rules that govern the configuration and use of Azure resources. It ensures that resources adhere to company standards and regulatory requirements by automatically auditing and remediating non-compliant resources.",
+      "contextImages": []
+    },
+    {
+      "id": 226,
+      "topic": "security_identity",
+      "type": "mcq",
+      "text": "What is the primary purpose of Azure B2B collaboration?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "To provide identity and access management for cloud-based applications."
+        },
+        {
+          "letter": "B",
+          "text": "To allow guest users from external organizations to access your organization's resources."
+        },
+        {
+          "letter": "C",
+          "text": "To provide identity and access management for internal users."
+        },
+        {
+          "letter": "D",
+          "text": "To enable customers to purchase products and services directly from your organization's website."
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Azure B2B (Business-to-Business) collaboration allows organizations to securely share applications and services with external users, such as partners, contractors, and vendors. It enables seamless access while maintaining control over security and compliance.",
+      "contextImages": []
+    },
+    {
+      "id": 227,
+      "topic": "cloud_concepts",
+      "type": "mcq",
+      "text": "What type of scaling typically involves adding more resources to a pool of existing resources?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Horizontal scaling"
+        },
+        {
+          "letter": "B",
+          "text": "Vertical scaling"
+        },
+        {
+          "letter": "C",
+          "text": "Scaling up"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Horizontal scaling, also known as \"scaling out,\" involves adding more instances of resources (e.g., virtual machines, containers, or application instances) to distribute the workload. This approach improves availability and load balancing while maintaining performance as demand increases.",
+      "contextImages": []
+    },
+    {
+      "id": 228,
+      "topic": "pricing_sla",
+      "type": "mcq",
+      "text": "Which cloud pricing model is often used for applications with predictable workloads and long-term requirements?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Serverless computing"
+        },
+        {
+          "letter": "B",
+          "text": "Pay-as-you-go"
+        },
+        {
+          "letter": "C",
+          "text": "Spot instances"
+        },
+        {
+          "letter": "D",
+          "text": "Reserved instances"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "Reserved instances allow you to commit to a specific amount of cloud resources for a longer term (typically one or three years) in exchange for significant cost savings. This pricing model is ideal for applications with predictable workloads and long-term stability requirements.",
+      "contextImages": []
+    },
+    {
+      "id": 229,
+      "topic": "security_identity",
+      "type": "mcq",
+      "text": "Which of the following is a key benefit of using Microsoft Entra Domain Services?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "It provides a managed domain service in the cloud without the need to manage on-premises domain controllers"
+        },
+        {
+          "letter": "B",
+          "text": "It simplifies the management of on-premises Active Directory"
+        },
+        {
+          "letter": "C",
+          "text": "It is only suitable for small-scale deployments"
+        },
+        {
+          "letter": "D",
+          "text": "It is a replacement for Azure Active Directory"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Microsoft Entra Domain Services (formerly Azure AD Domain Services) offers managed domain services like domain join, group policy, and LDAP, allowing organizations to use traditional Active Directory features without deploying and maintaining domain controllers in the cloud.",
+      "contextImages": []
+    },
+    {
+      "id": 230,
+      "topic": "cloud_concepts",
+      "type": "mcq",
+      "text": "Many years ago, your company licensed software that requires access to the Windows Registry to run. There is currently no option to run the app without the ability to write to the Registry. Which of the following is the only option for running this app in the cloud?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Serverless"
+        },
+        {
+          "letter": "B",
+          "text": "IaaS"
+        },
+        {
+          "letter": "C",
+          "text": "SaaS"
+        },
+        {
+          "letter": "D",
+          "text": "PaaS"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Since the application requires access to the Windows Registry, it must run on a full Windows OS environment where registry modifications are allowed. IaaS (such as Azure Virtual Machines) provides full control over the operating system, enabling applications that depend on system-level access to function properly.",
+      "contextImages": []
+    },
+    {
+      "id": 231,
+      "topic": "pricing_sla",
+      "type": "mcq",
+      "text": "How does the consumption-based model help businesses manage their IT costs?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "By aligning costs with actual usage"
+        },
+        {
+          "letter": "B",
+          "text": "By limiting resource usage"
+        },
+        {
+          "letter": "C",
+          "text": "By requiring upfront investments"
+        },
+        {
+          "letter": "D",
+          "text": "By increasing long-term commitments"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "The consumption-based model (also known as pay-as-you-go) allows businesses to only pay for the resources they use, rather than making large upfront investments or long-term commitments. This model helps manage IT costs by providing flexibility and eliminating the expense of unused capacity.",
+      "contextImages": []
+    },
+    {
+      "id": 232,
+      "topic": "cloud_concepts",
+      "type": "mcq",
+      "text": "Your company runs most of its data and applications on-premises and only uses the cloud when it needs to temporarily scale for more resources. For instance, it has 18 virtualized servers on-premises and can scale up to another 18 virtual machines in Azure if needed. What is this usage of the cloud called?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Public Cloud"
+        },
+        {
+          "letter": "B",
+          "text": "Private Cloud"
+        },
+        {
+          "letter": "C",
+          "text": "Autoscaling"
+        },
+        {
+          "letter": "D",
+          "text": "Hybrid Cloud"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "A hybrid cloud setup combines on-premises infrastructure with cloud resources, allowing businesses to scale their workloads as needed. The company primarily runs on on-premises servers but temporarily uses Azure for additional capacity, which is a typical example of hybrid cloud usage.",
+      "contextImages": []
+    },
+    {
+      "id": 233,
+      "topic": "cloud_concepts",
+      "type": "mcq",
+      "text": "How does high availability help businesses avoid financial losses?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "By increasing downtime"
+        },
+        {
+          "letter": "B",
+          "text": "By ensuring uninterrupted revenue generation"
+        },
+        {
+          "letter": "C",
+          "text": "By preventing data loss"
+        },
+        {
+          "letter": "D",
+          "text": "By reducing operational costs"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "High availability ensures that critical systems remain operational with minimal downtime, allowing businesses to continue serving customers, processing transactions, and maintaining productivity. This prevents financial losses caused by service outages that could disrupt revenue streams.",
+      "contextImages": []
+    },
+    {
+      "id": 234,
+      "topic": "cloud_concepts",
+      "type": "mcq",
+      "text": "Unexpectedly, a celebrity posts a glowing review of your product. Your website receives a huge spike in traffic and orders, and handles it well because your cloud platform automatically added additional resources as required and turned them off when no longer required. This property of your application is known as",
+      "options": [
+        {
+          "letter": "A",
+          "text": "High availability"
+        },
+        {
+          "letter": "B",
+          "text": "Scalability"
+        },
+        {
+          "letter": "C",
+          "text": "Predictability"
+        },
+        {
+          "letter": "D",
+          "text": "Manageability"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Scalability is the ability of a system to automatically adjust resources to handle increased or decreased demand. In this case, your cloud platform automatically added resources to handle the traffic spike and then scaled them down when demand decreased, ensuring smooth performance without unnecessary costs.",
+      "contextImages": []
+    },
+    {
+      "id": 235,
+      "topic": "core_services",
+      "type": "mcq",
+      "text": "What is the primary purpose of Azure Data Box?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "To create and manage Azure virtual machines"
+        },
+        {
+          "letter": "B",
+          "text": "To build and deploy web applications in Azure"
+        },
+        {
+          "letter": "C",
+          "text": "To monitor Azure resource usage"
+        },
+        {
+          "letter": "D",
+          "text": "To transfer large amounts of data to and from Azure"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "Azure Data Box is a physical device that helps businesses securely transfer large volumes of data to and from Azure, especially when network-based transfer is too slow or impractical.",
+      "contextImages": []
+    },
+    {
+      "id": 236,
+      "topic": "cloud_concepts",
+      "type": "mcq",
+      "text": "One of the benefits of cloud computing is that you can create a set of virtual machines that can automatically scale to add more resources or reduce resources based on need. This is an example of what type of manageability benefit?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Management of the cloud"
+        },
+        {
+          "letter": "B",
+          "text": "Management in the cloud"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "This refers to built-in cloud automation that dynamically manages resources based on demand. Cloud services handle scaling, provisioning, and maintenance, allowing businesses to focus on applications rather than infrastructure.",
+      "contextImages": []
+    },
+    {
+      "id": 237,
+      "topic": "governance",
+      "type": "mcq",
+      "text": "Your company regularly audits the usage of cloud computing resources to ensure they are in compliance with regulatory requirements and corporate standards. What practice is this an example of?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Scalability"
+        },
+        {
+          "letter": "B",
+          "text": "Reliability"
+        },
+        {
+          "letter": "C",
+          "text": "Governance"
+        },
+        {
+          "letter": "D",
+          "text": "Reactive Approach"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "Governance in the cloud involves the processes, policies, and standards that ensure resources are being used appropriately and in compliance with legal and corporate requirements. Regular audits are a key part of maintaining effective governance.",
+      "contextImages": []
+    },
+    {
+      "id": 238,
+      "topic": "security_identity",
+      "type": "multi",
+      "text": "Which of the following is a built-in role in Azure RBAC? Select all that apply.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Reader"
+        },
+        {
+          "letter": "B",
+          "text": "Owner"
+        },
+        {
+          "letter": "C",
+          "text": "User"
+        },
+        {
+          "letter": "D",
+          "text": "Contributor"
+        }
+      ],
+      "correctAnswers": [
+        "A",
+        "B",
+        "D"
+      ],
+      "explanation": "In Azure Role-Based Access Control (RBAC), \"Reader\", \"Owner\" and \"Contributor\" are built-in roles. The \"Reader\" role allows users to view resources but not make changes. \"Owner\" provides full control, while \"Contributor\" allows users to create and manage resources but not assign roles.",
+      "contextImages": []
+    },
+    {
+      "id": 239,
+      "topic": "core_services",
+      "type": "mcq",
+      "text": "Which of the following is an example of an IaaS offering from Azure?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Azure SQL Database"
+        },
+        {
+          "letter": "B",
+          "text": "Azure Virtual Machines"
+        },
+        {
+          "letter": "C",
+          "text": "Azure App Service"
+        },
+        {
+          "letter": "D",
+          "text": "Azure Functions"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Infrastructure as a Service (IaaS) provides virtualized computing resources over the internet. Azure Virtual Machines is a prime example because it provides virtualized compute resources that customers can use to run their workloads, including operating systems and applications, while Microsoft manages the underlying hardware.",
+      "contextImages": []
+    },
+    {
+      "id": 240,
+      "topic": "core_services",
+      "type": "mcq",
+      "text": "What is the maximum number of web apps a single App Service Plan (Premium v3) can support?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "100"
+        },
+        {
+          "letter": "B",
+          "text": "1"
+        },
+        {
+          "letter": "C",
+          "text": "10"
+        },
+        {
+          "letter": "D",
+          "text": "Unlimited"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "In the Premium v3 tier of Azure App Service Plans, there is no predefined limit to the number of web apps you can host. While the plan allows for unlimited web apps, the actual number you can effectively run depends on the plan's resource capacity and the demands of your applications.",
+      "contextImages": []
+    },
+    {
+      "id": 241,
+      "topic": "governance",
+      "type": "mcq",
+      "text": "How can tags be used to optimize costs in Azure?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "By automatically shutting down underutilized resources"
+        },
+        {
+          "letter": "B",
+          "text": "By identifying resources that can be migrated to a lower-cost tier"
+        },
+        {
+          "letter": "C",
+          "text": "By categorizing resources based on their cost and usage"
+        },
+        {
+          "letter": "D",
+          "text": "By automatically applying discounts to tagged resources"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "Tags in Azure help organize resources by assigning metadata (such as cost center, environment, or department). This categorization enables better cost tracking, reporting, and optimization by identifying which resources contribute most to cloud expenses.",
+      "contextImages": []
+    },
+    {
+      "id": 242,
+      "topic": "core_services",
+      "type": "mcq",
+      "text": "In which storage redundancy option does Azure keep six copies of your files across two regions?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "ZRS"
+        },
+        {
+          "letter": "B",
+          "text": "LRS"
+        },
+        {
+          "letter": "C",
+          "text": "GRS"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "Geo-Redundant Storage (GRS) keeps six copies of your data: three copies in the primary region and three more in a secondary region that is geographically distant. This setup ensures high availability and disaster recovery in case of regional failures.",
+      "contextImages": []
+    },
+    {
+      "id": 243,
+      "topic": "core_services",
+      "type": "mcq",
+      "text": "Which connectivity option of Azure can provide connectivity from your on-premises corporate network into Azure over a private line, not travelling over the public Internet?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Site-to-site VPN"
+        },
+        {
+          "letter": "B",
+          "text": "Azure Global Peering"
+        },
+        {
+          "letter": "C",
+          "text": "Azure ExpressRoute"
+        },
+        {
+          "letter": "D",
+          "text": "Point-to-site VPN"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "Azure ExpressRoute provides a private, dedicated connection between your on-premises network and Azure, bypassing the public Internet. This results in higher reliability, lower latency, and better security compared to VPN-based solutions.",
+      "contextImages": []
+    },
+    {
+      "id": 244,
+      "topic": "pricing_sla",
+      "type": "mcq",
+      "text": "What does cost predictability mean in the context of Azure?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "The ability to accurately forecast future costs."
+        },
+        {
+          "letter": "B",
+          "text": "The ability to avoid unexpected charges."
+        },
+        {
+          "letter": "C",
+          "text": "The ability to allocate costs to specific resources."
+        },
+        {
+          "letter": "D",
+          "text": "The ability to reduce costs over time."
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Cost predictability in Azure means being able to estimate and plan for future cloud expenses based on current and projected usage. This helps businesses budget effectively and avoid financial surprises when using cloud services.",
+      "contextImages": []
+    },
+    {
+      "id": 245,
+      "topic": "core_services",
+      "type": "mcq",
+      "text": "What is the maximum amount of data that can be stored in a single Azure Storage account?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "5 Petabytes"
+        },
+        {
+          "letter": "B",
+          "text": "5 Terabytes"
+        },
+        {
+          "letter": "C",
+          "text": "5 Gigabytes"
+        },
+        {
+          "letter": "D",
+          "text": "There is no limit"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "A single Azure Storage account can store up to 5 PB of data when using Locally Redundant Storage (LRS), Zone-Redundant Storage (ZRS), or Geo-Redundant Storage (GRS). This capacity allows organizations to manage large amounts of data efficiently.",
+      "contextImages": []
+    },
+    {
+      "id": 246,
+      "topic": "core_services",
+      "type": "mcq",
+      "text": "What is a fault domain?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "A report available through Azure Service Health"
+        },
+        {
+          "letter": "B",
+          "text": "A method to resolve human-readable names into IP addresses"
+        },
+        {
+          "letter": "C",
+          "text": "The place where tectonic plates meet far below the surface of the Earth"
+        },
+        {
+          "letter": "D",
+          "text": "A physical grouping of servers within an Azure data center."
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "A fault domain in Azure refers to a group of servers that share a common power source and network switch within a data center. Azure Availability Sets use fault domains to ensure that virtual machines are distributed across multiple physical hardware units, reducing the risk of a single point of failure.",
+      "contextImages": []
+    },
+    {
+      "id": 247,
+      "topic": "security_identity",
+      "type": "mcq",
+      "text": "What is the primary purpose of single sign-on (SSO)?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "To add an extra layer of security to user accounts."
+        },
+        {
+          "letter": "B",
+          "text": "To allow users to log in to multiple applications with a single set of credentials."
+        },
+        {
+          "letter": "C",
+          "text": "To enforce strong password policies."
+        },
+        {
+          "letter": "D",
+          "text": "To prevent unauthorized access to cloud resources."
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Single Sign-On (SSO) enables users to authenticate once and gain access to multiple applications or services without needing to log in again. It improves user experience by reducing the number of passwords to remember and enhances security by minimizing weak or reused passwords.",
+      "contextImages": []
+    },
+    {
+      "id": 248,
+      "topic": "governance",
+      "type": "mcq",
+      "text": "What is the name of the top-level management group of an organization?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Contoso"
+        },
+        {
+          "letter": "B",
+          "text": "yourcompanyname.onmicrosoft.com"
+        },
+        {
+          "letter": "C",
+          "text": "Admin"
+        },
+        {
+          "letter": "D",
+          "text": "Root"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "In Azure Management Groups, the Root Management Group is the top-level management group that contains all other management groups and subscriptions in an organization. It provides a way to apply governance policies and access controls consistently across all resources.",
+      "contextImages": []
+    },
+    {
+      "id": 249,
+      "topic": "core_services",
+      "type": "mcq",
+      "text": "Azure peering can connect two networks even though they belong to different subscriptions or customer accounts.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "True"
+        },
+        {
+          "letter": "B",
+          "text": "False"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Azure Virtual Network Peering allows you to connect two Azure Virtual Networks (VNets), even if they belong to different subscriptions or different Azure Active Directory tenants. This enables seamless network connectivity between separate environments while maintaining low-latency and high-bandwidth connections.",
+      "contextImages": []
+    },
+    {
+      "id": 250,
+      "topic": "core_services",
+      "type": "mcq",
+      "text": "Fill in the blank: ____ is a mechanism that allows you to connect two virtual networks within Azure.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Azure Load Balancer"
+        },
+        {
+          "letter": "B",
+          "text": "Azure peering"
+        },
+        {
+          "letter": "C",
+          "text": "Azure ExpressRoute"
+        },
+        {
+          "letter": "D",
+          "text": "Azure Application Gateway"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Azure Virtual Network Peering allows you to connect two Azure virtual networks seamlessly, providing low-latency, high-bandwidth connectivity between VNets.",
+      "contextImages": []
+    },
+    {
+      "id": 251,
+      "topic": "security_identity",
+      "type": "mcq",
+      "text": "What is the primary purpose of Microsoft Entra ID?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "To secure network traffic and protect against cyber threats"
+        },
+        {
+          "letter": "B",
+          "text": "To provide on-premises domain services in the cloud"
+        },
+        {
+          "letter": "C",
+          "text": "To manage user identities and access to applications and resources"
+        },
+        {
+          "letter": "D",
+          "text": "To store and manage large amounts of data"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "Microsoft Entra ID (formerly Azure Active Directory) is a cloud-based identity and access management service that manages user identities and controls access to applications and resources.",
+      "contextImages": []
+    },
+    {
+      "id": 252,
+      "topic": "security_identity",
+      "type": "mcq",
+      "text": "Which of the following is a passwordless authentication method supported by Azure?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Only biometric authentication (e.g., fingerprint, facial recognition)"
+        },
+        {
+          "letter": "B",
+          "text": "Four-digit PIN"
+        },
+        {
+          "letter": "C",
+          "text": "Biometric authentication and security keys"
+        },
+        {
+          "letter": "D",
+          "text": "Only security keys"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "Azure supports passwordless authentication through Windows Hello for Business (biometric) and FIDO2 security keys, plus Microsoft Authenticator phone-based authentication.",
+      "contextImages": []
+    },
+    {
+      "id": 253,
+      "topic": "governance",
+      "type": "mcq",
+      "text": "What is the primary purpose of an Azure resource group?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "To group related Azure resources together for management and deployment."
+        },
+        {
+          "letter": "B",
+          "text": "To provide a logical container for Azure subscriptions."
+        },
+        {
+          "letter": "C",
+          "text": "To act as a central hub or dashboard for all Azure services."
+        },
+        {
+          "letter": "D",
+          "text": "To manage user accounts and access control."
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "An Azure resource group is a logical container that organizes and manages related Azure resources sharing the same lifecycle or purpose.",
+      "contextImages": []
+    },
+    {
+      "id": 254,
+      "topic": "governance",
+      "type": "mcq",
+      "text": "Which of the following is NOT a core capability of Microsoft Purview?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Data sensitivity labeling"
+        },
+        {
+          "letter": "B",
+          "text": "Data loss prevention"
+        },
+        {
+          "letter": "C",
+          "text": "Data discovery and classification"
+        },
+        {
+          "letter": "D",
+          "text": "Data migration and integration"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "Microsoft Purview focuses on data governance, compliance, discovery, classification, and protection, not data migration or integration.",
+      "contextImages": []
+    },
+    {
+      "id": 255,
+      "topic": "core_services",
+      "type": "mcq",
+      "text": "Which Azure service can be used to deploy and scale serverless containerized applications?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Azure Kubernetes Service (AKS)"
+        },
+        {
+          "letter": "B",
+          "text": "Azure App Service"
+        },
+        {
+          "letter": "C",
+          "text": "Azure Functions"
+        },
+        {
+          "letter": "D",
+          "text": "Azure Container Instances"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "Azure Container Instances is a serverless container solution that deploys and scales containerized applications without managing VMs or Kubernetes clusters.",
+      "contextImages": []
+    },
+    {
+      "id": 256,
+      "topic": "cloud_concepts",
+      "type": "mcq",
+      "text": "Fill in the blank: A ____ is a geographical area on the planet that contains at least one, but potentially multiple datacenters that are nearby and networked together with a low-latency network.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "edge network"
+        },
+        {
+          "letter": "B",
+          "text": "data center"
+        },
+        {
+          "letter": "C",
+          "text": "region"
+        },
+        {
+          "letter": "D",
+          "text": "availability zone"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "A region is a geographical area containing one or more datacenters networked together with low-latency connections.",
+      "contextImages": []
+    },
+    {
+      "id": 257,
+      "topic": "core_services",
+      "type": "mcq",
+      "text": "What is the primary purpose of an availability set in Azure?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "To ensure data redundancy and durability"
+        },
+        {
+          "letter": "B",
+          "text": "To protect against single points of failure"
+        },
+        {
+          "letter": "C",
+          "text": "To provide load balancing for web applications"
+        },
+        {
+          "letter": "D",
+          "text": "To group virtual machines for easier management"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "An availability set protects VMs from single points of failure by distributing them across multiple fault domains and update domains within a datacenter.",
+      "contextImages": []
+    },
+    {
+      "id": 258,
+      "topic": "cloud_concepts",
+      "type": "mcq",
+      "text": "Which of the following is NOT a characteristic of Infrastructure as a Service (IaaS)?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Pay-as-you-go pricing"
+        },
+        {
+          "letter": "B",
+          "text": "Managed operating system"
+        },
+        {
+          "letter": "C",
+          "text": "Hardware virtualization"
+        },
+        {
+          "letter": "D",
+          "text": "On-demand provisioning"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "With IaaS the customer manages the operating system; it is not managed by the provider, unlike PaaS where the OS is managed by the cloud provider.",
+      "contextImages": []
+    },
+    {
+      "id": 259,
+      "topic": "core_services",
+      "type": "mcq",
+      "text": "What is the benefit of using Azure Virtual Desktop compared to traditional on-premises desktop virtualization solutions?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Improved scalability"
+        },
+        {
+          "letter": "B",
+          "text": "All answers are correct"
+        },
+        {
+          "letter": "C",
+          "text": "Increased security"
+        },
+        {
+          "letter": "D",
+          "text": "Lower costs"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Azure Virtual Desktop provides improved scalability, increased security, and lower costs compared to on-premises desktop virtualization.",
+      "contextImages": []
+    },
+    {
+      "id": 260,
+      "topic": "core_services",
+      "type": "mcq",
+      "text": "Which storage option should you choose if you need the absolute highest performance (regardless of the cost) for intense workloads like SAP HANA or transaction-heavy applications?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Ultra Disks"
+        },
+        {
+          "letter": "B",
+          "text": "Standard HDDs"
+        },
+        {
+          "letter": "C",
+          "text": "Premium SSDs"
+        },
+        {
+          "letter": "D",
+          "text": "Standard SSDs"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Azure Ultra Disks deliver the highest IOPS, throughput, and lowest latency, ideal for intensive workloads like SAP HANA and transaction-heavy applications.",
+      "contextImages": []
+    },
+    {
+      "id": 261,
+      "topic": "cloud_concepts",
+      "type": "mcq",
+      "text": "Which of the following is NOT a key aspect of predictability in Azure?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Scalability"
+        },
+        {
+          "letter": "B",
+          "text": "Cost optimization"
+        },
+        {
+          "letter": "C",
+          "text": "Consistent performance"
+        },
+        {
+          "letter": "D",
+          "text": "Fault tolerance"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "Fault tolerance relates to reliability and availability, not predictability, which focuses on consistent performance, scalability, and cost optimization.",
+      "contextImages": []
+    },
+    {
+      "id": 262,
+      "topic": "cloud_concepts",
+      "type": "mcq",
+      "text": "What is a key benefit of the consumption-based model in cloud computing?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Long-term contracts"
+        },
+        {
+          "letter": "B",
+          "text": "Upfront hardware purchases"
+        },
+        {
+          "letter": "C",
+          "text": "Fixed monthly costs"
+        },
+        {
+          "letter": "D",
+          "text": "Pay-as-you-go pricing"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "The consumption-based model means you only pay for the resources you actually use, avoiding large upfront costs and scaling spending with actual needs.",
+      "contextImages": []
+    },
+    {
+      "id": 263,
+      "topic": "cloud_concepts",
+      "type": "mcq",
+      "text": "Which of the following is NOT a core component of Azure's reliability strategy?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Performance"
+        },
+        {
+          "letter": "B",
+          "text": "Availability"
+        },
+        {
+          "letter": "C",
+          "text": "Fault tolerance"
+        },
+        {
+          "letter": "D",
+          "text": "Redundancy"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Azure's reliability strategy focuses on availability, fault tolerance, and redundancy; performance, while important, is not a core component of it.",
+      "contextImages": []
+    },
+    {
+      "id": 264,
+      "topic": "cloud_concepts",
+      "type": "mcq",
+      "text": "Which of the following qualities is unique to Private Cloud?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "A cloud infrastructure dedicated to a single organization, managed either by the organization itself or by a third-party provider"
+        },
+        {
+          "letter": "B",
+          "text": "The virtual network is not accessible from the public Internet"
+        },
+        {
+          "letter": "C",
+          "text": "An application that uses a network security group, firewall, distributed denial of service protection, and other network security methods"
+        },
+        {
+          "letter": "D",
+          "text": "Anyone can sign up using a credit card"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "A private cloud provides exclusive resources and infrastructure dedicated to a single organization, offering greater control, customization, and security.",
+      "contextImages": []
+    },
+    {
+      "id": 265,
+      "topic": "core_services",
+      "type": "mcq",
+      "text": "In which storage redundancy option does Azure give you a secondary endpoint for read-only access?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "RA-GRS"
+        },
+        {
+          "letter": "B",
+          "text": "ZRS"
+        },
+        {
+          "letter": "C",
+          "text": "LRS"
+        },
+        {
+          "letter": "D",
+          "text": "GRS"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "RA-GRS replicates data across two geographically separated regions (like GRS) and also provides a secondary read-only endpoint for high availability and disaster recovery.",
+      "contextImages": []
+    },
+    {
+      "id": 266,
+      "topic": "pricing_sla",
+      "type": "mcq",
+      "text": "How does data transfer between Azure regions impact costs?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "It's charged based on the destination region only"
+        },
+        {
+          "letter": "B",
+          "text": "It's charged based on the source region only"
+        },
+        {
+          "letter": "C",
+          "text": "It's always free, regardless of the distance"
+        },
+        {
+          "letter": "D",
+          "text": "It's charged based on the amount of data transferred and the distance"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "Data transfer between regions typically incurs egress charges; the cost depends on how much data is transferred and which regions are involved.",
+      "contextImages": []
+    },
+    {
+      "id": 267,
+      "topic": "security_identity",
+      "type": "mcq",
+      "text": "What is the primary benefit of using Microsoft Entra Conditional Access?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Improved user experience."
+        },
+        {
+          "letter": "B",
+          "text": "Reduced reliance on passwords."
+        },
+        {
+          "letter": "C",
+          "text": "Simplified user authentication."
+        },
+        {
+          "letter": "D",
+          "text": "Enhanced security by limiting access to authorized users and devices."
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "Conditional Access enforces granular access controls based on conditions such as user location, device compliance, and risk level, allowing only trusted users and devices.",
+      "contextImages": []
+    },
+    {
+      "id": 268,
+      "topic": "cloud_concepts",
+      "type": "mcq",
+      "text": "What is the primary benefit of using PaaS compared to IaaS?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Greater flexibility"
+        },
+        {
+          "letter": "B",
+          "text": "Lower costs"
+        },
+        {
+          "letter": "C",
+          "text": "Reduced development time"
+        },
+        {
+          "letter": "D",
+          "text": "Increased control over the infrastructure"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "PaaS reduces development time by providing a pre-configured environment with tools, frameworks, and services, without managing the underlying infrastructure.",
+      "contextImages": []
+    },
+    {
+      "id": 269,
+      "topic": "core_services",
+      "type": "mcq",
+      "text": "Fill in the blank: ____ stores data offline and offers the lowest storage costs.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Cool access"
+        },
+        {
+          "letter": "B",
+          "text": "Cold access"
+        },
+        {
+          "letter": "C",
+          "text": "Hot access"
+        },
+        {
+          "letter": "D",
+          "text": "Archive storage"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "Archive storage stores data offline and offers the lowest storage costs, ideal for rarely accessed data retained for long-term storage.",
+      "contextImages": []
+    },
+    {
+      "id": 270,
+      "topic": "core_services",
+      "type": "mcq",
+      "text": "Which Azure Storage access tier is optimized (including for cost) for data accessed infrequently and must be stored for at least 30 days?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Archive access tier"
+        },
+        {
+          "letter": "B",
+          "text": "Cool access tier"
+        },
+        {
+          "letter": "C",
+          "text": "Premium storage"
+        },
+        {
+          "letter": "D",
+          "text": "Hot access tier"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "The Cool access tier is optimized for infrequently accessed data stored for at least 30 days, offering lower storage costs than the Hot tier.",
+      "contextImages": []
+    },
+    {
+      "id": 271,
+      "topic": "core_services",
+      "type": "mcq",
+      "text": "Which feature of Azure Storage makes it durable?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Accessibility"
+        },
+        {
+          "letter": "B",
+          "text": "Security"
+        },
+        {
+          "letter": "C",
+          "text": "Redundancy"
+        },
+        {
+          "letter": "D",
+          "text": "Scalability"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "Redundancy ensures data durability by keeping multiple copies of data across different locations or storage types, protecting against data loss.",
+      "contextImages": []
+    },
+    {
+      "id": 272,
+      "topic": "governance",
+      "type": "mcq",
+      "text": "What is the primary purpose of tags in Azure?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "To categorize and organize resources for better management"
+        },
+        {
+          "letter": "B",
+          "text": "To monitor resource performance"
+        },
+        {
+          "letter": "C",
+          "text": "To assign security permissions to resources"
+        },
+        {
+          "letter": "D",
+          "text": "To automate resource provisioning"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Tags categorize and organize resources via key-value metadata, helping with resource management, cost tracking, and grouping for reporting and automation.",
+      "contextImages": []
+    },
+    {
+      "id": 273,
+      "topic": "cloud_concepts",
+      "type": "mcq",
+      "text": "Which of the following best describes scalability in the cloud?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "The ability to reduce costs by limiting storage"
+        },
+        {
+          "letter": "B",
+          "text": "The ability to increase or decrease resources based on demand"
+        },
+        {
+          "letter": "C",
+          "text": "The ability to run applications without an internet connection"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Scalability in the cloud is the ability to adjust resources based on changing demand, handling varying workloads without over- or under-provisioning.",
+      "contextImages": []
+    },
+    {
+      "id": 274,
+      "topic": "security_identity",
+      "type": "mcq",
+      "text": "What is the primary purpose of Azure RBAC?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "To protect against unauthorized access to Azure subscriptions."
+        },
+        {
+          "letter": "B",
+          "text": "To enforce multi-factor authentication."
+        },
+        {
+          "letter": "C",
+          "text": "To grant users the appropriate level of access to Azure resources."
+        },
+        {
+          "letter": "D",
+          "text": "To manage network security groups."
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "Azure Role-Based Access Control manages access to Azure resources, assigning specific permissions so users have the minimum access required for their tasks.",
+      "contextImages": []
+    },
+    {
+      "id": 275,
+      "topic": "core_services",
+      "type": "mcq",
+      "text": "What is the minimum number of Availability Zones required to create a highly available application in Azure?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "4"
+        },
+        {
+          "letter": "B",
+          "text": "1"
+        },
+        {
+          "letter": "C",
+          "text": "3"
+        },
+        {
+          "letter": "D",
+          "text": "2"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "At least two Availability Zones are required for a highly available application, protecting it from failure in a single zone.",
+      "contextImages": []
+    },
+    {
+      "id": 276,
+      "topic": "governance",
+      "type": "mcq",
+      "text": "Which of the following is a benefit of using sovereign regions in Azure?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Lower costs"
+        },
+        {
+          "letter": "B",
+          "text": "Greater flexibility"
+        },
+        {
+          "letter": "C",
+          "text": "Increased performance"
+        },
+        {
+          "letter": "D",
+          "text": "Reduced compliance risks"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "Sovereign regions help organizations meet specific legal, regulatory, and compliance requirements, reducing compliance risks around data residency and sovereignty.",
+      "contextImages": []
+    },
+    {
+      "id": 277,
+      "topic": "pricing_sla",
+      "type": "mcq",
+      "text": "What is the primary difference between pay-as-you-go and reserved instance pricing models in the cloud?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Reserved instances offer higher performance than pay-as-you-go instances."
+        },
+        {
+          "letter": "B",
+          "text": "Reserved instances offer discounted rates for long-term commitments, while pay-as-you-go is billed based on usage."
+        },
+        {
+          "letter": "C",
+          "text": "Pay-as-you-go requires upfront payment, while reserved instances are billed hourly."
+        },
+        {
+          "letter": "D",
+          "text": "Pay-as-you-go is only available for public cloud models, while reserved instances are for private cloud models."
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Pay-as-you-go charges based on usage with no commitment; reserved instances commit to specific resources for one or three years in exchange for a discounted rate.",
+      "contextImages": []
+    },
+    {
+      "id": 278,
+      "topic": "core_services",
+      "type": "multi",
+      "text": "Which of the following benefits are provided by Azure ExpressRoute compared to a regular Site-to-Site VPN? (Select all that apply.)",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Data travels over a private network, not a public one"
+        },
+        {
+          "letter": "B",
+          "text": "Less expensive connection to Azure"
+        },
+        {
+          "letter": "C",
+          "text": "Faster connection to Azure"
+        },
+        {
+          "letter": "D",
+          "text": "Access to private Virtual Networks that do not have devices with a public IP address"
+        }
+      ],
+      "correctAnswers": [
+        "A",
+        "C"
+      ],
+      "explanation": "ExpressRoute offers a private, dedicated connection (not over the public internet) that typically delivers faster and more consistent performance than a Site-to-Site VPN.",
+      "contextImages": []
+    },
+    {
+      "id": 279,
+      "topic": "cloud_concepts",
+      "type": "mcq",
+      "text": "Why are Azure datacenters located in various regions around the world?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "To comply with local regulations."
+        },
+        {
+          "letter": "B",
+          "text": "To reduce latency for users."
+        },
+        {
+          "letter": "C",
+          "text": "All answers are correct."
+        },
+        {
+          "letter": "D",
+          "text": "To ensure redundancy and high availability."
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "Azure datacenters span regions to comply with local regulations, reduce latency by placing resources closer to users, and ensure redundancy and high availability.",
+      "contextImages": []
+    },
+    {
+      "id": 280,
+      "topic": "security_identity",
+      "type": "mcq",
+      "text": "What is the primary advantage of using Azure's built-in security features compared to managing security on-premises?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Lower costs"
+        },
+        {
+          "letter": "B",
+          "text": "Reduced expertise required"
+        },
+        {
+          "letter": "C",
+          "text": "Decreased flexibility"
+        },
+        {
+          "letter": "D",
+          "text": "Increased complexity"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Azure's built-in security features reduce the need for specialized in-house expertise, providing automated tools for threat detection, encryption, and access control.",
+      "contextImages": []
+    },
+    {
+      "id": 281,
+      "topic": "core_services",
+      "type": "mcq",
+      "text": "Which compute type offers the greatest flexibility and control over the underlying hardware, allowing you to customize the environment to your specific needs?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Container"
+        },
+        {
+          "letter": "B",
+          "text": "Serverless"
+        },
+        {
+          "letter": "C",
+          "text": "Function"
+        },
+        {
+          "letter": "D",
+          "text": "Virtual Machine"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "Virtual Machines offer the greatest flexibility and control, letting you select the OS, configure hardware, and install software, ideal for specific or legacy configurations.",
+      "contextImages": []
+    },
+    {
+      "id": 282,
+      "topic": "cloud_concepts",
+      "type": "mcq",
+      "text": "What type of scaling typically involves moving from a smaller machine to a larger (more powerful) machine?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Vertical scaling"
+        },
+        {
+          "letter": "B",
+          "text": "Horizontal scaling"
+        },
+        {
+          "letter": "C",
+          "text": "Scaling out"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Vertical scaling involves moving to a larger, more powerful machine by increasing CPU, RAM, or storage of a single server.",
+      "contextImages": []
+    },
+    {
+      "id": 283,
+      "topic": "core_services",
+      "type": "mcq",
+      "text": "Which tool lets you centralize your file shares in Azure Files and keep the flexibility, performance, and compatibility of a Windows file server?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Azure File Sync"
+        },
+        {
+          "letter": "B",
+          "text": "Azure Storage Explorer"
+        },
+        {
+          "letter": "C",
+          "text": "AzCopy"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Azure File Sync centralizes file shares in Azure Files while keeping the flexibility and compatibility of a Windows file server, syncing on-premises Windows Server with Azure File shares.",
+      "contextImages": []
+    },
+    {
+      "id": 284,
+      "topic": "governance",
+      "type": "mcq",
+      "text": "Can resource groups be nested?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Yes"
+        },
+        {
+          "letter": "B",
+          "text": "No"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Resource groups cannot be nested. Each resource group is a container for resources but cannot contain other resource groups.",
+      "contextImages": []
+    },
+    {
+      "id": 285,
+      "topic": "core_services",
+      "type": "mcq",
+      "text": "What is the primary purpose of a virtual machine scale set in Azure?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "To group virtual machines for easier management"
+        },
+        {
+          "letter": "B",
+          "text": "To provide load balancing for web applications"
+        },
+        {
+          "letter": "C",
+          "text": "To automatically scale virtual machines based on demand"
+        },
+        {
+          "letter": "D",
+          "text": "To ensure data redundancy and durability"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "A virtual machine scale set automatically scales the number of VMs up or down based on demand, metrics, or schedules, providing high availability.",
+      "contextImages": []
+    },
+    {
+      "id": 286,
+      "topic": "governance",
+      "type": "mcq",
+      "text": "What entities can management groups contain?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Resource groups"
+        },
+        {
+          "letter": "B",
+          "text": "Subscriptions"
+        },
+        {
+          "letter": "C",
+          "text": "Management groups"
+        },
+        {
+          "letter": "D",
+          "text": "Resources"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Management groups organize and manage multiple subscriptions, applying policies and access controls across them; they contain subscriptions, not individual resources or resource groups.",
+      "contextImages": []
+    },
+    {
+      "id": 287,
+      "topic": "core_services",
+      "type": "mcq",
+      "text": "Which Azure App Service hosting option would you choose if you wanted isolated hardware and network, ensuring they are not used by any other Azure customers?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "App Service Environment"
+        },
+        {
+          "letter": "B",
+          "text": "Bare Metal Hosting"
+        },
+        {
+          "letter": "C",
+          "text": "App Service Plan"
+        },
+        {
+          "letter": "D",
+          "text": "Virtual Machine"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "An App Service Environment provides an isolated, fully managed environment with network isolation and dedicated hardware not shared with other Azure customers.",
+      "contextImages": []
+    },
+    {
+      "id": 288,
+      "topic": "cloud_concepts",
+      "type": "mcq",
+      "text": "Which of the following is the most likely scenario in which to choose Infrastructure as a Service (IaaS) options in cloud computing?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Someone looking to run an app for free in the cloud"
+        },
+        {
+          "letter": "B",
+          "text": "Someone looking to reduce administrative overhead"
+        },
+        {
+          "letter": "C",
+          "text": "Brand new development"
+        },
+        {
+          "letter": "D",
+          "text": "Lift-and-shift migration"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "Lift-and-shift migration moves existing on-premises workloads to the cloud with minimal changes, for which IaaS is ideal.",
+      "contextImages": []
+    },
+    {
+      "id": 289,
+      "topic": "cloud_concepts",
+      "type": "mcq",
+      "text": "What is the key characteristic of serverless computing that distinguishes it from traditional infrastructure?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Automatic scaling based on demand"
+        },
+        {
+          "letter": "B",
+          "text": "Limited scalability options"
+        },
+        {
+          "letter": "C",
+          "text": "Fixed pricing structure"
+        },
+        {
+          "letter": "D",
+          "text": "Requires manual server management"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Serverless computing automatically scales resources based on workload without the user managing the underlying infrastructure.",
+      "contextImages": []
+    },
+    {
+      "id": 290,
+      "topic": "core_services",
+      "type": "mcq",
+      "text": "You have a virtual machine that you need to have a public endpoint - accessible from the Internet. Which of the following resources do you need to have in order to achieve your goal?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "IIS web server"
+        },
+        {
+          "letter": "B",
+          "text": "Azure Firewall"
+        },
+        {
+          "letter": "C",
+          "text": "Public IP Address"
+        },
+        {
+          "letter": "D",
+          "text": "VPN Gateway"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "To make a VM accessible from the internet you must assign it a public IP address, giving it a public endpoint accessible externally.",
+      "contextImages": []
+    },
+    {
+      "id": 291,
+      "topic": "cloud_concepts",
+      "type": "mcq",
+      "text": "Fill in the blank: Cloud computing is a model of delivering IT services such as computing, networking and storage over the Internet on a ____ basis.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "pay up-front as a capital expense"
+        },
+        {
+          "letter": "B",
+          "text": "pay-as-you-go"
+        },
+        {
+          "letter": "C",
+          "text": "long-term contract"
+        },
+        {
+          "letter": "D",
+          "text": "case-by-case"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Cloud computing delivers IT services over the internet on a pay-as-you-go basis, paying only for the resources you use.",
+      "contextImages": []
+    },
+    {
+      "id": 292,
+      "topic": "security_identity",
+      "type": "mcq",
+      "text": "Which of the following is NOT a key component of Zero Trust security?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Micro-segmentation"
+        },
+        {
+          "letter": "B",
+          "text": "Least privilege access"
+        },
+        {
+          "letter": "C",
+          "text": "Continuous monitoring"
+        },
+        {
+          "letter": "D",
+          "text": "Strong passwords"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "Zero Trust focuses on micro-segmentation, least privilege access, and continuous monitoring; strong passwords, while useful, are not a core component.",
+      "contextImages": []
+    },
+    {
+      "id": 293,
+      "topic": "core_services",
+      "type": "mcq",
+      "text": "What is the default storage account type used by AzCopy?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Blob storage"
+        },
+        {
+          "letter": "B",
+          "text": "Queue storage"
+        },
+        {
+          "letter": "C",
+          "text": "Table storage"
+        },
+        {
+          "letter": "D",
+          "text": "File storage"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "AzCopy works with Blob storage by default and is commonly used to transfer data to and from Azure Blob Storage.",
+      "contextImages": []
+    },
+    {
+      "id": 294,
+      "topic": "cloud_concepts",
+      "type": "mcq",
+      "text": "What is the primary benefit of high availability in cloud computing?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Reduces scalability"
+        },
+        {
+          "letter": "B",
+          "text": "Increases cost"
+        },
+        {
+          "letter": "C",
+          "text": "Minimizes downtime and ensures continuous service"
+        },
+        {
+          "letter": "D",
+          "text": "Requires manual intervention"
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "High availability minimizes downtime and ensures continuous service, typically via redundant resources and failover mechanisms.",
+      "contextImages": []
+    },
+    {
+      "id": 295,
+      "topic": "security_identity",
+      "type": "mcq",
+      "text": "Which of the following is a key difference between Azure B2B and Azure B2C?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "B2B is for internal users, while B2C is for external users."
+        },
+        {
+          "letter": "B",
+          "text": "B2B is for cloud-based applications, while B2C is for on-premises applications."
+        },
+        {
+          "letter": "C",
+          "text": "B2B is for business-to-business collaboration, while B2C is for business-to-customer interactions."
+        },
+        {
+          "letter": "D",
+          "text": "There is no significant difference between the two services."
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "Azure B2B enables secure resource sharing with external partner organizations, while Azure B2C manages access for external customers (business-to-consumer).",
+      "contextImages": []
+    },
+    {
+      "id": 296,
+      "topic": "cloud_concepts",
+      "type": "mcq",
+      "text": "A small startup with limited IT resources and a need for flexible scalability would be best suited for which cloud model?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Community Cloud"
+        },
+        {
+          "letter": "B",
+          "text": "Private Cloud"
+        },
+        {
+          "letter": "C",
+          "text": "Hybrid Cloud"
+        },
+        {
+          "letter": "D",
+          "text": "Public Cloud"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "The public cloud provides on-demand resources, cost efficiency, and scalability without managing physical infrastructure, ideal for a small startup.",
+      "contextImages": []
+    },
+    {
+      "id": 297,
+      "topic": "cloud_concepts",
+      "type": "multi",
+      "text": "What are the two types of manageability for cloud computing? (Select all that apply.)",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Human resources"
+        },
+        {
+          "letter": "B",
+          "text": "Management of the cloud"
+        },
+        {
+          "letter": "C",
+          "text": "Management in the cloud"
+        },
+        {
+          "letter": "D",
+          "text": "Reducing expenses through automatic scaling"
+        }
+      ],
+      "correctAnswers": [
+        "B",
+        "C"
+      ],
+      "explanation": "Management of the cloud refers to managing the underlying infrastructure and services; management in the cloud refers to managing the applications, data, and services hosted within the cloud.",
+      "contextImages": []
+    },
+    {
+      "id": 298,
+      "topic": "security_identity",
+      "type": "mcq",
+      "text": "According to the shared responsibility model, who is responsible for keeping the guest operating system (Windows or Linux) updated on an Azure Virtual Machine?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "The customer, such as you"
+        },
+        {
+          "letter": "B",
+          "text": "It's actually automatically taken care of, and no one needs to do anything"
+        },
+        {
+          "letter": "C",
+          "text": "The cloud provider, in this case Microsoft Azure"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Under the shared responsibility model, the customer is responsible for managing and updating the guest OS on Azure VMs; Microsoft handles the physical hardware, network, and infrastructure.",
+      "contextImages": []
+    },
+    {
+      "id": 299,
+      "topic": "governance",
+      "type": "mcq",
+      "text": "Fill in the blank: ____ refers to the policies, processes, and controls that organizations implement to ensure that their cloud computing initiatives align with their overall business objectives and risk management strategies.",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Governance"
+        },
+        {
+          "letter": "B",
+          "text": "Security"
+        },
+        {
+          "letter": "C",
+          "text": "Manageability"
+        },
+        {
+          "letter": "D",
+          "text": "Reliability"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Governance refers to the policies, processes, and controls ensuring cloud initiatives align with business objectives and risk management, supporting compliance and risk management.",
+      "contextImages": []
     }
   ],
   "microsoft": []
