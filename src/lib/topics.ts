@@ -167,6 +167,78 @@ export const TOPICS: TopicInfo[] = [
       "calculator",
     ],
   },
+  {
+    key: "version_control",
+    displayName: "Version Control & Git",
+    color: "#181717",
+    keywords: ["git commit", "git remote", "branch", "merge", "clone", "repository", "commit"],
+  },
+  {
+    key: "pull_requests",
+    displayName: "Pull Requests",
+    color: "#2DA44E",
+    keywords: ["pull request", "merge conflict", "review", "github flow"],
+  },
+  {
+    key: "administration",
+    displayName: "Administration",
+    color: "#57606A",
+    keywords: ["organization", "enterprise", "billing", "permissions", "roles", "template"],
+  },
+  {
+    key: "security",
+    displayName: "Security",
+    color: "#CF222E",
+    keywords: ["dependabot", "secret scanning", "code scanning", "vulnerability", "advisory"],
+  },
+  {
+    key: "collaboration",
+    displayName: "Collaboration",
+    color: "#8250DF",
+    keywords: ["discussion", "notification", "star", "follow", "profile", "achievements"],
+  },
+  {
+    key: "codespaces",
+    displayName: "Codespaces",
+    color: "#0969DA",
+    keywords: ["codespace", "devcontainer", "dotfiles"],
+  },
+  {
+    key: "issues",
+    displayName: "Issues",
+    color: "#BF3989",
+    keywords: ["issue", "label", "milestone", "assignee"],
+  },
+  {
+    key: "projects",
+    displayName: "Projects",
+    color: "#9A6700",
+    keywords: ["github projects", "roadmap", "board", "insight chart"],
+  },
+  {
+    key: "markdown",
+    displayName: "Markdown",
+    color: "#1F883D",
+    keywords: ["markdown", "readme"],
+  },
+  {
+    key: "copilot",
+    displayName: "Copilot",
+    color: "#6E40C9",
+    keywords: ["copilot"],
+  },
+  {
+    key: "gists_wikis",
+    displayName: "Gists & Wikis",
+    color: "#B35900",
+    keywords: ["gist", "wiki"],
+  },
+  {
+    key: "actions",
+    displayName: "Actions",
+    color: "#218BFF",
+    keywords: ["github actions", "workflow", "runner", "ci/cd"],
+  },
 ];
 
 export function assignTopic(text: string, explanation: string): Topic {

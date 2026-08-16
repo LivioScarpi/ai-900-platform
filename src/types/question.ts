@@ -11,6 +11,18 @@ export type Topic =
   | "pricing_sla"
   | "governance"
   | "security_identity"
+  | "version_control"
+  | "pull_requests"
+  | "administration"
+  | "security"
+  | "collaboration"
+  | "codespaces"
+  | "issues"
+  | "projects"
+  | "markdown"
+  | "copilot"
+  | "gists_wikis"
+  | "actions"
   | "unknown";
 
 export interface BaseQuestion {

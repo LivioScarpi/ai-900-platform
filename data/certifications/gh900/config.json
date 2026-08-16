@@ -1,0 +1,12 @@
+{
+  "id": "gh900",
+  "name": "GH-900",
+  "fullName": "GitHub Foundations",
+  "provider": "GitHub",
+  "description": "Foundational knowledge of GitHub, version control, collaboration, and core platform features.",
+  "color": "#181717",
+  "examQuestions": 50,
+  "examDurationMin": 45,
+  "passmarkPct": 70,
+  "hasMicrosoftQuestions": false
+}
