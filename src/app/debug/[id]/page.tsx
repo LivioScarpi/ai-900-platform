@@ -1,19 +1,32 @@
 "use client";
 
-import { useState } from "react";
-import { getAllQuestions } from "@/lib/questions";
+import { Suspense, useState } from "react";
+import { useSearchParams } from "next/navigation";
+import { getAllQuestions, getCertQuestions } from "@/lib/questions";
 import { QuestionCard } from "@/components/QuestionCard";
 
 export default function DebugQuestionPage({ params }: { params: { id: string } }) {
+  return (
+    <Suspense fallback={null}>
+      <DebugQuestion id={params.id} />
+    </Suspense>
+  );
+}
+
+function DebugQuestion({ id: paramId }: { id: string }) {
+  const params = { id: paramId };
   const { id } = params;
-  const questions = getAllQuestions();
+  const certId = useSearchParams().get("cert");
+  const questions = certId ? getCertQuestions(certId) : getAllQuestions();
   const question = questions.find((q) => q.id === Number(id));
   const [key, setKey] = useState(0);
 
   if (!question) {
     return (
       <div className="px-8 py-8 max-w-2xl mx-auto w-full">
-        <p className="font-mono text-sm text-status-red">Question #{id} not found.</p>
+        <p className="font-mono text-sm text-status-red">
+          Question #{id} not found{certId ? ` in ${certId}` : ""}.
+        </p>
       </div>
     );
   }

@@ -28,5 +28,12 @@ export function QuestionCard({ question, onAnswer, hideExplanation, examMode, in
       return <DropdownCard question={question} onAnswer={onAnswer} hideExplanation={hideExplanation} examMode={examMode} initialAnswer={initialAnswer} />;
     case "dragdrop":
       return <DragDropCard question={question} onAnswer={onAnswer} hideExplanation={hideExplanation} examMode={examMode} initialAnswer={initialAnswer} />;
+    default:
+      return (
+        <div className="rounded-xl border border-status-red bg-status-red-bg px-4 py-3.5 text-[13.5px] text-ink">
+          Question #{(question as { id: number }).id} has an unsupported or missing
+          type ({String((question as { type?: string }).type ?? "none")}).
+        </div>
+      );
   }
 }

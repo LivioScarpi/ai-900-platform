@@ -1908,258 +1908,593 @@
     {
       "id": 71,
       "topic": "markdown",
+      "explanation": "GitHub renders comments (issues, pull requests, discussions, gists) with GitHub Flavored Markdown, a superset of Markdown that adds task lists, tables, autolinks and mentions. JSON, XML, JavaScript and CSS are data or code languages, not the comment formatting language.",
+      "reference": "https://docs.github.com/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax",
+      "contextImages": [],
+      "type": "mcq",
       "text": "When making comments in GitHub, the supported text language is:",
       "options": [
-        "JSON.",
-        "Markdown.",
-        "JavaScript.",
-        "XML.",
-        "CSS."
+        {
+          "letter": "A",
+          "text": "JSON."
+        },
+        {
+          "letter": "B",
+          "text": "Markdown."
+        },
+        {
+          "letter": "C",
+          "text": "JavaScript."
+        },
+        {
+          "letter": "D",
+          "text": "XML."
+        },
+        {
+          "letter": "E",
+          "text": "CSS."
+        }
       ],
-      "correctAnswer": "Markdown."
+      "correctAnswer": "B"
     },
     {
       "id": 72,
       "topic": "collaboration",
+      "explanation": "Achievements are badges shown on a user profile that recognize significant contributions and milestones, such as Pull Shark, Quickdraw or Arctic Code Vault Contributor. They are not repository counts, star counts, or rewards for coding challenges.",
+      "reference": "https://docs.github.com/account-and-profile/setting-up-and-managing-your-github-profile/customizing-your-profile/personalizing-your-profile#displaying-badges-on-your-profile",
+      "contextImages": [],
+      "type": "mcq",
       "text": "What are achievements on a GitHub user profile?",
       "options": [
-        "total number of repositories owned",
-        "number of stars received on repositories",
-        "special recognition for significant contributions and milestones",
-        "virtual trophies awarded for completing coding challenges"
+        {
+          "letter": "A",
+          "text": "total number of repositories owned"
+        },
+        {
+          "letter": "B",
+          "text": "number of stars received on repositories"
+        },
+        {
+          "letter": "C",
+          "text": "special recognition for significant contributions and milestones"
+        },
+        {
+          "letter": "D",
+          "text": "virtual trophies awarded for completing coding challenges"
+        }
       ],
-      "correctAnswer": "special recognition for significant contributions and milestones"
+      "correctAnswer": "C"
     },
     {
       "id": 73,
       "topic": "issues",
+      "explanation": "The issues dashboard offers default filters without any search syntax: Created (your issues), Assigned (everything assigned to you), and Mentioned. Team assignments, project-scoped views and comment history require advanced search qualifiers such as team: or commenter:.",
+      "reference": "https://docs.github.com/issues/tracking-your-work-with-issues/filtering-and-searching-issues-and-pull-requests",
+      "contextImages": [],
+      "type": "multi",
       "text": "Without using advanced search syntax, what are some of the available default filters when searching through issues? (Each answer presents a complete solution. Choose two.)",
       "options": [
-        "your project",
-        "everything assigned to your team",
-        "your issues",
-        "everything you have commented on",
-        "everything assigned to you"
+        {
+          "letter": "A",
+          "text": "your project"
+        },
+        {
+          "letter": "B",
+          "text": "everything assigned to your team"
+        },
+        {
+          "letter": "C",
+          "text": "your issues"
+        },
+        {
+          "letter": "D",
+          "text": "everything you have commented on"
+        },
+        {
+          "letter": "E",
+          "text": "everything assigned to you"
+        }
       ],
       "correctAnswers": [
-        "your issues",
-        "everything assigned to you"
+        "C",
+        "E"
       ]
     },
     {
       "id": 74,
       "topic": "version_control",
+      "explanation": "A commit is a snapshot of the entire repository at a point in time, storing the state of every tracked file plus author, message and parent commit. Git does not store diffs as the unit of history — diffs are computed by comparing two snapshots.",
+      "reference": "https://docs.github.com/get-started/using-git/about-git#git-terminology",
+      "contextImages": [],
+      "type": "mcq",
       "text": "Which of the following is the best description of a Git commit?",
       "options": [
-        "a snapshot of the entire repository at a specific point in time, capturing the state of all files in the project",
-        "a record of the most recent changes made by a developer in Git",
-        "a series of changes made to a file, or set of files, in Git",
-        "a log message that describes the purpose of the changes made to the files in a Git repository"
+        {
+          "letter": "A",
+          "text": "a snapshot of the entire repository at a specific point in time, capturing the state of all files in the project"
+        },
+        {
+          "letter": "B",
+          "text": "a record of the most recent changes made by a developer in Git"
+        },
+        {
+          "letter": "C",
+          "text": "a series of changes made to a file, or set of files, in Git"
+        },
+        {
+          "letter": "D",
+          "text": "a log message that describes the purpose of the changes made to the files in a Git repository"
+        }
       ],
-      "correctAnswer": "a snapshot of the entire repository at a specific point in time, capturing the state of all files in the project"
+      "correctAnswer": "A"
     },
     {
       "id": 75,
       "topic": "issues",
+      "explanation": "The mentions: qualifier finds issues where a given user is @-mentioned in the body or a comment, e.g. `is:issue mentions:octocat`. The other forms are not valid search qualifiers.",
+      "reference": "https://docs.github.com/search-github/searching-on-github/searching-issues-and-pull-requests#search-by-a-user-thats-mentioned-in-an-issue-or-pull-request",
+      "contextImages": [],
+      "type": "mcq",
       "text": "What qualifier finds issues that mention a certain user?",
       "options": [
-        "threads:",
-        "mentions:",
-        "mentioned:",
-        "@mentioned:"
+        {
+          "letter": "A",
+          "text": "threads:"
+        },
+        {
+          "letter": "B",
+          "text": "mentions:"
+        },
+        {
+          "letter": "C",
+          "text": "mentioned:"
+        },
+        {
+          "letter": "D",
+          "text": "@mentioned:"
+        }
       ],
-      "correctAnswer": "mentions:"
+      "correctAnswer": "B"
     },
     {
       "id": 76,
       "topic": "version_control",
+      "explanation": "A remote is a named reference (typically `origin`) to a copy of the repository hosted elsewhere, for example on GitHub. It is not the local clone, not a branch, and not a separate staging repository.",
+      "reference": "https://docs.github.com/get-started/getting-started-with-git/about-remote-repositories",
+      "contextImages": [],
+      "type": "mcq",
       "text": "What is a Git remote?",
       "options": [
-        "a local copy of the repository stored on a user's machine",
-        "a reference to a repository that is hosted in a separate location",
-        "a branch in the repository where changes are pushed for collaboration",
-        "a separate repository for testing before pushing changes to the main repository"
+        {
+          "letter": "A",
+          "text": "a local copy of the repository stored on a user's machine"
+        },
+        {
+          "letter": "B",
+          "text": "a reference to a repository that is hosted in a separate location"
+        },
+        {
+          "letter": "C",
+          "text": "a branch in the repository where changes are pushed for collaboration"
+        },
+        {
+          "letter": "D",
+          "text": "a separate repository for testing before pushing changes to the main repository"
+        }
       ],
-      "correctAnswer": "a reference to a repository that is hosted in a separate location"
+      "correctAnswer": "B"
     },
     {
       "id": 77,
       "topic": "administration",
+      "explanation": "GitHub is deliberately not opinionated about tooling: the platform and the Marketplace exist so teams can bring the tools they already prefer — CI, editors, project trackers — into one place around the repository.",
+      "reference": "https://docs.github.com/get-started/exploring-integrations/about-integrations",
+      "contextImages": [],
+      "type": "mcq",
       "text": "What is the primary goal of GitHub in terms of integrating tools and providing an ecosystem?",
       "options": [
-        "to bring developers' preferred tools together in one place",
-        "to offer a diverse range of tools for specific development needs",
-        "to develop proprietary tools and provide opinionated integration options",
-        "to create a unified, standardized ecosystem for all developers"
+        {
+          "letter": "A",
+          "text": "to bring developers' preferred tools together in one place"
+        },
+        {
+          "letter": "B",
+          "text": "to offer a diverse range of tools for specific development needs"
+        },
+        {
+          "letter": "C",
+          "text": "to develop proprietary tools and provide opinionated integration options"
+        },
+        {
+          "letter": "D",
+          "text": "to create a unified, standardized ecosystem for all developers"
+        }
       ],
-      "correctAnswer": "to create a unified, standardized ecosystem for all developers"
+      "correctAnswer": "D"
     },
     {
       "id": 78,
       "topic": "pull_requests",
+      "explanation": "In GitHub flow, review and approval of a pull request lead to merging the feature branch into the default branch. Deployment, tags and release issues are optional steps that happen after (or independently of) the merge.",
+      "reference": "https://docs.github.com/get-started/using-github/github-flow",
+      "contextImages": [],
+      "type": "mcq",
       "text": "In GitHub flow, what is the primary operation when a pull request is approved?",
       "options": [
-        "A release issue is created.",
-        "The changes are deployed.",
-        "The feature branch is merged.",
-        "A git tag is created."
+        {
+          "letter": "A",
+          "text": "A release issue is created."
+        },
+        {
+          "letter": "B",
+          "text": "The changes are deployed."
+        },
+        {
+          "letter": "C",
+          "text": "The feature branch is merged."
+        },
+        {
+          "letter": "D",
+          "text": "A git tag is created."
+        }
       ],
-      "correctAnswer": "The feature branch is merged."
+      "correctAnswer": "C"
     },
     {
       "id": 79,
       "topic": "codespaces",
+      "explanation": "Codespaces personalization for your account comes from dotfiles (a public dotfiles repository is cloned and its install script run in every codespace) and Settings Sync (carries your VS Code settings, keybindings and extensions across codespaces). A devcontainer configures the project for everyone, not just you; branch protections and the OS are not personalization mechanisms.",
+      "reference": "https://docs.github.com/codespaces/setting-your-user-preferences/personalizing-github-codespaces-for-your-account",
+      "contextImages": [],
+      "type": "multi",
       "text": "Which mechanisms can you use to personalize Codespaces for your account? (Each answer presents a complete solution. Choose two.)",
       "options": [
-        "branch protections",
-        "IDE plug-ins",
-        "devcontainer",
-        "settings sync",
-        "operating system",
-        "dotfiles"
+        {
+          "letter": "A",
+          "text": "branch protections"
+        },
+        {
+          "letter": "B",
+          "text": "IDE plug-ins"
+        },
+        {
+          "letter": "C",
+          "text": "devcontainer"
+        },
+        {
+          "letter": "D",
+          "text": "settings sync"
+        },
+        {
+          "letter": "E",
+          "text": "operating system"
+        },
+        {
+          "letter": "F",
+          "text": "dotfiles"
+        }
       ],
       "correctAnswers": [
-        "settings sync",
-        "dotfiles"
+        "D",
+        "F"
       ]
     },
     {
       "id": 80,
       "topic": "issues",
+      "explanation": "Issue form definitions are YAML files stored in the .github/ISSUE_TEMPLATE folder of the repository, alongside the optional config.yml.",
+      "reference": "https://docs.github.com/communities/using-templates-to-encourage-useful-issues-and-pull-requests/configuring-issue-templates-for-your-repository#creating-issue-forms",
+      "contextImages": [],
+      "type": "mcq",
       "text": "What folder is the definition files stored in when creating custom issue forms?",
       "options": [
-        ".issues/ISSUE_TEMPLATE",
-        ".github",
-        ".issues",
-        ".github/ISSUE_TEMPLATE"
+        {
+          "letter": "A",
+          "text": ".issues/ISSUE_TEMPLATE"
+        },
+        {
+          "letter": "B",
+          "text": ".github"
+        },
+        {
+          "letter": "C",
+          "text": ".issues"
+        },
+        {
+          "letter": "D",
+          "text": ".github/ISSUE_TEMPLATE"
+        }
       ],
-      "correctAnswer": ".github/ISSUE_TEMPLATE"
+      "correctAnswer": "D"
     },
     {
       "id": 81,
       "topic": "administration",
+      "explanation": "On GitHub Enterprise a repository can be public, private, or internal. Internal is the Enterprise-only visibility that exposes the repository to all members of the enterprise, enabling InnerSource. `external` is not a GitHub visibility level.",
+      "reference": "https://docs.github.com/repositories/creating-and-managing-repositories/about-repositories#about-repository-visibility",
+      "contextImages": [],
+      "type": "mcq",
       "text": "What are all repository visibility options in GitHub Enterprise?",
       "options": [
-        "public, private",
-        "public, internal, and private",
-        "external, private",
-        "external, public, and private"
+        {
+          "letter": "A",
+          "text": "public, private"
+        },
+        {
+          "letter": "B",
+          "text": "public, internal, and private"
+        },
+        {
+          "letter": "C",
+          "text": "external, private"
+        },
+        {
+          "letter": "D",
+          "text": "external, public, and private"
+        }
       ],
-      "correctAnswer": "public, internal, and private"
+      "correctAnswer": "B"
     },
     {
       "id": 82,
       "topic": "administration",
+      "explanation": "The new-repository form can initialize the repository with a README, a .gitignore chosen from a template list, and a LICENSE. The .git directory is created by Git itself and DOCS is not an option.",
+      "reference": "https://docs.github.com/repositories/creating-and-managing-repositories/creating-a-new-repository",
+      "contextImages": [],
+      "type": "mcq",
       "text": "Which three files can a user automatically add while creating a new repository?",
       "options": [
-        "README, .git, and DOCS",
-        "LICENSE, .git, and README",
-        "README, .gitignore, and LICENSE",
-        "LICENSE, DOCS, and .gitignore"
+        {
+          "letter": "A",
+          "text": "README, .git, and DOCS"
+        },
+        {
+          "letter": "B",
+          "text": "LICENSE, .git, and README"
+        },
+        {
+          "letter": "C",
+          "text": "README, .gitignore, and LICENSE"
+        },
+        {
+          "letter": "D",
+          "text": "LICENSE, DOCS, and .gitignore"
+        }
       ],
-      "correctAnswer": "README, .gitignore, and LICENSE"
+      "correctAnswer": "C"
     },
     {
       "id": 83,
       "topic": "administration",
+      "explanation": "A repository created from a template starts from the files of the template's default branch as a single initial commit. It does not carry over the template's commit history, pull requests, issues, or contributor list (unlike a fork).",
+      "reference": "https://docs.github.com/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template#about-repository-templates",
+      "contextImages": [],
+      "type": "mcq",
       "text": "When creating a repository from a template, what will the new repository contain?",
       "options": [
-        "commit history",
-        "pull requests",
-        "contributors",
-        "default branch"
+        {
+          "letter": "A",
+          "text": "commit history"
+        },
+        {
+          "letter": "B",
+          "text": "pull requests"
+        },
+        {
+          "letter": "C",
+          "text": "contributors"
+        },
+        {
+          "letter": "D",
+          "text": "default branch"
+        }
       ],
-      "correctAnswer": "default branch"
+      "correctAnswer": "D"
     },
     {
       "id": 84,
       "topic": "administration",
+      "explanation": "A repository is the core collaborative unit on GitHub: it stores project files, tracks every change, keeps the full revision history, and lets people work on that code together. The other options describe a plain local folder, a document store, or Git itself.",
+      "reference": "https://docs.github.com/repositories/creating-and-managing-repositories/about-repositories",
+      "contextImages": [],
+      "type": "mcq",
       "text": "Which of the following is the purpose of a GitHub repository?",
       "options": [
-        "to provide a collaborative space where developers can share and manage code files, track changes, and store revision history",
-        "to provide a folder that stores project files, including documentation, on your local machine",
-        "to provide a cloud-based hosting service for project documentation, providing a secure and centralized location for file storage",
-        "to provide a version control system designed for small projects, offering simple tools for organizing files on your laptop"
+        {
+          "letter": "A",
+          "text": "to provide a collaborative space where developers can share and manage code files, track changes, and store revision history"
+        },
+        {
+          "letter": "B",
+          "text": "to provide a folder that stores project files, including documentation, on your local machine"
+        },
+        {
+          "letter": "C",
+          "text": "to provide a cloud-based hosting service for project documentation, providing a secure and centralized location for file storage"
+        },
+        {
+          "letter": "D",
+          "text": "to provide a version control system designed for small projects, offering simple tools for organizing files on your laptop"
+        }
       ],
-      "correctAnswer": "to provide a collaborative space where developers can share and manage code files, track changes, and store revision history"
+      "correctAnswer": "A"
     },
     {
       "id": 85,
       "topic": "collaboration",
+      "explanation": "Appending /stargazers to a repository URL lists the users who starred it, e.g. https://github.com/github/docs/stargazers.",
+      "reference": "https://docs.github.com/get-started/exploring-projects-on-github/saving-repositories-with-stars",
+      "contextImages": [],
+      "type": "mcq",
       "text": "What should you append to the link https://github.com/github/docs/ to show who starred that repository?",
       "options": [
-        "stars",
-        "stargazers",
-        "starwatcher",
-        "Starviewers"
+        {
+          "letter": "A",
+          "text": "stars"
+        },
+        {
+          "letter": "B",
+          "text": "stargazers"
+        },
+        {
+          "letter": "C",
+          "text": "starwatcher"
+        },
+        {
+          "letter": "D",
+          "text": "Starviewers"
+        }
       ],
-      "correctAnswer": "stargazers"
+      "correctAnswer": "B"
     },
     {
       "id": 86,
       "topic": "pull_requests",
+      "explanation": "A pull request compares a head branch against a base branch, so the two branches must be different. Authorship is irrelevant — a pull request can be opened between branches by the same or different users, and across forks.",
+      "reference": "https://docs.github.com/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests",
+      "contextImages": [],
+      "type": "mcq",
       "text": "Pull requests can only be created between two branches that are:",
       "options": [
-        "authored by the same user.",
-        "authored by different users.",
-        "different.",
-        "the same."
+        {
+          "letter": "A",
+          "text": "authored by the same user."
+        },
+        {
+          "letter": "B",
+          "text": "authored by different users."
+        },
+        {
+          "letter": "C",
+          "text": "different."
+        },
+        {
+          "letter": "D",
+          "text": "the same."
+        }
       ],
-      "correctAnswer": "different."
+      "correctAnswer": "C"
     },
     {
       "id": 87,
       "topic": "gists_wikis",
+      "explanation": "Secret gists are not searchable and do not appear on your profile or the gist Discover page, but they are not private: anyone who has the URL can open the gist. Use a private repository for content that must stay confidential.",
+      "reference": "https://docs.github.com/get-started/writing-on-github/editing-and-sharing-content-with-gists/creating-gists#about-gists",
+      "contextImages": [],
+      "type": "mcq",
       "text": "Which of the following statements most accurately describes secret gists?",
       "options": [
-        "Users with assigned access can view the gist.",
-        "Anyone with the URL for the gist can view the gist.",
-        "Secret gists require GitHub Enterprise.",
-        "Anyone can see the gist from the gist Discover page."
+        {
+          "letter": "A",
+          "text": "Users with assigned access can view the gist."
+        },
+        {
+          "letter": "B",
+          "text": "Anyone with the URL for the gist can view the gist."
+        },
+        {
+          "letter": "C",
+          "text": "Secret gists require GitHub Enterprise."
+        },
+        {
+          "letter": "D",
+          "text": "Anyone can see the gist from the gist Discover page."
+        }
       ],
-      "correctAnswer": "Anyone with the URL for the gist can view the gist."
+      "correctAnswer": "B"
     },
     {
       "id": 88,
       "topic": "gists_wikis",
+      "explanation": "Forking the gist creates your own public copy while preserving the link to the original and its revision history, with no manual copying. Cloning gives you a local copy only, copy-paste loses the history, and gists have no collaborator access model.",
+      "reference": "https://docs.github.com/get-started/writing-on-github/editing-and-sharing-content-with-gists/forking-and-cloning-gists",
+      "contextImages": [],
+      "type": "mcq",
       "text": "While maintaining the gist history, which of the following is the most efficient way to create a public gist based on another user's gist?",
       "options": [
-        "Request to be added to the existing gist.",
-        "Fork the gist.",
-        "Create a new gist and copy the content from the existing gist.",
-        "Clone the gist."
+        {
+          "letter": "A",
+          "text": "Request to be added to the existing gist."
+        },
+        {
+          "letter": "B",
+          "text": "Fork the gist."
+        },
+        {
+          "letter": "C",
+          "text": "Create a new gist and copy the content from the existing gist."
+        },
+        {
+          "letter": "D",
+          "text": "Clone the gist."
+        }
       ],
-      "correctAnswer": "Fork the gist."
+      "correctAnswer": "B"
     },
     {
       "id": 89,
       "topic": "projects",
+      "explanation": "The Milestone page shows the milestone's progress as a completion percentage along with the list of open and closed issues (and pull requests) assigned to it. It does not list Action workflows or tagged Projects.",
+      "reference": "https://docs.github.com/issues/using-labels-and-milestones-to-track-work/viewing-your-milestones-progress",
+      "contextImages": [],
+      "type": "multi",
       "text": "Which of the following attributes are on the Milestone page? (Each answer presents a complete solution. Choose two.)",
       "options": [
-        "a list of the open and closed issues associated with the milestone",
-        "each milestone's completion percentage",
-        "GitHub Action workflows that need to be executed to complete the milestone",
-        "a summary list of GitHub Projects tagged to the milestone"
+        {
+          "letter": "A",
+          "text": "a list of the open and closed issues associated with the milestone"
+        },
+        {
+          "letter": "B",
+          "text": "each milestone's completion percentage"
+        },
+        {
+          "letter": "C",
+          "text": "GitHub Action workflows that need to be executed to complete the milestone"
+        },
+        {
+          "letter": "D",
+          "text": "a summary list of GitHub Projects tagged to the milestone"
+        }
       ],
       "correctAnswers": [
-        "a list of the open and closed issues associated with the milestone",
-        "each milestone's completion percentage"
+        "A",
+        "B"
       ]
     },
     {
       "id": 90,
       "topic": "projects",
+      "explanation": "Project insights offer two chart types: current charts, which visualize the items in the project right now (for example a bar chart by status), and historical charts, which plot the project's data over time. Pie, Gantt and forecast charts are not available.",
+      "reference": "https://docs.github.com/issues/planning-and-tracking-with-projects/viewing-insights-from-your-project/about-insights-for-projects",
+      "contextImages": [],
+      "type": "multi",
       "text": "Which of the following types of charts can a user create to get GitHub Projects insights? (Each answer presents a complete solution. Choose two.)",
       "options": [
-        "pie charts",
-        "current charts",
-        "Gantt charts",
-        "historical charts",
-        "forecast charts"
+        {
+          "letter": "A",
+          "text": "pie charts"
+        },
+        {
+          "letter": "B",
+          "text": "current charts"
+        },
+        {
+          "letter": "C",
+          "text": "Gantt charts"
+        },
+        {
+          "letter": "D",
+          "text": "historical charts"
+        },
+        {
+          "letter": "E",
+          "text": "forecast charts"
+        }
       ],
       "correctAnswers": [
-        "current charts",
-        "historical charts"
+        "B",
+        "D"
       ]
     }
   ],
