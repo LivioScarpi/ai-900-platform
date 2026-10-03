@@ -1901,7 +1901,7 @@
           "text": "Install and use GitHub Mobile."
         }
       ],
-      "correctAnswer": "D",
+      "correctAnswer": "A",
       "explanation": "GitHub Desktop provides a full local environment well suited for quickly modifying a batch of files.",
       "contextImages": []
     },
@@ -2110,7 +2110,7 @@
           "text": "to create a unified, standardized ecosystem for all developers"
         }
       ],
-      "correctAnswer": "D"
+      "correctAnswer": "A"
     },
     {
       "id": 78,
@@ -2495,6 +2495,2491 @@
       "correctAnswers": [
         "B",
         "D"
+      ]
+    },
+    {
+      "id": 91,
+      "topic": "pull_requests",
+      "explanation": "Commits are made on a branch. A pull request links a branch to a target branch and automatically includes any commit pushed to it, before or after the PR is opened.",
+      "contextImages": [],
+      "type": "mcq",
+      "text": "How are commits related to pull requests?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Commits are made on a branch that can have a linked pull request."
+        },
+        {
+          "letter": "B",
+          "text": "Commits can only be made after a pull request is created."
+        },
+        {
+          "letter": "C",
+          "text": "Commits can only be made before a pull request is created."
+        },
+        {
+          "letter": "D",
+          "text": "Commits are made on a pull request that can have a linked branch."
+        }
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "id": 92,
+      "topic": "administration",
+      "explanation": "Base permissions apply only to organization members. Outside collaborators only have access to the specific repositories they were granted, and can be given any role on them.",
+      "contextImages": [],
+      "type": "mcq",
+      "text": "What is the difference between an organization member and an outside collaborator?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Organization base permissions do not apply to outside collaborators."
+        },
+        {
+          "letter": "B",
+          "text": "Two-factor authentication (2FA) is not required for outside collaborators."
+        },
+        {
+          "letter": "C",
+          "text": "Outside collaborators cannot be given the admin role on a repository."
+        },
+        {
+          "letter": "D",
+          "text": "Outside collaborators do not consume paid licenses."
+        }
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "id": 93,
+      "topic": "version_control",
+      "explanation": "Git is a distributed, open source version control system designed to handle projects of any size quickly and efficiently.",
+      "contextImages": [],
+      "type": "mcq",
+      "text": "What are the defining features of Git?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Distributed version control, open source software, and being designed for handling projects of any size with efficiency"
+        },
+        {
+          "letter": "B",
+          "text": "Sequential version control, cloud-based hosting service, and being designed for collaboration on large projects"
+        },
+        {
+          "letter": "C",
+          "text": "Low-cost local branching, convenient staging areas, multiple workflows, and being designed for managing small projects"
+        },
+        {
+          "letter": "D",
+          "text": "Centralized version control, proprietary software, and being designed for small projects"
+        }
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "id": 94,
+      "topic": "issues",
+      "explanation": "Assignees can be people with write permissions on the repository and people who have commented on the issue or pull request.",
+      "contextImages": [],
+      "type": "multi",
+      "text": "Who can be assigned to an Issue or pull request? (Each answer presents a complete solution. Choose two.)",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Anyone who has an enterprise GitHub account"
+        },
+        {
+          "letter": "B",
+          "text": "Anyone who has commented on the Issue or pull request"
+        },
+        {
+          "letter": "C",
+          "text": "Anyone who has a personal GitHub account"
+        },
+        {
+          "letter": "D",
+          "text": "Anyone with write permissions to the repository"
+        }
+      ],
+      "correctAnswers": [
+        "B",
+        "D"
+      ]
+    },
+    {
+      "id": 95,
+      "topic": "projects",
+      "explanation": "GitHub Projects lets you create and customize multiple views (table, board, roadmap) with their own filters, grouping and sorting.",
+      "contextImages": [],
+      "type": "mcq",
+      "text": "Which of the following is a key characteristic of GitHub Projects?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Ability to visualize the commit history"
+        },
+        {
+          "letter": "B",
+          "text": "Ability to import Gantt charts from Microsoft Project"
+        },
+        {
+          "letter": "C",
+          "text": "Ability to create and customize multiple views"
+        },
+        {
+          "letter": "D",
+          "text": "Ability to enforce required fields"
+        }
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "id": 96,
+      "topic": "collaboration",
+      "explanation": "InnerSource applies open source collaboration practices inside an organization, e.g. sharing code between teams, while keeping it internal.",
+      "contextImages": [],
+      "type": "mcq",
+      "text": "Which of the following is an Innersource development practice?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Adopting open source code into the organization"
+        },
+        {
+          "letter": "B",
+          "text": "Sharing code between teams within the organization"
+        },
+        {
+          "letter": "C",
+          "text": "Removing open source code from the organization"
+        },
+        {
+          "letter": "D",
+          "text": "Making all repositories publicly accessible"
+        }
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "id": 97,
+      "topic": "markdown",
+      "explanation": "<!-- ... --> is the comment syntax (not rendered). '*' starts a list item, not a heading. (Original dump lost the formatting of some options.)",
+      "contextImages": [],
+      "type": "mcq",
+      "text": "Which of the following GitHub syntax formats is consistent with the associated text?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "* This is a heading"
+        },
+        {
+          "letter": "B",
+          "text": "This is a link"
+        },
+        {
+          "letter": "C",
+          "text": "<!-- This is a comment -->"
+        },
+        {
+          "letter": "D",
+          "text": "This is bolded text"
+        },
+        {
+          "letter": "E",
+          "text": "1. This is an ordered list"
+        }
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "id": 98,
+      "topic": "collaboration",
+      "explanation": "GitHub focuses on the open source community, access and opportunity for developers, and a secure platform for sharing code and collaborating.",
+      "contextImages": [],
+      "type": "multi",
+      "text": "What are the key areas of focus for GitHub? (Each answer presents a complete solution. Choose three.)",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Nurturing a community that supports open source principles"
+        },
+        {
+          "letter": "B",
+          "text": "Providing access and opportunities for developers"
+        },
+        {
+          "letter": "C",
+          "text": "Providing a social media platform for project managers"
+        },
+        {
+          "letter": "D",
+          "text": "Building a technology platform for secure code sharing and collaboration"
+        },
+        {
+          "letter": "E",
+          "text": "Hosting video calls with other developers"
+        }
+      ],
+      "correctAnswers": [
+        "A",
+        "B",
+        "D"
+      ]
+    },
+    {
+      "id": 99,
+      "topic": "codespaces",
+      "explanation": "By default a codespace times out after 30 minutes of inactivity. It is stopped, not deleted.",
+      "contextImages": [],
+      "type": "mcq",
+      "text": "After 30 minutes of inactivity, a GitHub Codespace will:",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Be deleted"
+        },
+        {
+          "letter": "B",
+          "text": "Commit changes"
+        },
+        {
+          "letter": "C",
+          "text": "Restart"
+        },
+        {
+          "letter": "D",
+          "text": "Time out"
+        }
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "id": 100,
+      "topic": "projects",
+      "explanation": "GitHub Projects offers three layouts: Table, Board and Roadmap. Kanban and Backlog are not layouts.",
+      "contextImages": [],
+      "type": "multi",
+      "text": "What layouts are available for GitHub Projects? (Each answer presents a complete solution. Choose three.)",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Roadmap"
+        },
+        {
+          "letter": "B",
+          "text": "Kanban"
+        },
+        {
+          "letter": "C",
+          "text": "Board"
+        },
+        {
+          "letter": "D",
+          "text": "Table"
+        },
+        {
+          "letter": "E",
+          "text": "Backlog"
+        }
+      ],
+      "correctAnswers": [
+        "A",
+        "C",
+        "D"
+      ]
+    },
+    {
+      "id": 101,
+      "topic": "version_control",
+      "explanation": "A branch is an independent line of development that lets you work on changes without affecting the main codebase. A new repository sharing code with upstream describes a fork.",
+      "contextImages": [],
+      "type": "mcq",
+      "text": "Which of the following describes a branch in Git?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "A pointer to an identical snapshot of the project at a specific point in time"
+        },
+        {
+          "letter": "B",
+          "text": "A physical copy of the entire project stored on disk"
+        },
+        {
+          "letter": "C",
+          "text": "A separate, isolated copy of the project's codebase"
+        },
+        {
+          "letter": "D",
+          "text": "A new repository that shares code with the original \"upstream\" repository"
+        }
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "id": 102,
+      "topic": "administration",
+      "explanation": "The Insights tab provides pre-built graphs: pulse, contributors, traffic, commits, code frequency, dependency graph, network, forks.",
+      "contextImages": [],
+      "type": "mcq",
+      "text": "Where should a repository admin navigate to view pre-built visualizations from repository data?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Settings"
+        },
+        {
+          "letter": "B",
+          "text": "Issues"
+        },
+        {
+          "letter": "C",
+          "text": "Insights"
+        },
+        {
+          "letter": "D",
+          "text": "Charts"
+        }
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "id": 103,
+      "topic": "administration",
+      "explanation": "Repository admins enable 'Template repository' in the repository's own settings.",
+      "contextImages": [],
+      "type": "mcq",
+      "text": "How can a user create a repository template, and what permissions are required?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "With Admin permissions, navigate to Repository settings and select Template Repository."
+        },
+        {
+          "letter": "B",
+          "text": "With Maintain permissions, navigate to Organization settings, select the repository, and choose Template Repository."
+        },
+        {
+          "letter": "C",
+          "text": "With Admin permissions, navigate to Organization settings, select the repository, and choose Template Repository."
+        },
+        {
+          "letter": "D",
+          "text": "With Maintain permissions, navigate to Repository settings and select Template Repository."
+        }
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "id": 104,
+      "topic": "issues",
+      "explanation": "'help wanted' is the default label signalling that maintainers need assistance.",
+      "contextImages": [],
+      "type": "mcq",
+      "text": "As a user, which of the following default labels is used to indicate that a maintainer needs assistance on an issue or pull request?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Enhancement"
+        },
+        {
+          "letter": "B",
+          "text": "Question"
+        },
+        {
+          "letter": "C",
+          "text": "Help wanted"
+        },
+        {
+          "letter": "D",
+          "text": "Documentation"
+        }
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "id": 105,
+      "topic": "collaboration",
+      "explanation": "Default discussion categories: Announcements, General, Ideas, Polls, Q&A, Show and tell.",
+      "contextImages": [],
+      "type": "mcq",
+      "text": "Which of the following options is available as a default Discussion category?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Bug report"
+        },
+        {
+          "letter": "B",
+          "text": "Daily check-in"
+        },
+        {
+          "letter": "C",
+          "text": "Show and tell"
+        },
+        {
+          "letter": "D",
+          "text": "Security concern"
+        }
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "id": 106,
+      "topic": "administration",
+      "explanation": "With EMU, accounts are provisioned and controlled centrally through the identity provider.",
+      "contextImages": [],
+      "type": "mcq",
+      "text": "What is a benefit of using GitHub Enterprise Cloud with Enterprise Managed Users (EMU)?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "It provides centralized control and streamlined management of user accounts through their identity provider (IdP)."
+        },
+        {
+          "letter": "B",
+          "text": "It offers additional collaboration and content creation capabilities for managed user accounts."
+        },
+        {
+          "letter": "C",
+          "text": "It automatically validates user interactions using the identity provider (IdP) conditional access policy (CAP)."
+        },
+        {
+          "letter": "D",
+          "text": "It enables GitHub user accounts access to protected resources using SAML SSO."
+        }
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "id": 107,
+      "topic": "version_control",
+      "explanation": "Cloning creates a local copy of a remote repository. Copying on GitHub.com is forking; retrieving updates is fetch/pull.",
+      "contextImages": [],
+      "type": "mcq",
+      "text": "Which of the following best describes cloning a repository?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "It creates a copy of the repository on GitHub.com."
+        },
+        {
+          "letter": "B",
+          "text": "It retrieves code updates from the remote repository."
+        },
+        {
+          "letter": "C",
+          "text": "It creates a copy of the repository on your local machine."
+        },
+        {
+          "letter": "D",
+          "text": "It imports your source code into a new repository."
+        }
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "id": 108,
+      "topic": "pull_requests",
+      "explanation": "CODEOWNERS defines owners for paths; they are automatically requested as reviewers on matching pull requests.",
+      "contextImages": [],
+      "type": "mcq",
+      "text": "What does a CODEOWNERS file do in a repository?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Restricts who can edit specific files"
+        },
+        {
+          "letter": "B",
+          "text": "Requires peer code review for code changes"
+        },
+        {
+          "letter": "C",
+          "text": "Defines access permissions for the repository"
+        },
+        {
+          "letter": "D",
+          "text": "Sets the reviewers for pull requests automatically"
+        }
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "id": 109,
+      "topic": "actions",
+      "explanation": "Org Actions policy can allow actions created by GitHub, actions by Marketplace verified creators, and specified actions/reusable workflows. NOTE: the dump key was A,C,D; changed to C,D,E - to verify.",
+      "contextImages": [],
+      "type": "multi",
+      "text": "From the Organization settings, which restrictions can organization owners place on GitHub Actions usage? (Each answer presents a complete solution. Choose three.)",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Allow actions that use self-hosted runners."
+        },
+        {
+          "letter": "B",
+          "text": "Allow an action to be run from a Codespace."
+        },
+        {
+          "letter": "C",
+          "text": "Allow specified actions."
+        },
+        {
+          "letter": "D",
+          "text": "Allow actions by Marketplace verified creators."
+        },
+        {
+          "letter": "E",
+          "text": "Allow actions created by GitHub."
+        }
+      ],
+      "correctAnswers": [
+        "C",
+        "D",
+        "E"
+      ]
+    },
+    {
+      "id": 110,
+      "topic": "pull_requests",
+      "explanation": "GitHub flow is a lightweight, branch-based workflow: branch, commit, open a PR, review, merge, deploy.",
+      "contextImages": [],
+      "type": "mcq",
+      "text": "Which of the following best describes GitHub flow?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "A branching model that uses feature branches and multiple primary branches"
+        },
+        {
+          "letter": "B",
+          "text": "A strategy where separate branches are created for each release, and pull requests are used to collaborate on and approve releases"
+        },
+        {
+          "letter": "C",
+          "text": "A lightweight workflow that allows for safe experimentation with new ideas and collaboration on projects through branching, pull requests, and merging"
+        },
+        {
+          "letter": "D",
+          "text": "A strict workflow that enforces a linear development process with all changes made directly on the main branch"
+        }
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "id": 111,
+      "topic": "gists_wikis",
+      "explanation": "A private repository's wiki is visible to anyone with read access to the repository.",
+      "contextImages": [],
+      "type": "mcq",
+      "text": "Which of the following statements most accurately describes who can access a private repository Wiki?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Wikis are only viewable by repository admins."
+        },
+        {
+          "letter": "B",
+          "text": "Wikis can be viewed by the same people who have Read access to the repository."
+        },
+        {
+          "letter": "C",
+          "text": "Wikis will not be visible until shared with a specific user."
+        },
+        {
+          "letter": "D",
+          "text": "Wikis are public regardless of whether you have access to the repository."
+        }
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "id": 112,
+      "topic": "version_control",
+      "explanation": "Git files are in one of three states: modified, staged, committed.",
+      "contextImages": [],
+      "type": "multi",
+      "text": "What are three valid states for a file in a git repository? (Each correct answer presents part of the solution. Choose three.)",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Committed"
+        },
+        {
+          "letter": "B",
+          "text": "Modified"
+        },
+        {
+          "letter": "C",
+          "text": "Uncommitted"
+        },
+        {
+          "letter": "D",
+          "text": "Staged"
+        },
+        {
+          "letter": "E",
+          "text": "Tracked"
+        }
+      ],
+      "correctAnswers": [
+        "A",
+        "B",
+        "D"
+      ]
+    },
+    {
+      "id": 113,
+      "topic": "security",
+      "explanation": "SECURITY.md tells users how to report vulnerabilities responsibly.",
+      "contextImages": [],
+      "type": "mcq",
+      "text": "What is the primary purpose of creating a security policy in a repository?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "To ensure that peer code review occurs before new changes are merged"
+        },
+        {
+          "letter": "B",
+          "text": "To define which types of secrets are blocked with push protection"
+        },
+        {
+          "letter": "C",
+          "text": "To describe how security vulnerabilities should be responsibly disclosed"
+        },
+        {
+          "letter": "D",
+          "text": "To customize the repository's Dependabot configuration"
+        }
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "id": 114,
+      "topic": "administration",
+      "explanation": "GitHub is a cloud-based hosting service for Git repositories offering collaboration tools.",
+      "contextImages": [],
+      "type": "mcq",
+      "text": "What is GitHub?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "A proprietary software platform for nurturing creativity in developers and building a technology community"
+        },
+        {
+          "letter": "B",
+          "text": "A cloud-based hosting service for version control and collaboration, focused on creating a safe and collaborative environment for developers"
+        },
+        {
+          "letter": "C",
+          "text": "A platform that focuses on facilitating the growth and sharing of code, specifically designed for new developers to hone their skills"
+        },
+        {
+          "letter": "D",
+          "text": "A centralized version control system designed for nurturing a community of developers and providing access to open source projects"
+        }
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "id": 115,
+      "topic": "administration",
+      "explanation": "GitHub Desktop is a GUI client to add, clone and manage local repositories, commit, push and pull. Issues, PR reviews and discussions are on github.com.",
+      "contextImages": [],
+      "type": "mcq",
+      "text": "Which of the following can be performed within GitHub Desktop?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Creating and managing issues"
+        },
+        {
+          "letter": "B",
+          "text": "Reviewing and approving pull requests"
+        },
+        {
+          "letter": "C",
+          "text": "Adding and cloning repositories"
+        },
+        {
+          "letter": "D",
+          "text": "Commenting on discussions"
+        },
+        {
+          "letter": "E",
+          "text": "Integrating with office suite software"
+        }
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "id": 116,
+      "topic": "administration",
+      "explanation": "GitHub Team adds more Actions minutes and Packages storage. SAML SSO is an Enterprise feature. NOTE: the dump key was B; changed to D - to verify.",
+      "contextImages": [],
+      "type": "mcq",
+      "text": "When using Organizations, GitHub Teams is better than GitHub Free because it offers:",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Advanced tools and insights in private repositories."
+        },
+        {
+          "letter": "B",
+          "text": "Authentication with SAML single sign-on and increased GitHub Actions minutes."
+        },
+        {
+          "letter": "C",
+          "text": "Expanded storage and priority support."
+        },
+        {
+          "letter": "D",
+          "text": "Increased GitHub Actions minutes and additional GitHub Packages storage."
+        }
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "id": 117,
+      "topic": "administration",
+      "explanation": "GitHub Marketplace is where you discover and install apps and Actions.",
+      "contextImages": [],
+      "type": "mcq",
+      "text": "Where can you go to discover, browse, and install tools?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "GitHub Marketplace"
+        },
+        {
+          "letter": "B",
+          "text": "GitHub Apps"
+        },
+        {
+          "letter": "C",
+          "text": "Organization settings"
+        },
+        {
+          "letter": "D",
+          "text": "Explore"
+        }
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "id": 118,
+      "topic": "collaboration",
+      "explanation": "You can watch/subscribe to a repository to receive notifications for its activity.",
+      "contextImages": [],
+      "type": "mcq",
+      "text": "How can a user choose to receive ongoing updates about a specific activity on GitHub.com?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "By automatically watching all repositories you have push access to"
+        },
+        {
+          "letter": "B",
+          "text": "By upgrading from a free to a paid account"
+        },
+        {
+          "letter": "C",
+          "text": "By subscribing to notifications for all activity in a repository"
+        },
+        {
+          "letter": "D",
+          "text": "By customizing the types of notifications you will receive in the future"
+        }
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "id": 119,
+      "topic": "codespaces",
+      "explanation": "You can customize the shell, the name and the default editor of a codespace. Branch protections and OS are not per-codespace settings.",
+      "contextImages": [],
+      "type": "multi",
+      "text": "Which of the following items can you customize for an individual Codespace? (Each answer presents a complete solution. Choose three.)",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Shell"
+        },
+        {
+          "letter": "B",
+          "text": "Branch protections"
+        },
+        {
+          "letter": "C",
+          "text": "Name"
+        },
+        {
+          "letter": "D",
+          "text": "Default editor"
+        },
+        {
+          "letter": "E",
+          "text": "Operating system"
+        }
+      ],
+      "correctAnswers": [
+        "A",
+        "C",
+        "D"
+      ]
+    },
+    {
+      "id": 120,
+      "topic": "administration",
+      "explanation": "Pre-defined repository roles: Read, Triage, Write, Maintain, Admin.",
+      "contextImages": [],
+      "type": "multi",
+      "text": "Which of the following are included as pre-defined repository roles? (Each answer presents a complete solution. Choose three.)",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Security"
+        },
+        {
+          "letter": "B",
+          "text": "View"
+        },
+        {
+          "letter": "C",
+          "text": "Triage"
+        },
+        {
+          "letter": "D",
+          "text": "Maintain"
+        },
+        {
+          "letter": "E",
+          "text": "Delete"
+        },
+        {
+          "letter": "F",
+          "text": "Write"
+        }
+      ],
+      "correctAnswers": [
+        "C",
+        "D",
+        "F"
+      ]
+    },
+    {
+      "id": 121,
+      "topic": "version_control",
+      "explanation": "Forks are used to propose changes to the upstream repository and to start a new project from an existing one.",
+      "contextImages": [],
+      "type": "multi",
+      "text": "What are the two main reasons why one might fork a repository? (Each answer presents a complete solution. Choose two.)",
+      "options": [
+        {
+          "letter": "A",
+          "text": "To create an issue or open a discussion"
+        },
+        {
+          "letter": "B",
+          "text": "To propose changes to the base repository"
+        },
+        {
+          "letter": "C",
+          "text": "To create a new repository based on an existing one"
+        },
+        {
+          "letter": "D",
+          "text": "To create a new branch to develop a new feature"
+        }
+      ],
+      "correctAnswers": [
+        "B",
+        "C"
+      ]
+    },
+    {
+      "id": 122,
+      "topic": "gists_wikis",
+      "explanation": "GitHub Pages hosts static websites directly from a repository.",
+      "contextImages": [],
+      "type": "mcq",
+      "text": "Which of the following best describes GitHub Pages?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Webpages hosted and published through GitHub repositories"
+        },
+        {
+          "letter": "B",
+          "text": "Handles pagination for API requests"
+        },
+        {
+          "letter": "C",
+          "text": "Hosts long-form documentation about your project"
+        },
+        {
+          "letter": "D",
+          "text": "Curated guides around how to use GitHub products"
+        }
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "id": 123,
+      "topic": "collaboration",
+      "explanation": "Pinned repositories are chosen by the user to highlight on their profile.",
+      "contextImages": [],
+      "type": "mcq",
+      "text": "Which of the following are displayed in the \"Pinned Repositories\" section of a GitHub user profile?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Repositories with the most recent activity"
+        },
+        {
+          "letter": "B",
+          "text": "Repositories that were personally selected to be highlighted"
+        },
+        {
+          "letter": "C",
+          "text": "Repositories that are owned by organizations in which the user is a member"
+        },
+        {
+          "letter": "D",
+          "text": "Repositories with the highest number of stars"
+        }
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "id": 124,
+      "topic": "issues",
+      "explanation": "Saved replies belong to the user's personal account and provide reusable responses for issues and pull requests.",
+      "contextImages": [],
+      "type": "multi",
+      "text": "Which of the following are advantages of saved replies? (Each correct answer presents part of the solution. Choose two.)",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Saved replies are tied to a GitHub user's personal account."
+        },
+        {
+          "letter": "B",
+          "text": "Saved replies are allocated at the enterprise level for all users."
+        },
+        {
+          "letter": "C",
+          "text": "Saved replies allow you to create a reusable response to issues and pull requests."
+        },
+        {
+          "letter": "D",
+          "text": "Saved replies will send auto notifications when a user is tagged to an issue."
+        }
+      ],
+      "correctAnswers": [
+        "A",
+        "C"
+      ]
+    },
+    {
+      "id": 125,
+      "topic": "projects",
+      "explanation": "Projects offers multiple layouts (table, board, roadmap) and Insights charts, which Projects Classic lacks.",
+      "contextImages": [],
+      "type": "multi",
+      "text": "What are advantages of GitHub Projects over GitHub Projects Classic? (Each answer presents a complete solution. Choose two.)",
+      "options": [
+        {
+          "letter": "A",
+          "text": "GitHub Projects has multiple layout views."
+        },
+        {
+          "letter": "B",
+          "text": "GitHub Projects has Insights."
+        },
+        {
+          "letter": "C",
+          "text": "GitHub Projects are Copilot enabled."
+        },
+        {
+          "letter": "D",
+          "text": "GitHub Projects can be connected to third-party tools."
+        }
+      ],
+      "correctAnswers": [
+        "A",
+        "B"
+      ]
+    },
+    {
+      "id": 126,
+      "topic": "collaboration",
+      "explanation": "To receive funding through GitHub Sponsors, a contributor first sets up a sponsored developer profile.",
+      "contextImages": [],
+      "type": "mcq",
+      "text": "New open source contributors can receive funding from GitHub sponsors:",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Using PayPal as a payment processor."
+        },
+        {
+          "letter": "B",
+          "text": "Equal to 95% of the contribution value."
+        },
+        {
+          "letter": "C",
+          "text": "By including GitHub matching funds."
+        },
+        {
+          "letter": "D",
+          "text": "After setting up a sponsored developer profile."
+        }
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "id": 127,
+      "topic": "codespaces",
+      "explanation": "A codespace is a cloud-hosted development environment.",
+      "contextImages": [],
+      "type": "mcq",
+      "text": "Which of the following best describes a Codespace?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "A lightweight editing experience that runs entirely in your browser"
+        },
+        {
+          "letter": "B",
+          "text": "An AI pair programmer that offers autocomplete-style suggestions"
+        },
+        {
+          "letter": "C",
+          "text": "A development environment hosted in the cloud"
+        },
+        {
+          "letter": "D",
+          "text": "A Visual Studio Code plug-in to manage local devcontainers"
+        }
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "id": 128,
+      "topic": "gists_wikis",
+      "explanation": "Every gist is a Git repository: it can be cloned, forked and has history.",
+      "contextImages": [],
+      "type": "mcq",
+      "text": "What is a gist?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "GitHub app"
+        },
+        {
+          "letter": "B",
+          "text": "Git repository"
+        },
+        {
+          "letter": "C",
+          "text": "Markdown document"
+        },
+        {
+          "letter": "D",
+          "text": "GitHub Pages site"
+        }
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "id": 129,
+      "topic": "pull_requests",
+      "explanation": "In GitHub flow you deploy the branch to verify changes in production before merging, so main stays stable.",
+      "contextImages": [],
+      "type": "mcq",
+      "text": "In GitHub, why is it recommended to deploy from your feature branch before merging into the main branch?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "To directly deploy changes from the main branch without any intermediate testing"
+        },
+        {
+          "letter": "B",
+          "text": "To speed up the process of merging changes into the main branch"
+        },
+        {
+          "letter": "C",
+          "text": "To avoid the need for testing changes in production"
+        },
+        {
+          "letter": "D",
+          "text": "To ensure the changes are verified and validated in a production environment"
+        }
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "id": 130,
+      "topic": "administration",
+      "explanation": "A README and repository topics make a repository easier to find and understand.",
+      "contextImages": [],
+      "type": "multi",
+      "text": "What are two recommended ways of improving the discoverability of a repository? (Each answer presents a complete solution. Choose two.)",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Register the repository with GitHub search."
+        },
+        {
+          "letter": "B",
+          "text": "Create a README file describing the repository."
+        },
+        {
+          "letter": "C",
+          "text": "Add labels to categorize the repository."
+        },
+        {
+          "letter": "D",
+          "text": "Add topics to classify the repository."
+        }
+      ],
+      "correctAnswers": [
+        "B",
+        "D"
+      ]
+    },
+    {
+      "id": 131,
+      "topic": "version_control",
+      "explanation": "In a DVCS every developer has a full local copy of the repository including history.",
+      "contextImages": [],
+      "type": "mcq",
+      "text": "A distributed version control system is best described as a system that:",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Relies on a central server to store the entire project history and allows developers to check out files for editing."
+        },
+        {
+          "letter": "B",
+          "text": "Stores project files on a cloud-based server and allows multiple developers to collaborate on the same codebase simultaneously."
+        },
+        {
+          "letter": "C",
+          "text": "Ensures each developer has their own local copy of the entire code repository, including the complete project history and metadata."
+        },
+        {
+          "letter": "D",
+          "text": "Requires developers to manually track and manage different versions of their files using naming conventions and manual backups."
+        }
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "id": 132,
+      "topic": "markdown",
+      "explanation": "Markdown is a lightweight markup language with plain-text formatting syntax.",
+      "contextImages": [],
+      "type": "mcq",
+      "text": "What best describes Markdown?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Markup language"
+        },
+        {
+          "letter": "B",
+          "text": "Programming language"
+        },
+        {
+          "letter": "C",
+          "text": "Scripting language"
+        },
+        {
+          "letter": "D",
+          "text": "Version control system"
+        },
+        {
+          "letter": "E",
+          "text": "Containerization solution"
+        }
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "id": 133,
+      "topic": "administration",
+      "explanation": "Write is the lowest role that can push to branches in the repository.",
+      "contextImages": [],
+      "type": "mcq",
+      "text": "What is the minimum access needed to contribute to a repository?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Read"
+        },
+        {
+          "letter": "B",
+          "text": "Triage"
+        },
+        {
+          "letter": "C",
+          "text": "Maintain"
+        },
+        {
+          "letter": "D",
+          "text": "Write"
+        }
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "id": 134,
+      "topic": "collaboration",
+      "explanation": "Bio and profile picture are shown on the public profile; private repositories, email and password are not.",
+      "contextImages": [],
+      "type": "mcq",
+      "text": "Which of the following information is available by default in a user's GitHub profile?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Personal biography and profile picture"
+        },
+        {
+          "letter": "B",
+          "text": "Public Secure Shell Protocol (SSH) keys"
+        },
+        {
+          "letter": "C",
+          "text": "A list of the user's private repositories"
+        },
+        {
+          "letter": "D",
+          "text": "Email address and password"
+        }
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "id": 135,
+      "topic": "actions",
+      "explanation": "Workflows are triggered by GitHub events such as discussion_comment, push and issues.",
+      "contextImages": [],
+      "type": "multi",
+      "text": "GitHub Actions workflows can be directly triggered by which of the following events? (Each answer presents a complete solution. Choose three.)",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Adding a comment to a discussion post"
+        },
+        {
+          "letter": "B",
+          "text": "Creating a new repository"
+        },
+        {
+          "letter": "C",
+          "text": "Committing a change to a local git repository"
+        },
+        {
+          "letter": "D",
+          "text": "Pushing to a GitHub repository"
+        },
+        {
+          "letter": "E",
+          "text": "Disabling a GitHub runner"
+        },
+        {
+          "letter": "F",
+          "text": "Creating an Issue"
+        }
+      ],
+      "correctAnswers": [
+        "A",
+        "D",
+        "F"
+      ]
+    },
+    {
+      "id": 136,
+      "topic": "actions",
+      "explanation": "Search the Marketplace for the vendor's actions and check the verified creator badge.",
+      "contextImages": [],
+      "type": "multi",
+      "text": "What should be done to locate an existing action that was provided by a GitHub-approved vendor? (Each correct answer presents part of the solution. Choose two.)",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Create a new workflow file."
+        },
+        {
+          "letter": "B",
+          "text": "Search the vendor's website for a github.yaml index."
+        },
+        {
+          "letter": "C",
+          "text": "Confirm that the action has a verification badge."
+        },
+        {
+          "letter": "D",
+          "text": "Install the GitHub App that was provided by the vendor."
+        },
+        {
+          "letter": "E",
+          "text": "Add the vendor as an allowed Actions Source."
+        },
+        {
+          "letter": "F",
+          "text": "Search the GitHub Marketplace for Actions by the vendor."
+        }
+      ],
+      "correctAnswers": [
+        "C",
+        "F"
+      ]
+    },
+    {
+      "id": 137,
+      "topic": "issues",
+      "explanation": "Use qualifiers org:, is:issue and label: together with the quoted text to search across the whole organization.",
+      "contextImages": [],
+      "type": "mcq",
+      "text": "An employee needs to find all issues within organization \"Avocado\" containing text \"404 error\" and a \"guacamole\" label. Which of the following steps would be best to search for these results?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Enter query org:Avocado is:issue label:guacamole \"404 error\" in the search bar."
+        },
+        {
+          "letter": "B",
+          "text": "Go to \"Avocado\" organization. Select Issues under a repository. Filter issues with a \"guacamole\" label."
+        },
+        {
+          "letter": "C",
+          "text": "Enter query org:Avocado label:guacamole \"404 error\" in the search bar. Select \"Issues\" in the Filter by section."
+        },
+        {
+          "letter": "D",
+          "text": "Go to the Avocado organization settings. Select Repository defaults under Repository. Scroll to Repository labels and select the 'guacamole' label."
+        }
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "id": 138,
+      "topic": "collaboration",
+      "explanation": "You are auto-subscribed when you open, comment on, or are assigned to an issue or pull request.",
+      "contextImages": [],
+      "type": "multi",
+      "text": "What are some scenarios that can automatically subscribe you to conversations on GitHub? (Each answer presents a complete solution. Choose three.)",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Pushing a commit to the default branch"
+        },
+        {
+          "letter": "B",
+          "text": "Being added as a repo admin"
+        },
+        {
+          "letter": "C",
+          "text": "Opening a pull request or issue"
+        },
+        {
+          "letter": "D",
+          "text": "Commenting on a thread"
+        },
+        {
+          "letter": "E",
+          "text": "Being assigned to an issue or pull request"
+        }
+      ],
+      "correctAnswers": [
+        "C",
+        "D",
+        "E"
+      ]
+    },
+    {
+      "id": 139,
+      "topic": "collaboration",
+      "explanation": "The GitHub community is centered on collaboration and creativity.",
+      "contextImages": [],
+      "type": "mcq",
+      "text": "Which of the following is a primary goal of GitHub's community?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Exclusively supporting experienced developers"
+        },
+        {
+          "letter": "B",
+          "text": "Creating a competitive environment for developers"
+        },
+        {
+          "letter": "C",
+          "text": "Facilitating collaboration and creativity"
+        },
+        {
+          "letter": "D",
+          "text": "Enforcing strict code quality standards"
+        }
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "id": 140,
+      "topic": "collaboration",
+      "explanation": "Pinned discussions stay at the top of the Discussions page.",
+      "contextImages": [],
+      "type": "mcq",
+      "text": "How can a user highlight a post to the top of the Discussions page?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Save the discussion."
+        },
+        {
+          "letter": "B",
+          "text": "Pin the discussion."
+        },
+        {
+          "letter": "C",
+          "text": "Create an issue from the discussion."
+        },
+        {
+          "letter": "D",
+          "text": "Star the discussion."
+        }
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "id": 141,
+      "topic": "security",
+      "explanation": "2FA is configured in your personal Settings under Password and authentication.",
+      "contextImages": [],
+      "type": "mcq",
+      "text": "As a GitHub user, where in the UI can you configure two-factor authentication (2FA) to further secure your account?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Profile -> Account -> 2FA"
+        },
+        {
+          "letter": "B",
+          "text": "Repository Settings -> Secrets and Variables -> 2FA"
+        },
+        {
+          "letter": "C",
+          "text": "Organization Settings -> Authentication Security -> 2FA"
+        },
+        {
+          "letter": "D",
+          "text": "Settings -> Password and Authentication -> 2FA"
+        }
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "id": 142,
+      "topic": "security",
+      "explanation": "2FA methods: authenticator app (TOTP), GitHub Mobile, security keys (also SMS). Security questions and SSO are not 2FA methods.",
+      "contextImages": [],
+      "type": "multi",
+      "text": "Which of the following two-factor authentication (2FA) methods can you use to secure a GitHub account? (Each answer presents a complete solution. Choose three.)",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Authenticator app"
+        },
+        {
+          "letter": "B",
+          "text": "Security questions"
+        },
+        {
+          "letter": "C",
+          "text": "GitHub mobile"
+        },
+        {
+          "letter": "D",
+          "text": "Security keys"
+        },
+        {
+          "letter": "E",
+          "text": "Single sign-on"
+        }
+      ],
+      "correctAnswers": [
+        "A",
+        "C",
+        "D"
+      ]
+    },
+    {
+      "id": 143,
+      "topic": "pull_requests",
+      "explanation": "A pull request can be Draft, Open, Closed or Merged.",
+      "contextImages": [],
+      "type": "multi",
+      "text": "Which of the following are available statuses of a pull request? (Each answer presents a complete solution. Choose four.)",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Draft"
+        },
+        {
+          "letter": "B",
+          "text": "Closed"
+        },
+        {
+          "letter": "C",
+          "text": "Rebasing"
+        },
+        {
+          "letter": "D",
+          "text": "Merged"
+        },
+        {
+          "letter": "E",
+          "text": "Modified"
+        },
+        {
+          "letter": "F",
+          "text": "Open"
+        }
+      ],
+      "correctAnswers": [
+        "A",
+        "B",
+        "D",
+        "F"
+      ]
+    },
+    {
+      "id": 144,
+      "topic": "actions",
+      "explanation": "Actions can come from any public repository, the same repository as the workflow, or a public Docker Hub image.",
+      "contextImages": [],
+      "type": "multi",
+      "text": "Workflows can reference actions in: (Each correct answer presents a complete solution. Choose three.)",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Any public repository."
+        },
+        {
+          "letter": "B",
+          "text": "The same repository as your workflow file."
+        },
+        {
+          "letter": "C",
+          "text": "GitHub Packages."
+        },
+        {
+          "letter": "D",
+          "text": "An enterprise marketplace."
+        },
+        {
+          "letter": "E",
+          "text": "A published Docker container image on Docker Hub."
+        }
+      ],
+      "correctAnswers": [
+        "A",
+        "B",
+        "E"
+      ]
+    },
+    {
+      "id": 145,
+      "topic": "pull_requests",
+      "explanation": "A branch gives a safe space to work on features or fixes without affecting main.",
+      "contextImages": [],
+      "type": "mcq",
+      "text": "What is the primary purpose of creating a new branch in the GitHub flow?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "To create a backup of the main branch"
+        },
+        {
+          "letter": "B",
+          "text": "To capture information about an issue"
+        },
+        {
+          "letter": "C",
+          "text": "To experiment with new features or fixes"
+        },
+        {
+          "letter": "D",
+          "text": "To incorporate changes from a review"
+        }
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "id": 146,
+      "topic": "projects",
+      "explanation": "The projects list has a Templates tab. (Original dump garbled option B.)",
+      "contextImages": [],
+      "type": "mcq",
+      "text": "From the list of projects for an organization, how can a user identify a GitHub Projects template?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Check the \"show template\" checkbox."
+        },
+        {
+          "letter": "B",
+          "text": "Use the \"is\" filter in the search text box."
+        },
+        {
+          "letter": "C",
+          "text": "Select the Templates tab."
+        },
+        {
+          "letter": "D",
+          "text": "View the contents in the .github/projects folder."
+        }
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "id": 147,
+      "topic": "codespaces",
+      "explanation": "Codespaces lifecycle: create, stop/resume, rebuild, delete.",
+      "contextImages": [],
+      "type": "multi",
+      "text": "Which of the following steps are part of the Codespaces lifecycle? (Each answer presents a complete solution. Choose three.)",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Commit"
+        },
+        {
+          "letter": "B",
+          "text": "Clone"
+        },
+        {
+          "letter": "C",
+          "text": "Rebuild"
+        },
+        {
+          "letter": "D",
+          "text": "Rollback"
+        },
+        {
+          "letter": "E",
+          "text": "Delete"
+        },
+        {
+          "letter": "F",
+          "text": "Create"
+        },
+        {
+          "letter": "G",
+          "text": "Install"
+        }
+      ],
+      "correctAnswers": [
+        "C",
+        "E",
+        "F"
+      ]
+    },
+    {
+      "id": 148,
+      "topic": "issues",
+      "explanation": "Templates can pre-apply labels/assignees and give users a structured form.",
+      "contextImages": [],
+      "type": "multi",
+      "text": "What are primary benefits of using GitHub issues templates? (Each answer presents a complete solution. Choose two.)",
+      "options": [
+        {
+          "letter": "A",
+          "text": "To automatically label or assign newly created issues"
+        },
+        {
+          "letter": "B",
+          "text": "To provide an easy-to-fill-out form for creating new issues"
+        },
+        {
+          "letter": "C",
+          "text": "To easily coerce existing issues into a standard format"
+        },
+        {
+          "letter": "D",
+          "text": "To automatically create new branches when issues are created"
+        }
+      ],
+      "correctAnswers": [
+        "A",
+        "B"
+      ]
+    },
+    {
+      "id": 149,
+      "topic": "administration",
+      "explanation": "GitHub Desktop is a standalone application; github.com is the web platform. (Key corrected per corrected dumps file.)",
+      "contextImages": [],
+      "type": "mcq",
+      "text": "The difference between GitHub Desktop and github.com is that Desktop:",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Is a standalone software application."
+        },
+        {
+          "letter": "B",
+          "text": "Enables integration with office suite applications."
+        },
+        {
+          "letter": "C",
+          "text": "Is only available on Windows operating systems."
+        },
+        {
+          "letter": "D",
+          "text": "Offers a graphical user interface."
+        },
+        {
+          "letter": "E",
+          "text": "Is a self-hosted version of GitHub."
+        }
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "id": 150,
+      "topic": "copilot",
+      "explanation": "Copilot for Business adds organization-wide policy management and support for organization/enterprise accounts; public-code blocking per dump key.",
+      "contextImages": [],
+      "type": "multi",
+      "text": "What features are offered by Copilot for Business that are not offered by Copilot for individuals? (Each answer presents a complete solution. Choose three.)",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Offers multi-line function suggestions"
+        },
+        {
+          "letter": "B",
+          "text": "Organization-wide policy management"
+        },
+        {
+          "letter": "C",
+          "text": "Blocks suggestions matching public code"
+        },
+        {
+          "letter": "D",
+          "text": "VPN proxy support via self-signed certificates"
+        },
+        {
+          "letter": "E",
+          "text": "Support for organization or enterprise GitHub accounts"
+        },
+        {
+          "letter": "F",
+          "text": "Plugs directly into the editor"
+        }
+      ],
+      "correctAnswers": [
+        "B",
+        "C",
+        "E"
+      ]
+    },
+    {
+      "id": 151,
+      "topic": "issues",
+      "explanation": "Issue template options: Bug report, Feature request, Custom template.",
+      "contextImages": [],
+      "type": "multi",
+      "text": "What template types are available when creating an issue template? (Each correct answer presents part of the solution. Choose three.)",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Feature request"
+        },
+        {
+          "letter": "B",
+          "text": "Custom template"
+        },
+        {
+          "letter": "C",
+          "text": "Bug report"
+        },
+        {
+          "letter": "D",
+          "text": "Standard template"
+        },
+        {
+          "letter": "E",
+          "text": "Security notification"
+        }
+      ],
+      "correctAnswers": [
+        "A",
+        "B",
+        "C"
+      ]
+    },
+    {
+      "id": 152,
+      "topic": "collaboration",
+      "explanation": "Only the Q&A category supports marking an answer.",
+      "contextImages": [],
+      "type": "mcq",
+      "text": "Which Discussion category allows a user to mark a response as an answer?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Q&A"
+        },
+        {
+          "letter": "B",
+          "text": "Ideas"
+        },
+        {
+          "letter": "C",
+          "text": "General"
+        },
+        {
+          "letter": "D",
+          "text": "Polls"
+        }
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "id": 153,
+      "topic": "copilot",
+      "explanation": "Per the exam key, Copilot's model is trained on public code.",
+      "contextImages": [],
+      "type": "mcq",
+      "text": "GitHub Copilot leverages an AI model trained using:",
+      "options": [
+        {
+          "letter": "A",
+          "text": "public, internal, and private repositories in your GitHub organization."
+        },
+        {
+          "letter": "B",
+          "text": "code samples from online forums."
+        },
+        {
+          "letter": "C",
+          "text": "public GitHub repositories."
+        },
+        {
+          "letter": "D",
+          "text": "public and internal repositories in your GitHub organization."
+        }
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "id": 154,
+      "topic": "administration",
+      "explanation": "Enterprise owners can set policies for repository visibility change and repository deletion and transfer.",
+      "contextImages": [],
+      "type": "multi",
+      "text": "Which of the following permissions can be enabled or disabled at the enterprise level? (Each answer presents a complete solution. Choose two.)",
+      "options": [
+        {
+          "letter": "A",
+          "text": "repository visibility change"
+        },
+        {
+          "letter": "B",
+          "text": "repository naming convention"
+        },
+        {
+          "letter": "C",
+          "text": "repository secrets"
+        },
+        {
+          "letter": "D",
+          "text": "repository deletion and transfer"
+        }
+      ],
+      "correctAnswers": [
+        "A",
+        "D"
+      ]
+    },
+    {
+      "id": 155,
+      "topic": "collaboration",
+      "explanation": "Issues and pull requests provide code review and discussion.",
+      "contextImages": [],
+      "type": "mcq",
+      "text": "Which of the following features does GitHub provide to enhance collaboration within teams?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "real-time collaboration through pair programming"
+        },
+        {
+          "letter": "B",
+          "text": "code review and discussion through issues and pull requests"
+        },
+        {
+          "letter": "C",
+          "text": "automated testing and code quality analysis"
+        },
+        {
+          "letter": "D",
+          "text": "git repositories hosting and sharing capabilities"
+        }
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "id": 156,
+      "topic": "administration",
+      "explanation": "Internal repositories are visible to all members of the enterprise.",
+      "contextImages": [],
+      "type": "multi",
+      "text": "An organization in a GitHub enterprise has a base permission of \"No permissions.\" Which users in this enterprise will be able to see all internal repositories within this organization? (Each answer presents a complete solution. Choose two.)",
+      "options": [
+        {
+          "letter": "A",
+          "text": "outside collaborators in the same organization"
+        },
+        {
+          "letter": "B",
+          "text": "outside collaborators with repo Admin access"
+        },
+        {
+          "letter": "C",
+          "text": "members in the same organization"
+        },
+        {
+          "letter": "D",
+          "text": "members in another organization in that enterprise"
+        }
+      ],
+      "correctAnswers": [
+        "C",
+        "D"
+      ]
+    },
+    {
+      "id": 157,
+      "topic": "administration",
+      "explanation": "Managed users cannot create public repositories or gists, or interact outside the enterprise.",
+      "contextImages": [],
+      "type": "mcq",
+      "text": "Which of the following is a restriction for Enterprise Managed Users (EMUs)?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Organization base permissions cannot be applied."
+        },
+        {
+          "letter": "B",
+          "text": "Users cannot create public repositories."
+        },
+        {
+          "letter": "C",
+          "text": "Each GitHub team must be linked to an identity provider group."
+        },
+        {
+          "letter": "D",
+          "text": "Custom repository roles are not available."
+        }
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "id": 158,
+      "topic": "actions",
+      "explanation": "GitHub-hosted runners are available for Linux, Windows and macOS.",
+      "contextImages": [],
+      "type": "mcq",
+      "text": "For which of the following does GitHub provide hosted runners?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "AWS, Azure, and GCP"
+        },
+        {
+          "letter": "B",
+          "text": "Linux, Windows, and macOS"
+        },
+        {
+          "letter": "C",
+          "text": "Kubernetes"
+        },
+        {
+          "letter": "D",
+          "text": "Docker"
+        }
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "id": 159,
+      "topic": "pull_requests",
+      "explanation": "Draft PRs cannot be merged and do not auto-request code owners until marked ready for review.",
+      "contextImages": [],
+      "type": "mcq",
+      "text": "Which of the following statements is true regarding the mergeability of draft pull requests?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "They cannot be merged, but code owners are automatically requested to review."
+        },
+        {
+          "letter": "B",
+          "text": "They can be merged, but code owners are not automatically requested to review."
+        },
+        {
+          "letter": "C",
+          "text": "They cannot be merged, and code owners are not automatically requested to review."
+        },
+        {
+          "letter": "D",
+          "text": "They can be merged, and code owners are automatically requested to review."
+        }
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "id": 160,
+      "topic": "codespaces",
+      "explanation": "github.dev is a lightweight editor with no terminal or compute; Codespaces gives a full environment with terminal.",
+      "contextImages": [],
+      "type": "mcq",
+      "text": "How is github.dev different than Codespaces?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Extensions in the Visual Studio Code Marketplace are supported by github.dev."
+        },
+        {
+          "letter": "B",
+          "text": "Codespaces is available within the web browser."
+        },
+        {
+          "letter": "C",
+          "text": "A free monthly quota for personal accounts is provided by github.dev."
+        },
+        {
+          "letter": "D",
+          "text": "Codespaces provides terminal access."
+        }
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "id": 161,
+      "topic": "issues",
+      "explanation": "Pinned issues appear at the top of the Issues list.",
+      "contextImages": [],
+      "type": "mcq",
+      "text": "As a user, what feature can you use to add an issue to the top of the Issues page for easier visibility?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Star the issue."
+        },
+        {
+          "letter": "B",
+          "text": "Label the issue."
+        },
+        {
+          "letter": "C",
+          "text": "Subscribe to the issue."
+        },
+        {
+          "letter": "D",
+          "text": "Pin the issue."
+        }
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "id": 162,
+      "topic": "pull_requests",
+      "explanation": "Branch protection can require PR approvals, status checks, etc. before merging.",
+      "contextImages": [],
+      "type": "mcq",
+      "text": "Which of the following outcomes can be achieved with a branch protection rule?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Require two-factor authentication (2FA) by code contributors."
+        },
+        {
+          "letter": "B",
+          "text": "Require approval before merging changes."
+        },
+        {
+          "letter": "C",
+          "text": "Block code pushes that contain hardcoded secrets."
+        },
+        {
+          "letter": "D",
+          "text": "Restrict who can view the branch."
+        }
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "id": 163,
+      "topic": "projects",
+      "explanation": "Default workflows include Item closed, Pull request merged, Auto-archive items. (Key corrected per corrected dumps file.)",
+      "contextImages": [],
+      "type": "multi",
+      "text": "Which of the following default workflows are available as part of GitHub projects? (Each answer presents a complete solution. Choose three.)",
+      "options": [
+        {
+          "letter": "A",
+          "text": "\"Label added to issue\""
+        },
+        {
+          "letter": "B",
+          "text": "\"Auto-archive items\""
+        },
+        {
+          "letter": "C",
+          "text": "\"Pull request merged\""
+        },
+        {
+          "letter": "D",
+          "text": "\"Item closed\""
+        },
+        {
+          "letter": "E",
+          "text": "\"Pull request opened\""
+        }
+      ],
+      "correctAnswers": [
+        "B",
+        "C",
+        "D"
+      ]
+    },
+    {
+      "id": 164,
+      "topic": "collaboration",
+      "explanation": "Discussions has a Polls category.",
+      "contextImages": [],
+      "type": "mcq",
+      "text": "Which of the following GitHub features supports Polling?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Issues"
+        },
+        {
+          "letter": "B",
+          "text": "Projects"
+        },
+        {
+          "letter": "C",
+          "text": "Discussions"
+        },
+        {
+          "letter": "D",
+          "text": "Wikis"
+        }
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "id": 165,
+      "topic": "administration",
+      "explanation": "Pulse summarizes recent repository activity: PRs, issues and commits.",
+      "contextImages": [],
+      "type": "mcq",
+      "text": "Which Insights feature allows users to view repository activity including: pull requests, issues, and commit history?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Traffic"
+        },
+        {
+          "letter": "B",
+          "text": "Activity overview"
+        },
+        {
+          "letter": "C",
+          "text": "Pulse"
+        },
+        {
+          "letter": "D",
+          "text": "Code frequency"
+        }
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "id": 166,
+      "topic": "collaboration",
+      "explanation": "GitHub Sponsors lets the community fund open source maintainers.",
+      "contextImages": [],
+      "type": "mcq",
+      "text": "What GitHub feature allows the developer community to financially support the people and organizations who maintain the open source projects they depend on?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "GitHub Support"
+        },
+        {
+          "letter": "B",
+          "text": "GitHub Sponsors"
+        },
+        {
+          "letter": "C",
+          "text": "GitHub Community Exchange"
+        },
+        {
+          "letter": "D",
+          "text": "GitHub Discussions"
+        }
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "id": 167,
+      "topic": "administration",
+      "explanation": "Teams can be visible or secret and can be nested to mirror an org hierarchy.",
+      "contextImages": [],
+      "type": "multi",
+      "text": "Which of the following are characteristics of GitHub Teams? (Each answer presents a complete solution. Choose two.)",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Team visibility can be visible or secret."
+        },
+        {
+          "letter": "B",
+          "text": "Teams can be nested."
+        },
+        {
+          "letter": "C",
+          "text": "Teams has a maximum size of 100 users."
+        },
+        {
+          "letter": "D",
+          "text": "Teams requires access to at least one repository."
+        }
+      ],
+      "correctAnswers": [
+        "A",
+        "B"
+      ]
+    },
+    {
+      "id": 168,
+      "topic": "actions",
+      "explanation": "Workflow components: events, jobs, steps (plus runners and actions).",
+      "contextImages": [],
+      "type": "multi",
+      "text": "Which of the following are components of GitHub Actions? (Each correct answer presents part of the solution. Choose three.)",
+      "options": [
+        {
+          "letter": "A",
+          "text": "JavaScript"
+        },
+        {
+          "letter": "B",
+          "text": "agents"
+        },
+        {
+          "letter": "C",
+          "text": "events"
+        },
+        {
+          "letter": "D",
+          "text": "steps"
+        },
+        {
+          "letter": "E",
+          "text": "CI/CD"
+        },
+        {
+          "letter": "F",
+          "text": "octokit"
+        },
+        {
+          "letter": "G",
+          "text": "jobs"
+        }
+      ],
+      "correctAnswers": [
+        "C",
+        "D",
+        "G"
+      ]
+    },
+    {
+      "id": 169,
+      "topic": "collaboration",
+      "explanation": "Open source software can be freely used, modified and shared.",
+      "contextImages": [],
+      "type": "mcq",
+      "text": "What is defined as software that can be freely used, modified, and shared by anyone?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "proprietary"
+        },
+        {
+          "letter": "B",
+          "text": "open source"
+        },
+        {
+          "letter": "C",
+          "text": "free source"
+        },
+        {
+          "letter": "D",
+          "text": "Innersource"
+        }
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "id": 170,
+      "topic": "security",
+      "explanation": "The Security tab shows Dependabot, code scanning and secret scanning alerts.",
+      "contextImages": [],
+      "type": "multi",
+      "text": "As a repository admin, which alerts can you see from the security tab of a repository? (Each answer presents a complete solution. Choose three.)",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Branch Protection"
+        },
+        {
+          "letter": "B",
+          "text": "Dependabot"
+        },
+        {
+          "letter": "C",
+          "text": "Push Protection Bypass"
+        },
+        {
+          "letter": "D",
+          "text": "Code Scanning"
+        },
+        {
+          "letter": "E",
+          "text": "Secret Scanning"
+        }
+      ],
+      "correctAnswers": [
+        "B",
+        "D",
+        "E"
+      ]
+    },
+    {
+      "id": 171,
+      "topic": "collaboration",
+      "explanation": "Following people and organizations surfaces their public activity in your feed.",
+      "contextImages": [],
+      "type": "multi",
+      "text": "What should a user follow to see public activity on their personal dashboard? (Each answer presents a complete solution. Choose two.)",
+      "options": [
+        {
+          "letter": "A",
+          "text": "teams"
+        },
+        {
+          "letter": "B",
+          "text": "people"
+        },
+        {
+          "letter": "C",
+          "text": "enterprises"
+        },
+        {
+          "letter": "D",
+          "text": "stars"
+        },
+        {
+          "letter": "E",
+          "text": "organizations"
+        }
+      ],
+      "correctAnswers": [
+        "B",
+        "E"
+      ]
+    },
+    {
+      "id": 172,
+      "topic": "copilot",
+      "explanation": "You need a Copilot plan enabled for your account and the Copilot extension in your IDE.",
+      "contextImages": [],
+      "type": "multi",
+      "text": "What steps must you follow to use GitHub Copilot? (Each correct answer presents part of the solution. Choose two.)",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Install the Copilot extension for your supported IDE."
+        },
+        {
+          "letter": "B",
+          "text": "Sign up for a Copilot edition and enable it for your account."
+        },
+        {
+          "letter": "C",
+          "text": "Sign and submit the legal disclaimer."
+        },
+        {
+          "letter": "D",
+          "text": "Install the Copilot App on your GitHub organization, account or server."
+        },
+        {
+          "letter": "E",
+          "text": "Store your coding project(s) in GitHub."
+        }
+      ],
+      "correctAnswers": [
+        "A",
+        "B"
+      ]
+    },
+    {
+      "id": 173,
+      "topic": "collaboration",
+      "explanation": "The contribution graph counts commits, pull requests, issues opened, reviews and discussions.",
+      "contextImages": [],
+      "type": "multi",
+      "text": "Which of the following are counted in the contribution graph on a user's profile? (Each answer presents a complete solution. Choose two.)",
+      "options": [
+        {
+          "letter": "A",
+          "text": "commits made"
+        },
+        {
+          "letter": "B",
+          "text": "public repositories"
+        },
+        {
+          "letter": "C",
+          "text": "followers"
+        },
+        {
+          "letter": "D",
+          "text": "issues closed"
+        },
+        {
+          "letter": "E",
+          "text": "pull requests created"
+        }
+      ],
+      "correctAnswers": [
+        "A",
+        "E"
       ]
     }
   ],
