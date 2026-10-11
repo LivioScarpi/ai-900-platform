@@ -4,6 +4,7 @@ import { useState } from "react";
 import { DropdownQuestion } from "@/types/question";
 import { CardShell } from "./CardShell";
 import { useAnswerCard } from "@/hooks/useAnswerCard";
+import { shuffleStrings } from "@/lib/shuffle";
 
 interface Props {
   question: DropdownQuestion;
@@ -21,6 +22,7 @@ export function DropdownCard({ question, onAnswer, hideExplanation, examMode, in
       : question.statements.map(() => "")
   );
   const { confirmed, confirm } = useAnswerCard({ examMode, hasInitial, onAnswer });
+  const [shuffledOptions] = useState(() => question.statements.map((s, i) => shuffleStrings(question.id * 31 + i, s.options)));
 
   function setAnswer(index: number, value: string) {
     if (confirmed) return;
@@ -80,7 +82,7 @@ export function DropdownCard({ question, onAnswer, hideExplanation, examMode, in
                 className={`inline-block mx-1.5 px-2.5 py-1 rounded-lg text-[13px] font-medium focus:outline-none transition-colors ${getSelectStyle(i)}`}
               >
                 <option value="">Select…</option>
-                {stmt.options.map((opt) => (
+                {shuffledOptions[i].map((opt) => (
                   <option key={opt} value={opt}>{opt}</option>
                 ))}
               </select>

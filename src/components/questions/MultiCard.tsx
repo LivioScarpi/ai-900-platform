@@ -4,6 +4,7 @@ import { useState } from "react";
 import { MultiQuestion } from "@/types/question";
 import { CardShell } from "./CardShell";
 import { useAnswerCard } from "@/hooks/useAnswerCard";
+import { useShuffledOptions, remapLetterRefs } from "@/lib/shuffle";
 
 interface Props {
   question: MultiQuestion;
@@ -32,6 +33,7 @@ function IconX() {
 export function MultiCard({ question, onAnswer, hideExplanation, examMode, initialAnswer }: Props) {
   const [selected, setSelected] = useState<Set<string>>(new Set(initialAnswer ?? []));
   const { confirmed, confirm } = useAnswerCard({ examMode, hasInitial: !!initialAnswer?.length, onAnswer });
+  const { ordered, displayLetter } = useShuffledOptions(question.id, question.options);
 
   function toggle(letter: string) {
     if (confirmed) return;
@@ -63,12 +65,12 @@ export function MultiCard({ question, onAnswer, hideExplanation, examMode, initi
     const base = "w-[22px] h-[22px] rounded flex items-center justify-center shrink-0 transition-all duration-150";
     if (!confirmed) {
       return selected.has(letter)
-        ? <span className={`${base} bg-brand text-white`}><span className="font-mono text-[9px] font-semibold">{letter}</span></span>
-        : <span className={`${base} bg-cream-100 text-ink-faint border border-cream-200`}><span className="font-mono text-[9px] font-semibold">{letter}</span></span>;
+        ? <span className={`${base} bg-brand text-white`}><span className="font-mono text-[9px] font-semibold">{displayLetter[letter]}</span></span>
+        : <span className={`${base} bg-cream-100 text-ink-faint border border-cream-200`}><span className="font-mono text-[9px] font-semibold">{displayLetter[letter]}</span></span>;
     }
     if (question.correctAnswers.includes(letter)) return <span className={`${base} bg-status-green text-white`}><IconCheck /></span>;
     if (selected.has(letter)) return <span className={`${base} bg-status-red text-white`}><IconX /></span>;
-    return <span className={`${base} bg-cream-100 text-ink-faint border border-cream-200`}><span className="font-mono text-[9px] font-semibold">{letter}</span></span>;
+    return <span className={`${base} bg-cream-100 text-ink-faint border border-cream-200`}><span className="font-mono text-[9px] font-semibold">{displayLetter[letter]}</span></span>;
   }
 
   const selectedArr = Array.from(selected).sort();
@@ -86,12 +88,12 @@ export function MultiCard({ question, onAnswer, hideExplanation, examMode, initi
       canConfirm={selected.size > 0}
       onConfirm={() => confirm(isCorrect, selectedArr)}
       hideExplanation={hideExplanation}
-      explanation={question.explanation}
+      explanation={remapLetterRefs(question.explanation, displayLetter)}
       reference={question.reference}
     >
       <p className="font-mono text-[10px] text-ink-faint">Select {question.correctAnswers.length} answers</p>
       <div className="flex flex-col gap-2">
-        {question.options.map((opt) => (
+        {ordered.map((opt) => (
           <button
             key={opt.letter}
             onClick={() => toggle(opt.letter)}

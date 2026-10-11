@@ -4,6 +4,7 @@ import { useState } from "react";
 import { McqQuestion } from "@/types/question";
 import { CardShell } from "./CardShell";
 import { useAnswerCard } from "@/hooks/useAnswerCard";
+import { useShuffledOptions, remapLetterRefs } from "@/lib/shuffle";
 
 interface Props {
   question: McqQuestion;
@@ -32,6 +33,7 @@ function IconX() {
 export function McqCard({ question, onAnswer, hideExplanation, examMode, initialAnswer }: Props) {
   const [selected, setSelected] = useState<string | null>(initialAnswer?.[0] ?? null);
   const { confirmed, confirm } = useAnswerCard({ examMode, hasInitial: !!initialAnswer?.[0], onAnswer });
+  const { ordered, displayLetter } = useShuffledOptions(question.id, question.options);
 
   function handleSelect(letter: string) {
     if (confirmed) return;
@@ -54,12 +56,12 @@ export function McqCard({ question, onAnswer, hideExplanation, examMode, initial
     const base = "w-[22px] h-[22px] rounded flex items-center justify-center shrink-0 transition-all duration-150";
     if (!confirmed) {
       return selected === letter
-        ? <span className={`${base} bg-brand text-white`}><span className="font-mono text-[9px] font-semibold">{letter}</span></span>
-        : <span className={`${base} bg-cream-100 text-ink-faint border border-cream-200`}><span className="font-mono text-[9px] font-semibold">{letter}</span></span>;
+        ? <span className={`${base} bg-brand text-white`}><span className="font-mono text-[9px] font-semibold">{displayLetter[letter]}</span></span>
+        : <span className={`${base} bg-cream-100 text-ink-faint border border-cream-200`}><span className="font-mono text-[9px] font-semibold">{displayLetter[letter]}</span></span>;
     }
     if (letter === question.correctAnswer) return <span className={`${base} bg-status-green text-white`}><IconCheck /></span>;
     if (letter === selected) return <span className={`${base} bg-status-red text-white`}><IconX /></span>;
-    return <span className={`${base} bg-cream-100 text-ink-faint border border-cream-200`}><span className="font-mono text-[9px] font-semibold">{letter}</span></span>;
+    return <span className={`${base} bg-cream-100 text-ink-faint border border-cream-200`}><span className="font-mono text-[9px] font-semibold">{displayLetter[letter]}</span></span>;
   }
 
   return (
@@ -73,11 +75,11 @@ export function McqCard({ question, onAnswer, hideExplanation, examMode, initial
       canConfirm={!!selected}
       onConfirm={() => selected && confirm(selected === question.correctAnswer, [selected])}
       hideExplanation={hideExplanation}
-      explanation={question.explanation}
+      explanation={remapLetterRefs(question.explanation, displayLetter)}
       reference={question.reference}
     >
       <div className="flex flex-col gap-2">
-        {question.options.map((opt) => (
+        {ordered.map((opt) => (
           <button
             key={opt.letter}
             onClick={() => handleSelect(opt.letter)}

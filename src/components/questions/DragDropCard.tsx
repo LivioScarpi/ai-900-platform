@@ -9,6 +9,7 @@ import {
 import { DragDropQuestion } from "@/types/question";
 import { CardShell } from "./CardShell";
 import { useAnswerCard } from "@/hooks/useAnswerCard";
+import { useShuffledStrings, useShuffledIndices } from "@/lib/shuffle";
 
 interface Props {
   question: DragDropQuestion;
@@ -77,6 +78,8 @@ export function DragDropCard({ question, onAnswer, hideExplanation, examMode, in
   });
   const { confirmed, confirm } = useAnswerCard({ examMode, hasInitial, onAnswer });
   const [activeId, setActiveId] = useState<string | null>(null);
+  const items = useShuffledStrings(question.id, question.items);
+  const targetOrder = useShuffledIndices(question.id * 31, question.targets.length);
 
   const sensors = useSensors(
     useSensor(PointerSensor, { activationConstraint: { distance: 8 } }),
@@ -142,13 +145,15 @@ export function DragDropCard({ question, onAnswer, hideExplanation, examMode, in
         <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
           <div className="flex flex-col gap-2">
             <p className="font-mono text-[9px] text-ink-faint uppercase tracking-[0.12em] mb-1">Items</p>
-            {question.items.map((item) => (
+            {items.map((item) => (
               <DraggableChip key={item} id={`${SRC_PREFIX}${item}`} label={item} disabled={confirmed} used={placedItems.has(item)} />
             ))}
           </div>
           <div className="flex flex-col gap-3">
             <p className="font-mono text-[9px] text-ink-faint uppercase tracking-[0.12em] mb-1">Targets</p>
-            {question.targets.map((target, i) => (
+            {targetOrder.map((i) => {
+              const target = question.targets[i];
+              return (
               <DropZone
                 key={i} id={String(i)} targetText={target.text}
                 assignedItem={assignments[i] ?? null}
@@ -156,7 +161,8 @@ export function DragDropCard({ question, onAnswer, hideExplanation, examMode, in
                 isCorrect={confirmed ? assignments[i] === target.correctItem : null}
                 onClear={() => clearAssignment(i)}
               />
-            ))}
+              );
+            })}
           </div>
         </div>
         <DragOverlay>

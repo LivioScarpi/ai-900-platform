@@ -4,6 +4,7 @@ import { useState } from "react";
 import { SentenceCompletionQuestion } from "@/types/question";
 import { CardShell } from "./CardShell";
 import { useAnswerCard } from "@/hooks/useAnswerCard";
+import { useShuffledStrings } from "@/lib/shuffle";
 
 interface Props {
   question: SentenceCompletionQuestion;
@@ -16,6 +17,7 @@ interface Props {
 export function SentenceCompletionCard({ question, onAnswer, hideExplanation, examMode, initialAnswer }: Props) {
   const [selected, setSelected] = useState(initialAnswer?.[0] ?? "");
   const { confirmed, confirm } = useAnswerCard({ examMode, hasInitial: !!initialAnswer?.[0], onAnswer });
+  const options = useShuffledStrings(question.id, question.options);
 
   function handleChange(value: string) {
     if (confirmed) return;
@@ -60,7 +62,7 @@ export function SentenceCompletionCard({ question, onAnswer, hideExplanation, ex
           className={`inline-block mx-1.5 px-2.5 py-1 rounded-lg text-[13px] font-medium focus:outline-none transition-colors ${getSelectStyle()}`}
         >
           <option value="">Select…</option>
-          {question.options.map((opt) => (
+          {options.map((opt) => (
             <option key={opt} value={opt}>{opt}</option>
           ))}
         </select>
