@@ -4981,6 +4981,465 @@
         "A",
         "E"
       ]
+    },
+    {
+      "id": 174,
+      "topic": "security",
+      "type": "mcq",
+      "text": "You are an admin and want to enable team synchronization for your organization. What installation permissions do you need to configure team synchronization for Azure AD?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Provide the tenant URL"
+        },
+        {
+          "letter": "B",
+          "text": "Read all users' full profiles"
+        },
+        {
+          "letter": "C",
+          "text": "Generate a valid Single Sign-on for Web Systems (SSWS) token"
+        },
+        {
+          "letter": "D",
+          "text": "Enable SAML Single Sign-on (SSO)"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "To enable team synchronization for Azure AD, the installation needs the following permissions: read all users' full profiles, sign in and read user profile, and read directory data.",
+      "contextImages": []
+    },
+    {
+      "id": 175,
+      "topic": "administration",
+      "type": "mcq",
+      "text": "You want to grant a user permissions to add and remove organization members to and from a team. Which permission would you need to grant that user?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Admin permission on all related repository"
+        },
+        {
+          "letter": "B",
+          "text": "Maintain permission on at least one related repository"
+        },
+        {
+          "letter": "C",
+          "text": "Organization billing manager"
+        },
+        {
+          "letter": "D",
+          "text": "Team maintainer"
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "The team maintainer permission is used for adding and removing organization members to and from a team. https://docs.github.com/en/organizations/organizing-members-into-teams/about-teams",
+      "contextImages": []
+    },
+    {
+      "id": 176,
+      "topic": "issues",
+      "type": "mcq",
+      "text": "How can you assign an issue to a specific GitHub user?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Edit the issue's Markdown content to mention the user's username."
+        },
+        {
+          "letter": "B",
+          "text": "Use the \"Assignees\" section when creating or editing the issue."
+        },
+        {
+          "letter": "C",
+          "text": "Assigning issues to users is only possible for repository owners."
+        },
+        {
+          "letter": "D",
+          "text": "Send a direct message to the user containing the issue details."
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "You can assign an issue to a specific user by using the \"Assignees\" section when creating or viewing the issue. This user will then be notified and responsible for the issue.",
+      "contextImages": []
+    },
+    {
+      "id": 177,
+      "topic": "pull_requests",
+      "type": "mcq",
+      "text": "How can you make commits to a Pull Request after it has been opened?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "You cannot make any commits to a Pull Request after it's opened."
+        },
+        {
+          "letter": "B",
+          "text": "You must close the Pull Request and open a new one with the changes."
+        },
+        {
+          "letter": "C",
+          "text": "Commits can be made directly to the \"compare\" branch in the Pull Request."
+        },
+        {
+          "letter": "D",
+          "text": "Commits are made on the \"base\" branch and are automatically reflected in the Pull Request."
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "You can continue to make commits to the \"compare\" branch of the Pull Request even after it has been opened. This is very common when addressing feedback from the reviews.",
+      "contextImages": []
+    },
+    {
+      "id": 178,
+      "topic": "pull_requests",
+      "type": "mcq",
+      "text": "What is the purpose of linking an activity to a Pull Request?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Linking an activity helps generate automated code suggestions."
+        },
+        {
+          "letter": "B",
+          "text": "Linking an activity connects the Pull Request to external repositories."
+        },
+        {
+          "letter": "C",
+          "text": "Linking an activity makes code reviews more complex and confusing."
+        },
+        {
+          "letter": "D",
+          "text": "Linking an activity creates connections between Pull Request discussions, issues, and other relevant entities."
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "Linking other activities helps provide better context by connecting other relevant discussions, issues, pull requests, etc.",
+      "contextImages": []
+    },
+    {
+      "id": 179,
+      "topic": "gists_wikis",
+      "type": "mcq",
+      "text": "Which of the following statements accurately describes GitHub Pages?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "It is a feature exclusively available to GitHub Enterprise users."
+        },
+        {
+          "letter": "B",
+          "text": "GitHub Pages supports dynamic server-side scripting and databases."
+        },
+        {
+          "letter": "C",
+          "text": "GitHub Pages allows users to host and publish static websites directly from GitHub repositories."
+        },
+        {
+          "letter": "D",
+          "text": "GitHub Pages provides unlimited free hosting of all types of web applications."
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "GitHub Pages is a service that allows any user to create and host static websites directly from their GitHub repositories, making it easy to share information, project documentation, and more.",
+      "contextImages": []
+    },
+    {
+      "id": 180,
+      "topic": "version_control",
+      "type": "mcq",
+      "text": "What's the difference between Git and GitHub?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Git is a distributed version control system (DVCS) that runs locally. GitHub is an interface layer that provides a shared remote."
+        },
+        {
+          "letter": "B",
+          "text": "Git is version control for projects with one contributor. GitHub is version control for projects with multiple contributors."
+        },
+        {
+          "letter": "C",
+          "text": "Git and GitHub are the same."
+        },
+        {
+          "letter": "D",
+          "text": "Git is local version control. GitHub is remote version control."
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Git is the tool you can use to work with a local branch and push changes to a remote repository. GitHub acts as a remote repository.",
+      "contextImages": []
+    },
+    {
+      "id": 181,
+      "topic": "administration",
+      "type": "mcq",
+      "text": "What is the difference between a GitHub organization account and a GitHub personal/user account?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "An organization account is intended for multiple people and teams, while personal/user accounts are typically for individuals."
+        },
+        {
+          "letter": "B",
+          "text": "You pay more for organization accounts versus personal/user accounts."
+        },
+        {
+          "letter": "C",
+          "text": "They are exactly the same."
+        },
+        {
+          "letter": "D",
+          "text": "Personal/user accounts have more access than organization accounts."
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Organizations are shared accounts where an unlimited number of people can collaborate across many projects at once and with tiered permissions.",
+      "contextImages": []
+    },
+    {
+      "id": 182,
+      "topic": "administration",
+      "type": "mcq",
+      "text": "What is a function you can execute on GitHub Mobile?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Create branches and pull requests."
+        },
+        {
+          "letter": "B",
+          "text": "Attach and remove release artifacts."
+        },
+        {
+          "letter": "C",
+          "text": "Add and clone repositories."
+        },
+        {
+          "letter": "D",
+          "text": "Manage, triage, and clear notifications from github.com."
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "On GitHub Mobile, you can manage, triage, and clear notifications from github.com.",
+      "contextImages": []
+    },
+    {
+      "id": 183,
+      "topic": "copilot",
+      "type": "mcq",
+      "text": "What are some supported integrated development environments for GitHub Copilot?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Only Visual Studio Code and Visual Studio"
+        },
+        {
+          "letter": "B",
+          "text": "Visual Studio Code, Visual Studio, Xcode, JetBrains, and Neovim"
+        },
+        {
+          "letter": "C",
+          "text": "Visual Studio Code, Visual Studio, Spyder, Eclipse"
+        },
+        {
+          "letter": "D",
+          "text": "Visual Studio Code, Visual Studio, Jupyter, NetBeans, Notepad ++"
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "GitHub Copilot is supported in many IDEs such as VS Code, Visual Studio, Xcode, JetBrains IDEs and Neovim, and even has an SDK to build support for other interfaces. (Note: the source quiz marked option C as correct, but its own explanation confirms B.)",
+      "contextImages": []
+    },
+    {
+      "id": 184,
+      "topic": "actions",
+      "type": "mcq",
+      "text": "What are the two types of GitHub Actions?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Container actions and JavaScript actions"
+        },
+        {
+          "letter": "B",
+          "text": "Embedded actions and container actions"
+        },
+        {
+          "letter": "C",
+          "text": "Workflows and triggers"
+        },
+        {
+          "letter": "D",
+          "text": "Events and jobs"
+        }
+      ],
+      "correctAnswer": "A",
+      "explanation": "Custom Actions can be created as a JavaScript Action or a container Action. With container actions, the environment is part of the Action's code. JavaScript actions don't include the environment in the code.",
+      "contextImages": []
+    },
+    {
+      "id": 185,
+      "topic": "version_control",
+      "type": "mcq",
+      "text": "In Git terminology, what is a \"remote\"?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "A local copy of a repository stored on your computer."
+        },
+        {
+          "letter": "B",
+          "text": "A separate branch used for experimental code."
+        },
+        {
+          "letter": "C",
+          "text": "A backup of your repository stored in a secure location."
+        },
+        {
+          "letter": "D",
+          "text": "A repository that tracks the same project but resides somewhere else."
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "Remotes are references to other repositories for collaboration and synchronization.",
+      "contextImages": []
+    },
+    {
+      "id": 186,
+      "topic": "markdown",
+      "type": "mcq",
+      "text": "How do you display certain reserved characters in Markdown, like asterisks (`*`) and underscores (`_`)?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Use three in a row, like `***` or `___`."
+        },
+        {
+          "letter": "B",
+          "text": "Escape them with a backslash, like `\\*` or `\\_`."
+        },
+        {
+          "letter": "C",
+          "text": "Unfortunately, this is not supported at this time."
+        },
+        {
+          "letter": "D",
+          "text": "Just implement the asterisk and underscore, they will show automatically."
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "Markdown reserved characters can be displayed literally by escaping them with a backslash. See https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax",
+      "contextImages": []
+    },
+    {
+      "id": 187,
+      "topic": "gists_wikis",
+      "type": "mcq",
+      "text": "What is the primary purpose of GitHub Wiki pages?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Storing and managing large binary files."
+        },
+        {
+          "letter": "B",
+          "text": "Tracking issues and bugs within a repository."
+        },
+        {
+          "letter": "C",
+          "text": "Hosting a collaborative documentation space for a project."
+        },
+        {
+          "letter": "D",
+          "text": "Showcasing code snippets and examples for public viewing."
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "GitHub Wiki pages provide a more open space for collaborative documentation separate from the versioned repository content. It can be a space for the community to collaborate, build guides, or share other useful information.",
+      "contextImages": []
+    },
+    {
+      "id": 188,
+      "topic": "version_control",
+      "type": "mcq",
+      "text": "In Git, what is a \"commit\" used for?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "A remote server where code is stored."
+        },
+        {
+          "letter": "B",
+          "text": "A record of changes to a repository's history."
+        },
+        {
+          "letter": "C",
+          "text": "An external plugin to integrate with other services."
+        },
+        {
+          "letter": "D",
+          "text": "A summary of issues and bugs in a project."
+        }
+      ],
+      "correctAnswer": "B",
+      "explanation": "A \"commit\" is a snapshot of your entire repository at a specific time, recording changes in the repository's history.",
+      "contextImages": []
+    },
+    {
+      "id": 189,
+      "topic": "issues",
+      "type": "mcq",
+      "text": "How do you create a GitHub Milestone for tracking project progress?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "By creating a new branch and adding a milestone label."
+        },
+        {
+          "letter": "B",
+          "text": "By approving a release label associated with a pull request."
+        },
+        {
+          "letter": "C",
+          "text": "By creating a new release of the project."
+        },
+        {
+          "letter": "D",
+          "text": "By going to the \"Issues\" tab and selecting \"Milestones,\" then clicking \"New Milestone.\""
+        }
+      ],
+      "correctAnswer": "D",
+      "explanation": "To create a GitHub Milestone, you navigate to the \"Issues\" tab of the repository, select \"Milestones,\" and then click \"New Milestone.\" This allows you to set a title, description, due date, and associate issues and pull requests with the Milestone for tracking progress.",
+      "contextImages": []
+    },
+    {
+      "id": 190,
+      "topic": "gists_wikis",
+      "type": "mcq",
+      "text": "What are GitHub Gists primarily used for?",
+      "options": [
+        {
+          "letter": "A",
+          "text": "Managing public repositories with version control."
+        },
+        {
+          "letter": "B",
+          "text": "Hosting large files for download."
+        },
+        {
+          "letter": "C",
+          "text": "Sharing and collaborating on small code snippets or text notes."
+        },
+        {
+          "letter": "D",
+          "text": "Creating private repositories for personal projects."
+        }
+      ],
+      "correctAnswer": "C",
+      "explanation": "Gists are small pieces of code or markdown-formatted text, typically shared for the purposes of a snippet.",
+      "contextImages": []
     }
   ],
   "microsoft": []
