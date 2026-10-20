@@ -1902,7 +1902,7 @@
         }
       ],
       "correctAnswer": "A",
-      "explanation": "GitHub Desktop provides a full local environment well suited for quickly modifying a batch of files.",
+      "explanation": "github.dev opens a lightweight VS Code editor directly in the browser (press . on any repository): nothing to install, no compute to provision, and you can edit many files and commit them together. GitHub Desktop and the git CLI require local installation and a clone; a Codespace takes time to start and consumes compute; GitHub Mobile is not meant for editing files.",
       "contextImages": []
     },
     {
@@ -4255,7 +4255,7 @@
     {
       "id": 150,
       "topic": "copilot",
-      "explanation": "Copilot for Business adds organization-wide policy management and support for organization/enterprise accounts; public-code blocking per dump key.",
+      "explanation": "Copilot for Business adds organization-wide policy management, VPN proxy support via self-signed certificates, and support for organization/enterprise GitHub accounts. Multi-line suggestions, blocking suggestions matching public code, and editor integration are available in both plans.",
       "contextImages": [],
       "type": "multi",
       "text": "What features are offered by Copilot for Business that are not offered by Copilot for individuals? (Each answer presents a complete solution. Choose three.)",
@@ -4287,7 +4287,7 @@
       ],
       "correctAnswers": [
         "B",
-        "C",
+        "D",
         "E"
       ]
     },
