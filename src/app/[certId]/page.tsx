@@ -1,7 +1,7 @@
 import Link from "next/link";
 import type { CSSProperties } from "react";
 import { getCertConfig } from "@/lib/certifications";
-import { getCertVideoQuestions, getCertMicrosoftQuestions } from "@/lib/questions";
+import { getCertQuestions, getCertVideoQuestions, getCertMicrosoftQuestions } from "@/lib/questions";
 import { TOPICS } from "@/lib/topics";
 import { notFound } from "next/navigation";
 
@@ -16,6 +16,8 @@ export default async function CertOverviewPage({
 
   const total = getCertVideoQuestions(certId).length;
   const msTotal = getCertMicrosoftQuestions(certId).length;
+  const certTopics = new Set(getCertQuestions(certId).map((q) => q.topic));
+  const topicCount = TOPICS.filter((t) => certTopics.has(t.key)).length;
 
   const modes = [
     {
@@ -43,7 +45,7 @@ export default async function CertOverviewPage({
       num: "03",
       label: "By Topic",
       sub: "Pick a topic and drill exclusively into those questions. Ideal when the dashboard shows a weak area that needs focused practice.",
-      stat: String(TOPICS.length),
+      stat: String(topicCount),
       statLabel: "topics",
       cta: "Choose topic",
       color: "#D97706",

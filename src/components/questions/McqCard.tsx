@@ -67,6 +67,7 @@ export function McqCard({ question, onAnswer, hideExplanation, examMode, initial
   return (
     <CardShell
       topic={question.topic}
+      aiDerived={question.aiDerived}
       badge={{ label: "MCQ", className: "bg-cream-100 text-ink-faint border-cream-200" }}
       contextImages={question.contextImages}
       text={question.text}

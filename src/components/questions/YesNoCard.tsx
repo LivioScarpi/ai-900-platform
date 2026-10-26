@@ -55,6 +55,7 @@ export function YesNoCard({ question, onAnswer, hideExplanation, examMode, initi
   return (
     <CardShell
       topic={question.topic}
+      aiDerived={question.aiDerived}
       badge={{ label: "Yes / No", className: "bg-sky-50 text-sky-700 border-sky-100" }}
       contextImages={question.contextImages}
       text={question.text}

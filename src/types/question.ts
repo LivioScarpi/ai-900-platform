@@ -36,6 +36,8 @@ export interface BaseQuestion {
   topic: Topic;
   explanation: string;
   reference?: string;
+  /** Answer and explanation derived by AI, not taken from an official answer key */
+  aiDerived?: boolean;
   contextImages: string[];
 }
 

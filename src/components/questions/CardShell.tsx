@@ -11,6 +11,7 @@ interface BadgeProps {
 interface CardShellProps {
   topic: Topic;
   badge: BadgeProps;
+  aiDerived?: boolean;
   contextImages?: string[];
   text?: string;
   children: React.ReactNode;
@@ -27,6 +28,7 @@ interface CardShellProps {
 export function CardShell({
   topic,
   badge,
+  aiDerived,
   contextImages,
   text,
   children,
@@ -46,6 +48,14 @@ export function CardShell({
         <span className={`font-mono text-[9px] font-medium tracking-[0.15em] px-2 py-0.5 rounded-full uppercase border ${badge.className}`}>
           {badge.label}
         </span>
+        {aiDerived && (
+          <span
+            title="Answer and explanation derived by AI, not from an official answer key. Verify against the reference."
+            className="font-mono text-[9px] font-medium tracking-[0.15em] px-2 py-0.5 rounded-full uppercase border bg-amber-50 text-amber-700 border-amber-200"
+          >
+            AI answer
+          </span>
+        )}
       </div>
 
       {(contextImages ?? []).map((url) => (

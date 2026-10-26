@@ -50,6 +50,7 @@ export function DropdownCard({ question, onAnswer, hideExplanation, examMode, in
   return (
     <CardShell
       topic={question.topic}
+      aiDerived={question.aiDerived}
       badge={{ label: "Dropdown", className: "bg-amber-50 text-amber-700 border-amber-100" }}
       contextImages={question.contextImages}
       text={question.text}

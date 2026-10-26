@@ -80,6 +80,7 @@ export function MultiCard({ question, onAnswer, hideExplanation, examMode, initi
   return (
     <CardShell
       topic={question.topic}
+      aiDerived={question.aiDerived}
       badge={{ label: "Multi-select", className: "bg-purple-50 text-purple-700 border-purple-100" }}
       contextImages={question.contextImages}
       text={question.text}

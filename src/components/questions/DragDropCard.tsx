@@ -125,6 +125,7 @@ export function DragDropCard({ question, onAnswer, hideExplanation, examMode, in
   return (
     <CardShell
       topic={question.topic}
+      aiDerived={question.aiDerived}
       badge={{ label: "Drag & Drop", className: "bg-pink-50 text-pink-700 border-pink-100" }}
       contextImages={question.contextImages}
       text={question.text}

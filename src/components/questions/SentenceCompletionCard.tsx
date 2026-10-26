@@ -39,6 +39,7 @@ export function SentenceCompletionCard({ question, onAnswer, hideExplanation, ex
   return (
     <CardShell
       topic={question.topic}
+      aiDerived={question.aiDerived}
       badge={{ label: "Complete", className: "bg-amber-50 text-amber-700 border-amber-100" }}
       contextImages={question.contextImages}
       confirmed={confirmed}
