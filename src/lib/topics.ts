@@ -239,6 +239,42 @@ export const TOPICS: TopicInfo[] = [
     color: "#218BFF",
     keywords: ["github actions", "workflow", "runner", "ci/cd"],
   },
+  {
+    key: "copilot_features",
+    displayName: "Copilot Plans & Features",
+    color: "#6E40C9",
+    keywords: ["copilot chat", "inline suggestion", "copilot free", "copilot pro"],
+  },
+  {
+    key: "copilot_agents",
+    displayName: "Agents, Spaces & MCP",
+    color: "#A21CAF",
+    keywords: ["coding agent", "agent mode", "copilot spaces", "mcp", "copilot cli"],
+  },
+  {
+    key: "copilot_privacy",
+    displayName: "Privacy & Content Exclusions",
+    color: "#B91C1C",
+    keywords: ["content exclusion", "public code", "code referencing", "data retention"],
+  },
+  {
+    key: "copilot_testing",
+    displayName: "Testing with Copilot",
+    color: "#047857",
+    keywords: ["unit test", "tdd", "edge case", "test coverage"],
+  },
+  {
+    key: "copilot_use_cases",
+    displayName: "Developer Use Cases",
+    color: "#B45309",
+    keywords: ["refactor", "boilerplate", "debugging", "documentation"],
+  },
+  {
+    key: "prompt_engineering",
+    displayName: "Prompt Engineering",
+    color: "#0369A1",
+    keywords: ["prompt", "few-shot", "zero-shot", "context window"],
+  },
 ];
 
 export function assignTopic(text: string, explanation: string): Topic {

@@ -1,0 +1,12 @@
+{
+  "id": "gh300",
+  "name": "GH-300",
+  "fullName": "GitHub Copilot",
+  "provider": "GitHub",
+  "description": "Responsible AI, Copilot plans and features, prompt engineering, privacy, testing and agents with GitHub Copilot.",
+  "color": "#6E40C9",
+  "examQuestions": 60,
+  "examDurationMin": 100,
+  "passmarkPct": 70,
+  "hasMicrosoftQuestions": false
+}

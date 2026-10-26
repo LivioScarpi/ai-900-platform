@@ -3,6 +3,7 @@ import legacyData from "../../data/questions.json";
 import ai900Questions from "../../data/certifications/ai900/questions.json";
 import az900Questions from "../../data/certifications/az900/questions.json";
 import gh900Questions from "../../data/certifications/gh900/questions.json";
+import gh300Questions from "../../data/certifications/gh300/questions.json";
 
 type CertData = { video: Question[]; microsoft: Question[] };
 
@@ -10,6 +11,7 @@ const CERT_DATA: Record<string, CertData> = {
   ai900: ai900Questions as CertData,
   az900: az900Questions as CertData,
   gh900: gh900Questions as CertData,
+  gh300: gh300Questions as CertData,
 };
 
 // ── Legacy (backwards compat) ─────────────────────────────────────────────

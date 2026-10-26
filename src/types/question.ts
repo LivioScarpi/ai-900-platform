@@ -23,6 +23,12 @@ export type Topic =
   | "copilot"
   | "gists_wikis"
   | "actions"
+  | "copilot_features"
+  | "copilot_agents"
+  | "copilot_privacy"
+  | "copilot_testing"
+  | "copilot_use_cases"
+  | "prompt_engineering"
   | "unknown";
 
 export interface BaseQuestion {

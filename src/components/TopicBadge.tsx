@@ -25,6 +25,12 @@ const TOPIC_COLORS: Record<Topic, string> = {
   copilot:           "bg-violet-50 text-violet-700 border-violet-100",
   gists_wikis:       "bg-orange-50 text-orange-700 border-orange-100",
   actions:           "bg-blue-50 text-blue-700 border-blue-100",
+  copilot_features:  "bg-violet-50 text-violet-700 border-violet-100",
+  copilot_agents:    "bg-fuchsia-50 text-fuchsia-700 border-fuchsia-100",
+  copilot_privacy:   "bg-red-50 text-red-700 border-red-100",
+  copilot_testing:   "bg-emerald-50 text-emerald-700 border-emerald-100",
+  copilot_use_cases: "bg-amber-50 text-amber-700 border-amber-100",
+  prompt_engineering:"bg-sky-50 text-sky-700 border-sky-100",
   unknown:           "bg-cream-100 text-ink-muted border-cream-200",
 };
 
@@ -53,6 +59,12 @@ const TOPIC_LABELS: Record<Topic, string> = {
   copilot:           "Copilot",
   gists_wikis:       "Gists & Wikis",
   actions:           "Actions",
+  copilot_features:  "Copilot Features",
+  copilot_agents:    "Agents, Spaces & MCP",
+  copilot_privacy:   "Privacy & Exclusions",
+  copilot_testing:   "Testing",
+  copilot_use_cases: "Developer Use Cases",
+  prompt_engineering:"Prompt Engineering",
   unknown:           "General",
 };
 
